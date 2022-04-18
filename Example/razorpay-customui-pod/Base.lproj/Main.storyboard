@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RRQ-zS-q6S">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MenuVC-->
+        <scene sceneID="s3j-sX-V66">
+            <objects>
+                <viewController id="XO7-Li-hg7" customClass="MenuVC" customModule="razorpay_customui_pod_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tgf-lu-I10">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W2d-5t-2WG">
+                                <rect key="frame" x="8" y="52" width="359" height="607"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewLayout key="collectionViewLayout" id="Cb7-nI-ieT" customClass="DynamicHeightFlowLayout" customModule="SampleApp_CustomUI" customModuleProvider="target"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuItemCell" id="JIi-DT-qRf" customClass="MenuItemCell" customModule="razorpay_customui_pod_Example" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="158" height="156"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VVo-ok-gh1">
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="156"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hq2-tP-wYA">
+                                                    <rect key="frame" x="8" y="65" width="142" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Hq2-tP-wYA" firstAttribute="centerY" secondItem="VVo-ok-gh1" secondAttribute="centerY" id="AID-XJ-kPd"/>
+                                                <constraint firstAttribute="trailing" secondItem="Hq2-tP-wYA" secondAttribute="trailing" constant="8" id="CDQ-hy-nHW"/>
+                                                <constraint firstItem="Hq2-tP-wYA" firstAttribute="leading" secondItem="VVo-ok-gh1" secondAttribute="leading" constant="8" id="jqI-Dl-Mee"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <size key="customSize" width="158" height="156"/>
+                                        <connections>
+                                            <outlet property="lblTitle" destination="Hq2-tP-wYA" id="VIA-Z3-yKB"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="XO7-Li-hg7" id="xlS-Ym-BEh"/>
+                                    <outlet property="delegate" destination="XO7-Li-hg7" id="FFr-w8-17Q"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cQc-9s-oiG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W2d-5t-2WG" firstAttribute="leading" secondItem="cQc-9s-oiG" secondAttribute="leading" constant="8" id="8du-Uc-2KX"/>
+                            <constraint firstItem="cQc-9s-oiG" firstAttribute="trailing" secondItem="W2d-5t-2WG" secondAttribute="trailing" constant="8" id="Xaz-fa-sDz"/>
+                            <constraint firstItem="W2d-5t-2WG" firstAttribute="top" secondItem="cQc-9s-oiG" secondAttribute="top" constant="8" id="arD-f2-kGn"/>
+                            <constraint firstItem="cQc-9s-oiG" firstAttribute="bottom" secondItem="W2d-5t-2WG" secondAttribute="bottom" constant="8" id="qcT-nR-bBW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Ca-gG-w4m"/>
+                    <connections>
+                        <outlet property="collectionView" destination="W2d-5t-2WG" id="bH3-5b-Mo7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fSt-ez-W3C" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1884" y="87.706146926536732"/>
+        </scene>
+        <!--Web CheckoutVC-->
+        <scene sceneID="5m4-aE-do6">
+            <objects>
+                <viewController storyboardIdentifier="WebCheckoutVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g8Y-Oo-CGS" customClass="WebCheckoutVC" customModule="razorpay_customui_pod_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7sY-Gz-YXx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ey8-vI-CKS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uv9-b7-Y4j">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="2rf-HG-603"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bnv-8o-9aN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2639.1999999999998" y="87.706146926536732"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oxF-Wv-206">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RRQ-zS-q6S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2EX-nm-wmx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XO7-Li-hg7" kind="relationship" relationship="rootViewController" id="AMb-Fz-TgV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dig-V5-mGx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.79999999999995" y="87.706146926536732"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
