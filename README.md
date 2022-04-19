@@ -42,7 +42,7 @@ pod 'razorpay-customui-pod'
 
 for older cocoapod versions check [CHANGELOG](https://github.com/razorpay/razorpay-customui-pod/blob/master/CHANGELOG.md).
 
-Refer to the documentation from [here](https://razorpay.com/docs/payment-gateway/ios-integration/standard/)
+Refer to the documentation from [here](https://razorpay.com/docs/payment-gateway/ios-integration/custom/)
 
 ## Contributing
 
