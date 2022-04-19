@@ -1,0 +1,12 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'razorpay-customui-pod_Example' do
+  
+  pod 'razorpay-customui-pod', :path => '../'
+
+  target 'razorpay-customui-pod_Tests' do
+    inherit! :search_paths
+  end
+end
