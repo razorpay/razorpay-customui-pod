@@ -1,0 +1,82 @@
+name: Deploy Custom Checkout
+on: repository_dispatch
+
+env:
+  DEPLOYMENT_VERSION: ${{github.event.client_payload.version}}
+  DEPLOYMENT_BRANCH_NAME: "release-v-${{github.event.client_payload.version}}"
+
+jobs:
+  uts_and_build_generation:
+    runs-on: macOS-latest # nosemgrep : non-self-hosted-runner
+    steps:
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
+
+      - name: Xcode Version
+        run: /usr/bin/xcodebuild -version
+
+      - name: Check out razorpay-ios repository code
+        uses: actions/checkout@v2
+        with:
+          repository: "razorpay/razorpay-ios"
+          token: "${{ secrets.CI_BOT_TOKEN }}"
+          ref: codeCoverage
+
+      - name: Set permission
+        run: exec chmod +x ./.github/scripts/run-uts.sh
+
+      - name: Running Standard Checkout Unit Tests
+        run: exec ./.github/scripts/run-uts.sh
+
+      - name: Set permission to run XCFramework Script
+        run: exec chmod +x ./.github/scripts/create-custom-checkout-build.sh
+
+      - name: Run Create XCFramework Script
+        run: exec ./.github/scripts/create-custom-checkout-build.sh
+
+      - name: Check out razorpay-pod repository code
+        uses: actions/checkout@v2
+        with:
+          repository: "razorpay/razorpay-pod"
+          token: "${{ secrets.CI_BOT_TOKEN }}"
+
+      - name: Set permission for PODSPEC Update
+        run: exec chmod +x ./.github/scripts/update_podspec_version.sh
+
+      - name: Update Release Version
+        run: exec ./.github/scripts/update_podspec_version.sh $DEPLOYMENT_VERSION
+
+      - name: Remove old Build
+        run: rm -rf ./Pod/Razorpay.xcframework
+
+      - name: Update new build
+        run: cp -R ~/Desktop/CheckoutOtpelf/ ./Pod
+
+      - name: Upload Release builds to Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: "Checkout-Releases-v${{env.DEPLOYMENT_VERSION}}"
+          path: ~/Desktop/CheckoutOtpelf
+
+      - name: Remove Framework Folder
+        run: rm -rf ./Pod/Razorpay.framework
+
+      - name: Create Branch and Commit Changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: Ramprasad A
+          author_email: ramprasad.a@razorpay.com
+          message: "Release standard checkout v${{env.DEPLOYMENT_VERSION}}"
+          new_branch: ${{env.DEPLOYMENT_BRANCH_NAME}}
+          add: "[./Pod, razorpay-pod.podspec]"
+          push: origin ${{env.DEPLOYMENT_BRANCH_NAME}} --set-upstream --force
+
+      - name: Create Pull Request
+        shell: bash
+        run: |
+          curl \
+          -X POST \
+          -H 'authorization: Bearer ${{ secrets.CI_BOT_TOKEN }}' \
+          -H "Accept: application/vnd.github+json" \
+          https://api.github.com/repos/razorpay/razorpay-pod/pulls \
+          -d '{"title":"v_${{env.DEPLOYMENT_VERSION}}_release","body":"Standard Checkout Deployment","head":"${{env.DEPLOYMENT_BRANCH_NAME}}","base":"master"}'
