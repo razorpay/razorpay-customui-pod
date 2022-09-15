@@ -33,10 +33,10 @@ jobs:
       - name: Run Create XCFramework Script
         run: exec ./.github/scripts/create-custom-checkout-build.sh
 
-      - name: Check out razorpay-pod repository code
+      - name: Check out razorpay-customui-pod repository code
         uses: actions/checkout@v2
         with:
-          repository: "razorpay/razorpay-pod"
+          repository: "razorpay/razorpay-customui-pod"
           token: "${{ secrets.CI_BOT_TOKEN }}"
 
       - name: Set permission for PODSPEC Update
@@ -49,13 +49,13 @@ jobs:
         run: rm -rf ./Pod/Razorpay.xcframework
 
       - name: Update new build
-        run: cp -R ~/Desktop/CheckoutOtpelf/ ./Pod
+        run: cp -R ~/Desktop/CustomuiOtpelf/ ./Pod
 
       - name: Upload Release builds to Artifacts
         uses: actions/upload-artifact@v3
         with:
           name: "Checkout-Releases-v${{env.DEPLOYMENT_VERSION}}"
-          path: ~/Desktop/CheckoutOtpelf
+          path: ~/Desktop/CustomuiOtpelf
 
       - name: Remove Framework Folder
         run: rm -rf ./Pod/Razorpay.framework
@@ -67,7 +67,7 @@ jobs:
           author_email: ramprasad.a@razorpay.com
           message: "Release standard checkout v${{env.DEPLOYMENT_VERSION}}"
           new_branch: ${{env.DEPLOYMENT_BRANCH_NAME}}
-          add: "[./Pod, razorpay-pod.podspec]"
+          add: "[./Pod, razorpay-customui-pod.podspec]"
           push: origin ${{env.DEPLOYMENT_BRANCH_NAME}} --set-upstream --force
 
       - name: Create Pull Request
@@ -77,5 +77,5 @@ jobs:
           -X POST \
           -H 'authorization: Bearer ${{ secrets.CI_BOT_TOKEN }}' \
           -H "Accept: application/vnd.github+json" \
-          https://api.github.com/repos/razorpay/razorpay-pod/pulls \
+          https://api.github.com/repos/razorpay/razorpay-customui-pod/pulls \
           -d '{"title":"v_${{env.DEPLOYMENT_VERSION}}_release","body":"Standard Checkout Deployment","head":"${{env.DEPLOYMENT_BRANCH_NAME}}","base":"master"}'
