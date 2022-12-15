@@ -25,7 +25,7 @@ helps businesses accepts online payments via Credit Card, Debit Card, Net bankin
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Razorpay' => 'support@razorpay.com' }
-  s.source           = { :git => 'https://github.com/razorpay/razorpay-customui-pod.git', :tag => s.version.to_s + 'beta' }
+  s.source           = { :git => 'https://github.com/razorpay/razorpay-customui-pod.git', :tag => s.version.to_s + '-beta' }
   s.social_media_url = 'https://twitter.com/razorpay'
 
   s.platform     = :ios, '11.0'
