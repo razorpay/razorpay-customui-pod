@@ -22,6 +22,15 @@ public protocol PluginPaymentCompletionDelegate : AnyObject {
   @objc func identifier() -> Swift.String
   @objc func pay(model: Razorpay.PluginPaymentModel)
 }
+@objc public protocol UPITurboPlugin {
+  @objc var paymentPlugin: Razorpay.PluginPaymentDelegate { get }
+  @objc func getLinkedAccounts(mobileNumber: Swift.String, resultDelegate: Any)
+  @objc func linkNewAccount(mobileNumber: Swift.String, linkActionDelegate: Any)
+  @objc func fetchAccountBalance(upiAccount: Any?, handler: @escaping (Any?, Swift.Error?) -> Swift.Void)
+  @objc func resetUpiPin(upiAccount: Any?, card: Any, handler: @escaping (Any?, Swift.Error?) -> Swift.Void)
+  @objc func delinkVpa(upiAccount: Any?, handler: @escaping (Any?, Swift.Error?) -> Swift.Void)
+  @objc func changeUpiPin(upiAccount: Any?, handler: @escaping (Any?, Swift.Error?) -> Swift.Void)
+}
 public protocol ErrorDescribable {
   var localizedDescription: Swift.String { get }
 }
@@ -33,7 +42,9 @@ public typealias PluginPaymentError = Razorpay.ErrorDescribable & Swift.Error
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class RazorpayCheckout : ObjectiveC.NSObject {
+  @objc final public var upiTurbo: Razorpay.UPITurboPlugin?
   @objc public static func initWithKey(_ key: Swift.String, andDelegate delegate: Razorpay.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView) -> Razorpay.RazorpayCheckout
+  @objc public static func initWithKey(_ key: Swift.String, andDelegate delegate: Razorpay.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, plugin: Razorpay.UPITurboPlugin) -> Razorpay.RazorpayCheckout
   @objc final public func changeApiKey(_ newApiKey: Swift.String)
   @objc final public func payWithCred(withOptions options: [Swift.AnyHashable : Any], withSuccessCallback success: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc final public func getCardFlows(_ options: [Swift.AnyHashable : Any], withCallback: @escaping (Swift.Bool) -> Swift.Void)
@@ -45,6 +56,7 @@ public typealias PluginPaymentError = Razorpay.ErrorDescribable & Swift.Error
   @objc final public func getSubscriptionAmount(havingSubscriptionId subId: Swift.String, withSuccessCallback success: @escaping (Swift.UInt64) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc final public func getSubscriptionAmount(options: [Swift.AnyHashable : Any], withSuccessCallback success: @escaping (Swift.UInt64) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc final public func authorize(_ options: [Swift.AnyHashable : Any])
+  @objc final public func authorize(_ options: [Swift.AnyHashable : Any], paymentPlugin: Razorpay.PluginPaymentDelegate)
   @objc final public func openCheckout(dict: [Swift.AnyHashable : Any])
   @objc final public func userCancelledPayment()
   @objc final public func decodeURI(from data: Swift.String)
@@ -65,6 +77,13 @@ public typealias PluginPaymentError = Razorpay.ErrorDescribable & Swift.Error
   @objc final public func getWalletLogo(havingWalletName name: Swift.String) -> Foundation.URL?
   @objc final public func payWithExternalPaymentEntity(options: [Swift.AnyHashable : Any], arrExternalPaymentEntities: [Razorpay.PluginPaymentDelegate])
   @objc final public func publishUri(with data: Swift.String)
+  @objc deinit
+}
+public class TurboPluginManager {
+  public init()
+  public func getSessionId() -> Swift.String?
+  public func getMercahntKey() -> Swift.String?
+  public func trackEvent()
   @objc deinit
 }
 @objc public protocol RazorpayPaymentCompletionProtocol {

@@ -283,6 +283,7 @@ SWIFT_CLASS("_TtC8Razorpay18PluginPaymentModel")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@protocol UPITurboPlugin;
 @protocol RazorpayPaymentCompletionProtocol;
 @class NSURL;
 
@@ -290,7 +291,9 @@ SWIFT_CLASS("_TtC8Razorpay16RazorpayCheckout")
 @interface RazorpayCheckout : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@property (nonatomic, strong) id <UPITurboPlugin> _Nullable upiTurbo;
 + (RazorpayCheckout * _Nonnull)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate withPaymentWebView:(WKWebView * _Nonnull)merchantWebView SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
++ (RazorpayCheckout * _Nonnull)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate withPaymentWebView:(WKWebView * _Nonnull)merchantWebView plugin:(id <UPITurboPlugin> _Nonnull)plugin SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 - (void)changeApiKey:(NSString * _Nonnull)newApiKey;
 - (void)payWithCredWithOptions:(NSDictionary * _Nonnull)options withSuccessCallback:(void (^ _Nonnull)(NSDictionary * _Nonnull))success andFailureCallback:(void (^ _Nonnull)(NSString * _Nonnull))failure;
 - (void)getCardFlows:(NSDictionary * _Nonnull)options withCallback:(void (^ _Nonnull)(BOOL))withCallback;
@@ -302,6 +305,7 @@ SWIFT_CLASS("_TtC8Razorpay16RazorpayCheckout")
 - (void)getSubscriptionAmountWithHavingSubscriptionId:(NSString * _Nonnull)subId withSuccessCallback:(void (^ _Nonnull)(uint64_t))success andFailureCallback:(void (^ _Nonnull)(NSString * _Nonnull))failure;
 - (void)getSubscriptionAmountWithOptions:(NSDictionary * _Nonnull)options withSuccessCallback:(void (^ _Nonnull)(uint64_t))success andFailureCallback:(void (^ _Nonnull)(NSString * _Nonnull))failure;
 - (void)authorize:(NSDictionary * _Nonnull)options;
+- (void)authorize:(NSDictionary * _Nonnull)options paymentPlugin:(id <PluginPaymentDelegate> _Nonnull)paymentPlugin;
 - (void)openCheckoutWithDict:(NSDictionary * _Nonnull)dict;
 - (void)userCancelledPayment;
 - (void)decodeURIFrom:(NSString * _Nonnull)data;
@@ -331,6 +335,18 @@ SWIFT_PROTOCOL("_TtP8Razorpay33RazorpayPaymentCompletionProtocol_")
 @end
 
 
+
+
+SWIFT_PROTOCOL("_TtP8Razorpay14UPITurboPlugin_")
+@protocol UPITurboPlugin
+@property (nonatomic, readonly, strong) id <PluginPaymentDelegate> _Nonnull paymentPlugin;
+- (void)getLinkedAccountsWithMobileNumber:(NSString * _Nonnull)mobileNumber resultDelegate:(id _Nonnull)resultDelegate;
+- (void)linkNewAccountWithMobileNumber:(NSString * _Nonnull)mobileNumber linkActionDelegate:(id _Nonnull)linkActionDelegate;
+- (void)fetchAccountBalanceWithUpiAccount:(id _Nullable)upiAccount handler:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))handler;
+- (void)resetUpiPinWithUpiAccount:(id _Nullable)upiAccount card:(id _Nonnull)card handler:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))handler;
+- (void)delinkVpaWithUpiAccount:(id _Nullable)upiAccount handler:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))handler;
+- (void)changeUpiPinWithUpiAccount:(id _Nullable)upiAccount handler:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))handler;
+@end
 
 #endif
 #if defined(__cplusplus)
