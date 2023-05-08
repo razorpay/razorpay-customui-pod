@@ -318,61 +318,6 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getPayload",
-            "printedName": "getPayload(handler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "([Swift.AnyHashable : Any]) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.AnyHashable : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AnyHashable",
-                        "printedName": "Swift.AnyHashable",
-                        "usr": "s:s11AnyHashableV"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Razorpay@objc(pl)PluginPaymentDelegate(im)getPayloadWithHandler:",
-            "mangledName": "$s8Razorpay21PluginPaymentDelegateP10getPayload7handleryySDys11AnyHashableVypGc_tF",
-            "moduleName": "Razorpay",
-            "genericSig": "<τ_0_0 where τ_0_0 : Razorpay.PluginPaymentDelegate>",
-            "sugared_genericSig": "<Self where Self : Razorpay.PluginPaymentDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -392,54 +337,6 @@
         "name": "UPITurboPlugin",
         "printedName": "UPITurboPlugin",
         "children": [
-          {
-            "kind": "Var",
-            "name": "paymentPlugin",
-            "printedName": "paymentPlugin",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PluginPaymentDelegate",
-                "printedName": "Razorpay.PluginPaymentDelegate",
-                "usr": "c:@M@Razorpay@objc(pl)PluginPaymentDelegate"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Razorpay@objc(pl)UPITurboPlugin(py)paymentPlugin",
-            "mangledName": "$s8Razorpay14UPITurboPluginP07paymentC0AA0C15PaymentDelegate_pvp",
-            "moduleName": "Razorpay",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PluginPaymentDelegate",
-                    "printedName": "Razorpay.PluginPaymentDelegate",
-                    "usr": "c:@M@Razorpay@objc(pl)PluginPaymentDelegate"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Razorpay@objc(pl)UPITurboPlugin(im)paymentPlugin",
-                "mangledName": "$s8Razorpay14UPITurboPluginP07paymentC0AA0C15PaymentDelegate_pvg",
-                "moduleName": "Razorpay",
-                "genericSig": "<τ_0_0 where τ_0_0 : Razorpay.UPITurboPlugin>",
-                "sugared_genericSig": "<Self where Self : Razorpay.UPITurboPlugin>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
           {
             "kind": "Function",
             "name": "getLinkedAccounts",
@@ -4666,42 +4563,7 @@
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/RamprasadA\/project\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/RazorpayCheckout.swift",
       "kind": "StringLiteral",
-      "offset": 4026,
-      "length": 5,
-      "value": "\"upi\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/RamprasadA\/project\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/RazorpayCheckout.swift",
-      "kind": "StringLiteral",
-      "offset": 4077,
-      "length": 6,
-      "value": "\"mode\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/RamprasadA\/project\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/RazorpayCheckout.swift",
-      "kind": "StringLiteral",
-      "offset": 4117,
-      "length": 6,
-      "value": "\"flow\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/RamprasadA\/project\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/RazorpayCheckout.swift",
-      "kind": "StringLiteral",
-      "offset": 4174,
-      "length": 8,
-      "value": "\"in_app\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/RamprasadA\/project\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/RazorpayCheckout.swift",
-      "kind": "StringLiteral",
-      "offset": 4194,
-      "length": 8,
-      "value": "\"intent\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/RamprasadA\/project\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/RazorpayCheckout.swift",
-      "kind": "StringLiteral",
-      "offset": 8890,
+      "offset": 8895,
       "length": 12,
       "value": "\"rcURIEvent\""
     },

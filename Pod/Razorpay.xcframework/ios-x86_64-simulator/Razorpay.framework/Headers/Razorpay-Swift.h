@@ -304,7 +304,6 @@ SWIFT_PROTOCOL("_TtP8Razorpay21PluginPaymentDelegate_")
 - (BOOL)canProcessPaymentWithModel:(PluginPaymentModel * _Nonnull)model SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)identifier SWIFT_WARN_UNUSED_RESULT;
 - (void)payWithModel:(PluginPaymentModel * _Nonnull)model;
-- (void)getPayloadWithHandler:(void (^ _Nonnull)(NSDictionary * _Nonnull))handler;
 @end
 
 
@@ -371,7 +370,6 @@ SWIFT_PROTOCOL("_TtP8Razorpay33RazorpayPaymentCompletionProtocol_")
 
 SWIFT_PROTOCOL("_TtP8Razorpay14UPITurboPlugin_")
 @protocol UPITurboPlugin
-@property (nonatomic, readonly, strong) id <PluginPaymentDelegate> _Nonnull paymentPlugin;
 - (void)getLinkedAccountsWithMobileNumber:(NSString * _Nonnull)mobileNumber resultDelegate:(id _Nonnull)resultDelegate;
 - (void)linkNewAccountWithMobileNumber:(NSString * _Nonnull)mobileNumber linkActionDelegate:(id _Nonnull)linkActionDelegate;
 - (void)fetchAccountBalanceWithUpiAccount:(id _Nullable)upiAccount handler:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))handler;

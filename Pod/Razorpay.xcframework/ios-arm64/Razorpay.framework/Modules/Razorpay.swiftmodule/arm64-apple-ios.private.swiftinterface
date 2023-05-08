@@ -21,10 +21,8 @@ public protocol PluginPaymentCompletionDelegate : AnyObject {
   @objc func canProcessPayment(model: Razorpay.PluginPaymentModel) -> Swift.Bool
   @objc func identifier() -> Swift.String
   @objc func pay(model: Razorpay.PluginPaymentModel)
-  @objc func getPayload(handler: @escaping (_ payload: [Swift.AnyHashable : Any]) -> Swift.Void)
 }
 @objc public protocol UPITurboPlugin {
-  @objc var paymentPlugin: any Razorpay.PluginPaymentDelegate { get }
   @objc func getLinkedAccounts(mobileNumber: Swift.String, resultDelegate: Any)
   @objc func linkNewAccount(mobileNumber: Swift.String, linkActionDelegate: Any)
   @objc func fetchAccountBalance(upiAccount: Any?, handler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
