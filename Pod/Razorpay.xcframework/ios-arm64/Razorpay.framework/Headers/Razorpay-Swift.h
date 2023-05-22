@@ -304,6 +304,9 @@ SWIFT_PROTOCOL("_TtP8Razorpay21PluginPaymentDelegate_")
 - (BOOL)canProcessPaymentWithModel:(PluginPaymentModel * _Nonnull)model SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)identifier SWIFT_WARN_UNUSED_RESULT;
 - (void)payWithModel:(PluginPaymentModel * _Nonnull)model;
+@optional
+- (void)getExternalPaymentDataWithMobileNumber:(NSString * _Nonnull)mobileNumber handler:(void (^ _Nonnull)(void))handler;
+- (NSArray<NSDictionary *> * _Nonnull)paymentData SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -370,14 +373,23 @@ SWIFT_PROTOCOL("_TtP8Razorpay33RazorpayPaymentCompletionProtocol_")
 
 SWIFT_PROTOCOL("_TtP8Razorpay14UPITurboPlugin_")
 @protocol UPITurboPlugin
+@property (nonatomic, readonly, strong) id <PluginPaymentDelegate> _Nonnull paymentPlugin;
 - (void)getLinkedAccountsWithMobileNumber:(NSString * _Nonnull)mobileNumber resultDelegate:(id _Nonnull)resultDelegate;
 - (void)linkNewAccountWithMobileNumber:(NSString * _Nonnull)mobileNumber linkActionDelegate:(id _Nonnull)linkActionDelegate;
 - (void)fetchAccountBalanceWithUpiAccount:(id _Nullable)upiAccount handler:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))handler;
 - (void)resetUpiPinWithUpiAccount:(id _Nullable)upiAccount card:(id _Nonnull)card handler:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))handler;
 - (void)delinkVpaWithUpiAccount:(id _Nullable)upiAccount handler:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))handler;
 - (void)changeUpiPinWithUpiAccount:(id _Nullable)upiAccount handler:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))handler;
-- (void)linkNewUpiAccountWithResultDelegate:(id _Nonnull)resultDelegate;
+@end
+
+
+SWIFT_PROTOCOL("_TtP8Razorpay16UPITurboUIPlugin_")
+@protocol UPITurboUIPlugin
+@property (nonatomic, readonly, strong) id <UPITurboPlugin> _Nullable corePlugin;
+@property (nonatomic, readonly, strong) id <PluginPaymentDelegate> _Nullable paymentPlugin;
+- (void)linkNewUpiAccountWithCompletionHandler:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))completionHandler;
 - (void)manageUpiAccount;
+- (NSArray<NSDictionary *> * _Nullable)getupiAccountObjectWithUpiAccounts:(id _Nullable)upiAccounts SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #endif

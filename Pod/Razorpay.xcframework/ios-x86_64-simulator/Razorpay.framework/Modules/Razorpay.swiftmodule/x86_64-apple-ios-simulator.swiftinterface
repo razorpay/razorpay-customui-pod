@@ -21,25 +21,36 @@ public protocol PluginPaymentCompletionDelegate : AnyObject {
   @objc func canProcessPayment(model: Razorpay.PluginPaymentModel) -> Swift.Bool
   @objc func identifier() -> Swift.String
   @objc func pay(model: Razorpay.PluginPaymentModel)
+  @objc optional func getExternalPaymentData(mobileNumber: Swift.String, handler: @escaping () -> Swift.Void)
+  @objc optional func paymentData() -> [[Swift.AnyHashable : Any]]
 }
 @objc public protocol UPITurboPlugin {
+  @objc var paymentPlugin: any Razorpay.PluginPaymentDelegate { get }
   @objc func getLinkedAccounts(mobileNumber: Swift.String, resultDelegate: Any)
   @objc func linkNewAccount(mobileNumber: Swift.String, linkActionDelegate: Any)
   @objc func fetchAccountBalance(upiAccount: Any?, handler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
   @objc func resetUpiPin(upiAccount: Any?, card: Any, handler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
   @objc func delinkVpa(upiAccount: Any?, handler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
   @objc func changeUpiPin(upiAccount: Any?, handler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
-  @objc func linkNewUpiAccount(resultDelegate: Any)
-  @objc func manageUpiAccount()
 }
 public protocol ErrorDescribable {
   var localizedDescription: Swift.String { get }
 }
 public typealias PluginPaymentError = Razorpay.ErrorDescribable & Swift.Error
+@objc public protocol UPITurboUIPlugin {
+  @objc var corePlugin: (any Razorpay.UPITurboPlugin)? { get }
+  @objc var paymentPlugin: (any Razorpay.PluginPaymentDelegate)? { get }
+  @objc func linkNewUpiAccount(completionHandler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
+  @objc func manageUpiAccount()
+  @objc func getupiAccountObject(upiAccounts: Any?) -> [[Swift.AnyHashable : Any]]?
+}
 @_hasMissingDesignatedInitializers @objc public class PluginPaymentModel : ObjectiveC.NSObject {
   final public let merchantKey: Swift.String
   final public let dictPaymentInformation: [Swift.AnyHashable : Any]
   final public let delegate: any Razorpay.PluginPaymentCompletionDelegate
+  public func getMerchantKey() -> Swift.String
+  public func getPaymentInfoDict() -> [Swift.AnyHashable : Any]
+  public func getDelegate() -> any Razorpay.PluginPaymentCompletionDelegate
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class RazorpayCheckout : ObjectiveC.NSObject {

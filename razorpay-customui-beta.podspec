@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'razorpay-customui-beta'
-  s.version          = '1.0.1'
+  s.version          = '1.0.3'
   s.summary          = "Beta - CocoaPod implementation of Razorpay's Custom Payment SDK"
 
   s.description      = <<-DESC
@@ -25,7 +25,7 @@ helps businesses accepts online payments via Credit Card, Debit Card, Net bankin
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Razorpay' => 'support@razorpay.com' }
-  s.source           = { :git => 'https://github.com/razorpay/razorpay-customui-pod.git', :tag => '1.0.1-beta' }
+  s.source           = { :git => 'https://github.com/razorpay/razorpay-customui-pod.git', :tag => '1.0.2-beta' }
   s.social_media_url = 'https://twitter.com/razorpay'
 
   s.platform     = :ios, '13.0'
