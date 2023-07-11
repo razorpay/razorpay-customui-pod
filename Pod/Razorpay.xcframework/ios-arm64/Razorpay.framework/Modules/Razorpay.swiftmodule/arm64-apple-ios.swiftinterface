@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Razorpay
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
@@ -26,6 +26,7 @@ public protocol PluginPaymentCompletionDelegate : AnyObject {
 }
 @objc public protocol UPITurboPlugin {
   @objc var paymentPlugin: any Razorpay.PluginPaymentDelegate { get }
+  @objc var deviceBindingDone: Swift.Bool { get }
   @objc func getLinkedAccounts(mobileNumber: Swift.String, resultDelegate: Any)
   @objc func linkNewAccount(mobileNumber: Swift.String, linkActionDelegate: Any)
   @objc func fetchAccountBalance(upiAccount: Any?, handler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
@@ -40,9 +41,9 @@ public typealias PluginPaymentError = Razorpay.ErrorDescribable & Swift.Error
 @objc public protocol UPITurboUIPlugin {
   @objc var corePlugin: (any Razorpay.UPITurboPlugin)? { get }
   @objc var paymentPlugin: (any Razorpay.PluginPaymentDelegate)? { get }
-  @objc func linkNewUpiAccount(completionHandler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
-  @objc func manageUpiAccount()
-  @objc func getupiAccountObject(upiAccounts: Any?) -> [[Swift.AnyHashable : Any]]?
+  @objc func linkNewUpiAccount(mobileNumber: Swift.String, color: Swift.String, completionHandler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
+  @objc func manageUpiAccount(mobileNumber: Swift.String, color: Swift.String)
+  @objc func getUpiAccountObject(upiAccounts: Any?) -> [[Swift.AnyHashable : Any]]?
 }
 @_hasMissingDesignatedInitializers @objc public class PluginPaymentModel : ObjectiveC.NSObject {
   final public let merchantKey: Swift.String
@@ -64,7 +65,7 @@ public typealias PluginPaymentError = Razorpay.ErrorDescribable & Swift.Error
   @objc final public func submitOtp(otp: Swift.String)
   @objc final public func resendOtp(response: @escaping (Swift.Bool) -> Swift.Void)
   @objc final public func redirectToBankPage()
-  @objc final public func getPaymentMethods(withOptions options: [Swift.AnyHashable : Any]?, withSuccessCallback success: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
+  @objc final public func getPaymentMethods(withOptions options: [Swift.AnyHashable : Any]?, withSuccessCallback success: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void, andFailureCallback failure: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void)
   @objc final public func getSubscriptionAmount(havingSubscriptionId subId: Swift.String, withSuccessCallback success: @escaping (Swift.UInt64) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc final public func getSubscriptionAmount(options: [Swift.AnyHashable : Any], withSuccessCallback success: @escaping (Swift.UInt64) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc final public func authorize(_ options: [Swift.AnyHashable : Any])
@@ -97,8 +98,14 @@ public class TurboPluginManager {
   public func getSessionId() -> Swift.String?
   public func getMercahntKey() -> Swift.String?
   public func getHTMLLoaingPage() -> Swift.String
-  public func trackEvent()
+  public func getBaseAnalyticsProperties() -> [Swift.AnyHashable : Any]
+  public func trackEvent(eventName: Swift.String, payload: [Swift.AnyHashable : Any])
+  public func submitAnalyticsEvents()
+  public func gatherAnalyticsDataCustomUI() -> [Swift.String : Any]?
   @objc deinit
+}
+extension Foundation.URLRequest {
+  public func cURL(pretty: Swift.Bool = false) -> Swift.String
 }
 @objc public protocol RazorpayPaymentCompletionProtocol {
   @objc func onPaymentSuccess(_ payment_id: Swift.String, andData response: [Swift.AnyHashable : Any])
