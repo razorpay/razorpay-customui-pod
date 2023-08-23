@@ -343,6 +343,7 @@ SWIFT_CLASS("_TtC8Razorpay16RazorpayCheckout")
 - (NSString * _Nonnull)getCardNetworkFromCardNumber:(NSString * _Nonnull)cardNumber SWIFT_WARN_UNUSED_RESULT;
 - (NSArray<NSString *> * _Nonnull)getSupportedUPIApps SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("use getAppsWhichSupportUpi(handler:) instead");
 + (void)getAppsWhichSupportUpiWithHandler:(void (^ _Nonnull)(NSArray<NSDictionary *> * _Nonnull))handler;
++ (void)getAppsWhichSupportUpiRecurringWithHandler:(void (^ _Nonnull)(NSArray<NSDictionary *> * _Nonnull))handler;
 - (BOOL)isCardValid:(NSString * _Nonnull)cardNumber SWIFT_WARN_UNUSED_RESULT;
 - (void)isValidVpa:(NSString * _Nonnull)vpa withSuccessCallback:(void (^ _Nonnull)(NSDictionary * _Nonnull))success withFailure:(void (^ _Nonnull)(NSDictionary * _Nonnull))failure;
 - (NSInteger)getCardNetworkLengthOfNetwork:(NSString * _Nonnull)network SWIFT_WARN_UNUSED_RESULT;
