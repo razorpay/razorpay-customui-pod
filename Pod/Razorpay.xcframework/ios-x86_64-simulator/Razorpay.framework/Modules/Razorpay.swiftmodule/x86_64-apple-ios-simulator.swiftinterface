@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
-// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Razorpay
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Razorpay
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
 import CoreLocation
@@ -57,6 +57,7 @@ public typealias PluginPaymentError = Razorpay.ErrorDescribable & Swift.Error
   @available(*, deprecated, message: "use getAppsWhichSupportUpi(handler:) instead")
   @objc final public func getSupportedUPIApps() -> [Swift.String]
   @objc public static func getAppsWhichSupportUpi(handler: @escaping ([[Swift.AnyHashable : Any]]) -> Swift.Void)
+  @objc public static func getAppsWhichSupportUpiRecurring(handler: @escaping ([[Swift.AnyHashable : Any]]) -> Swift.Void)
   @objc final public func isCardValid(_ cardNumber: Swift.String) -> Swift.Bool
   @objc final public func isValidVpa(_ vpa: Swift.String, withSuccessCallback success: @escaping (([Swift.AnyHashable : Any]) -> Swift.Void), withFailure failure: @escaping (([Swift.AnyHashable : Any]) -> Swift.Void))
   @objc final public func getCardNetworkLength(ofNetwork network: Swift.String) -> Swift.Int
