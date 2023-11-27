@@ -779,6 +779,36 @@
           },
           {
             "kind": "Function",
+            "name": "initWithKey",
+            "printedName": "initWithKey(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RazorpayCheckout",
+                "printedName": "Razorpay.RazorpayCheckout",
+                "usr": "c:@M@Razorpay@objc(cs)RazorpayCheckout"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Razorpay@objc(cs)RazorpayCheckout(cm)initWithKey:",
+            "mangledName": "$s8Razorpay0A8CheckoutC11initWithKeyyACSSFZ",
+            "moduleName": "Razorpay",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "changeApiKey",
             "printedName": "changeApiKey(_:)",
             "children": [
@@ -2207,6 +2237,64 @@
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setWebView",
+            "printedName": "setWebView(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Razorpay@objc(cs)RazorpayCheckout(im)setWebView:error:",
+            "mangledName": "$s8Razorpay0A8CheckoutC10setWebViewyySo05WKWebE0CKF",
+            "moduleName": "Razorpay",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDelegate",
+            "printedName": "setDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RazorpayPaymentCompletionProtocol",
+                "printedName": "Razorpay.RazorpayPaymentCompletionProtocol",
+                "usr": "c:@M@Razorpay@objc(pl)RazorpayPaymentCompletionProtocol"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Razorpay@objc(cs)RazorpayCheckout(im)setDelegate:error:",
+            "mangledName": "$s8Razorpay0A8CheckoutC11setDelegateyyAA0A25PaymentCompletionProtocol_pKF",
+            "moduleName": "Razorpay",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -3090,34 +3178,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Razorpay"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "Razorpay"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "Razorpay"
-      },
-      {
-        "kind": "Import",
-        "name": "DeveloperToolsSupport",
-        "printedName": "DeveloperToolsSupport",
-        "declKind": "Import",
-        "moduleName": "Razorpay"
       }
     ],
     "json_format_version": 8
@@ -3791,7 +3851,7 @@
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/RazorpayCheckout.swift",
       "kind": "StringLiteral",
-      "offset": 7518,
+      "offset": 8118,
       "length": 12,
       "value": "\"rcURIEvent\""
     },
@@ -7067,4053 +7127,4025 @@
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 3190,
+      "offset": 3567,
+      "length": 14,
+      "value": "\"com.razoroay\""
+    },
+    {
+      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3589,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "StringLiteral",
+      "offset": 3603,
+      "length": 7,
+      "value": "\"error\""
+    },
+    {
+      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "Dictionary",
+      "offset": 3612,
+      "length": 101,
+      "value": "[(\"code\", \"BAD_REQUEST_ERROR\"), (\"description\", \"Please initialise with key before calling this method\")]"
+    },
+    {
+      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "StringLiteral",
+      "offset": 4239,
+      "length": 14,
+      "value": "\"com.razoroay\""
+    },
+    {
+      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4261,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "StringLiteral",
+      "offset": 4275,
+      "length": 7,
+      "value": "\"error\""
+    },
+    {
+      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "Dictionary",
+      "offset": 4284,
+      "length": 101,
+      "value": "[(\"code\", \"BAD_REQUEST_ERROR\"), (\"description\", \"Please initialise with key before calling this method\")]"
+    },
+    {
+      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "StringLiteral",
+      "offset": 4700,
       "length": 49,
       "value": "\"https:\/\/\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 3238,
+      "offset": 4748,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 3617,
+      "offset": 5127,
       "length": 18,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 3630,
+      "offset": 5140,
       "length": 1,
       "value": "\"\/v1\/\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 3726,
+      "offset": 5236,
       "length": 18,
       "value": "\"checkout\/hdfcvas\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 3788,
+      "offset": 5298,
       "length": 26,
       "value": "\"payments\/create\/checkout\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 4175,
+      "offset": 5685,
       "length": 6,
       "value": "\"live\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 4983,
+      "offset": 6493,
       "length": 13,
       "value": "\"app_present\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 5062,
+      "offset": 6572,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 5816,
+      "offset": 7326,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 5870,
+      "offset": 7380,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 6274,
+      "offset": 7784,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 6457,
+      "offset": 7967,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 6743,
+      "offset": 8253,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 6924,
+      "offset": 8434,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 7234,
+      "offset": 8744,
       "length": 21,
       "value": "\"razorpay_payment_id\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 7271,
+      "offset": 8781,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 7425,
+      "offset": 8935,
       "length": 9,
       "value": "\"failure\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 7472,
+      "offset": 8982,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 7540,
+      "offset": 9050,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 7675,
+      "offset": 9185,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 8023,
+      "offset": 9533,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 8198,
+      "offset": 9708,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 8484,
+      "offset": 9994,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 8947,
+      "offset": 10457,
       "length": 17,
       "value": "\"subscription_id\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 9017,
+      "offset": 10527,
       "length": 14,
       "value": "\"subscription\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 9082,
+      "offset": 10592,
       "length": 8,
       "value": "\"amount\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 9148,
+      "offset": 10658,
       "length": 19,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 9166,
+      "offset": 10676,
       "length": 11,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 9254,
+      "offset": 10764,
       "length": 9,
       "value": "\"methods\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 9584,
+      "offset": 11094,
       "length": 81,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 9622,
+      "offset": 11132,
       "length": 3,
       "value": "\" The data fetched = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 9664,
+      "offset": 11174,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 9900,
+      "offset": 11410,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 9954,
+      "offset": 11464,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 10382,
+      "offset": 11892,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 10436,
+      "offset": 11946,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 10939,
+      "offset": 12449,
       "length": 17,
       "value": "\"subscription_id\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 11057,
+      "offset": 12567,
       "length": 9,
       "value": "\"options\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 11347,
+      "offset": 12857,
       "length": 14,
       "value": "\"subscription\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 11412,
+      "offset": 12922,
       "length": 8,
       "value": "\"amount\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 11478,
+      "offset": 12988,
       "length": 19,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 11496,
+      "offset": 13006,
       "length": 11,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 11782,
+      "offset": 13292,
       "length": 22,
       "value": "\"preferences_returned\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 12158,
+      "offset": 13668,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 12212,
+      "offset": 13722,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 12759,
+      "offset": 14269,
       "length": 17,
       "value": "\"subscription_id\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 13292,
+      "offset": 14802,
       "length": 17,
       "value": "\"subscription_id\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 13368,
+      "offset": 14878,
       "length": 17,
       "value": "\"subscription_id\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 13924,
+      "offset": 15434,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 13968,
+      "offset": 15478,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 14631,
+      "offset": 16141,
       "length": 9,
       "value": "\"LIBRARY\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 14644,
+      "offset": 16154,
       "length": 8,
       "value": "\"custom\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 14760,
+      "offset": 16270,
       "length": 11,
       "value": "\"FRAMEWORK\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 14810,
+      "offset": 16320,
       "length": 9,
       "value": "\"LIBRARY\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 14879,
+      "offset": 16389,
       "length": 11,
       "value": "\"FRAMEWORK\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 14907,
+      "offset": 16417,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 14946,
+      "offset": 16456,
       "length": 14,
       "value": "\"display_logo\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 14975,
+      "offset": 16485,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 15030,
+      "offset": 16540,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 15404,
+      "offset": 16914,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 15456,
+      "offset": 16966,
       "length": 21,
       "value": "\"navigator.userAgent\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 15972,
+      "offset": 17482,
       "length": 76,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 16010,
+      "offset": 17520,
       "length": 3,
       "value": "\" The result is not String = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 16047,
+      "offset": 17557,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 16250,
+      "offset": 17760,
       "length": 62,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 16288,
+      "offset": 17798,
       "length": 6,
       "value": "\" Result = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 16305,
+      "offset": 17815,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 16311,
+      "offset": 17821,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 16838,
+      "offset": 18348,
       "length": 4,
       "value": "\"ep\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 16959,
+      "offset": 18469,
       "length": 4,
       "value": "\"ep\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 17112,
+      "offset": 18622,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 17158,
+      "offset": 18668,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 17204,
+      "offset": 18714,
       "length": 22,
       "value": "\"upi_app_package_name\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 17335,
+      "offset": 18845,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 17470,
+      "offset": 18980,
       "length": 8,
       "value": "\"_[app]\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 17550,
+      "offset": 19060,
       "length": 22,
       "value": "\"upi_app_package_name\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 17750,
+      "offset": 19260,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 17811,
+      "offset": 19321,
       "length": 11,
       "value": "\"recurring\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 18102,
+      "offset": 19612,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 18190,
+      "offset": 19700,
       "length": 11,
       "value": "\"preferred\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 18346,
+      "offset": 19856,
       "length": 11,
       "value": "\"recurring\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 18361,
+      "offset": 19871,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 18423,
+      "offset": 19933,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 18542,
+      "offset": 20052,
       "length": 11,
       "value": "\"recurring\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 18726,
+      "offset": 20236,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 18922,
+      "offset": 20432,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 19118,
+      "offset": 20628,
       "length": 8,
       "value": "\"key_id\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 19178,
+      "offset": 20688,
       "length": 10,
       "value": "\"currency\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 19209,
+      "offset": 20719,
       "length": 10,
       "value": "\"currency\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 19224,
+      "offset": 20734,
       "length": 5,
       "value": "\"INR\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 19283,
+      "offset": 20793,
       "length": 14,
       "value": "\"display_logo\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 19430,
+      "offset": 20940,
       "length": 23,
       "value": "\"https:\/\/razorpay-post\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 19881,
+      "offset": 21391,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 20109,
+      "offset": 21619,
       "length": 13,
       "value": "\"about:blank\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 21243,
+      "offset": 22753,
       "length": 17,
       "value": "\"Network Failure\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 21348,
+      "offset": 22858,
       "length": 116,
       "value": "\"webview navigation error - NSErrorFailingURLStringKey =  \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 21423,
+      "offset": 22933,
       "length": 28,
       "value": "\"NSErrorFailingURLStringKey\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 21456,
+      "offset": 22966,
       "length": 5,
       "value": "\"N.A\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 21462,
+      "offset": 22972,
       "length": 2,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 21524,
+      "offset": 23034,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 21563,
+      "offset": 23073,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 21990,
+      "offset": 23500,
       "length": 117,
       "value": "\"webview request cancelled - NSErrorFailingURLStringKey =  \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 22066,
+      "offset": 23576,
       "length": 28,
       "value": "\"NSErrorFailingURLStringKey\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 22099,
+      "offset": 23609,
       "length": 5,
       "value": "\"N.A\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 22105,
+      "offset": 23615,
       "length": 2,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 22187,
+      "offset": 23697,
       "length": 28,
       "value": "\"NSErrorFailingURLStringKey\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 22263,
+      "offset": 23773,
       "length": 5,
       "value": "\"N.A\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 22365,
+      "offset": 23875,
       "length": 69,
       "value": "\"Webview Request Failed -> NSErrorFailingURLStringKey: \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 22433,
+      "offset": 23943,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 22640,
+      "offset": 24150,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 22693,
+      "offset": 24203,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 22933,
+      "offset": 24443,
       "length": 10,
       "value": "\"Catchall\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 23043,
+      "offset": 24553,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 23506,
+      "offset": 25016,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 23544,
+      "offset": 25054,
       "length": 5,
       "value": "\"N.A\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 23588,
+      "offset": 25098,
       "length": 24,
       "value": "\"https:\/\/razorpay-post\/\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 23659,
+      "offset": 25169,
       "length": 83,
       "value": "\"typeof window.razorpay_callback == 'function' && window.razorpay_callback() || ''\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 23832,
+      "offset": 25342,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 24054,
+      "offset": 25564,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 24158,
+      "offset": 25668,
       "length": 15,
       "value": "\"callback_data\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 24412,
+      "offset": 25922,
       "length": 80,
       "value": "\"Custom ui finish navigation - JavaScript evaluated but callBackData length = 0\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 24555,
+      "offset": 26065,
       "length": 89,
       "value": "\"^https:\\\/\\\/api\\.razorpay\\.com\\\/v1\\\/payments\\\/pay_[A-Za-z0-9]{14}\\\/ callback\\\/*\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 25019,
+      "offset": 26529,
       "length": 32,
       "value": "\"Invalid regex \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 25050,
+      "offset": 26560,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 25269,
+      "offset": 26779,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 25334,
+      "offset": 26844,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 25464,
+      "offset": 26974,
       "length": 87,
       "value": "\"calling on complete via non conventional method and callbackdata is = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 25550,
+      "offset": 27060,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 25774,
+      "offset": 27284,
       "length": 15,
       "value": "\"hideRzpLogo()\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 27247,
+      "offset": 28757,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 27503,
+      "offset": 29013,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 27617,
+      "offset": 29127,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 27979,
+      "offset": 29489,
       "length": 12,
       "value": "\"credpay:\/\/\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 28286,
+      "offset": 29796,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 28348,
+      "offset": 29858,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 28720,
+      "offset": 30230,
       "length": 18,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 28727,
+      "offset": 30237,
       "length": 1,
       "value": "\"=\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 28736,
+      "offset": 30246,
       "length": 1,
       "value": "\"&\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 28791,
+      "offset": 30301,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 28984,
+      "offset": 30494,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 29478,
+      "offset": 30988,
       "length": 21,
       "value": "\"razorpay_payment_id\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 30337,
+      "offset": 31847,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 30370,
+      "offset": 31880,
       "length": 6,
       "value": "\"code\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 30381,
+      "offset": 31891,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 30414,
+      "offset": 31924,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 30447,
+      "offset": 31957,
       "length": 7,
       "value": "\"field\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 30459,
+      "offset": 31969,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 30492,
+      "offset": 32002,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 30525,
+      "offset": 32035,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 30543,
+      "offset": 32053,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 30572,
+      "offset": 32082,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 30581,
+      "offset": 32091,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 30592,
+      "offset": 32102,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 30603,
+      "offset": 32113,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 30701,
+      "offset": 32211,
       "length": 18,
       "value": "\"http_status_code\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 30734,
+      "offset": 32244,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 30769,
+      "offset": 32279,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 30904,
+      "offset": 32414,
       "length": 15,
       "value": "\"error_message\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 30921,
+      "offset": 32431,
       "length": 28,
       "value": "\"Invalid jsonString \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 30948,
+      "offset": 32458,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 31095,
+      "offset": 32605,
       "length": 34,
       "value": "\"post('\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 31114,
+      "offset": 32624,
       "length": 15,
       "value": "\"',\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 31127,
+      "offset": 32637,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Array",
-      "offset": 31457,
+      "offset": 32967,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 31494,
+      "offset": 33004,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 31562,
+      "offset": 33072,
       "length": 15,
       "value": "\"availableApps\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Array",
-      "offset": 31616,
+      "offset": 33126,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 31709,
+      "offset": 33219,
       "length": 11,
       "value": "\"uriScheme\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 31767,
+      "offset": 33277,
       "length": 11,
       "value": "\"shortcode\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Array",
-      "offset": 32166,
+      "offset": 33726,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 32208,
+      "offset": 33768,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 32280,
+      "offset": 33840,
       "length": 15,
       "value": "\"availableApps\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Array",
-      "offset": 32335,
+      "offset": 33895,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 32420,
+      "offset": 33980,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 32520,
+      "offset": 34080,
       "length": 11,
       "value": "\"uriScheme\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 32582,
-      "length": 11,
-      "value": "\"shortcode\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
-      "kind": "StringLiteral",
-      "offset": 32642,
-      "length": 9,
-      "value": "\"appName\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
-      "kind": "StringLiteral",
-      "offset": 32747,
-      "length": 9,
-      "value": "\"appName\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
-      "kind": "StringLiteral",
-      "offset": 32803,
-      "length": 9,
-      "value": "\"appLogo\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
-      "kind": "StringLiteral",
-      "offset": 32934,
-      "length": 16,
-      "value": "\"appPackageName\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
-      "kind": "StringLiteral",
-      "offset": 32999,
-      "length": 15,
-      "value": "\"appIconBase64\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
-      "kind": "StringLiteral",
-      "offset": 33018,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
-      "kind": "Array",
-      "offset": 33390,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
-      "kind": "StringLiteral",
-      "offset": 33432,
-      "length": 5,
-      "value": "\"ios\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
-      "kind": "StringLiteral",
-      "offset": 33504,
-      "length": 15,
-      "value": "\"availableApps\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
-      "kind": "Array",
-      "offset": 33559,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
-      "kind": "Dictionary",
-      "offset": 33644,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
-      "kind": "StringLiteral",
-      "offset": 33744,
+      "offset": 34149,
       "length": 18,
       "value": "\"mandateUriScheme\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 33813,
+      "offset": 34218,
       "length": 11,
       "value": "\"shortcode\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 33873,
+      "offset": 34278,
       "length": 9,
       "value": "\"appName\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 33978,
+      "offset": 34462,
       "length": 9,
       "value": "\"appName\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 34034,
+      "offset": 34518,
       "length": 9,
       "value": "\"appLogo\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 34165,
+      "offset": 34649,
       "length": 16,
       "value": "\"appPackageName\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 34230,
+      "offset": 34714,
       "length": 15,
       "value": "\"appIconBase64\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 34249,
+      "offset": 34733,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Array",
-      "offset": 35301,
+      "offset": 35719,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 35625,
+      "offset": 36043,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 35698,
+      "offset": 36116,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 35721,
+      "offset": 36139,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 35987,
+      "offset": 36405,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 36120,
+      "offset": 36538,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 36211,
+      "offset": 36629,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 36568,
+      "offset": 36986,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Array",
-      "offset": 36678,
+      "offset": 37096,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Array",
-      "offset": 36760,
+      "offset": 37178,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 36783,
+      "offset": 37201,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 37082,
+      "offset": 37500,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 37105,
+      "offset": 37523,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 37244,
+      "offset": 37662,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 37370,
+      "offset": 37788,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 37409,
+      "offset": 37827,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 37444,
+      "offset": 37862,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 37524,
+      "offset": 37942,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 37531,
+      "offset": 37949,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 37921,
+      "offset": 38339,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 38115,
+      "offset": 38533,
       "length": 31,
       "value": "\"\/v1\/payments\/validate\/account\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 38222,
+      "offset": 38640,
       "length": 7,
       "value": "\"value\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 38248,
+      "offset": 38666,
       "length": 8,
       "value": "\"key_id\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 38276,
+      "offset": 38694,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 38430,
+      "offset": 38848,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 38465,
+      "offset": 38883,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 38505,
+      "offset": 38923,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 38885,
+      "offset": 39303,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 38895,
+      "offset": 39313,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 39211,
+      "offset": 39629,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 39296,
+      "offset": 39714,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 39420,
+      "offset": 39838,
       "length": 154,
       "value": "\"Error when calling validateVPA api. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 39513,
+      "offset": 39931,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 39519,
+      "offset": 39937,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 39573,
+      "offset": 39991,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 39750,
+      "offset": 40168,
       "length": 144,
       "value": "\"Error when calling validateVPA api. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 39843,
+      "offset": 40261,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 39849,
+      "offset": 40267,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 39893,
+      "offset": 40311,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 39997,
+      "offset": 40415,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 40006,
+      "offset": 40424,
       "length": 61,
       "value": "[(\"description\", \"Error in validating VAP. Please try again\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 40217,
+      "offset": 40635,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 40482,
+      "offset": 40900,
       "length": 9,
       "value": "\"default\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 40904,
+      "offset": 41322,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 41420,
+      "offset": 41838,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 41801,
+      "offset": 42219,
       "length": 8,
       "value": "\"action\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 41933,
+      "offset": 42351,
       "length": 6,
       "value": "\"body\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 41974,
+      "offset": 42392,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 42048,
+      "offset": 42466,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 42140,
+      "offset": 42558,
       "length": 19,
       "value": "\"open_url_external\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 42201,
+      "offset": 42619,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 42364,
+      "offset": 42782,
       "length": 14,
       "value": "\"setPaymentID\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 42420,
+      "offset": 42838,
       "length": 12,
       "value": "\"payment_id\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 42618,
+      "offset": 43036,
       "length": 18,
       "value": "\"callNativeIntent\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 42819,
+      "offset": 43237,
       "length": 101,
       "value": "\"Checkout bridge Post Message - unknown action and message received -> message body = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 42919,
+      "offset": 43337,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 43057,
+      "offset": 43475,
       "length": 94,
       "value": "\"Checkout bridge Post Message - unexpected message received -> message body = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 43150,
+      "offset": 43568,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 43256,
+      "offset": 43674,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 43289,
+      "offset": 43707,
       "length": 6,
       "value": "\"code\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 43316,
+      "offset": 43734,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 43349,
+      "offset": 43767,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 43402,
+      "offset": 43820,
       "length": 21,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 43411,
+      "offset": 43829,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 43422,
+      "offset": 43840,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 43457,
+      "offset": 43875,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 43490,
+      "offset": 43908,
       "length": 10,
       "value": "\"metadata\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 43528,
+      "offset": 43946,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 43595,
+      "offset": 44013,
       "length": 18,
       "value": "\"http_status_code\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 43628,
+      "offset": 44046,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 43703,
+      "offset": 44121,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 43736,
+      "offset": 44154,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 43783,
+      "offset": 44201,
       "length": 19,
       "value": "\"payment_cancelled\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 43844,
+      "offset": 44262,
       "length": 12,
       "value": "\"payment_id\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 44466,
+      "offset": 44884,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 44913,
+      "offset": 45331,
       "length": 12,
       "value": "\"intent_url\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 44966,
+      "offset": 45384,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 45073,
+      "offset": 45491,
       "length": 15,
       "value": "\"availableApps\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 45263,
+      "offset": 45681,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 45279,
+      "offset": 45697,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 45425,
+      "offset": 45843,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 45530,
+      "offset": 45948,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 45570,
+      "offset": 45988,
       "length": 29,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 45583,
+      "offset": 46001,
       "length": 1,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 45598,
+      "offset": 46016,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 45741,
+      "offset": 46159,
       "length": 12,
       "value": "\"payment_id\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 46150,
+      "offset": 46568,
       "length": 11,
       "value": "\"shortcode\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 46381,
+      "offset": 46799,
       "length": 18,
       "value": "\"mandateUriScheme\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 46447,
+      "offset": 46865,
       "length": 11,
       "value": "\"uriScheme\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 46583,
+      "offset": 47001,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 46599,
+      "offset": 47017,
       "length": 15,
       "value": "\"Network Error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 47312,
+      "offset": 47730,
       "length": 66,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 47328,
+      "offset": 47746,
       "length": 1,
       "value": "\"\/v1\/payments\/\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 47353,
+      "offset": 47771,
       "length": 1,
       "value": "\"\/status?platform=ios_sdk\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 47450,
+      "offset": 47868,
       "length": 16,
       "value": "\"?key_id=\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 47465,
+      "offset": 47883,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 47668,
+      "offset": 48086,
       "length": 68,
       "value": "\"Status Polling Methods url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 47735,
+      "offset": 48153,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 47939,
+      "offset": 48357,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 47999,
+      "offset": 48417,
       "length": 9,
       "value": "\"created\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 48138,
+      "offset": 48556,
       "length": 21,
       "value": "\"razorpay_payment_id\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 48341,
+      "offset": 48759,
       "length": 15,
       "value": "\"callback_data\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 48497,
+      "offset": 48915,
       "length": 74,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 48540,
+      "offset": 48958,
       "length": 3,
       "value": "\" url for url request \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 48570,
+      "offset": 48988,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 48714,
+      "offset": 49132,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 48982,
+      "offset": 49400,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 49131,
+      "offset": 49549,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 49337,
+      "offset": 49755,
       "length": 96,
       "value": "\"Unable to json serialize the data returned in getPaymentMethods. url for url request \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 49432,
+      "offset": 49850,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 51106,
+      "offset": 51524,
       "length": 24,
       "value": "\"Merchant Key not found\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 51153,
+      "offset": 51571,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 51162,
+      "offset": 51580,
       "length": 59,
       "value": "[(\"description\", \"Unexpected Error. Missing merchant key.\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 51286,
+      "offset": 51704,
       "length": 94,
       "value": "\"https:\/\/\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 51335,
+      "offset": 51753,
       "length": 1,
       "value": "\"\/v1\/payments\/create\/ajax?key_id=\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 51379,
+      "offset": 51797,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 51534,
+      "offset": 51952,
       "length": 69,
       "value": "\"POST Payment Methods url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 51602,
+      "offset": 52020,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 51626,
+      "offset": 52044,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 51635,
+      "offset": 52053,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 51816,
+      "offset": 52234,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 51851,
+      "offset": 52269,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 51891,
+      "offset": 52309,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 52126,
+      "offset": 52544,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 52136,
+      "offset": 52554,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 52451,
+      "offset": 52869,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 52491,
+      "offset": 52909,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 52733,
+      "offset": 53151,
       "length": 104,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 52776,
+      "offset": 53194,
       "length": 3,
       "value": "\" url for url request \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 52830,
+      "offset": 53248,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 52836,
+      "offset": 53254,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 52948,
+      "offset": 53366,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 52957,
+      "offset": 53375,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 53212,
+      "offset": 53630,
       "length": 144,
       "value": "\"Error when preferences fetched api. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 53305,
+      "offset": 53723,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 53311,
+      "offset": 53729,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 53355,
+      "offset": 53773,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 53459,
+      "offset": 53877,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 53468,
+      "offset": 53886,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 54152,
+      "offset": 54570,
       "length": 103,
       "value": "\"https:\/\/\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 54179,
+      "offset": 54597,
       "length": 1,
       "value": "\":@\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 54221,
+      "offset": 54639,
       "length": 1,
       "value": "\"\/v1\/payments\/create\/checkout\/json\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 54409,
+      "offset": 54827,
       "length": 68,
       "value": "\"POST get card flows url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 54476,
+      "offset": 54894,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 54500,
+      "offset": 54918,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 54509,
+      "offset": 54927,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 54690,
+      "offset": 55108,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 54725,
+      "offset": 55143,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 54765,
+      "offset": 55183,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 55144,
+      "offset": 55562,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 55154,
+      "offset": 55572,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 55470,
+      "offset": 55888,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 55505,
+      "offset": 55923,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 55623,
+      "offset": 56041,
       "length": 80,
       "value": "\"POST get card flows Error response  = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 55692,
+      "offset": 56110,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 55702,
+      "offset": 56120,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 55902,
+      "offset": 56320,
       "length": 6,
       "value": "\"next\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 56103,
+      "offset": 56521,
       "length": 8,
       "value": "\"action\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 56173,
+      "offset": 56591,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 56273,
+      "offset": 56691,
       "length": 10,
       "value": "\"redirect\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 56379,
+      "offset": 56797,
       "length": 14,
       "value": "\"otp_generate\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 56753,
+      "offset": 57171,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 56762,
+      "offset": 57180,
       "length": 51,
       "value": "[(\"description\", \"Native otp not enabled for card\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 57003,
+      "offset": 57421,
       "length": 104,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 57046,
+      "offset": 57464,
       "length": 3,
       "value": "\" url for url request \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 57100,
+      "offset": 57518,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 57106,
+      "offset": 57524,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 57218,
+      "offset": 57636,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 57227,
+      "offset": 57645,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 57482,
+      "offset": 57900,
       "length": 135,
       "value": "\"Error fetching card flows. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 57566,
+      "offset": 57984,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 57572,
+      "offset": 57990,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 57616,
+      "offset": 58034,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 57720,
+      "offset": 58138,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 57729,
+      "offset": 58147,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 58332,
+      "offset": 58750,
       "length": 33,
       "value": "\"POST generate otp url not found\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 58388,
+      "offset": 58806,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 58397,
+      "offset": 58815,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 58635,
+      "offset": 59053,
       "length": 66,
       "value": "\"POST generate otp url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 58700,
+      "offset": 59118,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 58724,
+      "offset": 59142,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 58733,
+      "offset": 59151,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 58914,
+      "offset": 59332,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 58949,
+      "offset": 59367,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 58989,
+      "offset": 59407,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 59264,
+      "offset": 59682,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 59299,
+      "offset": 59717,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 59417,
+      "offset": 59835,
       "length": 82,
       "value": "\"POST generate otp url Error response  = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 59488,
+      "offset": 59906,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 59498,
+      "offset": 59916,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 59698,
+      "offset": 60116,
       "length": 6,
       "value": "\"next\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 59899,
+      "offset": 60317,
       "length": 8,
       "value": "\"action\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 59969,
+      "offset": 60387,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 60069,
+      "offset": 60487,
       "length": 12,
       "value": "\"otp_submit\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 60175,
+      "offset": 60593,
       "length": 12,
       "value": "\"otp_resend\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 60610,
+      "offset": 61028,
       "length": 76,
       "value": "\"POST generate otp url response does not include otp_submit\/otp_resend urls\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 60717,
+      "offset": 61135,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 60726,
+      "offset": 61144,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 60978,
+      "offset": 61396,
       "length": 104,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 61021,
+      "offset": 61439,
       "length": 3,
       "value": "\" url for url request \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 61075,
+      "offset": 61493,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 61081,
+      "offset": 61499,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 61193,
+      "offset": 61611,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 61202,
+      "offset": 61620,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 61444,
+      "offset": 61862,
       "length": 138,
       "value": "\"Error when POST generate otp. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 61531,
+      "offset": 61949,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 61537,
+      "offset": 61955,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 61581,
+      "offset": 61999,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 61685,
+      "offset": 62103,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 61694,
+      "offset": 62112,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 62310,
+      "offset": 62728,
       "length": 27,
       "value": "\"submit otp url not found.\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 62360,
+      "offset": 62778,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 62369,
+      "offset": 62787,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 62607,
+      "offset": 63025,
       "length": 64,
       "value": "\"POST submit otp url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 62670,
+      "offset": 63088,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 62694,
+      "offset": 63112,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 62703,
+      "offset": 63121,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 62884,
+      "offset": 63302,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 62919,
+      "offset": 63337,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 62959,
+      "offset": 63377,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 63066,
+      "offset": 63484,
       "length": 5,
       "value": "\"otp\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 63329,
+      "offset": 63747,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 63339,
+      "offset": 63757,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 63664,
+      "offset": 64082,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 63699,
+      "offset": 64117,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 63817,
+      "offset": 64235,
       "length": 76,
       "value": "\"POST submit otp Error response  = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 63882,
+      "offset": 64300,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 63892,
+      "offset": 64310,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 64014,
+      "offset": 64432,
       "length": 21,
       "value": "\"razorpay_payment_id\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 64411,
+      "offset": 64829,
       "length": 104,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 64454,
+      "offset": 64872,
       "length": 3,
       "value": "\" url for url request \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 64508,
+      "offset": 64926,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 64514,
+      "offset": 64932,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 64626,
+      "offset": 65044,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 64635,
+      "offset": 65053,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 64877,
+      "offset": 65295,
       "length": 135,
       "value": "\"Error when submitting otp. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 64961,
+      "offset": 65379,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 64967,
+      "offset": 65385,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 65011,
+      "offset": 65429,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 65115,
+      "offset": 65533,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 65124,
+      "offset": 65542,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 65720,
+      "offset": 66138,
       "length": 27,
       "value": "\"resend otp url not found.\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 65770,
+      "offset": 66188,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 65779,
+      "offset": 66197,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66017,
+      "offset": 66435,
       "length": 64,
       "value": "\"POST Resend otp url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66080,
+      "offset": 66498,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66104,
+      "offset": 66522,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 66113,
+      "offset": 66531,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66294,
+      "offset": 66712,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66329,
+      "offset": 66747,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66369,
+      "offset": 66787,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 66644,
+      "offset": 67062,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66679,
+      "offset": 67097,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66797,
+      "offset": 67215,
       "length": 76,
       "value": "\"POST resend otp Error response  = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66862,
+      "offset": 67280,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66872,
+      "offset": 67290,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 67072,
+      "offset": 67490,
       "length": 6,
       "value": "\"next\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 67273,
+      "offset": 67691,
       "length": 8,
       "value": "\"action\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 67343,
+      "offset": 67761,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 67443,
+      "offset": 67861,
       "length": 12,
       "value": "\"otp_submit\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 67549,
+      "offset": 67967,
       "length": 12,
       "value": "\"otp_resend\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 67984,
+      "offset": 68402,
       "length": 74,
       "value": "\"POST resend otp url response does not include otp_submit\/otp_resend urls\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 68089,
+      "offset": 68507,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 68098,
+      "offset": 68516,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 68350,
+      "offset": 68768,
       "length": 104,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 68393,
+      "offset": 68811,
       "length": 3,
       "value": "\" url for url request \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 68447,
+      "offset": 68865,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 68453,
+      "offset": 68871,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 68565,
+      "offset": 68983,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 68574,
+      "offset": 68992,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 68816,
+      "offset": 69234,
       "length": 144,
       "value": "\"Error when preferences fetched api. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 68909,
+      "offset": 69327,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 68915,
+      "offset": 69333,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 68959,
+      "offset": 69377,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 69063,
+      "offset": 69481,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 69072,
+      "offset": 69490,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 69402,
+      "offset": 69820,
       "length": 65,
       "value": "\"https:\/\/\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 69451,
+      "offset": 69869,
       "length": 1,
       "value": "\"\/v1\/preferences\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 69517,
+      "offset": 69935,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 69683,
+      "offset": 70101,
       "length": 8,
       "value": "\"key_id\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 69961,
+      "offset": 70379,
       "length": 68,
       "value": "\"Get Payment Methods url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 70028,
+      "offset": 70446,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 70052,
+      "offset": 70470,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 70061,
+      "offset": 70479,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 70243,
+      "offset": 70661,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 70444,
+      "offset": 70862,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 70611,
+      "offset": 71029,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 70862,
+      "offset": 71280,
       "length": 126,
       "value": "\"Unable to json serialize the data returned in getPaymentMethods. url for url request \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 70981,
+      "offset": 71399,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 70987,
+      "offset": 71405,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 71099,
+      "offset": 71517,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 71108,
+      "offset": 71526,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 71260,
+      "offset": 71678,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 71598,
+      "offset": 72016,
       "length": 144,
       "value": "\"Error when preferences fetched api. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 71691,
+      "offset": 72109,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 71697,
+      "offset": 72115,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 71741,
+      "offset": 72159,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 71845,
+      "offset": 72263,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 71854,
+      "offset": 72272,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 72261,
+      "offset": 72679,
       "length": 66,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 72277,
+      "offset": 72695,
       "length": 1,
       "value": "\"\/v1\/payments\/\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 72302,
+      "offset": 72720,
       "length": 1,
       "value": "\"\/cancel?platform=ios_sdk\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 72406,
+      "offset": 72824,
       "length": 22,
       "value": "\"status?key_id=\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 72427,
+      "offset": 72845,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 72617,
+      "offset": 73035,
       "length": 65,
       "value": "\"Get Payment Methods url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 72681,
+      "offset": 73099,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 72705,
+      "offset": 73123,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 72714,
+      "offset": 73132,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 72896,
+      "offset": 73314,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 73094,
+      "offset": 73512,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 73258,
+      "offset": 73676,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 73352,
+      "offset": 73770,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 73364,
+      "offset": 73782,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 73538,
+      "offset": 73956,
       "length": 126,
       "value": "\"Unable to json serialize the data returned in getPaymentMethods. url for url request \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 73657,
+      "offset": 74075,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 73663,
+      "offset": 74081,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 73775,
+      "offset": 74193,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 73784,
+      "offset": 74202,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 73933,
+      "offset": 74351,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 74265,
+      "offset": 74683,
       "length": 144,
       "value": "\"Error when preferences fetched api. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 74358,
+      "offset": 74776,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 74364,
+      "offset": 74782,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 74408,
+      "offset": 74826,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 74512,
+      "offset": 74930,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 74521,
+      "offset": 74939,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 74954,
+      "offset": 75372,
       "length": 68,
       "value": "\"Get Payment Methods url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 75021,
+      "offset": 75439,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 75045,
+      "offset": 75463,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 75054,
+      "offset": 75472,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 75236,
+      "offset": 75654,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 75429,
+      "offset": 75847,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 75588,
+      "offset": 76006,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 75829,
+      "offset": 76247,
       "length": 126,
       "value": "\"Unable to json serialize the data returned in getPaymentMethods. url for url request \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 75948,
+      "offset": 76366,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 75954,
+      "offset": 76372,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 76055,
+      "offset": 76473,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 76064,
+      "offset": 76482,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 76208,
+      "offset": 76626,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 76517,
+      "offset": 76935,
       "length": 144,
       "value": "\"Error when preferences fetched api. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 76610,
+      "offset": 77028,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 76616,
+      "offset": 77034,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 76660,
+      "offset": 77078,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 76764,
+      "offset": 77182,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 76773,
+      "offset": 77191,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 77010,
+      "offset": 77428,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 77078,
+      "offset": 77496,
       "length": 12,
       "value": "\"intent_url\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 77270,
+      "offset": 77688,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 77658,
+      "offset": 78076,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 78084,
+      "offset": 78502,
       "length": 9,
       "value": "\"request\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 78157,
+      "offset": 78575,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 78351,
+      "offset": 78769,
       "length": 9,
       "value": "\"request\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 78408,
+      "offset": 78826,
       "length": 9,
       "value": "\"content\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 78602,
+      "offset": 79020,
       "length": 15,
       "value": "\"callback_data\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 78766,
+      "offset": 79184,
       "length": 101,
       "value": "\"Unable to json serialize the data returned in getPaymentMethods. url for url request \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 78866,
+      "offset": 79284,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 79018,
+      "offset": 79436,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 79039,
+      "offset": 79457,
       "length": 92,
       "value": "\"Something went  wrong, please try again! If issue persists contact to support@razorpay.com\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 79322,
+      "offset": 79740,
       "length": 101,
       "value": "\"Unable to json serialize the data returned in getPaymentMethods. url for url request \""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 79422,
+      "offset": 79840,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 79558,
+      "offset": 79976,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 79579,
+      "offset": 79997,
       "length": 92,
       "value": "\"Something went  wrong, please try again! If issue persists contact to support@razorpay.com\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 79956,
+      "offset": 80374,
       "length": 14,
       "value": "\"user_aborted\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 80036,
+      "offset": 80454,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 80131,
+      "offset": 80549,
       "length": 8,
       "value": "\"failed\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 79956,
+      "offset": 80374,
       "length": 14,
       "value": "\"user_aborted\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 80036,
+      "offset": 80454,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 80131,
+      "offset": 80549,
       "length": 8,
       "value": "\"failed\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 80371,
+      "offset": 80789,
       "length": 21,
       "value": "\"razorpay:\/\/&status=\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 80400,
+      "offset": 80818,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 80549,
+      "offset": 80967,
       "length": 12,
       "value": "\"payment_id\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 80679,
+      "offset": 81097,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 80700,
+      "offset": 81118,
       "length": 38,
       "value": "\"Payment processing cancelled by user\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 80821,
+      "offset": 81239,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 80882,
+      "offset": 81300,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 81304,
+      "offset": 81722,
       "length": 9,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 81312,
+      "offset": 81730,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 81538,
+      "offset": 81956,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 81594,
+      "offset": 82012,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 81657,
+      "offset": 82075,
       "length": 15,
       "value": "\"availableApps\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 81722,
+      "offset": 82140,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 81872,
+      "offset": 82290,
       "length": 18,
       "value": "\"mandateUriScheme\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 82017,
+      "offset": 82435,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 82088,
+      "offset": 82506,
       "length": 5,
       "value": "false"
     },
@@ -13656,7 +13688,7 @@
       "kind": "StringLiteral",
       "offset": 1310,
       "length": 7,
-      "value": "\"2.0.7\""
+      "value": "\"2.0.8\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/CustomuiConstants.swift",
@@ -16324,27 +16356,6 @@
       "offset": 429,
       "length": 12,
       "value": "\"event_name\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/DerivedData\/iphonesimulator\/Build\/Intermediates.noindex\/RazorpayIOS.build\/Release-iphonesimulator\/CustomuiOtpelf.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 738,
-      "length": 15,
-      "value": "\"Razorpay_Logo\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/DerivedData\/iphonesimulator\/Build\/Intermediates.noindex\/RazorpayIOS.build\/Release-iphonesimulator\/CustomuiOtpelf.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 882,
-      "length": 12,
-      "value": "\"check_mark\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/DerivedData\/iphonesimulator\/Build\/Intermediates.noindex\/RazorpayIOS.build\/Release-iphonesimulator\/CustomuiOtpelf.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1018,
-      "length": 9,
-      "value": "\"warning\""
     }
   ]
 }
