@@ -3178,6 +3178,34 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Razorpay"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Razorpay"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Razorpay"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "Razorpay"
       }
     ],
     "json_format_version": 8
@@ -16356,6 +16384,27 @@
       "offset": 429,
       "length": 12,
       "value": "\"event_name\""
+    },
+    {
+      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/DerivedData\/iphonesimulator\/Build\/Intermediates.noindex\/RazorpayIOS.build\/Release-iphonesimulator\/CustomuiOtpelf.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 738,
+      "length": 15,
+      "value": "\"Razorpay_Logo\""
+    },
+    {
+      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/DerivedData\/iphonesimulator\/Build\/Intermediates.noindex\/RazorpayIOS.build\/Release-iphonesimulator\/CustomuiOtpelf.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 882,
+      "length": 12,
+      "value": "\"check_mark\""
+    },
+    {
+      "filePath": "\/Users\/ramprasad.a\/Documents\/ImmediateBugFix\/razorpay-ios\/RazorpayIOS\/DerivedData\/iphonesimulator\/Build\/Intermediates.noindex\/RazorpayIOS.build\/Release-iphonesimulator\/CustomuiOtpelf.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1018,
+      "length": 9,
+      "value": "\"warning\""
     }
   ]
 }
