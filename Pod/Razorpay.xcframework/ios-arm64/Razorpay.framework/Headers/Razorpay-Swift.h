@@ -338,6 +338,7 @@ SWIFT_CLASS("_TtC8Razorpay16RazorpayCheckout")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (RazorpayCheckout * _Nonnull)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate withPaymentWebView:(WKWebView * _Nonnull)merchantWebView SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
++ (RazorpayCheckout * _Nonnull)initWithKey:(NSString * _Nonnull)key SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 - (void)changeApiKey:(NSString * _Nonnull)newApiKey;
 - (void)payWithCredWithOptions:(NSDictionary * _Nonnull)options withSuccessCallback:(void (^ _Nonnull)(NSDictionary * _Nonnull))success andFailureCallback:(void (^ _Nonnull)(NSString * _Nonnull))failure;
 - (void)getCardFlows:(NSDictionary * _Nonnull)options withCallback:(void (^ _Nonnull)(BOOL))withCallback;
@@ -369,6 +370,8 @@ SWIFT_CLASS("_TtC8Razorpay16RazorpayCheckout")
 - (NSURL * _Nullable)getWalletLogoWithHavingWalletName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 - (void)payWithExternalPaymentEntityWithOptions:(NSDictionary * _Nonnull)options arrExternalPaymentEntities:(NSArray<id <PluginPaymentDelegate>> * _Nonnull)arrExternalPaymentEntities;
 - (void)publishUriWith:(NSString * _Nonnull)data;
+- (BOOL)setWebView:(WKWebView * _Nonnull)webView error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)setDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate error:(NSError * _Nullable * _Nullable)error;
 @end
 
 

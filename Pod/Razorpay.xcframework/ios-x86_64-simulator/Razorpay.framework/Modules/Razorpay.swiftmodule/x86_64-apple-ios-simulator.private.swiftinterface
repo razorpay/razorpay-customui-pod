@@ -37,6 +37,7 @@ public typealias PluginPaymentError = Razorpay.ErrorDescribable & Swift.Error
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class RazorpayCheckout : ObjectiveC.NSObject {
   @objc public static func initWithKey(_ key: Swift.String, andDelegate delegate: any Razorpay.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView) -> Razorpay.RazorpayCheckout
+  @objc public static func initWithKey(_ key: Swift.String) -> Razorpay.RazorpayCheckout
   @objc final public func changeApiKey(_ newApiKey: Swift.String)
   @objc final public func payWithCred(withOptions options: [Swift.AnyHashable : Any], withSuccessCallback success: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc final public func getCardFlows(_ options: [Swift.AnyHashable : Any], withCallback: @escaping (Swift.Bool) -> Swift.Void)
@@ -69,6 +70,8 @@ public typealias PluginPaymentError = Razorpay.ErrorDescribable & Swift.Error
   @objc final public func getWalletLogo(havingWalletName name: Swift.String) -> Foundation.URL?
   @objc final public func payWithExternalPaymentEntity(options: [Swift.AnyHashable : Any], arrExternalPaymentEntities: [any Razorpay.PluginPaymentDelegate])
   @objc final public func publishUri(with data: Swift.String)
+  @objc final public func setWebView(_ webView: WebKit.WKWebView) throws
+  @objc final public func setDelegate(_ delegate: any Razorpay.RazorpayPaymentCompletionProtocol) throws
   @objc deinit
 }
 @objc public protocol RazorpayPaymentCompletionProtocol {
