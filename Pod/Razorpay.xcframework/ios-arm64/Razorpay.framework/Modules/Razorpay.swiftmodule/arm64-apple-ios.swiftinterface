@@ -34,10 +34,10 @@ public protocol PluginPaymentCompletionDelegate : AnyObject {
   @objc var deviceBindingDone: Swift.Bool { get }
   @objc func getLinkedUpiAccounts(mobileNumber: Swift.String, resultDelegate: Any)
   @objc func linkNewAccount(mobileNumber: Swift.String, linkActionDelegate: Any)
-  @objc func fetchAccountBalance(upiAccount: Any?, handler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
-  @objc func resetUpiPin(upiAccount: Any?, card: Any, handler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
-  @objc func delinkVpa(upiAccount: Any?, handler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
-  @objc func changeUpiPin(upiAccount: Any?, handler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
+  @objc func fetchAccountBalance(upiAccount: Any?, handler: @escaping (Any?, Any?) -> Swift.Void)
+  @objc func resetUpiPin(upiAccount: Any?, card: Any, handler: @escaping (Any?, Any?) -> Swift.Void)
+  @objc func delinkVpa(upiAccount: Any?, handler: @escaping (Any?, Any?) -> Swift.Void)
+  @objc func changeUpiPin(upiAccount: Any?, handler: @escaping (Any?, Any?) -> Swift.Void)
 }
 @objc public protocol UPITurboTPVPlugin {
   @objc func linkNewUpiAccount(linkActionDelegate: Any)
@@ -55,7 +55,7 @@ public typealias PluginPaymentError = Razorpay.ErrorDescribable & Swift.Error
   @objc var corePlugin: (any Razorpay.UPITurboPlugin)? { get }
   @objc var paymentPlugin: (any Razorpay.PluginPaymentDelegate)? { get }
   @objc func getLinkedUpiAccounts(mobileNumber: Swift.String, resultDelegate: Any)
-  @objc func linkNewUpiAccount(mobileNumber: Swift.String, color: Swift.String, completionHandler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
+  @objc func linkNewUpiAccount(mobileNumber: Swift.String, color: Swift.String, completionHandler: @escaping (Any?, Any?) -> Swift.Void)
   @objc func manageUpiAccount(mobileNumber: Swift.String, color: Swift.String)
   @objc func getUpiAccountObject(upiAccounts: Any?) -> [[Swift.AnyHashable : Any]]?
 }
@@ -63,10 +63,10 @@ public typealias PluginPaymentError = Razorpay.ErrorDescribable & Swift.Error
   @objc func setOrderId(orderId: Swift.String) -> any Razorpay.UPITurboTPVUIPlugin
   @objc func setCustomerId(customerId: Swift.String) -> any Razorpay.UPITurboTPVUIPlugin
   @objc func setMobileNumber(mobile: Swift.String) -> any Razorpay.UPITurboTPVUIPlugin
-  @objc func linkNewUpiAccountWithUI(amountInDisplayFormat: Swift.String, color: Swift.String, completionHandler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
+  @objc func linkNewUpiAccountWithUI(amountInDisplayFormat: Swift.String, color: Swift.String, completionHandler: @escaping (Any?, Any?) -> Swift.Void)
 }
 public protocol UPITurboUIInternalPlugin : Razorpay.UPITurboUIPlugin {
-  func linkNewUpiAccount(mobileNumber: Swift.String, amountInDisplayFormat: Swift.String, color: Swift.String, completionHandler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
+  func linkNewUpiAccount(mobileNumber: Swift.String, amountInDisplayFormat: Swift.String, color: Swift.String, completionHandler: @escaping (Any?, Any?) -> Swift.Void)
 }
 @_hasMissingDesignatedInitializers @objc public class PluginPaymentModel : ObjectiveC.NSObject {
   final public let merchantKey: Swift.String
@@ -123,6 +123,7 @@ public class TurboPluginManager {
   public func getSessionId() -> Swift.String?
   public func getMercahntKey() -> Swift.String?
   public func getHTMLLoaingPage() -> Swift.String
+  public func isCFBEnabledUser() -> Swift.Bool
   public func getBaseAnalyticsProperties() -> [Swift.AnyHashable : Any]
   public func trackEvent(eventName: Swift.String, payload: [Swift.AnyHashable : Any])
   public func submitAnalyticsEvents()

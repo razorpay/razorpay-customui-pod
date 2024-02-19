@@ -402,10 +402,10 @@ SWIFT_PROTOCOL("_TtP8Razorpay14UPITurboPlugin_")
 @property (nonatomic, readonly) BOOL deviceBindingDone;
 - (void)getLinkedUpiAccountsWithMobileNumber:(NSString * _Nonnull)mobileNumber resultDelegate:(id _Nonnull)resultDelegate;
 - (void)linkNewAccountWithMobileNumber:(NSString * _Nonnull)mobileNumber linkActionDelegate:(id _Nonnull)linkActionDelegate;
-- (void)fetchAccountBalanceWithUpiAccount:(id _Nullable)upiAccount handler:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))handler;
-- (void)resetUpiPinWithUpiAccount:(id _Nullable)upiAccount card:(id _Nonnull)card handler:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))handler;
-- (void)delinkVpaWithUpiAccount:(id _Nullable)upiAccount handler:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))handler;
-- (void)changeUpiPinWithUpiAccount:(id _Nullable)upiAccount handler:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))handler;
+- (void)fetchAccountBalanceWithUpiAccount:(id _Nullable)upiAccount handler:(void (^ _Nonnull)(id _Nullable, id _Nullable))handler;
+- (void)resetUpiPinWithUpiAccount:(id _Nullable)upiAccount card:(id _Nonnull)card handler:(void (^ _Nonnull)(id _Nullable, id _Nullable))handler;
+- (void)delinkVpaWithUpiAccount:(id _Nullable)upiAccount handler:(void (^ _Nonnull)(id _Nullable, id _Nullable))handler;
+- (void)changeUpiPinWithUpiAccount:(id _Nullable)upiAccount handler:(void (^ _Nonnull)(id _Nullable, id _Nullable))handler;
 @end
 
 
@@ -424,7 +424,7 @@ SWIFT_PROTOCOL("_TtP8Razorpay19UPITurboTPVUIPlugin_")
 - (id <UPITurboTPVUIPlugin> _Nonnull)setOrderIdWithOrderId:(NSString * _Nonnull)orderId SWIFT_WARN_UNUSED_RESULT;
 - (id <UPITurboTPVUIPlugin> _Nonnull)setCustomerIdWithCustomerId:(NSString * _Nonnull)customerId SWIFT_WARN_UNUSED_RESULT;
 - (id <UPITurboTPVUIPlugin> _Nonnull)setMobileNumberWithMobile:(NSString * _Nonnull)mobile SWIFT_WARN_UNUSED_RESULT;
-- (void)linkNewUpiAccountWithUIWithAmountInDisplayFormat:(NSString * _Nonnull)amountInDisplayFormat color:(NSString * _Nonnull)color completionHandler:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))completionHandler;
+- (void)linkNewUpiAccountWithUIWithAmountInDisplayFormat:(NSString * _Nonnull)amountInDisplayFormat color:(NSString * _Nonnull)color completionHandler:(void (^ _Nonnull)(id _Nullable, id _Nullable))completionHandler;
 @end
 
 
@@ -434,7 +434,7 @@ SWIFT_PROTOCOL("_TtP8Razorpay16UPITurboUIPlugin_")
 @property (nonatomic, readonly, strong) id <UPITurboPlugin> _Nullable corePlugin;
 @property (nonatomic, readonly, strong) id <PluginPaymentDelegate> _Nullable paymentPlugin;
 - (void)getLinkedUpiAccountsWithMobileNumber:(NSString * _Nonnull)mobileNumber resultDelegate:(id _Nonnull)resultDelegate;
-- (void)linkNewUpiAccountWithMobileNumber:(NSString * _Nonnull)mobileNumber color:(NSString * _Nonnull)color completionHandler:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))completionHandler;
+- (void)linkNewUpiAccountWithMobileNumber:(NSString * _Nonnull)mobileNumber color:(NSString * _Nonnull)color completionHandler:(void (^ _Nonnull)(id _Nullable, id _Nullable))completionHandler;
 - (void)manageUpiAccountWithMobileNumber:(NSString * _Nonnull)mobileNumber color:(NSString * _Nonnull)color;
 - (NSArray<NSDictionary *> * _Nullable)getUpiAccountObjectWithUpiAccounts:(id _Nullable)upiAccounts SWIFT_WARN_UNUSED_RESULT;
 @end
