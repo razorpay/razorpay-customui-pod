@@ -15,7 +15,7 @@ struct PayloadModel {
 //    var key: String = "rzp_live_5W8oZPBNQPbZDE"
     var paymentType: PaymentType
 }
-
+    
 class MenuVC: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -82,13 +82,13 @@ extension MenuVC {
         cardPaymentDict = [
             "amount": "100",
             "currency": "INR",
-            "email": "a@b.com",
-            "contact": "123456789",
+            "email": "vivek.shindhe@razorpay.com",
+            "contact": "9999912345",
             "method": "card",
             "card[name]": "Test User",
             "card[number]": "4111111111111111",
             "card[expiry_month]": "11",
-            "card[expiry_year]": "23",
+            "card[expiry_year]": "26",
             "card[cvv]": "123",
             "display_logo": false
         ]
@@ -117,7 +117,7 @@ extension MenuVC {
             "email": "a@b.com",
             "contact": "1234567890",
             "method": "netbanking",
-            "bank": "HDFC",
+            "bank": "UTIB",
         ]
         
         self.payloadArray += [PayloadModel(title: "Net Banking", options: cardPaymentDict, paymentType: .makePayment)]
@@ -127,7 +127,7 @@ extension MenuVC {
             "amount": "100",
             "currency": "INR",
             "email": "a@b.com",
-            "contact": "123456789",
+            "contact": "9731585653",
             "method": "wallet",
             "wallet": "olamoney",
         ]
@@ -168,9 +168,9 @@ extension MenuVC {
                     "contact": "9090980808",
 //                    "order_id": "order_DBJOWzybf0sJbb",
                     "method": "upi",
-                    "_[flow]": "intent",
-                    "upi_app_package_name": "phonepe",
-//                    "vpa": "gaurav.kumar@exampleupi" // Optional Parameter
+//                    "_[flow]": "intent",
+//                    "upi_app_package_name": "phonepe",
+                    "vpa": "failure@razorpay" // Optional Parameter
                 ]
         self.payloadArray += [PayloadModel(title: "UPI", options: cardPaymentDict, paymentType: .makePayment)]
         cardPaymentDict = [:]

@@ -1,5 +1,5 @@
 PODS:
-  - razorpay-customui-pod (2.0.0)
+  - razorpay-customui-pod (2.0.10)
 
 DEPENDENCIES:
   - razorpay-customui-pod (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  razorpay-customui-pod: 9efe71a2db94a89cfc340081195da2ca4b12adf2
+  razorpay-customui-pod: f3cb691e8120bbfd72ff0b9b1569c737d1e618c1
 
 PODFILE CHECKSUM: 4604fcfab1e097d33685417648d256fc51b90457
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

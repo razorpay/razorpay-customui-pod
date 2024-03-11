@@ -288,8 +288,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -418,21 +418,6 @@
 			};
 			name = Release;
 		};
-		6D87279B6D9CF19AF7C7DD7207F23365 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61A37221B1D49A542FD8513C108F02E6 /* razorpay-customui-pod.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -528,6 +513,35 @@
 			};
 			name = Debug;
 		};
+		BCC0E8B1FEA8EA5CC17B2A7E683ABD44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61A37221B1D49A542FD8513C108F02E6 /* razorpay-customui-pod.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD7945B34DBB996AE3958EB6C88198AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9343C6BEBB639278A334124BB73D1A3F /* razorpay-customui-pod.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		BE9CE40C7B01AE6621322F743033386B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A1C15AFB68B90FA4943F94E7EF90452 /* Pods-razorpay-customui-pod_Example.debug.xcconfig */;
@@ -558,20 +572,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C58EC9F1D983E2C4510B166B221A697A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9343C6BEBB639278A334124BB73D1A3F /* razorpay-customui-pod.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -708,8 +708,8 @@
 		6DADB2AB4F9AF36732292314EF39EC0A /* Build configuration list for PBXAggregateTarget "razorpay-customui-pod" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C58EC9F1D983E2C4510B166B221A697A /* Debug */,
-				6D87279B6D9CF19AF7C7DD7207F23365 /* Release */,
+				BD7945B34DBB996AE3958EB6C88198AE /* Debug */,
+				BCC0E8B1FEA8EA5CC17B2A7E683ABD44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## razorpay-customui-pod
 
-Copyright (c) 2022 Ramprasad A <ramprasad.a@razorpay.com>
+Copyright (c) 2022 Razorpay Software Pvt. Ltd.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

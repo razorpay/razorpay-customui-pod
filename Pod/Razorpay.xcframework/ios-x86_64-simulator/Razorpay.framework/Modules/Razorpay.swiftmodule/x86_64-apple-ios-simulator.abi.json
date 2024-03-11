@@ -4663,1162 +4663,1274 @@
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "StringLiteral",
-      "offset": 2640,
-      "length": 11,
-      "value": "\"framework\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 2721,
-      "length": 18,
-      "value": "\"local_payment_id\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 3034,
-      "length": 18,
-      "value": "\"local_payment_id\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 3171,
-      "length": 6,
-      "value": "\"data\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 3231,
-      "length": 18,
-      "value": "\"platform_version\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 3301,
-      "length": 4,
-      "value": "\"os\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 3355,
-      "length": 12,
-      "value": "\"os_version\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 3413,
-      "length": 8,
-      "value": "\"device\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 3491,
-      "length": 8,
-      "value": "\"mobile\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 3585,
-      "length": 8,
-      "value": "\"tablet\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 3691,
-      "length": 13,
-      "value": "\"unspecified\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 3731,
-      "length": 5,
-      "value": "\"nil\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 3880,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 4020,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 4066,
-      "length": 16,
-      "value": "\"_[checkout_id]\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 4120,
-      "length": 7,
-      "value": "\"_[id]\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 4165,
-      "length": 7,
-      "value": "\"_[os]\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 4222,
-      "length": 17,
-      "value": "\"_[package_name]\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 4342,
-      "length": 20,
-      "value": "\"_[library_version]\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 4558,
-      "length": 9,
-      "value": "\"context\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 4616,
-      "length": 9,
-      "value": "\"network\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 4679,
-      "length": 19,
-      "value": "\"connectivity_type\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 4743,
-      "length": 23,
-      "value": "\"cellular_network_type\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 4804,
-      "length": 8,
-      "value": "\"locale\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 5038,
-      "length": 9,
-      "value": "\"context\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 5278,
-      "length": 9,
-      "value": "\"context\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 5442,
-      "length": 9,
-      "value": "\"context\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 5623,
-      "length": 9,
-      "value": "\"context\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 5718,
-      "length": 9,
-      "value": "\"context\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 6127,
-      "length": 8,
-      "value": "\"events\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 6415,
-      "length": 8,
-      "value": "\"events\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 6602,
-      "length": 8,
-      "value": "\"events\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 6737,
-      "length": 12,
-      "value": "\"properties\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 6886,
-      "length": 8,
-      "value": "\"events\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 7013,
-      "length": 9,
-      "value": "\"Viewed \""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 7032,
-      "length": 7,
-      "value": "\" Page\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "Array",
-      "offset": 7512,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7698,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 7748,
-      "length": 18,
-      "value": "\"local_payment_id\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 7849,
-      "length": 6,
-      "value": "\"POST\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 7923,
-      "length": 18,
-      "value": "\"application\/json\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 7963,
+      "offset": 2670,
       "length": 14,
-      "value": "\"Content-Type\""
+      "value": "\"CFBundleName\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "StringLiteral",
-      "offset": 8074,
-      "length": 5,
-      "value": "\"ios\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 8115,
-      "length": 14,
-      "value": "\"x-identifier\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 8442,
-      "length": 9,
-      "value": "\"context\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 8527,
-      "length": 9,
-      "value": "\"network\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 8588,
-      "length": 19,
-      "value": "\"connectivity_type\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 8660,
-      "length": 6,
-      "value": "\"wifi\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 8741,
-      "length": 10,
-      "value": "\"cellular\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 8830,
-      "length": 9,
-      "value": "\"network\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 8880,
-      "length": 9,
-      "value": "\"context\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 8974,
-      "length": 9,
-      "value": "\"context\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 9061,
-      "length": 9,
-      "value": "\"network\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 9157,
-      "length": 19,
-      "value": "\"connectivity_type\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 9311,
-      "length": 19,
-      "value": "\"connectivity_type\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 9387,
-      "length": 6,
-      "value": "\"wifi\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 9472,
-      "length": 10,
-      "value": "\"cellular\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 9566,
-      "length": 9,
-      "value": "\"network\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 9691,
-      "length": 9,
-      "value": "\"context\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10033,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 10383,
-      "length": 4,
-      "value": "\"2G\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 10647,
-      "length": 4,
-      "value": "\"3G\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 10708,
-      "length": 4,
-      "value": "\"4G\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 10744,
-      "length": 5,
-      "value": "\"N.A\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "Dictionary",
-      "offset": 10822,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11085,
-      "length": 5,
-      "value": "\"key\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11143,
-      "length": 8,
-      "value": "\"events\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "Array",
-      "offset": 11153,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11169,
-      "length": 9,
-      "value": "\"context\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11198,
-      "length": 8,
-      "value": "\"device\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11230,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11276,
-      "length": 14,
-      "value": "\"manufacturer\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11344,
-      "length": 7,
-      "value": "\"model\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11397,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11490,
-      "length": 9,
-      "value": "\"version\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11567,
-      "length": 10,
-      "value": "\"platform\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11579,
-      "length": 12,
-      "value": "\"mobile_sdk\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11609,
-      "length": 5,
-      "value": "\"sdk\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11638,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11679,
-      "length": 19,
-      "value": "\"_\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11697,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11720,
-      "length": 6,
-      "value": "\"type\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11819,
-      "length": 11,
-      "value": "\"framework\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11867,
-      "length": 9,
-      "value": "\"version\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11951,
-      "length": 9,
-      "value": "\"network\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 11984,
-      "length": 9,
-      "value": "\"carrier\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12063,
-      "length": 5,
-      "value": "\"N.A\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12090,
-      "length": 19,
-      "value": "\"connectivity_type\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12175,
-      "length": 6,
-      "value": "\"wifi\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12222,
-      "length": 10,
-      "value": "\"cellular\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12284,
-      "length": 23,
-      "value": "\"cellular_network_type\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12356,
-      "length": 4,
-      "value": "\"os\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12384,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12441,
-      "length": 9,
-      "value": "\"version\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12518,
-      "length": 8,
-      "value": "\"screen\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12550,
-      "length": 7,
-      "value": "\"width\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12612,
-      "length": 8,
-      "value": "\"height\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12690,
-      "length": 8,
-      "value": "\"locale\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12700,
-      "length": 88,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12736,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12739,
-      "length": 1,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12773,
-      "length": 13,
-      "value": "\"Can't Fetch\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12787,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12879,
-      "length": 6,
-      "value": "\"mode\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12947,
-      "length": 6,
-      "value": "\"test\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12956,
-      "length": 6,
-      "value": "\"live\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 12981,
+      "offset": 2739,
       "length": 19,
       "value": "\"merchant_app_name\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "StringLiteral",
-      "offset": 13053,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 13073,
-      "length": 22,
-      "value": "\"merchant_app_version\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 13106,
-      "length": 28,
-      "value": "\"CFBundleShortVersionString\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 13139,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 13159,
-      "length": 20,
-      "value": "\"merchant_app_build\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 13224,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 13244,
+      "offset": 2858,
       "length": 21,
-      "value": "\"merchant_app_bundle\""
+      "value": "\"CFBundleDisplayName\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "StringLiteral",
-      "offset": 13324,
-      "length": 2,
-      "value": "\"\""
+      "offset": 2934,
+      "length": 19,
+      "value": "\"merchant_app_name\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "StringLiteral",
-      "offset": 13344,
-      "length": 25,
-      "value": "\"merchant_app_executable\""
+      "offset": 3036,
+      "length": 19,
+      "value": "\"merchant_app_name\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "StringLiteral",
-      "offset": 13428,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 13448,
-      "length": 17,
-      "value": "\"merchant_key_id\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 13496,
-      "length": 12,
-      "value": "\"build_type\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 13553,
-      "length": 14,
-      "value": "\"merchant_key\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 13917,
-      "length": 13,
-      "value": "\"Can't Fetch\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 14328,
-      "length": 7,
-      "value": "\"event\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 14360,
-      "length": 11,
-      "value": "\"timestamp\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 14565,
-      "length": 64,
-      "value": "\"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14678,
-      "length": 2,
-      "value": "62"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 14761,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14816,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14856,
-      "length": 2,
-      "value": "62"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14955,
-      "length": 2,
-      "value": "62"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15237,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15280,
-      "length": 13,
-      "value": "1388534400000"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15324,
-      "length": 7,
-      "value": "1000000"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15371,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15375,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15456,
-      "length": 8,
-      "value": "14776336"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "FloatLiteral",
-      "offset": 15715,
-      "length": 14,
-      "value": "1598614926.941"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "BooleanLiteral",
-      "offset": 15957,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 16232,
-      "length": 5,
-      "value": "\"key\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 16294,
+      "offset": 3067,
       "length": 9,
-      "value": "\"metrics\""
+      "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "StringLiteral",
-      "offset": 16353,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 16361,
-      "length": 40,
-      "value": "\"checkout.mobile.sessionCreated.metrics\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 16427,
-      "length": 8,
-      "value": "\"labels\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 16611,
+      "offset": 3124,
       "length": 11,
       "value": "\"framework\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "StringLiteral",
-      "offset": 16657,
-      "length": 19,
-      "value": "\"_\""
+      "offset": 3205,
+      "length": 18,
+      "value": "\"local_payment_id\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "StringLiteral",
-      "offset": 16675,
+      "offset": 3518,
+      "length": 18,
+      "value": "\"local_payment_id\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 3655,
+      "length": 6,
+      "value": "\"data\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 3715,
+      "length": 18,
+      "value": "\"platform_version\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 3785,
+      "length": 4,
+      "value": "\"os\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 3839,
+      "length": 12,
+      "value": "\"os_version\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 3897,
+      "length": 8,
+      "value": "\"device\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 3975,
+      "length": 8,
+      "value": "\"mobile\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 4069,
+      "length": 8,
+      "value": "\"tablet\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 4175,
+      "length": 13,
+      "value": "\"unspecified\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 4215,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 4364,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 4504,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 4620,
+      "length": 14,
+      "value": "\"CFBundleName\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 4766,
+      "length": 21,
+      "value": "\"CFBundleDisplayName\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 4892,
+      "length": 9,
+      "value": "\"Unknown\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 4945,
+      "length": 16,
+      "value": "\"_[checkout_id]\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 4999,
+      "length": 7,
+      "value": "\"_[id]\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 5044,
+      "length": 7,
+      "value": "\"_[os]\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 5101,
+      "length": 17,
+      "value": "\"_[package_name]\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 5145,
+      "length": 13,
+      "value": "\"_[platform]\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 5159,
+      "length": 12,
+      "value": "\"mobile_sdk\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 5185,
+      "length": 12,
+      "value": "\"_[library]\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 5199,
+      "length": 8,
+      "value": "\"custom\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 5221,
+      "length": 13,
+      "value": "\"_[app_name]\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 5264,
+      "length": 20,
+      "value": "\"_[library_version]\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 5480,
+      "length": 9,
+      "value": "\"context\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 5538,
+      "length": 9,
+      "value": "\"network\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 5601,
+      "length": 19,
+      "value": "\"connectivity_type\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 5665,
+      "length": 23,
+      "value": "\"cellular_network_type\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 5726,
+      "length": 8,
+      "value": "\"locale\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 5960,
+      "length": 9,
+      "value": "\"context\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 6200,
+      "length": 9,
+      "value": "\"context\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 6364,
+      "length": 9,
+      "value": "\"context\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 6545,
+      "length": 9,
+      "value": "\"context\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 6640,
+      "length": 9,
+      "value": "\"context\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 7049,
+      "length": 8,
+      "value": "\"events\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 7337,
+      "length": 8,
+      "value": "\"events\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 7524,
+      "length": 8,
+      "value": "\"events\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 7659,
+      "length": 12,
+      "value": "\"properties\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 7808,
+      "length": 8,
+      "value": "\"events\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 7935,
+      "length": 9,
+      "value": "\"Viewed \""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 7954,
+      "length": 7,
+      "value": "\" Page\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "Array",
-      "offset": 16878,
+      "offset": 8434,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8620,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "StringLiteral",
-      "offset": 16949,
+      "offset": 8670,
+      "length": 18,
+      "value": "\"local_payment_id\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 8771,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "StringLiteral",
-      "offset": 17023,
+      "offset": 8845,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "StringLiteral",
-      "offset": 17063,
+      "offset": 8885,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "BooleanLiteral",
-      "offset": 17416,
+      "kind": "StringLiteral",
+      "offset": 8996,
       "length": 5,
-      "value": "false"
+      "value": "\"ios\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 9037,
+      "length": 14,
+      "value": "\"x-identifier\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 9364,
+      "length": 9,
+      "value": "\"context\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 9449,
+      "length": 9,
+      "value": "\"network\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 9510,
+      "length": 19,
+      "value": "\"connectivity_type\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 9582,
+      "length": 6,
+      "value": "\"wifi\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 9663,
+      "length": 10,
+      "value": "\"cellular\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 9752,
+      "length": 9,
+      "value": "\"network\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 9802,
+      "length": 9,
+      "value": "\"context\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 9896,
+      "length": 9,
+      "value": "\"context\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 9983,
+      "length": 9,
+      "value": "\"network\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 10079,
+      "length": 19,
+      "value": "\"connectivity_type\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 10233,
+      "length": 19,
+      "value": "\"connectivity_type\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 10309,
+      "length": 6,
+      "value": "\"wifi\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 10394,
+      "length": 10,
+      "value": "\"cellular\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 10488,
+      "length": 9,
+      "value": "\"network\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 10613,
+      "length": 9,
+      "value": "\"context\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "BooleanLiteral",
-      "offset": 17477,
+      "offset": 10955,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "StringLiteral",
-      "offset": 17760,
+      "offset": 11305,
+      "length": 4,
+      "value": "\"2G\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 11569,
+      "length": 4,
+      "value": "\"3G\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 11630,
+      "length": 4,
+      "value": "\"4G\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 11666,
+      "length": 5,
+      "value": "\"N.A\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "Dictionary",
+      "offset": 11744,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12007,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "StringLiteral",
-      "offset": 17822,
-      "length": 9,
-      "value": "\"metrics\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 17881,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 17889,
-      "length": 40,
-      "value": "\"checkout.mobile.sessionErrored.metrics\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 17955,
+      "offset": 12065,
       "length": 8,
-      "value": "\"labels\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 18139,
-      "length": 11,
-      "value": "\"framework\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 18185,
-      "length": 19,
-      "value": "\"_\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 18203,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 18238,
-      "length": 10,
-      "value": "\"severity\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 18274,
-      "length": 4,
-      "value": "\"S0\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
-      "kind": "StringLiteral",
-      "offset": 18281,
-      "length": 4,
-      "value": "\"S1\""
+      "value": "\"events\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "Array",
-      "offset": 18487,
+      "offset": 12075,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "StringLiteral",
-      "offset": 18558,
+      "offset": 12091,
+      "length": 9,
+      "value": "\"context\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12120,
+      "length": 8,
+      "value": "\"device\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12152,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12198,
+      "length": 14,
+      "value": "\"manufacturer\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12266,
+      "length": 7,
+      "value": "\"model\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12319,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12412,
+      "length": 9,
+      "value": "\"version\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12489,
+      "length": 10,
+      "value": "\"platform\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12501,
+      "length": 12,
+      "value": "\"mobile_sdk\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12531,
+      "length": 5,
+      "value": "\"sdk\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12560,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12601,
+      "length": 19,
+      "value": "\"_\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12619,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12642,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12741,
+      "length": 11,
+      "value": "\"framework\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12789,
+      "length": 9,
+      "value": "\"version\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12873,
+      "length": 9,
+      "value": "\"network\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12906,
+      "length": 9,
+      "value": "\"carrier\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 12985,
+      "length": 5,
+      "value": "\"N.A\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13012,
+      "length": 19,
+      "value": "\"connectivity_type\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13097,
+      "length": 6,
+      "value": "\"wifi\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13144,
+      "length": 10,
+      "value": "\"cellular\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13206,
+      "length": 23,
+      "value": "\"cellular_network_type\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13278,
+      "length": 4,
+      "value": "\"os\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13306,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13363,
+      "length": 9,
+      "value": "\"version\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13440,
+      "length": 8,
+      "value": "\"screen\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13472,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13534,
+      "length": 8,
+      "value": "\"height\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13612,
+      "length": 8,
+      "value": "\"locale\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13622,
+      "length": 88,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13658,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13661,
+      "length": 1,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13695,
+      "length": 13,
+      "value": "\"Can't Fetch\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13709,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13801,
+      "length": 6,
+      "value": "\"mode\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13869,
+      "length": 6,
+      "value": "\"test\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13878,
+      "length": 6,
+      "value": "\"live\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13903,
+      "length": 19,
+      "value": "\"merchant_app_name\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13975,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 13995,
+      "length": 22,
+      "value": "\"merchant_app_version\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 14028,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 14061,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 14081,
+      "length": 20,
+      "value": "\"merchant_app_build\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 14146,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 14166,
+      "length": 21,
+      "value": "\"merchant_app_bundle\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 14246,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 14266,
+      "length": 25,
+      "value": "\"merchant_app_executable\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 14350,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 14370,
+      "length": 17,
+      "value": "\"merchant_key_id\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 14418,
+      "length": 12,
+      "value": "\"build_type\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 14475,
+      "length": 14,
+      "value": "\"merchant_key\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 14839,
+      "length": 13,
+      "value": "\"Can't Fetch\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 15250,
+      "length": 7,
+      "value": "\"event\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 15282,
+      "length": 11,
+      "value": "\"timestamp\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 15487,
+      "length": 64,
+      "value": "\"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15600,
+      "length": 2,
+      "value": "62"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 15683,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15738,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15778,
+      "length": 2,
+      "value": "62"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15877,
+      "length": 2,
+      "value": "62"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16159,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16202,
+      "length": 13,
+      "value": "1388534400000"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16246,
+      "length": 7,
+      "value": "1000000"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16293,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16297,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16378,
+      "length": 8,
+      "value": "14776336"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16525,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16575,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "FloatLiteral",
+      "offset": 16762,
+      "length": 14,
+      "value": "1598614926.941"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17004,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 17279,
+      "length": 5,
+      "value": "\"key\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 17341,
+      "length": 9,
+      "value": "\"metrics\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 17400,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 17408,
+      "length": 40,
+      "value": "\"checkout.mobile.sessionCreated.metrics\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 17474,
+      "length": 8,
+      "value": "\"labels\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 17658,
+      "length": 11,
+      "value": "\"framework\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 17704,
+      "length": 19,
+      "value": "\"_\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 17722,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "Array",
+      "offset": 17925,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 17996,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "StringLiteral",
-      "offset": 18632,
+      "offset": 18070,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
       "kind": "StringLiteral",
-      "offset": 18672,
+      "offset": 18110,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "BooleanLiteral",
+      "offset": 18463,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "BooleanLiteral",
+      "offset": 18524,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 18807,
+      "length": 5,
+      "value": "\"key\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 18869,
+      "length": 9,
+      "value": "\"metrics\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 18928,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 18936,
+      "length": 40,
+      "value": "\"checkout.mobile.sessionErrored.metrics\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 19002,
+      "length": 8,
+      "value": "\"labels\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 19186,
+      "length": 11,
+      "value": "\"framework\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 19232,
+      "length": 19,
+      "value": "\"_\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 19250,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 19285,
+      "length": 10,
+      "value": "\"severity\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 19321,
+      "length": 4,
+      "value": "\"S0\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 19328,
+      "length": 4,
+      "value": "\"S1\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "Array",
+      "offset": 19534,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 19605,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 19679,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/Lumberjack.swift",
+      "kind": "StringLiteral",
+      "offset": 19719,
       "length": 14,
       "value": "\"Content-Type\""
     },
@@ -13721,35 +13833,35 @@
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/CustomuiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1310,
-      "length": 7,
-      "value": "\"2.0.9\""
+      "offset": 1336,
+      "length": 8,
+      "value": "\"2.0.10\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/CustomuiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1357,
+      "offset": 1384,
       "length": 12,
       "value": "\"1648621749\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/CustomuiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1404,
+      "offset": 1431,
       "length": 31,
       "value": "\"https:\/\/cdn.razorpay.com\/app\/\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/CustomuiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1466,
+      "offset": 1493,
       "length": 37,
       "value": "\"https:\/\/betacdn.np.razorpay.in\/app\/\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/CustomuiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1541,
+      "offset": 1568,
       "length": 6,
       "value": "\".png\""
     },
