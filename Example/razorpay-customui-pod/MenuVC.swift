@@ -170,7 +170,7 @@ extension MenuVC {
                     "method": "upi",
 //                    "_[flow]": "intent",
 //                    "upi_app_package_name": "phonepe",
-                    "vpa": "failure@razorpay" // Optional Parameter
+                    "vpa": "success@razorpay" // Optional Parameter
                 ]
         self.payloadArray += [PayloadModel(title: "UPI", options: cardPaymentDict, paymentType: .makePayment)]
         cardPaymentDict = [:]
