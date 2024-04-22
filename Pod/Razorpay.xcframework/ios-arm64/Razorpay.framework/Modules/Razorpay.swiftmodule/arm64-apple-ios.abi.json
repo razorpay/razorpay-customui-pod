@@ -13800,7 +13800,7 @@
       "kind": "StringLiteral",
       "offset": 1336,
       "length": 8,
-      "value": "\"2.0.11\""
+      "value": "\"2.0.12\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/CustomuiConstants.swift",
@@ -14849,8 +14849,8 @@
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/RemoteConfig.swift",
       "kind": "Dictionary",
       "offset": 6006,
-      "length": 744,
-      "value": "[(\"availableApps\", [[(\"uriScheme\", \"tez:\/\/upi\/pay\"), (\"appName\", \"G PaY\"), (\"shortcode\", \"google_pay\")], [(\"uriScheme\", \"phonepe:\/\/pay\"), (\"appName\", \"Phone Pe\"), (\"shortcode\", \"phonepe\")], [(\"uriScheme\", \"paytmmp:\/\/upi\/pay\"), (\"appName\", \"Paytm\"), (\"shortcode\", \"paytm\")], [(\"uriScheme\", \"credpay:\/\/checkout\"), (\"appName\", \"Cred\"), (\"shortcode\", \"cred\")]])]"
+      "length": 747,
+      "value": "[(\"availableApps\", [[(\"uriScheme\", \"tez:\/\/upi\/pay\"), (\"appName\", \"GooglePay\"), (\"shortcode\", \"google_pay\")], [(\"uriScheme\", \"phonepe:\/\/pay\"), (\"appName\", \"PhonePe\"), (\"shortcode\", \"phonepe\")], [(\"uriScheme\", \"paytmmp:\/\/upi\/pay\"), (\"appName\", \"Paytm\"), (\"shortcode\", \"paytm\")], [(\"uriScheme\", \"credpay:\/\/checkout\"), (\"appName\", \"Cred\"), (\"shortcode\", \"cred\")]])]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/AnalyticsUtil.swift",
