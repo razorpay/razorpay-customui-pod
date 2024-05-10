@@ -9255,2009 +9255,2037 @@
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 48275,
+      "offset": 48178,
+      "length": 12,
+      "value": "\"account_id\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "StringLiteral",
+      "offset": 48242,
+      "length": 18,
+      "value": "\"rzp_live_partner\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "StringLiteral",
+      "offset": 48297,
+      "length": 27,
+      "value": "\"&account_id=\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "StringLiteral",
+      "offset": 48323,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "StringLiteral",
+      "offset": 48548,
       "length": 68,
       "value": "\"Status Polling Methods url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 48342,
+      "offset": 48615,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 48546,
+      "offset": 48819,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 48606,
+      "offset": 48879,
       "length": 9,
       "value": "\"created\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 48745,
+      "offset": 49018,
       "length": 21,
       "value": "\"razorpay_payment_id\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 48948,
+      "offset": 49221,
       "length": 15,
       "value": "\"callback_data\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 49104,
+      "offset": 49377,
       "length": 74,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 49147,
+      "offset": 49420,
       "length": 3,
       "value": "\" url for url request \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 49177,
+      "offset": 49450,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 49321,
+      "offset": 49594,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 49589,
+      "offset": 49862,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 49738,
+      "offset": 50011,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 49944,
+      "offset": 50217,
       "length": 96,
       "value": "\"Unable to json serialize the data returned in getPaymentMethods. url for url request \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 50039,
+      "offset": 50312,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 51713,
+      "offset": 51986,
       "length": 24,
       "value": "\"Merchant Key not found\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 51760,
+      "offset": 52033,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 51769,
+      "offset": 52042,
       "length": 59,
       "value": "[(\"description\", \"Unexpected Error. Missing merchant key.\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 51893,
+      "offset": 52166,
       "length": 94,
       "value": "\"https:\/\/\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 51942,
+      "offset": 52215,
       "length": 1,
       "value": "\"\/v1\/payments\/create\/ajax?key_id=\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 51986,
+      "offset": 52259,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 52141,
+      "offset": 52414,
       "length": 69,
       "value": "\"POST Payment Methods url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 52209,
+      "offset": 52482,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 52233,
+      "offset": 52506,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 52242,
+      "offset": 52515,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 52423,
+      "offset": 52696,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 52458,
+      "offset": 52731,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 52498,
+      "offset": 52771,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 52733,
+      "offset": 53006,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 52743,
+      "offset": 53016,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 53058,
+      "offset": 53331,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 53098,
+      "offset": 53371,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 53340,
+      "offset": 53613,
       "length": 104,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 53383,
+      "offset": 53656,
       "length": 3,
       "value": "\" url for url request \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 53437,
+      "offset": 53710,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 53443,
+      "offset": 53716,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 53555,
+      "offset": 53828,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 53564,
+      "offset": 53837,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 53819,
+      "offset": 54092,
       "length": 144,
       "value": "\"Error when preferences fetched api. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 53912,
+      "offset": 54185,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 53918,
+      "offset": 54191,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 53962,
+      "offset": 54235,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 54066,
+      "offset": 54339,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 54075,
+      "offset": 54348,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 54759,
+      "offset": 55032,
       "length": 103,
       "value": "\"https:\/\/\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 54786,
+      "offset": 55059,
       "length": 1,
       "value": "\":@\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 54828,
+      "offset": 55101,
       "length": 1,
       "value": "\"\/v1\/payments\/create\/checkout\/json\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 55016,
+      "offset": 55289,
       "length": 68,
       "value": "\"POST get card flows url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 55083,
+      "offset": 55356,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 55107,
+      "offset": 55380,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 55116,
+      "offset": 55389,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 55297,
+      "offset": 55570,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 55332,
+      "offset": 55605,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 55372,
+      "offset": 55645,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 55751,
+      "offset": 56024,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 55761,
+      "offset": 56034,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 56077,
+      "offset": 56350,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 56112,
+      "offset": 56385,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 56230,
+      "offset": 56503,
       "length": 80,
       "value": "\"POST get card flows Error response  = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 56299,
+      "offset": 56572,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 56309,
+      "offset": 56582,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 56509,
+      "offset": 56782,
       "length": 6,
       "value": "\"next\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 56710,
+      "offset": 56983,
       "length": 8,
       "value": "\"action\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 56780,
+      "offset": 57053,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 56880,
+      "offset": 57153,
       "length": 10,
       "value": "\"redirect\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 56986,
+      "offset": 57259,
       "length": 14,
       "value": "\"otp_generate\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 57360,
+      "offset": 57633,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 57369,
+      "offset": 57642,
       "length": 51,
       "value": "[(\"description\", \"Native otp not enabled for card\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 57610,
+      "offset": 57883,
       "length": 104,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 57653,
+      "offset": 57926,
       "length": 3,
       "value": "\" url for url request \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 57707,
+      "offset": 57980,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 57713,
+      "offset": 57986,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 57825,
+      "offset": 58098,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 57834,
+      "offset": 58107,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 58089,
+      "offset": 58362,
       "length": 135,
       "value": "\"Error fetching card flows. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 58173,
+      "offset": 58446,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 58179,
+      "offset": 58452,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 58223,
+      "offset": 58496,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 58327,
+      "offset": 58600,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 58336,
+      "offset": 58609,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 58939,
+      "offset": 59212,
       "length": 33,
       "value": "\"POST generate otp url not found\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 58995,
+      "offset": 59268,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 59004,
+      "offset": 59277,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 59242,
+      "offset": 59515,
       "length": 66,
       "value": "\"POST generate otp url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 59307,
+      "offset": 59580,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 59331,
+      "offset": 59604,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 59340,
+      "offset": 59613,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 59521,
+      "offset": 59794,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 59556,
+      "offset": 59829,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 59596,
+      "offset": 59869,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 59871,
+      "offset": 60144,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 59906,
+      "offset": 60179,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 60024,
+      "offset": 60297,
       "length": 82,
       "value": "\"POST generate otp url Error response  = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 60095,
+      "offset": 60368,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 60105,
+      "offset": 60378,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 60305,
+      "offset": 60578,
       "length": 6,
       "value": "\"next\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 60506,
+      "offset": 60779,
       "length": 8,
       "value": "\"action\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 60576,
+      "offset": 60849,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 60676,
+      "offset": 60949,
       "length": 12,
       "value": "\"otp_submit\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 60782,
+      "offset": 61055,
       "length": 12,
       "value": "\"otp_resend\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 61217,
+      "offset": 61490,
       "length": 76,
       "value": "\"POST generate otp url response does not include otp_submit\/otp_resend urls\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 61324,
+      "offset": 61597,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 61333,
+      "offset": 61606,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 61585,
+      "offset": 61858,
       "length": 104,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 61628,
+      "offset": 61901,
       "length": 3,
       "value": "\" url for url request \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 61682,
+      "offset": 61955,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 61688,
+      "offset": 61961,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 61800,
+      "offset": 62073,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 61809,
+      "offset": 62082,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 62051,
+      "offset": 62324,
       "length": 138,
       "value": "\"Error when POST generate otp. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 62138,
+      "offset": 62411,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 62144,
+      "offset": 62417,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 62188,
+      "offset": 62461,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 62292,
+      "offset": 62565,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 62301,
+      "offset": 62574,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 62917,
+      "offset": 63190,
       "length": 27,
       "value": "\"submit otp url not found.\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 62967,
+      "offset": 63240,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 62976,
+      "offset": 63249,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 63214,
+      "offset": 63487,
       "length": 64,
       "value": "\"POST submit otp url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 63277,
+      "offset": 63550,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 63301,
+      "offset": 63574,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 63310,
+      "offset": 63583,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 63491,
+      "offset": 63764,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 63526,
+      "offset": 63799,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 63566,
+      "offset": 63839,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 63673,
+      "offset": 63946,
       "length": 5,
       "value": "\"otp\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 63936,
+      "offset": 64209,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 63946,
+      "offset": 64219,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 64271,
+      "offset": 64544,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 64306,
+      "offset": 64579,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 64424,
+      "offset": 64697,
       "length": 76,
       "value": "\"POST submit otp Error response  = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 64489,
+      "offset": 64762,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 64499,
+      "offset": 64772,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 64621,
+      "offset": 64894,
       "length": 21,
       "value": "\"razorpay_payment_id\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 65018,
+      "offset": 65291,
       "length": 104,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 65061,
+      "offset": 65334,
       "length": 3,
       "value": "\" url for url request \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 65115,
+      "offset": 65388,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 65121,
+      "offset": 65394,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 65233,
+      "offset": 65506,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 65242,
+      "offset": 65515,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 65484,
+      "offset": 65757,
       "length": 135,
       "value": "\"Error when submitting otp. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 65568,
+      "offset": 65841,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 65574,
+      "offset": 65847,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 65618,
+      "offset": 65891,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 65722,
+      "offset": 65995,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 65731,
+      "offset": 66004,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66327,
+      "offset": 66600,
       "length": 27,
       "value": "\"resend otp url not found.\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66377,
+      "offset": 66650,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 66386,
+      "offset": 66659,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66624,
+      "offset": 66897,
       "length": 64,
       "value": "\"POST Resend otp url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66687,
+      "offset": 66960,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66711,
+      "offset": 66984,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 66720,
+      "offset": 66993,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66901,
+      "offset": 67174,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66936,
+      "offset": 67209,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 66976,
+      "offset": 67249,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 67251,
+      "offset": 67524,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 67286,
+      "offset": 67559,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 67404,
+      "offset": 67677,
       "length": 76,
       "value": "\"POST resend otp Error response  = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 67469,
+      "offset": 67742,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 67479,
+      "offset": 67752,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 67679,
+      "offset": 67952,
       "length": 6,
       "value": "\"next\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 67880,
+      "offset": 68153,
       "length": 8,
       "value": "\"action\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 67950,
+      "offset": 68223,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 68050,
+      "offset": 68323,
       "length": 12,
       "value": "\"otp_submit\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 68156,
+      "offset": 68429,
       "length": 12,
       "value": "\"otp_resend\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 68591,
+      "offset": 68864,
       "length": 74,
       "value": "\"POST resend otp url response does not include otp_submit\/otp_resend urls\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 68696,
+      "offset": 68969,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 68705,
+      "offset": 68978,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 68957,
+      "offset": 69230,
       "length": 104,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 69000,
+      "offset": 69273,
       "length": 3,
       "value": "\" url for url request \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 69054,
+      "offset": 69327,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 69060,
+      "offset": 69333,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 69172,
+      "offset": 69445,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 69181,
+      "offset": 69454,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 69423,
+      "offset": 69696,
       "length": 144,
       "value": "\"Error when preferences fetched api. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 69516,
+      "offset": 69789,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 69522,
+      "offset": 69795,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 69566,
+      "offset": 69839,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 69670,
+      "offset": 69943,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 69679,
+      "offset": 69952,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 70009,
+      "offset": 70282,
       "length": 65,
       "value": "\"https:\/\/\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 70058,
+      "offset": 70331,
       "length": 1,
       "value": "\"\/v1\/preferences\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 70124,
+      "offset": 70397,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 70290,
+      "offset": 70563,
       "length": 8,
       "value": "\"key_id\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 70568,
+      "offset": 70841,
       "length": 68,
       "value": "\"Get Payment Methods url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 70635,
+      "offset": 70908,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 70659,
+      "offset": 70932,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 70668,
+      "offset": 70941,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 70850,
+      "offset": 71123,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 71051,
+      "offset": 71324,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 71218,
+      "offset": 71491,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 71469,
+      "offset": 71742,
       "length": 126,
       "value": "\"Unable to json serialize the data returned in getPaymentMethods. url for url request \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 71588,
+      "offset": 71861,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 71594,
+      "offset": 71867,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 71706,
+      "offset": 71979,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 71715,
+      "offset": 71988,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 71867,
+      "offset": 72140,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 72205,
+      "offset": 72478,
       "length": 144,
       "value": "\"Error when preferences fetched api. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 72298,
+      "offset": 72571,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 72304,
+      "offset": 72577,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 72348,
+      "offset": 72621,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 72452,
+      "offset": 72725,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 72461,
+      "offset": 72734,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 72868,
+      "offset": 73141,
       "length": 66,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 72884,
+      "offset": 73157,
       "length": 1,
       "value": "\"\/v1\/payments\/\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 72909,
+      "offset": 73182,
       "length": 1,
       "value": "\"\/cancel?platform=ios_sdk\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 73013,
+      "offset": 73286,
       "length": 22,
       "value": "\"status&key_id=\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 73034,
+      "offset": 73307,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 73224,
+      "offset": 73497,
       "length": 65,
       "value": "\"Get Payment Methods url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 73288,
+      "offset": 73561,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 73312,
+      "offset": 73585,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 73321,
+      "offset": 73594,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 73503,
+      "offset": 73776,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 73701,
+      "offset": 73974,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 73865,
+      "offset": 74138,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 73959,
+      "offset": 74232,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 73971,
+      "offset": 74244,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 74145,
+      "offset": 74418,
       "length": 126,
       "value": "\"Unable to json serialize the data returned in getPaymentMethods. url for url request \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 74264,
+      "offset": 74537,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 74270,
+      "offset": 74543,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 74382,
+      "offset": 74655,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 74391,
+      "offset": 74664,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 74540,
+      "offset": 74813,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 74872,
+      "offset": 75145,
       "length": 144,
       "value": "\"Error when preferences fetched api. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 74965,
+      "offset": 75238,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 74971,
+      "offset": 75244,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 75015,
+      "offset": 75288,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 75119,
+      "offset": 75392,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 75128,
+      "offset": 75401,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 75561,
+      "offset": 75834,
       "length": 68,
       "value": "\"Get Payment Methods url not parsed where url string = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 75628,
+      "offset": 75901,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 75652,
+      "offset": 75925,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 75661,
+      "offset": 75934,
       "length": 62,
       "value": "[(\"description\", \"Unexpected Error. Error has been reported.\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 75843,
+      "offset": 76116,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 76036,
+      "offset": 76309,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 76195,
+      "offset": 76468,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 76436,
+      "offset": 76709,
       "length": 126,
       "value": "\"Unable to json serialize the data returned in getPaymentMethods. url for url request \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 76555,
+      "offset": 76828,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 76561,
+      "offset": 76834,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 76662,
+      "offset": 76935,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 76671,
+      "offset": 76944,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 76815,
+      "offset": 77088,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 77124,
+      "offset": 77397,
       "length": 144,
       "value": "\"Error when preferences fetched api. Url for the request  = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 77217,
+      "offset": 77490,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 77223,
+      "offset": 77496,
       "length": 3,
       "value": "\" and error description = \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 77267,
+      "offset": 77540,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 77371,
+      "offset": 77644,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 77380,
+      "offset": 77653,
       "length": 55,
       "value": "[(\"description\", \"Error in fetching. Please try again\")]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 77617,
+      "offset": 77890,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 77685,
+      "offset": 77958,
       "length": 12,
       "value": "\"intent_url\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 77877,
+      "offset": 78150,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "Dictionary",
-      "offset": 78265,
+      "offset": 78538,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 78691,
+      "offset": 78964,
       "length": 9,
       "value": "\"request\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 78764,
+      "offset": 79037,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 78958,
+      "offset": 79231,
       "length": 9,
       "value": "\"request\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 79015,
+      "offset": 79288,
       "length": 9,
       "value": "\"content\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 79209,
+      "offset": 79482,
       "length": 15,
       "value": "\"callback_data\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 79373,
-      "length": 101,
-      "value": "\"Unable to json serialize the data returned in getPaymentMethods. url for url request \""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
-      "kind": "StringLiteral",
-      "offset": 79473,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79625,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
-      "kind": "StringLiteral",
       "offset": 79646,
-      "length": 92,
-      "value": "\"Something went  wrong, please try again! If issue persists contact to support@razorpay.com\""
-    },
-    {
-      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
-      "kind": "StringLiteral",
-      "offset": 79929,
       "length": 101,
       "value": "\"Unable to json serialize the data returned in getPaymentMethods. url for url request \""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 80029,
+      "offset": 79746,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 80165,
+      "offset": 79898,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 80186,
+      "offset": 79919,
       "length": 92,
       "value": "\"Something went  wrong, please try again! If issue persists contact to support@razorpay.com\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 80563,
+      "offset": 80202,
+      "length": 101,
+      "value": "\"Unable to json serialize the data returned in getPaymentMethods. url for url request \""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "StringLiteral",
+      "offset": 80302,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80438,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "StringLiteral",
+      "offset": 80459,
+      "length": 92,
+      "value": "\"Something went  wrong, please try again! If issue persists contact to support@razorpay.com\""
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "StringLiteral",
+      "offset": 80836,
       "length": 14,
       "value": "\"user_aborted\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 80643,
+      "offset": 80916,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 80738,
+      "offset": 81011,
       "length": 8,
       "value": "\"failed\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 80563,
+      "offset": 80836,
       "length": 14,
       "value": "\"user_aborted\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 80643,
+      "offset": 80916,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 80738,
+      "offset": 81011,
       "length": 8,
       "value": "\"failed\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 80978,
+      "offset": 81251,
       "length": 21,
       "value": "\"razorpay:\/\/&status=\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 81007,
+      "offset": 81280,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 81156,
+      "offset": 81429,
       "length": 12,
       "value": "\"payment_id\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 81286,
+      "offset": 81559,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 81307,
+      "offset": 81580,
       "length": 38,
       "value": "\"Payment processing cancelled by user\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 81428,
+      "offset": 81701,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "IntegerLiteral",
-      "offset": 81489,
+      "offset": 81762,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 81911,
+      "offset": 82184,
       "length": 9,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 81919,
+      "offset": 82192,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 82145,
+      "offset": 82418,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 82201,
+      "offset": 82474,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 82264,
+      "offset": 82537,
       "length": 15,
       "value": "\"availableApps\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 82329,
+      "offset": 82602,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 82479,
+      "offset": 82752,
       "length": 18,
       "value": "\"mandateUriScheme\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 82624,
+      "offset": 82897,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 82695,
+      "offset": 82968,
       "length": 5,
       "value": "false"
     },
@@ -13800,7 +13828,7 @@
       "kind": "StringLiteral",
       "offset": 1336,
       "length": 8,
-      "value": "\"2.0.12\""
+      "value": "\"2.0.13\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/CustomuiConstants.swift",
