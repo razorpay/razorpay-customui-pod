@@ -11,7 +11,8 @@ import Razorpay
 struct PayloadModel {
     var title: String
     var options: [String: Any]
-    var key: String = "rzp_test_1DP5mmOlF5G5ag"
+//    var key: String = "rzp_test_1DP5mmOlF5G5ag"
+    var key: String = "rzp_live_partner_Jgy1T7ZabnnFB1"
 //    var key: String = "rzp_live_5W8oZPBNQPbZDE"
     var paymentType: PaymentType
 }
@@ -162,16 +163,29 @@ extension MenuVC {
             "upi_app_package_name": "phonepe",
         ] */
         [
-                    "amount": 100, // amount in currency subunits. Defaults to INR. 100 = 100 paise = INR 1.
-                    "currency": "INR",
-                    "email": "gaurav.kumar@example.com",
-                    "contact": "9090980808",
-//                    "order_id": "order_DBJOWzybf0sJbb",
-                    "method": "upi",
-//                    "_[flow]": "intent",
-//                    "upi_app_package_name": "phonepe",
-                    "vpa": "success@razorpay" // Optional Parameter
-                ]
+            
+            
+                "currency":"INR",
+            "account_id":"acc_HUof36OLlC0sC8",
+                "amount":"100",
+                "email":"test@razorpay.com",
+                "contact":"9999999999",
+                "method":"upi",
+                "_[flow]":"intent",
+            "upi_app_package_name":"phonepe"
+            
+        ]
+//        [
+//                    "amount": 100, // amount in currency subunits. Defaults to INR. 100 = 100 paise = INR 1.
+//                    "currency": "INR",
+//                    "email": "gaurav.kumar@example.com",
+//                    "contact": "9090980808",
+////                    "order_id": "order_DBJOWzybf0sJbb",
+//                    "method": "upi",
+////                    "_[flow]": "intent",
+////                    "upi_app_package_name": "phonepe",
+//                    "vpa": "success@razorpay" // Optional Parameter
+//                ]
         self.payloadArray += [PayloadModel(title: "UPI", options: cardPaymentDict, paymentType: .makePayment)]
         cardPaymentDict = [:]
     }
