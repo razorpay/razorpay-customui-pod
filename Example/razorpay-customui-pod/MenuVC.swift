@@ -11,8 +11,8 @@ import Razorpay
 struct PayloadModel {
     var title: String
     var options: [String: Any]
-//    var key: String = "rzp_test_1DP5mmOlF5G5ag"
-    var key: String = "rzp_live_partner_Jgy1T7ZabnnFB1"
+    var key: String = "rzp_test_1DP5mmOlF5G5ag"
+//    var key: String = "rzp_live_partner_Jgy1T7ZabnnFB1"
 //    var key: String = "rzp_live_5W8oZPBNQPbZDE"
     var paymentType: PaymentType
 }
@@ -165,14 +165,15 @@ extension MenuVC {
         [
             
             
+                "key":"rzp_live_ILgsfZCZoFIKMb",
                 "currency":"INR",
-            "account_id":"acc_HUof36OLlC0sC8",
                 "amount":"100",
                 "email":"test@razorpay.com",
                 "contact":"9999999999",
                 "method":"upi",
-                "_[flow]":"intent",
-            "upi_app_package_name":"phonepe"
+                "_[flow]":"collect",
+                "vpa":"vivekshindhe96-3@okicici"
+            
             
         ]
 //        [
