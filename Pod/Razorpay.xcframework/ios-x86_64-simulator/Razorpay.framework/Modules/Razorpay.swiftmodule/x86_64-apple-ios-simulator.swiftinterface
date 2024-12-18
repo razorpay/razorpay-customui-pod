@@ -37,17 +37,18 @@ public protocol PluginPaymentCompletionDelegate : AnyObject {
   @objc func fetchAccountBalance(upiAccount: Any?, handler: @escaping (Any?, Any?) -> Swift.Void)
   @objc func resetUpiPin(upiAccount: Any?, card: Any, handler: @escaping (Any?, Any?) -> Swift.Void)
   @objc func delinkVpa(upiAccount: Any?, handler: @escaping (Any?, Any?) -> Swift.Void)
+  @objc func delinkVpa(linkedBankAccount: Any?, handler: @escaping (Any?, Any?) -> Swift.Void)
   @objc func changeUpiPin(upiAccount: Any?, handler: @escaping (Any?, Any?) -> Swift.Void)
 }
 @objc public protocol TokenPlugin {
-  @objc func initialise(_ delegate: Any)
+  @objc func initialize(_ delegate: Any)
 }
 @objc public class Session : ObjectiveC.NSObject {
   final public let token: Swift.String
   public init(token: Swift.String)
   @objc deinit
 }
-public protocol TubroPluginTokenProvider {
+public protocol TurboSessionDelegate {
   func fetchToken(completion: @escaping (Razorpay.Session) -> Swift.Void)
 }
 @objc public protocol UPITurboTPVPlugin {
@@ -69,14 +70,12 @@ public protocol ErrorDescribable {
   var localizedDescription: Swift.String { get }
 }
 public typealias PluginPaymentError = Razorpay.ErrorDescribable & Swift.Error
-@objc public protocol UPITurboUIPlugin : Razorpay.TokenPlugin, Razorpay.UPITurboLinkedBankAccountsProtocol, Razorpay.UPITurboLinkedUpiAccountsProtocol, Razorpay.UPITurboPrefetchWithUIProtocol {
+@objc public protocol UPITurboUIPlugin : Razorpay.TokenPlugin, Razorpay.UPITurboLinkedUpiAccountsProtocol, Razorpay.UPITurboPrefetchWithUIProtocol {
   @objc var TPV: (any Razorpay.UPITurboTPVUIPlugin)? { get }
   @objc var corePlugin: (any Razorpay.UPITurboPlugin)? { get }
   @objc var paymentPlugin: (any Razorpay.PluginPaymentDelegate)? { get }
   @objc func linkNewUpiAccount(mobileNumber: Swift.String, color: Swift.String, completionHandler: @escaping (Any?, Any?) -> Swift.Void)
-  @objc func linkNewUpiAccount(customerId: Swift.String, color: Swift.String, completionHandler: @escaping (Any?, Any?) -> Swift.Void)
   @objc func manageUpiAccount(mobileNumber: Swift.String, color: Swift.String)
-  @objc func manageUpiAccount(customerId: Swift.String, color: Swift.String)
   @objc func getUpiAccountObject(upiAccounts: Any?) -> [[Swift.AnyHashable : Any]]?
 }
 @objc public protocol UPITurboTPVUIPlugin {
@@ -91,17 +90,15 @@ public protocol UPITurboUIInternalPlugin : Razorpay.UPITurboUIPlugin {
 }
 @objc public protocol UPITurboPrefetchWithUIProtocol {
   @objc func setCustomerMobile(mobile: Swift.String) -> any Razorpay.UPITurboPrefetchWithUIProtocol
-  @objc func setCustomerId(customerId: Swift.String) -> any Razorpay.UPITurboPrefetchWithUIProtocol
   @objc func setColor(color: Swift.String) -> any Razorpay.UPITurboPrefetchWithUIProtocol
-  @objc func prefetchAndLinkUpiAccountsWithUI(linkAccountWithUPIPinNotSet: Swift.Bool, completionHandler: @escaping (Any?, Any?) -> Swift.Void)
+  @objc func prefetchAndLinkUpiAccountsWithUI(completionHandler: @escaping (Any?, Any?) -> Swift.Void)
   @objc func setUpiPinWithUI(_ account: Any, completionHandler: @escaping (Any?, Any?) -> Swift.Void)
 }
 extension Razorpay.UPITurboPrefetchWithUIProtocol {
-  public func prefetchAndLinkUpiAccountsWithUI(linkAccountWithUPIPinNotSet: Swift.Bool = false, completionHandler: @escaping (Any?, Any?) -> Swift.Void)
+  public func prefetchAndLinkUpiAccountsWithUI(completionHandler: @escaping (Any?, Any?) -> Swift.Void)
 }
 @objc public protocol UPITurboLinkedUpiAccountsProtocol {
   @objc func getLinkedUpiAccounts(mobileNumber: Swift.String, resultDelegate: Any)
-  @objc func getLinkedUpiAccounts(customerId: Swift.String, resultDelegate: Any)
 }
 @objc public protocol UPITurboLinkedBankAccountsProtocol {
   @objc func getLinkedBankAccounts(mobileNumber: Swift.String, resultDelegate: Any)

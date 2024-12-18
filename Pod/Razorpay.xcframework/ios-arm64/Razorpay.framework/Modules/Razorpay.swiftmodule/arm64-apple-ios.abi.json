@@ -1001,6 +1001,88 @@
           },
           {
             "kind": "Function",
+            "name": "delinkVpa",
+            "printedName": "delinkVpa(linkedBankAccount:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?, Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Any?, Any?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Razorpay@objc(pl)UPITurboPlugin(im)delinkVpaWithLinkedBankAccount:handler:",
+            "mangledName": "$s8Razorpay14UPITurboPluginP9delinkVpa17linkedBankAccount7handleryypSg_yAG_AGtctF",
+            "moduleName": "Razorpay",
+            "genericSig": "<τ_0_0 where τ_0_0 : Razorpay.UPITurboPlugin>",
+            "sugared_genericSig": "<Self where Self : Razorpay.UPITurboPlugin>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "changeUpiPin",
             "printedName": "changeUpiPin(upiAccount:handler:)",
             "children": [
@@ -1145,8 +1227,8 @@
         "children": [
           {
             "kind": "Function",
-            "name": "initialise",
-            "printedName": "initialise(_:)",
+            "name": "initialize",
+            "printedName": "initialize(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1160,8 +1242,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Razorpay@objc(pl)TokenPlugin(im)initialise:",
-            "mangledName": "$s8Razorpay11TokenPluginP10initialiseyyypF",
+            "usr": "c:@M@Razorpay@objc(pl)TokenPlugin(im)initialize:",
+            "mangledName": "$s8Razorpay11TokenPluginP10initializeyyypF",
             "moduleName": "Razorpay",
             "genericSig": "<τ_0_0 where τ_0_0 : Razorpay.TokenPlugin>",
             "sugared_genericSig": "<Self where Self : Razorpay.TokenPlugin>",
@@ -1387,8 +1469,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "TubroPluginTokenProvider",
-        "printedName": "TubroPluginTokenProvider",
+        "name": "TurboSessionDelegate",
+        "printedName": "TurboSessionDelegate",
         "children": [
           {
             "kind": "Function",
@@ -1420,19 +1502,19 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Razorpay24TubroPluginTokenProviderP05fetchD010completionyyAA7SessionCc_tF",
-            "mangledName": "$s8Razorpay24TubroPluginTokenProviderP05fetchD010completionyyAA7SessionCc_tF",
+            "usr": "s:8Razorpay20TurboSessionDelegateP10fetchToken10completionyyAA0C0Cc_tF",
+            "mangledName": "$s8Razorpay20TurboSessionDelegateP10fetchToken10completionyyAA0C0Cc_tF",
             "moduleName": "Razorpay",
-            "genericSig": "<τ_0_0 where τ_0_0 : Razorpay.TubroPluginTokenProvider>",
-            "sugared_genericSig": "<Self where Self : Razorpay.TubroPluginTokenProvider>",
+            "genericSig": "<τ_0_0 where τ_0_0 : Razorpay.TurboSessionDelegate>",
+            "sugared_genericSig": "<Self where Self : Razorpay.TurboSessionDelegate>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:8Razorpay24TubroPluginTokenProviderP",
-        "mangledName": "$s8Razorpay24TubroPluginTokenProviderP",
+        "usr": "s:8Razorpay20TurboSessionDelegateP",
+        "mangledName": "$s8Razorpay20TurboSessionDelegateP",
         "moduleName": "Razorpay",
         "declAttributes": [
           "AccessControl"
@@ -2153,87 +2235,6 @@
           },
           {
             "kind": "Function",
-            "name": "linkNewUpiAccount",
-            "printedName": "linkNewUpiAccount(customerId:color:completionHandler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Any?, Any?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Any?, Any?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Any?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Any?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Razorpay@objc(pl)UPITurboUIPlugin(im)linkNewUpiAccountWithCustomerId:color:completionHandler:",
-            "mangledName": "$s8Razorpay16UPITurboUIPluginP17linkNewUpiAccount10customerId5color17completionHandlerySS_SSyypSg_AHtctF",
-            "moduleName": "Razorpay",
-            "genericSig": "<τ_0_0 where τ_0_0 : Razorpay.UPITurboUIPlugin>",
-            "sugared_genericSig": "<Self where Self : Razorpay.UPITurboUIPlugin>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "manageUpiAccount",
             "printedName": "manageUpiAccount(mobileNumber:color:)",
             "children": [
@@ -2258,42 +2259,6 @@
             "declKind": "Func",
             "usr": "c:@M@Razorpay@objc(pl)UPITurboUIPlugin(im)manageUpiAccountWithMobileNumber:color:",
             "mangledName": "$s8Razorpay16UPITurboUIPluginP16manageUpiAccount12mobileNumber5colorySS_SStF",
-            "moduleName": "Razorpay",
-            "genericSig": "<τ_0_0 where τ_0_0 : Razorpay.UPITurboUIPlugin>",
-            "sugared_genericSig": "<Self where Self : Razorpay.UPITurboUIPlugin>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "manageUpiAccount",
-            "printedName": "manageUpiAccount(customerId:color:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Razorpay@objc(pl)UPITurboUIPlugin(im)manageUpiAccountWithCustomerId:color:",
-            "mangledName": "$s8Razorpay16UPITurboUIPluginP16manageUpiAccount10customerId5colorySS_SStF",
             "moduleName": "Razorpay",
             "genericSig": "<τ_0_0 where τ_0_0 : Razorpay.UPITurboUIPlugin>",
             "sugared_genericSig": "<Self where Self : Razorpay.UPITurboUIPlugin>",
@@ -2376,8 +2341,8 @@
         "usr": "c:@M@Razorpay@objc(pl)UPITurboUIPlugin",
         "mangledName": "$s8Razorpay16UPITurboUIPluginP",
         "moduleName": "Razorpay",
-        "genericSig": "<τ_0_0 : Razorpay.TokenPlugin, τ_0_0 : Razorpay.UPITurboLinkedBankAccountsProtocol, τ_0_0 : Razorpay.UPITurboLinkedUpiAccountsProtocol, τ_0_0 : Razorpay.UPITurboPrefetchWithUIProtocol>",
-        "sugared_genericSig": "<Self : Razorpay.TokenPlugin, Self : Razorpay.UPITurboLinkedBankAccountsProtocol, Self : Razorpay.UPITurboLinkedUpiAccountsProtocol, Self : Razorpay.UPITurboPrefetchWithUIProtocol>",
+        "genericSig": "<τ_0_0 : Razorpay.TokenPlugin, τ_0_0 : Razorpay.UPITurboLinkedUpiAccountsProtocol, τ_0_0 : Razorpay.UPITurboPrefetchWithUIProtocol>",
+        "sugared_genericSig": "<Self : Razorpay.TokenPlugin, Self : Razorpay.UPITurboLinkedUpiAccountsProtocol, Self : Razorpay.UPITurboPrefetchWithUIProtocol>",
         "declAttributes": [
           "AccessControl",
           "ObjC"
@@ -2403,13 +2368,6 @@
             "printedName": "TokenPlugin",
             "usr": "c:@M@Razorpay@objc(pl)TokenPlugin",
             "mangledName": "$s8Razorpay11TokenPluginP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UPITurboLinkedBankAccountsProtocol",
-            "printedName": "UPITurboLinkedBankAccountsProtocol",
-            "usr": "c:@M@Razorpay@objc(pl)UPITurboLinkedBankAccountsProtocol",
-            "mangledName": "$s8Razorpay34UPITurboLinkedBankAccountsProtocolP"
           },
           {
             "kind": "Conformance",
@@ -2848,13 +2806,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "UPITurboLinkedBankAccountsProtocol",
-            "printedName": "UPITurboLinkedBankAccountsProtocol",
-            "usr": "c:@M@Razorpay@objc(pl)UPITurboLinkedBankAccountsProtocol",
-            "mangledName": "$s8Razorpay34UPITurboLinkedBankAccountsProtocolP"
-          },
-          {
-            "kind": "Conformance",
             "name": "UPITurboLinkedUpiAccountsProtocol",
             "printedName": "UPITurboLinkedUpiAccountsProtocol",
             "usr": "c:@M@Razorpay@objc(pl)UPITurboLinkedUpiAccountsProtocol",
@@ -2907,37 +2858,6 @@
           },
           {
             "kind": "Function",
-            "name": "setCustomerId",
-            "printedName": "setCustomerId(customerId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UPITurboPrefetchWithUIProtocol",
-                "printedName": "any Razorpay.UPITurboPrefetchWithUIProtocol",
-                "usr": "c:@M@Razorpay@objc(pl)UPITurboPrefetchWithUIProtocol"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Razorpay@objc(pl)UPITurboPrefetchWithUIProtocol(im)setCustomerIdWithCustomerId:",
-            "mangledName": "$s8Razorpay30UPITurboPrefetchWithUIProtocolP13setCustomerId08customerH0AaB_pSS_tF",
-            "moduleName": "Razorpay",
-            "genericSig": "<τ_0_0 where τ_0_0 : Razorpay.UPITurboPrefetchWithUIProtocol>",
-            "sugared_genericSig": "<Self where Self : Razorpay.UPITurboPrefetchWithUIProtocol>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "setColor",
             "printedName": "setColor(color:)",
             "children": [
@@ -2970,18 +2890,12 @@
           {
             "kind": "Function",
             "name": "prefetchAndLinkUpiAccountsWithUI",
-            "printedName": "prefetchAndLinkUpiAccountsWithUI(linkAccountWithUPIPinNotSet:completionHandler:)",
+            "printedName": "prefetchAndLinkUpiAccountsWithUI(completionHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
               },
               {
                 "kind": "TypeFunc",
@@ -3030,8 +2944,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Razorpay@objc(pl)UPITurboPrefetchWithUIProtocol(im)prefetchAndLinkUpiAccountsWithUIWithLinkAccountWithUPIPinNotSet:completionHandler:",
-            "mangledName": "$s8Razorpay30UPITurboPrefetchWithUIProtocolP026prefetchAndLinkUpiAccountsD2UI011linkAccountD12UPIPinNotSet17completionHandlerySb_yypSg_AGtctF",
+            "usr": "c:@M@Razorpay@objc(pl)UPITurboPrefetchWithUIProtocol(im)prefetchAndLinkUpiAccountsWithUIWithCompletionHandler:",
+            "mangledName": "$s8Razorpay30UPITurboPrefetchWithUIProtocolP026prefetchAndLinkUpiAccountsD2UI17completionHandleryyypSg_AFtc_tF",
             "moduleName": "Razorpay",
             "genericSig": "<τ_0_0 where τ_0_0 : Razorpay.UPITurboPrefetchWithUIProtocol>",
             "sugared_genericSig": "<Self where Self : Razorpay.UPITurboPrefetchWithUIProtocol>",
@@ -3119,19 +3033,12 @@
           {
             "kind": "Function",
             "name": "prefetchAndLinkUpiAccountsWithUI",
-            "printedName": "prefetchAndLinkUpiAccountsWithUI(linkAccountWithUPIPinNotSet:completionHandler:)",
+            "printedName": "prefetchAndLinkUpiAccountsWithUI(completionHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
               },
               {
                 "kind": "TypeFunc",
@@ -3180,8 +3087,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Razorpay30UPITurboPrefetchWithUIProtocolPAAE026prefetchAndLinkUpiAccountsD2UI011linkAccountD12UPIPinNotSet17completionHandlerySb_yypSg_AGtctF",
-            "mangledName": "$s8Razorpay30UPITurboPrefetchWithUIProtocolPAAE026prefetchAndLinkUpiAccountsD2UI011linkAccountD12UPIPinNotSet17completionHandlerySb_yypSg_AGtctF",
+            "usr": "s:8Razorpay30UPITurboPrefetchWithUIProtocolPAAE026prefetchAndLinkUpiAccountsD2UI17completionHandleryyypSg_AFtc_tF",
+            "mangledName": "$s8Razorpay30UPITurboPrefetchWithUIProtocolPAAE026prefetchAndLinkUpiAccountsD2UI17completionHandleryyypSg_AFtc_tF",
             "moduleName": "Razorpay",
             "genericSig": "<τ_0_0 where τ_0_0 : Razorpay.UPITurboPrefetchWithUIProtocol>",
             "sugared_genericSig": "<Self where Self : Razorpay.UPITurboPrefetchWithUIProtocol>",
@@ -3246,41 +3153,6 @@
             "declKind": "Func",
             "usr": "c:@M@Razorpay@objc(pl)UPITurboLinkedUpiAccountsProtocol(im)getLinkedUpiAccountsWithMobileNumber:resultDelegate:",
             "mangledName": "$s8Razorpay33UPITurboLinkedUpiAccountsProtocolP03getcdE012mobileNumber14resultDelegateySS_yptF",
-            "moduleName": "Razorpay",
-            "genericSig": "<τ_0_0 where τ_0_0 : Razorpay.UPITurboLinkedUpiAccountsProtocol>",
-            "sugared_genericSig": "<Self where Self : Razorpay.UPITurboLinkedUpiAccountsProtocol>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getLinkedUpiAccounts",
-            "printedName": "getLinkedUpiAccounts(customerId:resultDelegate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "Any"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Razorpay@objc(pl)UPITurboLinkedUpiAccountsProtocol(im)getLinkedUpiAccountsWithCustomerId:resultDelegate:",
-            "mangledName": "$s8Razorpay33UPITurboLinkedUpiAccountsProtocolP03getcdE010customerId14resultDelegateySS_yptF",
             "moduleName": "Razorpay",
             "genericSig": "<τ_0_0 where τ_0_0 : Razorpay.UPITurboLinkedUpiAccountsProtocol>",
             "sugared_genericSig": "<Self where Self : Razorpay.UPITurboLinkedUpiAccountsProtocol>",
@@ -7156,14 +7028,7 @@
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RzpRepo\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/PluginPaymentProtocols.swift",
       "kind": "BooleanLiteral",
-      "offset": 3721,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/justin.joseph\/Documents\/RzpRepo\/iOS\/razorpay-ios\/RazorpayIOS\/Main\/PluginPaymentProtocols.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6144,
+      "offset": 3802,
       "length": 5,
       "value": "false"
     },
@@ -7422,21 +7287,21 @@
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RzpRepo\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 75855,
+      "offset": 76023,
       "length": 14,
       "value": "\"user_aborted\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RzpRepo\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 75935,
+      "offset": 76103,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RzpRepo\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 76030,
+      "offset": 76198,
       "length": 8,
       "value": "\"failed\""
     },
