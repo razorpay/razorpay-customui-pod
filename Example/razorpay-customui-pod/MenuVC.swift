@@ -12,8 +12,10 @@ struct PayloadModel {
     var title: String
     var options: [String: Any]
 //    var key: String = "rzp_test_1DP5mmOlF5G5ag"
-    var key: String = "rzp_live_partner_Jgy1T7ZabnnFB1"
+    var key: String = "rzp_live_ILgsfZCZoFIKMb"
+//    var key: String = "rzp_live_partner_Jgy1T7ZabnnFB1"
 //    var key: String = "rzp_live_5W8oZPBNQPbZDE"
+//    var key: String = "rzp_live_fQOafVJoJqscJ6"
     var paymentType: PaymentType
 }
     
@@ -126,11 +128,11 @@ extension MenuVC {
         
         cardPaymentDict = [
             "amount": "100",
-            "currency": "INR",
+            "currency": "MYR",
             "email": "a@b.com",
             "contact": "9731585653",
             "method": "wallet",
-            "wallet": "olamoney",
+            "wallet": "touchngo",
         ]
         
         self.payloadArray += [PayloadModel(title: "Wallet Payment", options: cardPaymentDict, paymentType: .makePayment)]
