@@ -43,7 +43,7 @@ class WebCheckoutVC: UIViewController, WKScriptMessageHandler {
 //        self.wkWebView.navigationDelegate = self
         self.wkWebView.configuration.userContentController.add(self, name: "testController")
         
-//        self.wkWebView.uiDelegate = self
+        self.wkWebView.uiDelegate = self
         self.setConstraintsToWebView()
         self.setRightBarButtonItem()
         self.title = self.payload?.title
