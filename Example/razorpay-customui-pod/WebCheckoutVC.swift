@@ -19,7 +19,11 @@ enum PaymentType:String,Codable {
     case upiPayment
 }
 
-class WebCheckoutVC: UIViewController {
+class WebCheckoutVC: UIViewController, WKScriptMessageHandler {
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        
+    }
+    
     
     var paymentType: PaymentType = .makePayment
     var payload: PayloadModel?
@@ -36,7 +40,9 @@ class WebCheckoutVC: UIViewController {
         self.wkWebView = WKWebView(frame: self.view.frame, configuration: configuration)
 //        self.wkWebView = WKWebView(frame: .zero)
         self.razorpay = RazorpayCheckout.initWithKey(payload?.key ?? "", andDelegate: self, withPaymentWebView: wkWebView)
-        self.wkWebView.navigationDelegate = self
+//        self.wkWebView.navigationDelegate = self
+        self.wkWebView.configuration.userContentController.add(self, name: "testController")
+        
         self.wkWebView.uiDelegate = self
         self.setConstraintsToWebView()
         self.setRightBarButtonItem()
