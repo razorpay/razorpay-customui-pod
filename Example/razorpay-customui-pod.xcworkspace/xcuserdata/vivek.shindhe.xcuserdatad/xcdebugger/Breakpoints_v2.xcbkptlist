@@ -5,99 +5,61 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
-            uuid = "C18911CD-0ED5-42C9-ABAA-916B360C800F"
-            shouldBeEnabled = "No"
+            uuid = "1BFF7450-8F61-4418-ABA1-FEEEE9977919"
+            shouldBeEnabled = "Yes"
+            nameForDebugger = "RazorpayOncomplete"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "razorpay-customui-pod/WebCheckoutVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "triggerAppropriatePayment()"
-            landmarkType = "7">
+            symbolName = "InternalRazorpay.onComplete"
+            moduleName = "Razorpay">
+            <Locations>
+               <Location
+                  uuid = "1BFF7450-8F61-4418-ABA1-FEEEE9977919 - 22a004f4a32b75b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Razorpay.InternalRazorpay.onComplete(Swift.Dictionary&lt;Swift.AnyHashable, Any&gt;) -&gt; ()"
+                  moduleName = "Razorpay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivek.shindhe/Razorpay/iOS/razorpay-ios/RazorpayIOS/Main/AnalyticsUtil.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92">
+               </Location>
+               <Location
+                  uuid = "1BFF7450-8F61-4418-ABA1-FEEEE9977919 - 990352427bda4bca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Razorpay.InternalRazorpay.onComplete(resp: Swift.String) -&gt; ()"
+                  moduleName = "Razorpay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivek.shindhe/Razorpay/iOS/razorpay-ios/RazorpayIOS/Main/RazorpayUtils.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DAF0FCB5-F4CB-4E1C-B4D6-59AC72D5CC7B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "razorpay-customui-pod/WebCheckoutVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "triggerAppropriatePayment()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1FB35F42-4C6B-49CE-9ED2-B33C2C3B8F64"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "razorpay-customui-pod/WebCheckoutVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "webView(_:didCommit:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7A4F5CBF-ECBA-47D7-A093-A621556F748D"
+            uuid = "66A5CF67-F931-45B1-B624-1A34F092627D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "razorpay-customui-pod/WebCheckoutVC.swift"
+            filePath = "../../razorpay-ios/RazorpayIOS/CustomuiOtpelf/InternalRazorpay.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "webView(_:didFinish:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7B912148-5C56-4FB8-80A1-00AF43868524"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "razorpay-customui-pod/WebCheckoutVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "webView(_:didFail:withError:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "81B8B100-EA2C-41D6-83A5-7D36A1AAB6B7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "razorpay-customui-pod/WebCheckoutVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "webView(_:didFailProvisionalNavigation:withError:)"
-            landmarkType = "7">
+            startingLineNumber = "775"
+            endingLineNumber = "775"
+            landmarkName = "InternalRazorpay"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

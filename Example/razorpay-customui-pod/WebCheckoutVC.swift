@@ -40,7 +40,7 @@ class WebCheckoutVC: UIViewController, WKScriptMessageHandler {
         self.wkWebView = WKWebView(frame: self.view.frame, configuration: configuration)
 //        self.wkWebView = WKWebView(frame: .zero)
         self.razorpay = RazorpayCheckout.initWithKey(payload?.key ?? "", andDelegate: self, withPaymentWebView: wkWebView)
-//        self.wkWebView.navigationDelegate = self
+        self.wkWebView.navigationDelegate = self
         self.wkWebView.configuration.userContentController.add(self, name: "testController")
         
         self.wkWebView.uiDelegate = self

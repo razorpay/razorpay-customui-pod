@@ -170,7 +170,6 @@ extension MenuVC {
             
             
                 "currency":"INR",
-                "order_id":"order_PzrsuVdgejdQZB",
                 "amount":"1388624",
                 "email":"test@razorpay.com",
                 "contact":"9999999999",

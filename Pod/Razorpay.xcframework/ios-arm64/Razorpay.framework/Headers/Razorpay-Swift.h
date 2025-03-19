@@ -282,6 +282,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import Foundation;
 @import ObjectiveC;
+@import WebKit;
 #endif
 
 #endif
@@ -304,8 +305,27 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 @class WKWebView;
-@class NSString;
 @class WKNavigation;
+@class WKUserContentController;
+@class WKScriptMessage;
+
+SWIFT_CLASS("_TtC8Razorpay16InternalRazorpay")
+@interface InternalRazorpay : NSObject <WKNavigationDelegate, WKScriptMessageHandler>
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)webView:(WKWebView * _Nonnull)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)er;
+- (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)er;
+- (void)webView:(WKWebView * _Nonnull)webView didCommitNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
+
+
+
+
+
+
+@class NSString;
 
 SWIFT_CLASS("_TtC8Razorpay6Otpelf")
 @interface Otpelf : NSObject

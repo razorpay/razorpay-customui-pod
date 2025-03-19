@@ -170,6 +170,14 @@ public class TurboPluginManager {
   public func gatherAnalyticsDataCustomUI() -> [Swift.String : Any]?
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class InternalRazorpay : ObjectiveC.NSObject, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError er: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError er: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didCommit navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor @preconcurrency @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @objc deinit
+}
 @objc public protocol RazorpayPaymentCompletionProtocol {
   @objc func onPaymentSuccess(_ payment_id: Swift.String, andData response: [Swift.AnyHashable : Any])
   @objc @available(*, deprecated, message: "this function will accept a code of Type Int and not Int32 in future releases")
@@ -188,3 +196,4 @@ public class TurboPluginManager {
 }
 public struct CXError {
 }
+extension Razorpay.InternalRazorpay : Swift.Sendable {}
