@@ -80,10 +80,11 @@ extension Razorpay.UPITurboPrefetchProtocol {
   @objc func getLinkedUpiAccounts(mobileNumber: Swift.String, resultDelegate: Any)
 }
 @objc public protocol UPITurboTPVUIPlugin {
-  @objc func setOrderId(orderId: Swift.String) -> any Razorpay.UPITurboTPVUIPlugin
-  @objc func setCustomerId(customerId: Swift.String) -> any Razorpay.UPITurboTPVUIPlugin
-  @objc func setMobileNumber(mobile: Swift.String) -> any Razorpay.UPITurboTPVUIPlugin
-  @objc func linkNewUpiAccountWithUI(amountInDisplayFormat: Swift.String, color: Swift.String, completionHandler: @escaping (Any?, Any?) -> Swift.Void)
+  @objc func setOrderId(orderId: Swift.String?) -> any Razorpay.UPITurboTPVUIPlugin
+  @objc func setCustomerId(customerId: Swift.String?) -> any Razorpay.UPITurboTPVUIPlugin
+  @objc func setMobileNumber(mobile: Swift.String?) -> any Razorpay.UPITurboTPVUIPlugin
+  @objc func setTpvBankAccount(tpvBankAccount: Any?) -> any Razorpay.UPITurboTPVUIPlugin
+  @objc func linkNewUpiAccountWithUI(color: Swift.String, completionHandler: @escaping (Any?, Any?) -> Swift.Void)
 }
 public protocol UPITurboUIInternalPlugin : Razorpay.UPITurboUIPlugin {
   func linkNewUpiAccount(amountInDisplayFormat: Swift.String, color: Swift.String, completionHandler: @escaping (Any?, Any?) -> Swift.Void)

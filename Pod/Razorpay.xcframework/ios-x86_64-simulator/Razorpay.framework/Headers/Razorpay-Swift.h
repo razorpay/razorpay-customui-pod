@@ -473,10 +473,11 @@ SWIFT_PROTOCOL("_TtP8Razorpay17UPITurboTPVPlugin_")
 
 SWIFT_PROTOCOL("_TtP8Razorpay19UPITurboTPVUIPlugin_")
 @protocol UPITurboTPVUIPlugin
-- (id <UPITurboTPVUIPlugin> _Nonnull)setOrderIdWithOrderId:(NSString * _Nonnull)orderId SWIFT_WARN_UNUSED_RESULT;
-- (id <UPITurboTPVUIPlugin> _Nonnull)setCustomerIdWithCustomerId:(NSString * _Nonnull)customerId SWIFT_WARN_UNUSED_RESULT;
-- (id <UPITurboTPVUIPlugin> _Nonnull)setMobileNumberWithMobile:(NSString * _Nonnull)mobile SWIFT_WARN_UNUSED_RESULT;
-- (void)linkNewUpiAccountWithUIWithAmountInDisplayFormat:(NSString * _Nonnull)amountInDisplayFormat color:(NSString * _Nonnull)color completionHandler:(void (^ _Nonnull)(id _Nullable, id _Nullable))completionHandler;
+- (id <UPITurboTPVUIPlugin> _Nonnull)setOrderIdWithOrderId:(NSString * _Nullable)orderId SWIFT_WARN_UNUSED_RESULT;
+- (id <UPITurboTPVUIPlugin> _Nonnull)setCustomerIdWithCustomerId:(NSString * _Nullable)customerId SWIFT_WARN_UNUSED_RESULT;
+- (id <UPITurboTPVUIPlugin> _Nonnull)setMobileNumberWithMobile:(NSString * _Nullable)mobile SWIFT_WARN_UNUSED_RESULT;
+- (id <UPITurboTPVUIPlugin> _Nonnull)setTpvBankAccountWithTpvBankAccount:(id _Nullable)tpvBankAccount SWIFT_WARN_UNUSED_RESULT;
+- (void)linkNewUpiAccountWithUIWithColor:(NSString * _Nonnull)color completionHandler:(void (^ _Nonnull)(id _Nullable, id _Nullable))completionHandler;
 @end
 
 
