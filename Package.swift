@@ -1,31 +1,26 @@
-// swift-tools-version: 5.4
+// swift-tools-version: 5.9
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
-let packageVersion = "2.0.17"
 
 let package = Package(
-    name: "razorpay-customui-spm",
+    name: "RazorpayCustomUI",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v13)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "razorpay-customui-spm",
-            targets: ["razorpay-customui-spm"]
+            name: "RazorpayCustomUI",
+            targets: ["Razorpay"]
         ),
     ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-    ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(
-            name: "razorpay-customui-spm",
+            name: "Razorpay",
             path: "Pod/Razorpay.xcframework"
         )
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
