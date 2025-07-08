@@ -1,0 +1,24 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "razorpay-customui-pod",
+          "kind" : "root",
+          "location" : "/Users/vivek.shindhe/Razorpay/iOS/razorpay-customui-pod",
+          "name" : "razorpay-customui-pod"
+        },
+        "path" : "/Users/vivek.shindhe/Razorpay/iOS/razorpay-customui-pod/Pod/Razorpay.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "Razorpay"
+      }
+    ],
+    "dependencies" : [
+
+    ]
+  },
+  "version" : 6
+}
