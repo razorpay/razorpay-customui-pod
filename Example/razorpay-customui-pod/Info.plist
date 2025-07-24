@@ -24,6 +24,11 @@
 	<array>
 		<string>phonepe</string>
 		<string>tez</string>
+		<string>credpay</string>
+		<string>paytmmp</string>
+		<string>popclubapp</string>
+		<string>bhim</string>
+		<string>amazonpay</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
