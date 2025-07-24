@@ -104,6 +104,9 @@ extension WebCheckoutVC: WKNavigationDelegate {
 extension WebCheckoutVC {
     
     func triggerAppropriatePayment() {
+        RazorpayCheckout.getAppsWhichSupportUpi{ upiApps in
+            print(upiApps)
+        }
         self.printAsJson(payload?.options ?? [:])
         switch self.payload?.paymentType {
         case .makeCredPayment:
