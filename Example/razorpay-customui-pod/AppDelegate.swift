@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Razorpay
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -39,6 +40,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        do {
+            let regex = try NSRegularExpression(pattern: "razorpay-\(Bundle.main.bundleIdentifier ?? ".*")")
+           let results = regex.matches(in: url.absoluteString, range: NSRange(url.absoluteString.startIndex..., in: url.absoluteString))
+
+           if results.count > 0 {
+               return RazorpayCheckout.handleRedirection(url.absoluteString)
+           } else {
+               return false
+           }
+       } catch let error {
+           print("invalid regex: \(error.localizedDescription)")
+           return false
+       }
     }
 
 

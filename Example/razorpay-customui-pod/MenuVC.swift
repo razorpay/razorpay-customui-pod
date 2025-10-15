@@ -128,11 +128,11 @@ extension MenuVC {
         
         cardPaymentDict = [
             "amount": "100",
-            "currency": "INR",
+            "currency": "MYR",
             "email": "a@b.com",
             "contact": "9731585653",
             "method": "wallet",
-            "wallet": "mobikwik",
+            "wallet": "touchngo",
         ]
         
         self.payloadArray += [PayloadModel(title: "Wallet Payment", options: cardPaymentDict, paymentType: .makePayment)]
@@ -174,7 +174,8 @@ extension MenuVC {
                 "email":"test@razorpay.com",
                 "contact":"9999999999",
                 "method":"upi",
-                "vpa":"failure@razorpay"
+                "_[flow]":"intent",
+                "upi_app_package_name":"phonepe"
             
         ]
 //        [

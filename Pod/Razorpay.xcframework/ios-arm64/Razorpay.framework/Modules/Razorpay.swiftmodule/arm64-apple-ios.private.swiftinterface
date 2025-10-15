@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Razorpay
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Razorpay
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CommonCrypto
 import CoreLocation
 import CoreTelephony
@@ -16,15 +16,21 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public protocol PluginPaymentCompletionDelegate : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   func paymentSuccessful(orderID: Swift.String, dictVerification: [Swift.AnyHashable : Any]?)
+  #endif
   func paymentFailed(code: Swift.Int, errorDescription: Swift.String, data: [Swift.AnyHashable : Any])
+  #if compiler(>=5.3) && $NonescapableTypes
   func trackEvent(event: Swift.String, withProperties dict: [Swift.AnyHashable : Any]?)
+  #endif
 }
 @objc public protocol PluginPaymentDelegate {
   @objc func canProcessPayment(model: Razorpay.PluginPaymentModel) -> Swift.Bool
   @objc func identifier() -> Swift.String
   @objc func pay(model: Razorpay.PluginPaymentModel)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func getExternalPaymentData(mobileNumber: Swift.String, orderId: Swift.String?, handler: @escaping () -> Swift.Void)
+  #endif
   @objc optional func paymentData() -> [[Swift.AnyHashable : Any]]
   @objc optional func paymentTPVData() -> [Swift.AnyHashable : Any]
 }
@@ -33,16 +39,28 @@ public protocol ErrorDescribable {
 }
 public typealias PluginPaymentError = Razorpay.ErrorDescribable & Swift.Error
 @objc public protocol UPITurboPlugin : Razorpay.TokenPlugin, Razorpay.UPITurboLinkedBankAccountsProtocol, Razorpay.UPITurboLinkedUpiAccountsProtocol, Razorpay.UPITurboPrefetchProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var TPV: (any Razorpay.UPITurboTPVPlugin)? { get }
+  #endif
   @objc var paymentPlugin: any Razorpay.PluginPaymentDelegate { get }
   @objc var deviceBindingDone: Swift.Bool { get }
   @objc func linkNewAccount(mobileNumber: Swift.String, linkActionDelegate: Any)
   @objc func linkNewAccount(customerId: Swift.String, linkActionDelegate: Any)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func fetchAccountBalance(upiAccount: Any?, handler: @escaping (Any?, Any?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func resetUpiPin(upiAccount: Any?, card: Any, handler: @escaping (Any?, Any?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func delinkVpa(upiAccount: Any?, handler: @escaping (Any?, Any?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func delinkVpa(linkedBankAccount: Any?, handler: @escaping (Any?, Any?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func changeUpiPin(upiAccount: Any?, handler: @escaping (Any?, Any?) -> Swift.Void)
+  #endif
 }
 @objc public protocol TokenPlugin {
   @objc func initialize(_ delegate: Any)
@@ -71,32 +89,56 @@ extension Razorpay.UPITurboPrefetchProtocol {
   public func prefetchAndLinkUpiAccounts(linkAccountWithUPIPinNotSet: Swift.Bool = false, linkActionDelegate: Any)
 }
 @objc public protocol UPITurboUIPlugin : Razorpay.TokenPlugin, Razorpay.UPITurboPrefetchWithUIProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var TPV: (any Razorpay.UPITurboTPVUIPlugin)? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var corePlugin: (any Razorpay.UPITurboPlugin)? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var paymentPlugin: (any Razorpay.PluginPaymentDelegate)? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func linkNewUpiAccount(mobileNumber: Swift.String, color: Swift.String, completionHandler: @escaping (Any?, Any?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func manageUpiAccount(mobileNumber: Swift.String, color: Swift.String, completionHandler: @escaping (Any?, Any?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func getUpiAccountObject(upiAccounts: Any?) -> [[Swift.AnyHashable : Any]]?
+  #endif
   @objc func getLinkedUpiAccounts(mobileNumber: Swift.String, resultDelegate: Any)
 }
 @objc public protocol UPITurboTPVUIPlugin {
   @objc func setOrderId(orderId: Swift.String) -> any Razorpay.UPITurboTPVUIPlugin
   @objc func setCustomerId(customerId: Swift.String) -> any Razorpay.UPITurboTPVUIPlugin
   @objc func setMobileNumber(mobile: Swift.String) -> any Razorpay.UPITurboTPVUIPlugin
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func linkNewUpiAccountWithUI(amountInDisplayFormat: Swift.String, color: Swift.String, completionHandler: @escaping (Any?, Any?) -> Swift.Void)
+  #endif
 }
 public protocol UPITurboUIInternalPlugin : Razorpay.UPITurboUIPlugin {
+  #if compiler(>=5.3) && $NonescapableTypes
   func linkNewUpiAccount(amountInDisplayFormat: Swift.String, color: Swift.String, completionHandler: @escaping (Any?, Any?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func prefetchAndLinkUpiAccounts(amountInDisplayFormat: Swift.String, color: Swift.String, completionHandler: @escaping (Any?, Any?) -> Swift.Void)
+  #endif
 }
 @objc public protocol UPITurboPrefetchWithUIProtocol {
   @objc func setCustomerMobile(mobile: Swift.String) -> any Razorpay.UPITurboPrefetchWithUIProtocol
   @objc func setColor(color: Swift.String) -> any Razorpay.UPITurboPrefetchWithUIProtocol
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func prefetchAndLinkUpiAccountsWithUI(completionHandler: @escaping (Any?, Any?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func setUpiPinWithUI(_ account: Any, completionHandler: @escaping (Any?, Any?) -> Swift.Void)
+  #endif
 }
 extension Razorpay.UPITurboPrefetchWithUIProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func prefetchAndLinkUpiAccountsWithUI(completionHandler: @escaping (Any?, Any?) -> Swift.Void)
+  #endif
 }
 @objc public protocol UPITurboLinkedUpiAccountsProtocol {
   @objc func getLinkedUpiAccounts(mobileNumber: Swift.String, resultDelegate: Any)
@@ -129,7 +171,9 @@ extension Razorpay.UPITurboPrefetchWithUIProtocol {
   @objc final public func submitOtp(otp: Swift.String)
   @objc final public func resendOtp(response: @escaping (Swift.Bool) -> Swift.Void)
   @objc final public func redirectToBankPage()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getPaymentMethods(withOptions options: [Swift.AnyHashable : Any]?, withSuccessCallback success: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
+  #endif
   @objc final public func getSubscriptionAmount(havingSubscriptionId subId: Swift.String, withSuccessCallback success: @escaping (Swift.UInt64) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc final public func getSubscriptionAmount(options: [Swift.AnyHashable : Any], withSuccessCallback success: @escaping (Swift.UInt64) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc final public func authorize(_ options: [Swift.AnyHashable : Any])
@@ -137,37 +181,58 @@ extension Razorpay.UPITurboPrefetchWithUIProtocol {
   @objc final public func userCancelledPayment()
   @objc final public func decodeURI(from data: Swift.String)
   @objc final public func close()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func webView(_ webView: WebKit.WKWebView, didCommit navigation: WebKit.WKNavigation!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError er: any Swift.Error)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError er: any Swift.Error)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  #endif
   @objc final public func getCardNetwork(fromCardNumber cardNumber: Swift.String) -> Swift.String
   @available(*, deprecated, message: "use getAppsWhichSupportUpi(handler:) instead")
   @objc final public func getSupportedUPIApps() -> [Swift.String]
   @objc public static func getAppsWhichSupportUpi(handler: @escaping ([[Swift.AnyHashable : Any]]) -> Swift.Void)
   @objc public static func getAppsWhichSupportUpiRecurring(handler: @escaping ([[Swift.AnyHashable : Any]]) -> Swift.Void)
   @objc final public func isCardValid(_ cardNumber: Swift.String) -> Swift.Bool
-  @objc final public func isValidVpa(_ vpa: Swift.String, withSuccessCallback success: @escaping (([Swift.AnyHashable : Any]) -> Swift.Void), withFailure failure: @escaping (([Swift.AnyHashable : Any]) -> Swift.Void))
+  @objc final public func isValidVpa(_ vpa: Swift.String, withSuccessCallback success: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void, withFailure failure: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void)
   @objc final public func getCardNetworkLength(ofNetwork network: Swift.String) -> Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getBankLogo(havingBankCode bankCode: Swift.String) -> Foundation.URL?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getWalletSqLogo(havingWalletName name: Swift.String) -> Foundation.URL?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getWalletLogo(havingWalletName name: Swift.String) -> Foundation.URL?
+  #endif
   @objc final public func payWithExternalPaymentEntity(options: [Swift.AnyHashable : Any], arrExternalPaymentEntities: [any Razorpay.PluginPaymentDelegate])
   @objc final public func publishUri(with data: Swift.String)
   @objc final public func setWebView(_ webView: WebKit.WKWebView) throws
   @objc final public func setDelegate(_ delegate: any Razorpay.RazorpayPaymentCompletionProtocol) throws
+  @objc public static func handleRedirection(_ url: Swift.String) -> Swift.Bool
   @objc deinit
 }
 public class TurboPluginManager {
   public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getSessionId() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getMercahntKey() -> Swift.String?
+  #endif
   public func getHTMLLoaingPage() -> Swift.String
   public func isCFBEnabledUser() -> Swift.Bool
   public func getBaseAnalyticsProperties() -> [Swift.AnyHashable : Any]
   public func trackEvent(eventName: Swift.String, payload: [Swift.AnyHashable : Any])
   public func submitAnalyticsEvents()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func gatherAnalyticsDataCustomUI() -> [Swift.String : Any]?
+  #endif
   @objc deinit
 }
 @objc public protocol RazorpayPaymentCompletionProtocol {
@@ -176,10 +241,16 @@ public class TurboPluginManager {
   func onPaymentError(_ code: Swift.Int32, description str: Swift.String, andData response: [Swift.AnyHashable : Any])
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Otpelf : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func initWithWebView(_ webView: WebKit.WKWebView, andMerchantKey merchantKey: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func getSharedInstance() -> Razorpay.Otpelf?
+  #endif
   @objc public func setPaymentData(_ data: [Swift.AnyHashable : Any])
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func webView(didFinish navigation: WebKit.WKNavigation!) throws
+  #endif
   @objc public func close()
   @objc deinit
 }
