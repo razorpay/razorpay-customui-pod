@@ -5731,6 +5731,36 @@
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleRedirection",
+            "printedName": "handleRedirection(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Razorpay@objc(cs)RazorpayCheckout(cm)handleRedirection:",
+            "mangledName": "$s8Razorpay0A8CheckoutC17handleRedirectionySbSSFZ",
+            "moduleName": "Razorpay",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -7126,7 +7156,7 @@
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/RazorpayCheckout.swift",
       "kind": "StringLiteral",
-      "offset": 10029,
+      "offset": 10153,
       "length": 12,
       "value": "\"rcURIEvent\""
     },
@@ -7356,22 +7386,57 @@
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2107,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2144,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2239,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2282,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 54127,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 85630,
+      "offset": 90337,
       "length": 14,
       "value": "\"user_aborted\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 85710,
+      "offset": 90417,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 85805,
+      "offset": 90512,
       "length": 8,
       "value": "\"failed\""
     },
@@ -9088,7 +9153,7 @@
       "kind": "StringLiteral",
       "offset": 1336,
       "length": 8,
-      "value": "\"2.0.19\""
+      "value": "\"2.0.20\""
     },
     {
       "filePath": "\/Users\/vivek.shindhe\/Razorpay\/iOS\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/CustomuiConstants.swift",
