@@ -30,7 +30,8 @@ helps businesses accepts online payments via Credit Card, Debit Card, Net bankin
 
   s.platform     = :ios, '11.0'
   
-  s.vendored_frameworks = 'Pod/RazorpayCustom.xcframework'
+  s.vendored_frameworks = ['Pod/RazorpayCustom.xcframework', 'Pod/RazorpayWrapper']
+    
   
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
