@@ -40,7 +40,7 @@ class WebCheckoutVC: UIViewController, WKScriptMessageHandler {
         self.wkWebView = WKWebView(frame: self.view.frame, configuration: configuration)
 //        self.wkWebView = WKWebView(frame: .zero)
         self.razorpay = RazorpayCheckout.initWithKey(payload?.key ?? "", andDelegate: self, withPaymentWebView: wkWebView)
-//        self.wkWebView.navigationDelegate = self
+        self.wkWebView.navigationDelegate = self
         self.wkWebView.configuration.userContentController.add(self, name: "testController")
         
         self.wkWebView.uiDelegate = self
@@ -99,6 +99,19 @@ extension WebCheckoutVC: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         self.razorpay?.webView(webView, didFailProvisionalNavigation: navigation, withError: error)
     }
+    
+//    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping @MainActor (WKNavigationActionPolicy) -> Void) {
+//        print("loading URL"+(navigationAction.request.url?.absoluteString ?? "nil value"))
+//        self.razorpay?.webView(webView, decidePolicyFor: navigationAction)
+//        decisionHandler(.allow)
+//    }
+    
+    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping @MainActor (WKNavigationActionPolicy) -> Void) {
+        print("loading URL"+(navigationAction.request.url?.absoluteString ?? "nil value"))
+        self.razorpay?.webView(webView, decidePolicyFor: navigationAction)
+        decisionHandler(.allow)
+    }
+    
 }
 
 extension WebCheckoutVC {
