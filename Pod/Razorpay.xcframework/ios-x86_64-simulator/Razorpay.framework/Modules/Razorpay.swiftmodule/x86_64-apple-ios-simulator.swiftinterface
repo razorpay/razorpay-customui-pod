@@ -187,6 +187,7 @@ extension Razorpay.UPITurboPrefetchWithUIProtocol {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError er: any Swift.Error)
   #endif
+  final public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction)
   #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError er: any Swift.Error)
   #endif

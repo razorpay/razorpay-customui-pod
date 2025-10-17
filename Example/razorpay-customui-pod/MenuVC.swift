@@ -11,7 +11,7 @@ import Razorpay
 struct PayloadModel {
     var title: String
     var options: [String: Any]
-    var key: String = "rzp_test_1DP5mmOlF5G5ag"
+    var key: String = "rzp_live_fQOafVJoJqscJ6"
 //    var key: String = "rzp_live_ILgsfZCZoFIKMb"
 //    var key: String = "rzp_live_partner_Jgy1T7ZabnnFB1"
 //    var key: String = "rzp_live_5W8oZPBNQPbZDE"
@@ -26,6 +26,11 @@ class MenuVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let bundleIdentifier = Bundle.main.bundleIdentifier {
+            print("Bundle Identifier: \(bundleIdentifier)")
+        } else {
+            print("Could not retrieve bundle identifier.")
+        }
         guard let dynamicFlowLayout = self.collectionView.collectionViewLayout as? DynamicHeightFlowLayout else{
             assertionFailure("could not get flow layout instance")
             return
@@ -127,7 +132,7 @@ extension MenuVC {
         cardPaymentDict = [:]
         
         cardPaymentDict = [
-            "amount": "100",
+            "amount": "10",
             "currency": "MYR",
             "email": "a@b.com",
             "contact": "9731585653",
