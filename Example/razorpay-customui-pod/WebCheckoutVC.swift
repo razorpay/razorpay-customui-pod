@@ -108,8 +108,12 @@ extension WebCheckoutVC: WKNavigationDelegate {
     
     public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping @MainActor (WKNavigationActionPolicy) -> Void) {
         print("loading URL"+(navigationAction.request.url?.absoluteString ?? "nil value"))
-        self.razorpay?.webView(webView, decidePolicyFor: navigationAction)
-        decisionHandler(.allow)
+        if let razorpay = self.razorpay {
+            self.razorpay?.webView(webView, decidePolicyFor: navigationAction, handler: decisionHandler)
+        }else{
+            decisionHandler(.allow)
+        }
+        
     }
     
 }
