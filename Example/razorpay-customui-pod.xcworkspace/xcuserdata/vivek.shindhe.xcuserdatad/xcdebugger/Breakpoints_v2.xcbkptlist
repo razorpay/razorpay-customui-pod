@@ -14,8 +14,8 @@
             filePath = "razorpay-customui-pod/WebCheckoutVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "triggerAppropriatePayment()"
             landmarkType = "7">
          </BreakpointContent>
@@ -32,7 +32,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "644"
             endingLineNumber = "644"
-            landmarkName = "webView(_:decidePolicyFor:)"
+            landmarkName = "webView(_:decidePolicyFor:handler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -48,7 +48,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "643"
             endingLineNumber = "643"
-            landmarkName = "webView(_:decidePolicyFor:)"
+            landmarkName = "webView(_:decidePolicyFor:handler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -112,7 +112,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1247"
             endingLineNumber = "1247"
-            landmarkName = "pollStatus(_:removeLimiter:)"
+            landmarkName = "performPollingRequest(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
