@@ -41,7 +41,7 @@ s.default_subspec = 'Core'
  end
  
  s.subspec 'Standard' do |standard|
-    stanndard.vendored_frameworks = 'Pod/custom/RazorpayStandard.xcframework'
+    standard.vendored_frameworks = 'Pod/custom/RazorpayStandard.xcframework'
     standard.dependency 'razorpay-pod/Core'
  end
   
