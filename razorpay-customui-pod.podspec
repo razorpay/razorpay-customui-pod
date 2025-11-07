@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'razorpay-customui-pod'
-  s.version          = '2.0.22'
+  s.version          = '2.1.0'
   s.summary          = "CocoaPod implementation of Razorpay's Custom Payment SDK"
 
   s.description      = <<-DESC
@@ -30,7 +30,20 @@ helps businesses accepts online payments via Credit Card, Debit Card, Net bankin
 
   s.platform     = :ios, '11.0'
   
-  s.vendored_frameworks = 'Pod/Razorpay.xcframework'
+s.default_subspec = 'Core'
+
+  s.subspec 'Core' do |core|
+    core.vendored_frameworks = [
+      'Pod/Razorpay.xcframework',
+      'Pod/RazorpayCore.xcframework',
+      'Pod/RazorpayCustom.xcframework'
+    ]
+ end
+ 
+ s.subspec 'Standard' do |standard|
+    stanndard.vendored_frameworks = 'Pod/custom/RazorpayStandard.xcframework'
+    standard.dependency 'razorpay-pod/Core'
+ end
   
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
