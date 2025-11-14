@@ -2,12 +2,12 @@
 triple:          'x86_64-apple-darwin'
 binary-path:     '/Users/ramprasad.a/Documents/projects/CheckoutModularisation/razorpay-ios/RazorpayIOS/DerivedData/iphonesimulator/Build/Products/Release-iphonesimulator/RazorpayCustom.framework/RazorpayCustom'
 relocations:
-  - { offset: 0x1036FE, size: 0x8, addend: 0x0, symName: _RazorpayCustomVersionString, symObjAddr: 0x0, symBinAddr: 0x5C3C0, symSize: 0x0 }
-  - { offset: 0x103733, size: 0x8, addend: 0x0, symName: _RazorpayCustomVersionNumber, symObjAddr: 0x38, symBinAddr: 0x5C3F8, symSize: 0x0 }
+  - { offset: 0x1036FE, size: 0x8, addend: 0x0, symName: _RazorpayCustomVersionString, symObjAddr: 0x0, symBinAddr: 0x5C660, symSize: 0x0 }
+  - { offset: 0x103733, size: 0x8, addend: 0x0, symName: _RazorpayCustomVersionNumber, symObjAddr: 0x38, symBinAddr: 0x5C698, symSize: 0x0 }
   - { offset: 0x103770, size: 0x8, addend: 0x0, symName: '+[CustomCheckoutLibLoader load]', symObjAddr: 0x0, symBinAddr: 0x1880, symSize: 0x16 }
   - { offset: 0x10377E, size: 0x8, addend: 0x0, symName: '+[CustomCheckoutLibLoader load]', symObjAddr: 0x0, symBinAddr: 0x1880, symSize: 0x16 }
-  - { offset: 0x1037A4, size: 0x8, addend: 0x0, symName: _load.onceToken, symObjAddr: 0x6F48, symBinAddr: 0x966D0, symSize: 0x0 }
-  - { offset: 0x103821, size: 0x8, addend: 0x0, symName: '+[CustomCheckoutLibLoader load].cold.1', symObjAddr: 0x95, symBinAddr: 0x5B1BF, symSize: 0x18 }
+  - { offset: 0x1037A4, size: 0x8, addend: 0x0, symName: _load.onceToken, symObjAddr: 0x6F48, symBinAddr: 0x97890, symSize: 0x0 }
+  - { offset: 0x103821, size: 0x8, addend: 0x0, symName: '+[CustomCheckoutLibLoader load].cold.1', symObjAddr: 0x95, symBinAddr: 0x5B44F, symSize: 0x18 }
   - { offset: 0x10384F, size: 0x8, addend: 0x0, symName: '___31+[CustomCheckoutLibLoader load]_block_invoke', symObjAddr: 0x16, symBinAddr: 0x1896, symSize: 0x5E }
   - { offset: 0x1038BD, size: 0x8, addend: 0x0, symName: '___31+[CustomCheckoutLibLoader load]_block_invoke_2', symObjAddr: 0x74, symBinAddr: 0x18F4, symSize: 0x21 }
   - { offset: 0x103B9C, size: 0x8, addend: 0x0, symName: '_$sSo26SCNetworkReachabilityFlagsVs10SetAlgebraSCSQWb', symObjAddr: 0x550, symBinAddr: 0x1E40, symSize: 0x20 }
@@ -60,10 +60,10 @@ relocations:
   - { offset: 0x104F67, size: 0x8, addend: 0x0, symName: '_$sSo38UIApplicationOpenExternalURLOptionsKeyaSYSCSY8rawValue03RawG0QzvgTW', symObjAddr: 0x640, symBinAddr: 0x1F30, symSize: 0x20 }
   - { offset: 0x104FB4, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom20WebViewBridgeMessageV05buildcdeF0012fromWKScriptF0ACSgSo0iF0C_tFZTf4nd_n', symObjAddr: 0x6D0, symBinAddr: 0x1FC0, symSize: 0x2B0 }
   - { offset: 0x1051A2, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom15GlobalUrlConfigC04_cdnD033_A5F2DC878D78959D6DC08DB2950AE0DALL_WZ', symObjAddr: 0x0, symBinAddr: 0x2570, symSize: 0x40 }
-  - { offset: 0x1051C6, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom15GlobalUrlConfigC05_baseD033_A5F2DC878D78959D6DC08DB2950AE0DALLSSvpZ', symObjAddr: 0x148, symBinAddr: 0x942D8, symSize: 0x0 }
-  - { offset: 0x1051E0, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom15GlobalUrlConfigC06_trackD033_A5F2DC878D78959D6DC08DB2950AE0DALLSSvpZ', symObjAddr: 0x158, symBinAddr: 0x942E8, symSize: 0x0 }
-  - { offset: 0x1051FA, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom15GlobalUrlConfigC04_cdnD033_A5F2DC878D78959D6DC08DB2950AE0DALLSSvpZ', symObjAddr: 0x168, symBinAddr: 0x942F8, symSize: 0x0 }
-  - { offset: 0x105214, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom15GlobalUrlConfigC07_butlereD033_A5F2DC878D78959D6DC08DB2950AE0DALLSSvpZ', symObjAddr: 0x178, symBinAddr: 0x94308, symSize: 0x0 }
+  - { offset: 0x1051C6, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom15GlobalUrlConfigC05_baseD033_A5F2DC878D78959D6DC08DB2950AE0DALLSSvpZ', symObjAddr: 0x148, symBinAddr: 0x95490, symSize: 0x0 }
+  - { offset: 0x1051E0, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom15GlobalUrlConfigC06_trackD033_A5F2DC878D78959D6DC08DB2950AE0DALLSSvpZ', symObjAddr: 0x158, symBinAddr: 0x954A0, symSize: 0x0 }
+  - { offset: 0x1051FA, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom15GlobalUrlConfigC04_cdnD033_A5F2DC878D78959D6DC08DB2950AE0DALLSSvpZ', symObjAddr: 0x168, symBinAddr: 0x954B0, symSize: 0x0 }
+  - { offset: 0x105214, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom15GlobalUrlConfigC07_butlereD033_A5F2DC878D78959D6DC08DB2950AE0DALLSSvpZ', symObjAddr: 0x178, symBinAddr: 0x954C0, symSize: 0x0 }
   - { offset: 0x105222, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom15GlobalUrlConfigC04_cdnD033_A5F2DC878D78959D6DC08DB2950AE0DALL_WZ', symObjAddr: 0x0, symBinAddr: 0x2570, symSize: 0x40 }
   - { offset: 0x105275, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom15GlobalUrlConfigCMa', symObjAddr: 0x60, symBinAddr: 0x25D0, symSize: 0x14 }
   - { offset: 0x105297, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom15GlobalUrlConfigCfD', symObjAddr: 0x40, symBinAddr: 0x25B0, symSize: 0x20 }
@@ -76,7 +76,7 @@ relocations:
   - { offset: 0x105593, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13ObserverModelV03addC04name8observer8selector6objectSbSS_yp10ObjectiveC8SelectorVypSgtF', symObjAddr: 0x10, symBinAddr: 0x2600, symSize: 0x2D0 }
   - { offset: 0x105654, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13ObserverModelV06removeC04name8observer6objectSbSS_ypypSgtF', symObjAddr: 0x2E0, symBinAddr: 0x28D0, symSize: 0x260 }
   - { offset: 0x10582A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A13InternetUtilsC08razorpaycD033_7275882C450308EB933870DA6B4CD14DLL_WZ', symObjAddr: 0x0, symBinAddr: 0x2BF0, symSize: 0x30 }
-  - { offset: 0x10584E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A13InternetUtilsC08razorpaycD033_7275882C450308EB933870DA6B4CD14DLLACvpZ', symObjAddr: 0x860, symBinAddr: 0x943B0, symSize: 0x0 }
+  - { offset: 0x10584E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A13InternetUtilsC08razorpaycD033_7275882C450308EB933870DA6B4CD14DLLACvpZ', symObjAddr: 0x860, symBinAddr: 0x95568, symSize: 0x0 }
   - { offset: 0x105906, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A13InternetUtilsC08razorpaycD033_7275882C450308EB933870DA6B4CD14DLL_WZ', symObjAddr: 0x0, symBinAddr: 0x2BF0, symSize: 0x30 }
   - { offset: 0x10592E, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataVSgSo13NSURLResponseCSgs5Error_pSgIeghggg_So6NSDataCSgAGSo7NSErrorCSgIeyBhyyy_TR', symObjAddr: 0x260, symBinAddr: 0x2E50, symSize: 0xF0 }
   - { offset: 0x105946, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A13InternetUtilsCMa', symObjAddr: 0x380, symBinAddr: 0x2F70, symSize: 0x20 }
@@ -90,7 +90,7 @@ relocations:
   - { offset: 0x105BFD, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A13InternetUtilsCfD', symObjAddr: 0x350, symBinAddr: 0x2F40, symSize: 0x30 }
   - { offset: 0x105CD5, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A13InternetUtilsC14sharedInstanceACyFZTf4d_g', symObjAddr: 0x3A0, symBinAddr: 0x2F90, symSize: 0x120 }
   - { offset: 0x105D26, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A13InternetUtilsC11sendRequest_11withSuccess0G7Failurey10Foundation10URLRequestV_yAI_AG4DataVSo13NSURLResponseCSgtcyAI_So7NSErrorCSgSStctFTf4nnnd_n', symObjAddr: 0x4C0, symBinAddr: 0x30B0, symSize: 0x1C0 }
-  - { offset: 0x105F0A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom10OtpelfDataC14sharedInstanceACvpZ', symObjAddr: 0x234B8, symBinAddr: 0x97CA0, symSize: 0x0 }
+  - { offset: 0x105F0A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom10OtpelfDataC14sharedInstanceACvpZ', symObjAddr: 0x234B8, symBinAddr: 0x98E60, symSize: 0x0 }
   - { offset: 0x106001, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom10OtpelfDataC14sharedInstance_WZ', symObjAddr: 0x0, symBinAddr: 0x3450, symSize: 0x30 }
   - { offset: 0x106261, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom10OtpelfDataCMa', symObjAddr: 0x1530, symBinAddr: 0x4980, symSize: 0x20 }
   - { offset: 0x106275, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom10OtpelfDataC06updateC033_B750007D7AD1D1E9FD8BA7BFDC8CD790LL07withNewC4HashySS_tFy10Foundation10URLRequestV_AG0D0VSo13NSURLResponseCSgtcfU_TA', symObjAddr: 0x15C0, symBinAddr: 0x49D0, symSize: 0x30 }
@@ -117,7 +117,7 @@ relocations:
   - { offset: 0x10725B, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom10OtpelfDataCfD', symObjAddr: 0x1510, symBinAddr: 0x4960, symSize: 0x20 }
   - { offset: 0x1072AF, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom10OtpelfDataC014fetchEncryptedC7AndHash33_B750007D7AD1D1E9FD8BA7BFDC8CD790LLSS_SStyFTf4d_n', symObjAddr: 0x1740, symBinAddr: 0x4B20, symSize: 0x250 }
   - { offset: 0x1073C9, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom10OtpelfDataC07decryptC6String8inBase64S2S_tFZTf4nd_n', symObjAddr: 0x1990, symBinAddr: 0x4D70, symSize: 0x5D0 }
-  - { offset: 0x10782A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13CrashReporterC16internalInstance33_299861DF65E3FE9A81F2F93BFAF13EDDLLACvpZ', symObjAddr: 0x4060, symBinAddr: 0x945D8, symSize: 0x0 }
+  - { offset: 0x10782A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13CrashReporterC16internalInstance33_299861DF65E3FE9A81F2F93BFAF13EDDLLACvpZ', symObjAddr: 0x4060, symBinAddr: 0x95790, symSize: 0x0 }
   - { offset: 0x107BD6, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13CrashReporterC16internalInstance33_299861DF65E3FE9A81F2F93BFAF13EDDLL_WZ', symObjAddr: 0x8C0, symBinAddr: 0x5DB0, symSize: 0x30 }
   - { offset: 0x107D4A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13CrashReporterCMa', symObjAddr: 0x14E0, symBinAddr: 0x69D0, symSize: 0x20 }
   - { offset: 0x107D5E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13CrashReporterC27startSwiftUnhandExcHandling33_299861DF65E3FE9A81F2F93BFAF13EDDLLyyFyyYbcfU_TA', symObjAddr: 0x1520, symBinAddr: 0x6A10, symSize: 0x20 }
@@ -152,10 +152,10 @@ relocations:
   - { offset: 0x10ABD4, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A16UserDefaultsUtilCMa', symObjAddr: 0x20, symBinAddr: 0x9410, symSize: 0x20 }
   - { offset: 0x10AC1D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A16UserDefaultsUtilC14getStringValue6forKey011withDefaultH0S2S_SSSgtFZTf4nnd_n', symObjAddr: 0x40, symBinAddr: 0x9430, symSize: 0x130 }
   - { offset: 0x10ADCA, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom15OtpelfConstantsC22InitalOtelfOptionsDict_WZ', symObjAddr: 0x0, symBinAddr: 0x9560, symSize: 0x140 }
-  - { offset: 0x10ADEE, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom15OtpelfConstantsC22InitalOtelfOptionsDictSDySSypGvpZ', symObjAddr: 0x30C8, symBinAddr: 0x97CA8, symSize: 0x0 }
+  - { offset: 0x10ADEE, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom15OtpelfConstantsC22InitalOtelfOptionsDictSDySSypGvpZ', symObjAddr: 0x30C8, symBinAddr: 0x98E68, symSize: 0x0 }
   - { offset: 0x10AE75, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom15OtpelfConstantsC22InitalOtelfOptionsDict_WZ', symObjAddr: 0x0, symBinAddr: 0x9560, symSize: 0x140 }
   - { offset: 0x10AFC1, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom15OtpelfConstantsCMa', symObjAddr: 0x160, symBinAddr: 0x96A0, symSize: 0x20 }
-  - { offset: 0x10B208, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A8CheckoutC14sharedInstance33_274503078B357213B151AD568A5A2776LLACvpZ', symObjAddr: 0x4F50, symBinAddr: 0x94840, symSize: 0x0 }
+  - { offset: 0x10B208, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A8CheckoutC14sharedInstance33_274503078B357213B151AD568A5A2776LLACvpZ', symObjAddr: 0x4F50, symBinAddr: 0x959F8, symSize: 0x0 }
   - { offset: 0x10B9CD, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A8CheckoutC14sharedInstance33_274503078B357213B151AD568A5A2776LL_WZ', symObjAddr: 0x60, symBinAddr: 0x9720, symSize: 0x30 }
   - { offset: 0x10BDBE, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A8CheckoutCfETo', symObjAddr: 0x2F70, symBinAddr: 0xC630, symSize: 0x40 }
   - { offset: 0x10BF05, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFSS_Tg5', symObjAddr: 0x35D0, symBinAddr: 0xCC90, symSize: 0x60 }
@@ -252,9 +252,9 @@ relocations:
   - { offset: 0x10F31D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom18RemoteConfigHelperC8getValue10forKeyPath03altiJ0011withDefaultG00l10LiveReloadG008fallBackmD0xSgAA0cD7OptionsO_ALSgAJS2btlFZSS_Tt5g5', symObjAddr: 0x2FB0, symBinAddr: 0xC670, symSize: 0x300 }
   - { offset: 0x10F6A7, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A8CheckoutC22getAppsWhichSupportUpi7handleryySaySDys11AnyHashableVypGGc_tFZTf4nd_n', symObjAddr: 0x4780, symBinAddr: 0xDDD0, symSize: 0x1D0 }
   - { offset: 0x10F7B2, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A8CheckoutC31getAppsWhichSupportUpiRecurring7handleryySaySDys11AnyHashableVypGGc_tFZTf4nd_n', symObjAddr: 0x4950, symBinAddr: 0xDFA0, symSize: 0x1D0 }
-  - { offset: 0x10FA51, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom10LumberjackC14sharedInstance33_2F5BD6C055E88E207A4482B9AE0C395ALLACvpZ', symObjAddr: 0x73E8, symBinAddr: 0x94908, symSize: 0x0 }
-  - { offset: 0x10FD83, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom10LumberjackC11isSetupDone33_2F5BD6C055E88E207A4482B9AE0C395ALLSbvpZ', symObjAddr: 0x73F0, symBinAddr: 0x94910, symSize: 0x0 }
-  - { offset: 0x10FD9E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom18ShortCodeGeneratorV11base62chars33_2F5BD6C055E88E207A4482B9AE0C395ALLSaySJGvpZ', symObjAddr: 0x73F8, symBinAddr: 0x94918, symSize: 0x0 }
+  - { offset: 0x10FA51, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom10LumberjackC14sharedInstance33_2F5BD6C055E88E207A4482B9AE0C395ALLACvpZ', symObjAddr: 0x73E8, symBinAddr: 0x95AC0, symSize: 0x0 }
+  - { offset: 0x10FD83, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom10LumberjackC11isSetupDone33_2F5BD6C055E88E207A4482B9AE0C395ALLSbvpZ', symObjAddr: 0x73F0, symBinAddr: 0x95AC8, symSize: 0x0 }
+  - { offset: 0x10FD9E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom18ShortCodeGeneratorV11base62chars33_2F5BD6C055E88E207A4482B9AE0C395ALLSaySJGvpZ', symObjAddr: 0x73F8, symBinAddr: 0x95AD0, symSize: 0x0 }
   - { offset: 0x10FDAC, size: 0x8, addend: 0x0, symName: '_$sIg_Ieg_TR', symObjAddr: 0x0, symBinAddr: 0xE500, symSize: 0x20 }
   - { offset: 0x10FDC0, size: 0x8, addend: 0x0, symName: '_$sIeg_IyB_TR', symObjAddr: 0x20, symBinAddr: 0xE520, symSize: 0x20 }
   - { offset: 0x10FDD8, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom10LumberjackC14sharedInstance33_2F5BD6C055E88E207A4482B9AE0C395ALL_WZ', symObjAddr: 0x40, symBinAddr: 0xE540, symSize: 0x40 }
@@ -301,7 +301,7 @@ relocations:
   - { offset: 0x113A9C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom10LumberjackC17getSharedInstance17havingMerchantKeyACSS_tFZTf4nd_g', symObjAddr: 0x6AE0, symBinAddr: 0x14E50, symSize: 0x1C0 }
   - { offset: 0x113B32, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom18ShortCodeGeneratorV8tobase626numberSSs5Int64V_tFZTf4nd_n', symObjAddr: 0x6DF0, symBinAddr: 0x150D0, symSize: 0x160 }
   - { offset: 0x113C44, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom18ShortCodeGeneratorV11getUniqueIdySSSdFZTf4nd_n', symObjAddr: 0x6FE0, symBinAddr: 0x152C0, symSize: 0x190 }
-  - { offset: 0x113FA7, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom18TurboPluginManagerC11mercahntKeySSSgvpZ', symObjAddr: 0x13BD8, symBinAddr: 0x97CB0, symSize: 0x0 }
+  - { offset: 0x113FA7, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom18TurboPluginManagerC11mercahntKeySSSgvpZ', symObjAddr: 0x13BD8, symBinAddr: 0x98E70, symSize: 0x0 }
   - { offset: 0x1144BA, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV7_insert2at3key5valueys10_HashTableV6BucketV_xnq_ntFSS_ypTg5', symObjAddr: 0xF80, symBinAddr: 0x16520, symSize: 0x60 }
   - { offset: 0x114535, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV7_insert2at3key5valueys10_HashTableV6BucketV_xnq_ntFs11AnyHashableV_ypTg5', symObjAddr: 0xFE0, symBinAddr: 0x16580, symSize: 0x70 }
   - { offset: 0x1145BB, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV7_insert2at3key5valueys10_HashTableV6BucketV_xnq_ntFSS_s6UInt64VTg5', symObjAddr: 0x1050, symBinAddr: 0x165F0, symSize: 0x50 }
@@ -419,10 +419,10 @@ relocations:
   - { offset: 0x11CB7C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom24ShieldInformationFetcherCfD', symObjAddr: 0xD50, symBinAddr: 0x1F6F0, symSize: 0x30 }
   - { offset: 0x11CCD0, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom24ShieldInformationFetcherC15locationManager_18didUpdateLocationsySo010CLLocationG0C_SaySo0K0CGtFTf4dnn_n', symObjAddr: 0x1330, symBinAddr: 0x1F9B0, symSize: 0x2A0 }
   - { offset: 0x11D05F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom24ShieldInformationFetcherC15locationManager_16didFailWithErrorySo010CLLocationG0C_s0K0_ptFTf4ddn_n', symObjAddr: 0x15D0, symBinAddr: 0x1FC50, symSize: 0xA0 }
-  - { offset: 0x11D26F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom08InternalA0C10lumberjack33_A34FCE121A921F9C733582C316C5B44ALLAA10LumberjackCSgvpZ', symObjAddr: 0x217F0, symBinAddr: 0x95258, symSize: 0x0 }
-  - { offset: 0x11D2C5, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom08InternalA0C15globalUrlStringSSSgvpZ', symObjAddr: 0x8BE98, symBinAddr: 0x97CC0, symSize: 0x0 }
-  - { offset: 0x11D2DF, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom08InternalA0C14sharedInstance33_A34FCE121A921F9C733582C316C5B44ALLACvpZ', symObjAddr: 0x217F8, symBinAddr: 0x95260, symSize: 0x0 }
-  - { offset: 0x11E334, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom08InternalA0C13IS_SDK_CLOSEDSbvpZ', symObjAddr: 0x8BEA8, symBinAddr: 0x97CD0, symSize: 0x0 }
+  - { offset: 0x11D26F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom08InternalA0C10lumberjack33_A34FCE121A921F9C733582C316C5B44ALLAA10LumberjackCSgvpZ', symObjAddr: 0x217F0, symBinAddr: 0x96410, symSize: 0x0 }
+  - { offset: 0x11D2C5, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom08InternalA0C15globalUrlStringSSSgvpZ', symObjAddr: 0x8BE98, symBinAddr: 0x98E80, symSize: 0x0 }
+  - { offset: 0x11D2DF, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom08InternalA0C14sharedInstance33_A34FCE121A921F9C733582C316C5B44ALLACvpZ', symObjAddr: 0x217F8, symBinAddr: 0x96418, symSize: 0x0 }
+  - { offset: 0x11E334, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom08InternalA0C13IS_SDK_CLOSEDSbvpZ', symObjAddr: 0x8BEA8, symBinAddr: 0x98E90, symSize: 0x0 }
   - { offset: 0x11E3E0, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom08InternalA0C14statusCredData4withySS_tF', symObjAddr: 0x0, symBinAddr: 0x1FD50, symSize: 0x290 }
   - { offset: 0x11E783, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom08InternalA0C14sharedInstance33_A34FCE121A921F9C733582C316C5B44ALL_WZ', symObjAddr: 0x4E0, symBinAddr: 0x20230, symSize: 0x30 }
   - { offset: 0x11E89C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom08InternalA0C18getQueryParamValue33_A34FCE121A921F9C733582C316C5B44ALL_7withKeyS2S_SStF', symObjAddr: 0x7A0, symBinAddr: 0x204D0, symSize: 0x830 }
@@ -629,14 +629,14 @@ relocations:
   - { offset: 0x135349, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom20PluginPaymentManagerC0A4Core0cD18CompletionDelegateAadEP13paymentFailed4code16errorDescription4dataySi_SSSDys11AnyHashableVypGtFTW', symObjAddr: 0x5A0, symBinAddr: 0x415B0, symSize: 0x10 }
   - { offset: 0x13535D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom20PluginPaymentManagerC0A4Core0cD18CompletionDelegateAadEP10trackEvent5event14withPropertiesySS_SDys11AnyHashableVypGSgtFTW', symObjAddr: 0x5B0, symBinAddr: 0x415C0, symSize: 0x10 }
   - { offset: 0x13553B, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom18RemoteConfigHelperCACyc33_0281C7800251F66FB19FEAA72CB2D9AALlfc', symObjAddr: 0x0, symBinAddr: 0x42260, symSize: 0x180 }
-  - { offset: 0x13555F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom18RemoteConfigHelperC14sharedInstanceACvpZ', symObjAddr: 0x4328, symBinAddr: 0x97CD8, symSize: 0x0 }
+  - { offset: 0x13555F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom18RemoteConfigHelperC14sharedInstanceACvpZ', symObjAddr: 0x4328, symBinAddr: 0x98E98, symSize: 0x0 }
   - { offset: 0x135678, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom18RemoteConfigHelperC14sharedInstance_WZ', symObjAddr: 0x180, symBinAddr: 0x423E0, symSize: 0x40 }
   - { offset: 0x1356C5, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom18RemoteConfigHelperCMa', symObjAddr: 0x3E0, symBinAddr: 0x42640, symSize: 0x20 }
   - { offset: 0x13578C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom18RemoteConfigHelperCACyc33_0281C7800251F66FB19FEAA72CB2D9AALlfc', symObjAddr: 0x0, symBinAddr: 0x42260, symSize: 0x180 }
   - { offset: 0x135885, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom18RemoteConfigHelperC013latestFetchedD033_0281C7800251F66FB19FEAA72CB2D9AALLSDySSypGvW', symObjAddr: 0x1C0, symBinAddr: 0x42420, symSize: 0x190 }
   - { offset: 0x135948, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom18RemoteConfigHelperC05fetchD0yyySDySSypGSgcFyAA0cD13FetchResponseO_AFtcfU_', symObjAddr: 0x350, symBinAddr: 0x425B0, symSize: 0x60 }
   - { offset: 0x1359E4, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom18RemoteConfigHelperCfD', symObjAddr: 0x3B0, symBinAddr: 0x42610, symSize: 0x30 }
-  - { offset: 0x135B95, size: 0x8, addend: 0x0, symName: '_$sSo18NSNotificationNamea14RazorpayCustomE19reachabilityChangedABvpZ', symObjAddr: 0x9240, symBinAddr: 0x97CE0, symSize: 0x0 }
+  - { offset: 0x135B95, size: 0x8, addend: 0x0, symName: '_$sSo18NSNotificationNamea14RazorpayCustomE19reachabilityChangedABvpZ', symObjAddr: 0x9240, symBinAddr: 0x98EA0, symSize: 0x0 }
   - { offset: 0x135BA3, size: 0x8, addend: 0x0, symName: '_$sSo18NSNotificationNamea14RazorpayCustomE19reachabilityChanged_WZ', symObjAddr: 0x80, symBinAddr: 0x426A0, symSize: 0x30 }
   - { offset: 0x135D9A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom12ReachabilityC19reachabilityChanged33_C76F1F3C5E0AC9E4B4AFA474E141FBCALLyyF', symObjAddr: 0xB0, symBinAddr: 0x426D0, symSize: 0x2E0 }
   - { offset: 0x135E7E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom12ReachabilityC19reachabilityChanged33_C76F1F3C5E0AC9E4B4AFA474E141FBCALLyyFyyScMYccfU_', symObjAddr: 0xE40, symBinAddr: 0x431D0, symSize: 0x80 }
@@ -680,7 +680,7 @@ relocations:
   - { offset: 0x136F8C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom5ToastO4show8withText11forDuration8onWindowySS_ACSo8UIWindowCSgtFZySbcfU0_', symObjAddr: 0x0, symBinAddr: 0x43600, symSize: 0x190 }
   - { offset: 0x136FE1, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom5ToastO4show8withText11forDuration8onWindowySS_ACSo8UIWindowCSgtFZySbcfU0_ySbcfU0_', symObjAddr: 0x190, symBinAddr: 0x43790, symSize: 0x180 }
   - { offset: 0x137102, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom5ToastO4show8withText11forDuration8onWindowySS_ACSo8UIWindowCSgtFZTf4nnnd_n', symObjAddr: 0x350, symBinAddr: 0x43910, symSize: 0x920 }
-  - { offset: 0x137549, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom16BaseRemoteConfigC0C7DefaultSDySSypGvpZ', symObjAddr: 0x13C78, symBinAddr: 0x97CE8, symSize: 0x0 }
+  - { offset: 0x137549, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom16BaseRemoteConfigC0C7DefaultSDySSypGvpZ', symObjAddr: 0x13C78, symBinAddr: 0x98EA8, symSize: 0x0 }
   - { offset: 0x1377EB, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom16BaseRemoteConfigC0C7Default_WZ', symObjAddr: 0x5C0, symBinAddr: 0x44AA0, symSize: 0x2190 }
   - { offset: 0x139677, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom16BaseRemoteConfigCMa', symObjAddr: 0x3550, symBinAddr: 0x47A30, symSize: 0x20 }
   - { offset: 0x1396AF, size: 0x8, addend: 0x0, symName: '_$ss13_parseInteger5ascii5radixq_Sgx_SitSyRzs010FixedWidthB0R_r0_lFSS_SiTg5', symObjAddr: 0x35C0, symBinAddr: 0x47A60, symSize: 0x120 }
@@ -739,201 +739,204 @@ relocations:
   - { offset: 0x13C1F4, size: 0x8, addend: 0x0, symName: '_$s10ObjectiveC8ObjCBoolVIeyBy_SbIegy_TR', symObjAddr: 0x80, symBinAddr: 0x496C0, symSize: 0x20 }
   - { offset: 0x13C208, size: 0x8, addend: 0x0, symName: '_$ss6UInt64VIeyBy_ABIegy_TR', symObjAddr: 0xA0, symBinAddr: 0x496E0, symSize: 0x20 }
   - { offset: 0x13C21C, size: 0x8, addend: 0x0, symName: '_$sSo7NSArrayCIeyBy_SaySDys11AnyHashableVypGGIegg_TR', symObjAddr: 0xC0, symBinAddr: 0x49700, symSize: 0x40 }
-  - { offset: 0x13CA65, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationCMa', symObjAddr: 0x34A0, symBinAddr: 0x4C9D0, symSize: 0x20 }
-  - { offset: 0x13CA84, size: 0x8, addend: 0x0, symName: '_$ss6UInt64VIeyBy_ABIegy_TRTA', symObjAddr: 0x3500, symBinAddr: 0x4CA20, symSize: 0x20 }
-  - { offset: 0x13CAB8, size: 0x8, addend: 0x0, symName: '_$s10ObjectiveC8ObjCBoolVIeyBy_SbIegy_TRTA', symObjAddr: 0x3580, symBinAddr: 0x4CAA0, symSize: 0x20 }
-  - { offset: 0x13CC7C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11initWithKey_11andDelegate18withPaymentWebViewypSgSS_0A4Core0aK18CompletionProtocol_pSo05WKWebM0CtF', symObjAddr: 0x3F0, symBinAddr: 0x49A30, symSize: 0x170 }
-  - { offset: 0x13CDB9, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11initWithKey_11andDelegate18withPaymentWebViewypSgSS_0A4Core0aK18CompletionProtocol_pSo05WKWebM0CtFTo', symObjAddr: 0x560, symBinAddr: 0x49BA0, symSize: 0x100 }
-  - { offset: 0x13CDE8, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11initWithKeyyypSgSSF', symObjAddr: 0x660, symBinAddr: 0x49CA0, symSize: 0xB0 }
-  - { offset: 0x13CE53, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11initWithKeyyypSgSSFTo', symObjAddr: 0x710, symBinAddr: 0x49D50, symSize: 0xD0 }
-  - { offset: 0x13CE67, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC12changeApiKey_16checkoutInstanceySS_ypSgtF', symObjAddr: 0x7E0, symBinAddr: 0x49E20, symSize: 0x20 }
-  - { offset: 0x13CE93, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11payWithCred11withOptions16checkoutInstance0H15SuccessCallback010andFailureM0ySDys11AnyHashableVypG_ypSgyAKcySSctF', symObjAddr: 0x820, symBinAddr: 0x49E60, symSize: 0x10 }
-  - { offset: 0x13CEBA, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11payWithCred11withOptions16checkoutInstance0H15SuccessCallback010andFailureM0ySDys11AnyHashableVypG_ypSgyAKcySSctFTo', symObjAddr: 0x830, symBinAddr: 0x49E70, symSize: 0x110 }
-  - { offset: 0x13CEF0, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC12getCardFlows_16checkoutInstance12withCallbackySDys11AnyHashableVypG_ypSgySbctF', symObjAddr: 0x940, symBinAddr: 0x49F80, symSize: 0x90 }
-  - { offset: 0x13CFB5, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC12getCardFlows_16checkoutInstance12withCallbackySDys11AnyHashableVypG_ypSgySbctFTo', symObjAddr: 0x9D0, symBinAddr: 0x4A010, symSize: 0x160 }
-  - { offset: 0x13D00C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC9submitOtp3otp16checkoutInstanceySS_ypSgtF', symObjAddr: 0xB80, symBinAddr: 0x4A1C0, symSize: 0x80 }
-  - { offset: 0x13D096, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC9submitOtp3otp16checkoutInstanceySS_ypSgtFTo', symObjAddr: 0xC00, symBinAddr: 0x4A240, symSize: 0x110 }
-  - { offset: 0x13D0E5, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC18redirectToBankPage16checkoutInstanceyypSg_tF', symObjAddr: 0xF10, symBinAddr: 0x4A550, symSize: 0x70 }
-  - { offset: 0x13D159, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC18redirectToBankPage16checkoutInstanceyypSg_tFTo', symObjAddr: 0xF80, symBinAddr: 0x4A5C0, symSize: 0xE0 }
-  - { offset: 0x13D19D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC17getPaymentMethods11withOptions16checkoutInstance0H15SuccessCallback010andFailureM0ySDys11AnyHashableVypGSg_ypSgyAKcySSctF', symObjAddr: 0x1060, symBinAddr: 0x4A6A0, symSize: 0x20 }
-  - { offset: 0x13D1B8, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC17getPaymentMethods11withOptions16checkoutInstance0H15SuccessCallback010andFailureM0ySDys11AnyHashableVypGSg_ypSgyAKcySSctFTo', symObjAddr: 0x1080, symBinAddr: 0x4A6C0, symSize: 0x150 }
-  - { offset: 0x13D1EE, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC21getSubscriptionAmount06havingF2Id16checkoutInstance19withSuccessCallback010andFailureN0ySS_ypSgys6UInt64VcySSctF', symObjAddr: 0x11D0, symBinAddr: 0x4A810, symSize: 0x20 }
-  - { offset: 0x13D20F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC21getSubscriptionAmount06havingF2Id16checkoutInstance19withSuccessCallback010andFailureN0ySS_ypSgys6UInt64VcySSctFTo', symObjAddr: 0x11F0, symBinAddr: 0x4A830, symSize: 0x130 }
-  - { offset: 0x13D239, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC21getSubscriptionAmount7options16checkoutInstance19withSuccessCallback010andFailureM0ySDys11AnyHashableVypG_ypSgys6UInt64VcySSctF', symObjAddr: 0x1320, symBinAddr: 0x4A960, symSize: 0x20 }
-  - { offset: 0x13D254, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC21getSubscriptionAmount7options16checkoutInstance19withSuccessCallback010andFailureM0ySDys11AnyHashableVypG_ypSgys6UInt64VcySSctFTo', symObjAddr: 0x1340, symBinAddr: 0x4A980, symSize: 0x140 }
-  - { offset: 0x13D27E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC9authorize_16checkoutInstanceySDys11AnyHashableVypG_ypSgtF', symObjAddr: 0x1480, symBinAddr: 0x4AAC0, symSize: 0x10 }
-  - { offset: 0x13D292, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC04openC04dict16checkoutInstanceySDys11AnyHashableVypG_ypSgtF', symObjAddr: 0x14B0, symBinAddr: 0x4AAF0, symSize: 0x10 }
-  - { offset: 0x13D2A6, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC20userCancelledPayment16checkoutInstanceyypSg_tF', symObjAddr: 0x15A0, symBinAddr: 0x4ABE0, symSize: 0x20 }
-  - { offset: 0x13D2BA, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC9decodeURI4from16checkoutInstanceySS_ypSgtF', symObjAddr: 0x15E0, symBinAddr: 0x4AC20, symSize: 0x20 }
-  - { offset: 0x13D2D5, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC9decodeURI4from16checkoutInstanceySS_ypSgtFTo', symObjAddr: 0x1600, symBinAddr: 0x4AC40, symSize: 0x80 }
-  - { offset: 0x13D2FF, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC5close16checkoutInstanceyypSg_tF', symObjAddr: 0x1680, symBinAddr: 0x4ACC0, symSize: 0x20 }
-  - { offset: 0x13D313, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC7webView_9didCommit16checkoutInstanceySo05WKWebF0C_So12WKNavigationCSgypSgtF', symObjAddr: 0x1750, symBinAddr: 0x4AD90, symSize: 0x20 }
-  - { offset: 0x13D32E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC7webView_9didCommit16checkoutInstanceySo05WKWebF0C_So12WKNavigationCSgypSgtFTo', symObjAddr: 0x1770, symBinAddr: 0x4ADB0, symSize: 0xD0 }
-  - { offset: 0x13D358, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC7webView_28didFailProvisionalNavigation9withError16checkoutInstanceySo05WKWebF0C_So12WKNavigationCSgs0L0_pypSgtF', symObjAddr: 0x1840, symBinAddr: 0x4AE80, symSize: 0x20 }
-  - { offset: 0x13D373, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC7webView_28didFailProvisionalNavigation9withError16checkoutInstanceySo05WKWebF0C_So12WKNavigationCSgs0L0_pypSgtFTo', symObjAddr: 0x1860, symBinAddr: 0x4AEA0, symSize: 0xE0 }
-  - { offset: 0x13D39D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC7webView_7didFail9withError16checkoutInstanceySo05WKWebF0C_So12WKNavigationCSgs0J0_pypSgtF', symObjAddr: 0x1940, symBinAddr: 0x4AF80, symSize: 0x20 }
-  - { offset: 0x13D3B8, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC7webView_7didFail9withError16checkoutInstanceySo05WKWebF0C_So12WKNavigationCSgs0J0_pypSgtFTo', symObjAddr: 0x1960, symBinAddr: 0x4AFA0, symSize: 0xE0 }
-  - { offset: 0x13D3E2, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC7webView_9didFinish16checkoutInstanceySo05WKWebF0C_So12WKNavigationCSgypSgtF', symObjAddr: 0x1A40, symBinAddr: 0x4B080, symSize: 0x20 }
-  - { offset: 0x13D3FD, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC7webView_9didFinish16checkoutInstanceySo05WKWebF0C_So12WKNavigationCSgypSgtFTo', symObjAddr: 0x1A60, symBinAddr: 0x4B0A0, symSize: 0xD0 }
-  - { offset: 0x13D427, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC14getCardNetwork04fromF6Number16checkoutInstanceS2S_ypSgtF', symObjAddr: 0x1B30, symBinAddr: 0x4B170, symSize: 0x10 }
-  - { offset: 0x13D442, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC14getCardNetwork04fromF6Number16checkoutInstanceS2S_ypSgtFTo', symObjAddr: 0x1B40, symBinAddr: 0x4B180, symSize: 0xD0 }
-  - { offset: 0x13D478, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC22getAppsWhichSupportUpi7handleryySaySDys11AnyHashableVypGGc_tF', symObjAddr: 0x1C10, symBinAddr: 0x4B250, symSize: 0x10 }
-  - { offset: 0x13D48C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC31getAppsWhichSupportUpiRecurring7handleryySaySDys11AnyHashableVypGGc_tF', symObjAddr: 0x1C40, symBinAddr: 0x4B280, symSize: 0x10 }
-  - { offset: 0x13D4A0, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11isCardValid_16checkoutInstanceSbSS_ypSgtF', symObjAddr: 0x1CF0, symBinAddr: 0x4B330, symSize: 0x10 }
-  - { offset: 0x13D4CF, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11isCardValid_16checkoutInstanceSbSS_ypSgtFTo', symObjAddr: 0x1D00, symBinAddr: 0x4B340, symSize: 0xB0 }
-  - { offset: 0x13D4F9, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC10isValidVpa_16checkoutInstance19withSuccessCallback0J7FailureySS_ypSgySDys11AnyHashableVypGcyAKctF', symObjAddr: 0x1DB0, symBinAddr: 0x4B3F0, symSize: 0x20 }
-  - { offset: 0x13D514, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC10isValidVpa_16checkoutInstance19withSuccessCallback0J7FailureySS_ypSgySDys11AnyHashableVypGcyAKctFTo', symObjAddr: 0x1DD0, symBinAddr: 0x4B410, symSize: 0x130 }
-  - { offset: 0x13D53E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC20getCardNetworkLength02ofG016checkoutInstanceSiSS_ypSgtF', symObjAddr: 0x1F00, symBinAddr: 0x4B540, symSize: 0x10 }
-  - { offset: 0x13D559, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC20getCardNetworkLength02ofG016checkoutInstanceSiSS_ypSgtFTo', symObjAddr: 0x1F10, symBinAddr: 0x4B550, symSize: 0xB0 }
-  - { offset: 0x13D583, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC28payWithExternalPaymentEntity7options03arrgH8Entities16checkoutInstanceySDys11AnyHashableVypG_Say0A4Core06PluginH8Delegate_pGypSgtF', symObjAddr: 0x2270, symBinAddr: 0x4B8B0, symSize: 0x20 }
-  - { offset: 0x13D59E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC28payWithExternalPaymentEntity7options03arrgH8Entities16checkoutInstanceySDys11AnyHashableVypG_Say0A4Core06PluginH8Delegate_pGypSgtFTo', symObjAddr: 0x2290, symBinAddr: 0x4B8D0, symSize: 0xE0 }
-  - { offset: 0x13D5C8, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC10publishUri4with16checkoutInstanceySS_ypSgtF', symObjAddr: 0x2370, symBinAddr: 0x4B9B0, symSize: 0x20 }
-  - { offset: 0x13D62D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC10setWebViewyySo05WKWebG0CKFTo', symObjAddr: 0x2480, symBinAddr: 0x4BAA0, symSize: 0xB0 }
-  - { offset: 0x13D6D8, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11setDelegateyy0A4Core0A25PaymentCompletionProtocol_pKFTo', symObjAddr: 0x2570, symBinAddr: 0x4BB50, symSize: 0xB0 }
-  - { offset: 0x13D74E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationCACycfC', symObjAddr: 0x2620, symBinAddr: 0x4BC00, symSize: 0x20 }
-  - { offset: 0x13D762, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationCACycfc', symObjAddr: 0x2640, symBinAddr: 0x4BC20, symSize: 0x30 }
-  - { offset: 0x13D795, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationCACycfcTo', symObjAddr: 0x2670, symBinAddr: 0x4BC50, symSize: 0x30 }
-  - { offset: 0x13D7CA, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationCfD', symObjAddr: 0x26A0, symBinAddr: 0x4BC80, symSize: 0x30 }
-  - { offset: 0x13D82C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11payWithCred11withOptions16checkoutInstance0H15SuccessCallback010andFailureM0ySDys11AnyHashableVypG_ypSgyAKcySSctFTf4nndnd_n', symObjAddr: 0x2710, symBinAddr: 0x4BCB0, symSize: 0xC0 }
-  - { offset: 0x13D8DD, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC9authorize_16checkoutInstanceySDys11AnyHashableVypG_ypSgtFTf4nnd_n', symObjAddr: 0x2910, symBinAddr: 0x4BE40, symSize: 0x110 }
-  - { offset: 0x13D9FE, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC04openC04dict16checkoutInstanceySDys11AnyHashableVypG_ypSgtFTf4nnd_n', symObjAddr: 0x2A20, symBinAddr: 0x4BF50, symSize: 0xB0 }
-  - { offset: 0x13DAED, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC14getCardNetwork04fromF6Number16checkoutInstanceS2S_ypSgtFTf4nnd_n', symObjAddr: 0x2C20, symBinAddr: 0x4C150, symSize: 0xD0 }
-  - { offset: 0x13DC4D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC22getAppsWhichSupportUpi7handleryySaySDys11AnyHashableVypGGc_tFTf4nd_n', symObjAddr: 0x2CF0, symBinAddr: 0x4C220, symSize: 0x1D0 }
-  - { offset: 0x13DD58, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC31getAppsWhichSupportUpiRecurring7handleryySaySDys11AnyHashableVypGGc_tFTf4nd_n', symObjAddr: 0x2EC0, symBinAddr: 0x4C3F0, symSize: 0x1D0 }
-  - { offset: 0x13DE8A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11isCardValid_16checkoutInstanceSbSS_ypSgtFTf4nnd_n', symObjAddr: 0x3090, symBinAddr: 0x4C5C0, symSize: 0xB0 }
-  - { offset: 0x13DF82, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC20getCardNetworkLength02ofG016checkoutInstanceSiSS_ypSgtFTf4nnd_n', symObjAddr: 0x3210, symBinAddr: 0x4C740, symSize: 0x1E0 }
-  - { offset: 0x13E1DF, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC14sharedInstance33_5F54B00A656483404F259221BFC088B6LLACvpZ', symObjAddr: 0x690, symBinAddr: 0x95CC0, symSize: 0x0 }
-  - { offset: 0x13E37B, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC14sharedInstance33_5F54B00A656483404F259221BFC088B6LL_WZ', symObjAddr: 0x20, symBinAddr: 0x4CC70, symSize: 0x30 }
-  - { offset: 0x13E3BC, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfCfETo', symObjAddr: 0x420, symBinAddr: 0x4D070, symSize: 0x10 }
-  - { offset: 0x13E3F8, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfCMa', symObjAddr: 0x5C0, symBinAddr: 0x4D210, symSize: 0x20 }
-  - { offset: 0x13E4BB, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC15initWithWebView_14andMerchantKeyySo05WKWebG0C_SSSgtFZ', symObjAddr: 0x0, symBinAddr: 0x4CC50, symSize: 0x10 }
-  - { offset: 0x13E4FD, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC17getSharedInstanceACSgyFZ', symObjAddr: 0x10, symBinAddr: 0x4CC60, symSize: 0x10 }
-  - { offset: 0x13E52C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfCACyc33_5F54B00A656483404F259221BFC088B6LlfcTo', symObjAddr: 0x50, symBinAddr: 0x4CCA0, symSize: 0x30 }
-  - { offset: 0x13E5A2, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC15initWithWebView_14andMerchantKeyySo05WKWebG0C_SSSgtFZTo', symObjAddr: 0x80, symBinAddr: 0x4CCD0, symSize: 0x60 }
-  - { offset: 0x13E5F3, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC17getSharedInstanceACSgyFZTo', symObjAddr: 0xE0, symBinAddr: 0x4CD30, symSize: 0x20 }
-  - { offset: 0x13E634, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC14setPaymentDatayySDys11AnyHashableVypGF', symObjAddr: 0x100, symBinAddr: 0x4CD50, symSize: 0x90 }
-  - { offset: 0x13E6BD, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC14setPaymentDatayySDys11AnyHashableVypGFTo', symObjAddr: 0x190, symBinAddr: 0x4CDE0, symSize: 0xE0 }
-  - { offset: 0x13E70F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC7webView9didFinishySo12WKNavigationCSg_tKF', symObjAddr: 0x270, symBinAddr: 0x4CEC0, symSize: 0x10 }
-  - { offset: 0x13E745, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC7webView9didFinishySo12WKNavigationCSg_tKFTo', symObjAddr: 0x280, symBinAddr: 0x4CED0, symSize: 0x60 }
-  - { offset: 0x13E77C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC5closeyyF', symObjAddr: 0x2E0, symBinAddr: 0x4CF30, symSize: 0x80 }
-  - { offset: 0x13E7F6, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC5closeyyFTo', symObjAddr: 0x360, symBinAddr: 0x4CFB0, symSize: 0x90 }
-  - { offset: 0x13E83E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfCfD', symObjAddr: 0x3F0, symBinAddr: 0x4D040, symSize: 0x30 }
-  - { offset: 0x13E875, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC17getSharedInstanceACSgyFZTf4d_n', symObjAddr: 0x430, symBinAddr: 0x4D080, symSize: 0xB0 }
-  - { offset: 0x13E8D9, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC7webView9didFinishySo12WKNavigationCSg_tKFTf4dd_n', symObjAddr: 0x4E0, symBinAddr: 0x4D130, symSize: 0xE0 }
-  - { offset: 0x13EAB0, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom12RemoteConfigC14sharedInstanceACvpZ', symObjAddr: 0xB2C0, symBinAddr: 0x97CF0, symSize: 0x0 }
-  - { offset: 0x13EC57, size: 0x8, addend: 0x0, symName: '_$sSD14RazorpayCustomE5merge5otherySDyxq_G_tFSS_ypTg5', symObjAddr: 0x270, symBinAddr: 0x4D520, symSize: 0x460 }
-  - { offset: 0x13EE16, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom12RemoteConfigC14sharedInstance_WZ', symObjAddr: 0x6D0, symBinAddr: 0x4D980, symSize: 0x40 }
-  - { offset: 0x13EE5C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom12RemoteConfigCfE', symObjAddr: 0x710, symBinAddr: 0x4D9C0, symSize: 0x20 }
-  - { offset: 0x13EEC2, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom12RemoteConfigCMa', symObjAddr: 0x780, symBinAddr: 0x4DA30, symSize: 0x20 }
-  - { offset: 0x13F047, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOwet', symObjAddr: 0x1F90, symBinAddr: 0x4F140, symSize: 0x80 }
-  - { offset: 0x13F05B, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOwst', symObjAddr: 0x2010, symBinAddr: 0x4F1C0, symSize: 0xD0 }
-  - { offset: 0x13F06F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOMa', symObjAddr: 0x2110, symBinAddr: 0x4F290, symSize: 0x10 }
-  - { offset: 0x13F083, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOSHAASQWb', symObjAddr: 0x2120, symBinAddr: 0x4F2A0, symSize: 0x10 }
-  - { offset: 0x13F097, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOACSQAAWl', symObjAddr: 0x2130, symBinAddr: 0x4F2B0, symSize: 0x30 }
-  - { offset: 0x13F0EB, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0xD0, symBinAddr: 0x4D380, symSize: 0x70 }
-  - { offset: 0x13F1BE, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOSHAASH9hashValueSivgTW', symObjAddr: 0x140, symBinAddr: 0x4D3F0, symSize: 0x50 }
-  - { offset: 0x13F23C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x190, symBinAddr: 0x4D440, symSize: 0x30 }
-  - { offset: 0x13F28E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0x1C0, symBinAddr: 0x4D470, symSize: 0x50 }
-  - { offset: 0x13F47F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsO8rawValueSSvg', symObjAddr: 0x0, symBinAddr: 0x4D2B0, symSize: 0xD0 }
-  - { offset: 0x13F4D4, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOSYAASY8rawValuexSg03RawG0Qz_tcfCTW', symObjAddr: 0x210, symBinAddr: 0x4D4C0, symSize: 0x30 }
-  - { offset: 0x13F4FD, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOSYAASY8rawValue03RawG0QzvgTW', symObjAddr: 0x240, symBinAddr: 0x4D4F0, symSize: 0x30 }
-  - { offset: 0x13F57B, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom12RemoteConfigCfD', symObjAddr: 0x730, symBinAddr: 0x4D9E0, symSize: 0x50 }
-  - { offset: 0x13F620, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom12RemoteConfigCACyc33_2F95BA117359203479CB879708FEAED5LlfcTf4g_n', symObjAddr: 0x7A0, symBinAddr: 0x4DA50, symSize: 0x16F0 }
-  - { offset: 0x1406D7, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsO8rawValueACSgSS_tcfCTf4nd_n', symObjAddr: 0x2160, symBinAddr: 0x4F2E0, symSize: 0x6F }
-  - { offset: 0x140894, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC11isSetupDone33_A8433C8C2FE2435E95013CF9655FF18FLLSbvpZ', symObjAddr: 0x19B8, symBinAddr: 0x95DE8, symSize: 0x0 }
-  - { offset: 0x1408AE, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC14sharedInstance33_A8433C8C2FE2435E95013CF9655FF18FLLACvpZ', symObjAddr: 0x19C0, symBinAddr: 0x95DF0, symSize: 0x0 }
-  - { offset: 0x140A17, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC19networkConnectivityAA08InternetF0OvpZ', symObjAddr: 0x19C8, symBinAddr: 0x95DF8, symSize: 0x0 }
-  - { offset: 0x140A25, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC14sharedInstance33_A8433C8C2FE2435E95013CF9655FF18FLL_WZ', symObjAddr: 0x0, symBinAddr: 0x4F350, symSize: 0x40 }
-  - { offset: 0x140C68, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilCMa', symObjAddr: 0x11F0, symBinAddr: 0x50540, symSize: 0x20 }
-  - { offset: 0x140CDF, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom7CXErrorVWOr', symObjAddr: 0x18F0, symBinAddr: 0x50BB0, symSize: 0x40 }
-  - { offset: 0x140CF3, size: 0x8, addend: 0x0, symName: '_$sSS_yptWOh', symObjAddr: 0x1930, symBinAddr: 0x50BF0, symSize: 0x30 }
-  - { offset: 0x140F3A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilCACyc33_A8433C8C2FE2435E95013CF9655FF18FLlfc', symObjAddr: 0x40, symBinAddr: 0x4F390, symSize: 0xB0 }
-  - { offset: 0x140FD2, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC10trackEvent_16havingProperties02cxH0yAA0cF0O_SDys11AnyHashableVypGAKSgtF', symObjAddr: 0xF0, symBinAddr: 0x4F440, symSize: 0x120 }
-  - { offset: 0x1410B5, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC11addProperty9havingKey03andF0ySS_AA0cF0CtF', symObjAddr: 0x210, symBinAddr: 0x4F560, symSize: 0xA0 }
-  - { offset: 0x141148, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC11reportError_11havingLevel03andB7Message11errorSourceySo7NSErrorCSg_AA0afH0OS2SSgtF', symObjAddr: 0x2B0, symBinAddr: 0x4F600, symSize: 0xA50 }
-  - { offset: 0x141615, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC34removeReachabilityNotifierObserveryyF', symObjAddr: 0xD00, symBinAddr: 0x50050, symSize: 0x160 }
-  - { offset: 0x141717, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC31setReachabilityNotifierObserveryyF', symObjAddr: 0xE60, symBinAddr: 0x501B0, symSize: 0x220 }
-  - { offset: 0x141852, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC19reachabilityChanged4notey10Foundation12NotificationV_tF', symObjAddr: 0x1080, symBinAddr: 0x503D0, symSize: 0xC0 }
-  - { offset: 0x1418D0, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC19reachabilityChanged4notey10Foundation12NotificationV_tFTo', symObjAddr: 0x1140, symBinAddr: 0x50490, symSize: 0x80 }
-  - { offset: 0x1418F8, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilCfD', symObjAddr: 0x11C0, symBinAddr: 0x50510, symSize: 0x30 }
-  - { offset: 0x141967, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14CXAvailabilityC21generateCXErrorObject7cxErrorSDySSypGAA0eF8Protocol_p_tFTf4en_nAA0E0V_TB5Tf4nd_n', symObjAddr: 0x1270, symBinAddr: 0x50560, symSize: 0x610 }
-  - { offset: 0x141ECF, size: 0x8, addend: 0x0, symName: '_$sSo8UIDeviceC14RazorpayCustomE9modelNameSSvgTf4d_n', symObjAddr: 0x0, symBinAddr: 0x50C20, symSize: 0x1C10 }
-  - { offset: 0x141F80, size: 0x8, addend: 0x0, symName: '_$sSo8UIDeviceC14RazorpayCustomE9modelNameSSvgTf4d_n', symObjAddr: 0x0, symBinAddr: 0x50C20, symSize: 0x1C10 }
-  - { offset: 0x142A23, size: 0x8, addend: 0x0, symName: '_$sSSSg5label_yp5valuetWOc', symObjAddr: 0x1C70, symBinAddr: 0x52850, symSize: 0x40 }
-  - { offset: 0x142A37, size: 0x8, addend: 0x0, symName: '_$sSSSg5label_yp5valuetWOh', symObjAddr: 0x1CB0, symBinAddr: 0x52890, symSize: 0x2C }
-  - { offset: 0x142CB6, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC14sharedInstance33_87F5FB9514EBE761F2543FAB15BA4630LLACvpZ', symObjAddr: 0x35E8, symBinAddr: 0x95FC0, symSize: 0x0 }
-  - { offset: 0x142EFA, size: 0x8, addend: 0x0, symName: '_$sypSgs5Error_pSgIeghng_yXlSgSo7NSErrorCSgIeyBhyy_TR', symObjAddr: 0x0, symBinAddr: 0x528C0, symSize: 0xA0 }
-  - { offset: 0x142F9C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC14sharedInstance33_87F5FB9514EBE761F2543FAB15BA4630LL_WZ', symObjAddr: 0x830, symBinAddr: 0x530F0, symSize: 0x30 }
-  - { offset: 0x14308A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfCfETo', symObjAddr: 0x23E0, symBinAddr: 0x54CA0, symSize: 0x80 }
-  - { offset: 0x1430B9, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfCMa', symObjAddr: 0x2460, symBinAddr: 0x54D20, symSize: 0x20 }
-  - { offset: 0x1430CD, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC27StorageBridgeMessageHandler33_87F5FB9514EBE761F2543FAB15BA4630LLCMa', symObjAddr: 0x2480, symBinAddr: 0x54D40, symSize: 0x20 }
-  - { offset: 0x1430E1, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC26OtpElfBridgeMessageHandler33_87F5FB9514EBE761F2543FAB15BA4630LLCMa', symObjAddr: 0x24A0, symBinAddr: 0x54D60, symSize: 0x20 }
-  - { offset: 0x14328C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC7webView9didFinishySo12WKNavigationCSg_tFyypSg_s5Error_pSgtYbScMYccfU_TA', symObjAddr: 0x3500, symBinAddr: 0x55D40, symSize: 0x10 }
-  - { offset: 0x1432A0, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x3510, symBinAddr: 0x55D50, symSize: 0x20 }
-  - { offset: 0x1432B4, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x3530, symBinAddr: 0x55D70, symSize: 0x10 }
-  - { offset: 0x143634, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC14setPaymentDatayySDys11AnyHashableVypGF', symObjAddr: 0xA0, symBinAddr: 0x52960, symSize: 0x420 }
-  - { offset: 0x1438CB, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC5closeyyF', symObjAddr: 0x4C0, symBinAddr: 0x52D80, symSize: 0x1D0 }
-  - { offset: 0x143970, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC27StorageBridgeMessageHandler33_87F5FB9514EBE761F2543FAB15BA4630LLC21userContentController_10didReceiveySo06WKUserpQ0C_So08WKScriptG0CtFTo', symObjAddr: 0x690, symBinAddr: 0x52F50, symSize: 0x60 }
-  - { offset: 0x1439A1, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC26OtpElfBridgeMessageHandler33_87F5FB9514EBE761F2543FAB15BA4630LLC21userContentController_10didReceiveySo06WKUserqR0C_So08WKScriptH0CtFTo', symObjAddr: 0x730, symBinAddr: 0x52FF0, symSize: 0x60 }
-  - { offset: 0x143A27, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfCACyc33_87F5FB9514EBE761F2543FAB15BA4630Llfc', symObjAddr: 0x860, symBinAddr: 0x53120, symSize: 0x2A0 }
-  - { offset: 0x143AC2, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfCACyc33_87F5FB9514EBE761F2543FAB15BA4630LlfcTo', symObjAddr: 0xB00, symBinAddr: 0x533C0, symSize: 0x20 }
-  - { offset: 0x143AD6, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC12setupBridges33_87F5FB9514EBE761F2543FAB15BA4630LLyyF', symObjAddr: 0xB20, symBinAddr: 0x533E0, symSize: 0x210 }
-  - { offset: 0x143B83, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC7webView9didFinishySo12WKNavigationCSg_tFyypSg_s5Error_pSgtYbScMYccfU_', symObjAddr: 0xD30, symBinAddr: 0x535F0, symSize: 0x2F0 }
-  - { offset: 0x143D20, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC14getSDKMetadata33_87F5FB9514EBE761F2543FAB15BA4630LLyyF', symObjAddr: 0x1020, symBinAddr: 0x538E0, symSize: 0x1390 }
-  - { offset: 0x144333, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfCfD', symObjAddr: 0x23B0, symBinAddr: 0x54C70, symSize: 0x30 }
-  - { offset: 0x144356, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC15initWithWebView_14andMerchantKeyySo05WKWebH0C_SSSgtFZTf4nnd_n', symObjAddr: 0x24C0, symBinAddr: 0x54D80, symSize: 0x430 }
-  - { offset: 0x1444D4, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC7webView9didFinishySo12WKNavigationCSg_tFTf4dn_n', symObjAddr: 0x28F0, symBinAddr: 0x551B0, symSize: 0x1A0 }
-  - { offset: 0x1445DC, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC27StorageBridgeMessageHandler33_87F5FB9514EBE761F2543FAB15BA4630LLC21userContentController_10didReceiveySo06WKUserpQ0C_So08WKScriptG0CtFTf4dnd_n', symObjAddr: 0x2A90, symBinAddr: 0x55350, symSize: 0x4E0 }
-  - { offset: 0x144926, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC26OtpElfBridgeMessageHandler33_87F5FB9514EBE761F2543FAB15BA4630LLC21userContentController_10didReceiveySo06WKUserqR0C_So08WKScriptH0CtFTf4dnd_n', symObjAddr: 0x2F70, symBinAddr: 0x55830, symSize: 0x4E0 }
-  - { offset: 0x144DA5, size: 0x8, addend: 0x0, symName: '_$ss17_dictionaryUpCastySDyq0_q1_GSDyxq_GSHRzSHR0_r2_lFSS_yps11AnyHashableVypTg5', symObjAddr: 0x10, symBinAddr: 0x55DB0, symSize: 0x500 }
-  - { offset: 0x14502F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom20ReachabilityObserverCMa', symObjAddr: 0x1850, symBinAddr: 0x575F0, symSize: 0x20 }
-  - { offset: 0x145075, size: 0x8, addend: 0x0, symName: '_$ss17_dictionaryUpCastySDyq0_q1_GSDyxq_GSHRzSHR0_r2_lFSS_yps11AnyHashableVypTg5', symObjAddr: 0x10, symBinAddr: 0x55DB0, symSize: 0x500 }
-  - { offset: 0x14519E, size: 0x8, addend: 0x0, symName: '_$ss17_dictionaryUpCastySDyq0_q1_GSDyxq_GSHRzSHR0_r2_lFSS_S2SypTg5', symObjAddr: 0x510, symBinAddr: 0x562B0, symSize: 0x450 }
-  - { offset: 0x1452DD, size: 0x8, addend: 0x0, symName: '_$ss17_dictionaryUpCastySDyq0_q1_GSDyxq_GSHRzSHR0_r2_lFSS_SSSgSSypTg5', symObjAddr: 0x960, symBinAddr: 0x56700, symSize: 0x460 }
-  - { offset: 0x145416, size: 0x8, addend: 0x0, symName: '_$ss17_dictionaryUpCastySDyq0_q1_GSDyxq_GSHRzSHR0_r2_lFs11AnyHashableV_A2EypTg5', symObjAddr: 0xDC0, symBinAddr: 0x56B60, symSize: 0x4F0 }
-  - { offset: 0x145596, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom20ReachabilityObserverCACycfc', symObjAddr: 0x12B0, symBinAddr: 0x57050, symSize: 0xD0 }
-  - { offset: 0x145672, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom20ReachabilityObserverC21startReceivingUpdatesyyKF', symObjAddr: 0x1380, symBinAddr: 0x57120, symSize: 0x140 }
-  - { offset: 0x145722, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom20ReachabilityObserverC21broadcastNotification12notificationy10Foundation0F0V_tF', symObjAddr: 0x14C0, symBinAddr: 0x57260, symSize: 0x170 }
-  - { offset: 0x14580C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom20ReachabilityObserverC21broadcastNotification12notificationy10Foundation0F0V_tFTo', symObjAddr: 0x1630, symBinAddr: 0x573D0, symSize: 0x80 }
-  - { offset: 0x145825, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom20ReachabilityObserverC20stopReceivingUpdatesyyF', symObjAddr: 0x16B0, symBinAddr: 0x57450, symSize: 0x160 }
-  - { offset: 0x1458B9, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom20ReachabilityObserverCfD', symObjAddr: 0x1810, symBinAddr: 0x575B0, symSize: 0x40 }
-  - { offset: 0x145A52, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14CXAvailabilityC14sharedInstanceACvpZ', symObjAddr: 0x3470, symBinAddr: 0x97CF8, symSize: 0x0 }
-  - { offset: 0x145AAF, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14CXAvailabilityC14sharedInstance_WZ', symObjAddr: 0x0, symBinAddr: 0x57610, symSize: 0x30 }
-  - { offset: 0x145AD7, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14CXAvailabilityCMa', symObjAddr: 0x60, symBinAddr: 0x57650, symSize: 0x20 }
-  - { offset: 0x145AEB, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom7CXErrorVwxx', symObjAddr: 0x1C0, symBinAddr: 0x57690, symSize: 0x30 }
-  - { offset: 0x145AFF, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom7CXErrorVwcp', symObjAddr: 0x1F0, symBinAddr: 0x576C0, symSize: 0x70 }
-  - { offset: 0x145B13, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom7CXErrorVwca', symObjAddr: 0x260, symBinAddr: 0x57730, symSize: 0x90 }
-  - { offset: 0x145B27, size: 0x8, addend: 0x0, symName: ___swift_memcpy48_8, symObjAddr: 0x2F0, symBinAddr: 0x577C0, symSize: 0x20 }
-  - { offset: 0x145B3B, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom7CXErrorVwta', symObjAddr: 0x310, symBinAddr: 0x577E0, symSize: 0x60 }
-  - { offset: 0x145B4F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom7CXErrorVwet', symObjAddr: 0x370, symBinAddr: 0x57840, symSize: 0x40 }
-  - { offset: 0x145B63, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom7CXErrorVwst', symObjAddr: 0x3B0, symBinAddr: 0x57880, symSize: 0x50 }
-  - { offset: 0x145B77, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom7CXErrorVMa', symObjAddr: 0x400, symBinAddr: 0x578D0, symSize: 0xA }
-  - { offset: 0x145BAE, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14CXAvailabilityCfd', symObjAddr: 0x30, symBinAddr: 0x57640, symSize: 0x10 }
-  - { offset: 0x145D40, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOMa', symObjAddr: 0x1A0, symBinAddr: 0x578E0, symSize: 0x10 }
-  - { offset: 0x145D54, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOwet', symObjAddr: 0x1B0, symBinAddr: 0x578F0, symSize: 0x80 }
-  - { offset: 0x145D68, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOwst', symObjAddr: 0x230, symBinAddr: 0x57970, symSize: 0xD0 }
-  - { offset: 0x145D7C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOMa', symObjAddr: 0x310, symBinAddr: 0x57A40, symSize: 0x10 }
-  - { offset: 0x145EA7, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOSHAASQWb', symObjAddr: 0x14A0, symBinAddr: 0x58A90, symSize: 0x10 }
-  - { offset: 0x145EBB, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOACSQAAWl', symObjAddr: 0x14B0, symBinAddr: 0x58AA0, symSize: 0x30 }
-  - { offset: 0x145ECF, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOSHAASQWb', symObjAddr: 0x14E0, symBinAddr: 0x58AD0, symSize: 0x10 }
-  - { offset: 0x145EE3, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOACSQAAWl', symObjAddr: 0x14F0, symBinAddr: 0x58AE0, symSize: 0x30 }
-  - { offset: 0x145F14, size: 0x8, addend: 0x0, symName: '_$ss2eeoiySbx_xtSYRzSQ8RawValueRpzlF14RazorpayCustom0D10ErrorLevelO_Tg5', symObjAddr: 0x400, symBinAddr: 0x57A50, symSize: 0xE0 }
-  - { offset: 0x145FE6, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x1070, symBinAddr: 0x586C0, symSize: 0x10 }
-  - { offset: 0x14604D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOSHAASH9hashValueSivgTW', symObjAddr: 0x1080, symBinAddr: 0x586D0, symSize: 0x90 }
-  - { offset: 0x1460F8, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x1110, symBinAddr: 0x58760, symSize: 0x70 }
-  - { offset: 0x14615F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0x1180, symBinAddr: 0x587D0, symSize: 0x90 }
-  - { offset: 0x1461FD, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x1300, symBinAddr: 0x588F0, symSize: 0x70 }
-  - { offset: 0x1462D0, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOSHAASH9hashValueSivgTW', symObjAddr: 0x1370, symBinAddr: 0x58960, symSize: 0x50 }
-  - { offset: 0x14634E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x13C0, symBinAddr: 0x589B0, symSize: 0x30 }
-  - { offset: 0x1463A0, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0x13F0, symBinAddr: 0x589E0, symSize: 0x50 }
-  - { offset: 0x146430, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventO8rawValueSSvg', symObjAddr: 0x4E0, symBinAddr: 0x57B30, symSize: 0xB90 }
-  - { offset: 0x146CFA, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOSYAASY8rawValuexSg03RawF0Qz_tcfCTW', symObjAddr: 0x1210, symBinAddr: 0x58860, symSize: 0x30 }
-  - { offset: 0x146D23, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOSYAASY8rawValue03RawF0QzvgTW', symObjAddr: 0x1240, symBinAddr: 0x58890, symSize: 0x60 }
-  - { offset: 0x146D66, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOSYAASY8rawValuexSg03RawF0Qz_tcfCTW', symObjAddr: 0x1440, symBinAddr: 0x58A30, symSize: 0x30 }
-  - { offset: 0x146D8F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOSYAASY8rawValue03RawF0QzvgTW', symObjAddr: 0x1470, symBinAddr: 0x58A60, symSize: 0x30 }
-  - { offset: 0x146DA9, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelO8rawValueACSgSS_tcfCTf4nd_n', symObjAddr: 0x1520, symBinAddr: 0x58B10, symSize: 0x70 }
-  - { offset: 0x146DE0, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventO8rawValueACSgSS_tcfCTf4nd_n', symObjAddr: 0x15D0, symBinAddr: 0x58B80, symSize: 0x590 }
-  - { offset: 0x146F70, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC5track_16havingProperties6sentByySS_SDySSypGSgAA16RzpWebViewBridgeOtF', symObjAddr: 0x0, symBinAddr: 0x59130, symSize: 0x240 }
-  - { offset: 0x14706B, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC5track_16havingProperties6sentByySS_SDySSypGSgAA16RzpWebViewBridgeOtF', symObjAddr: 0x0, symBinAddr: 0x59130, symSize: 0x240 }
-  - { offset: 0x1473F2, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19ResourceBundleClass33_8326A1FAEC957F421AE3D23D843F7354LLCMa', symObjAddr: 0x20, symBinAddr: 0x59370, symSize: 0x14 }
+  - { offset: 0x13CA60, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationCfETo', symObjAddr: 0x2A50, symBinAddr: 0x4BF10, symSize: 0x30 }
+  - { offset: 0x13CAD6, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationCMa', symObjAddr: 0x3850, symBinAddr: 0x4CC60, symSize: 0x20 }
+  - { offset: 0x13CAF5, size: 0x8, addend: 0x0, symName: '_$ss6UInt64VIeyBy_ABIegy_TRTA', symObjAddr: 0x38B0, symBinAddr: 0x4CCB0, symSize: 0x20 }
+  - { offset: 0x13CB29, size: 0x8, addend: 0x0, symName: '_$s10ObjectiveC8ObjCBoolVIeyBy_SbIegy_TRTA', symObjAddr: 0x3930, symBinAddr: 0x4CD30, symSize: 0x20 }
+  - { offset: 0x13CB59, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC8upiTurbo0A4Core14UPITurboPlugin_pSgvM', symObjAddr: 0x180, symBinAddr: 0x497C0, symSize: 0x40 }
+  - { offset: 0x13CB7E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC10upiTurboUI0A4Core16UPITurboUIPlugin_pSgvM', symObjAddr: 0x350, symBinAddr: 0x49880, symSize: 0x40 }
+  - { offset: 0x13CD37, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11initWithKey_11andDelegate18withPaymentWebViewypSgSS_0A4Core0aK18CompletionProtocol_pSo05WKWebM0CtF', symObjAddr: 0x730, symBinAddr: 0x49C50, symSize: 0x170 }
+  - { offset: 0x13CE74, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11initWithKey_11andDelegate18withPaymentWebViewypSgSS_0A4Core0aK18CompletionProtocol_pSo05WKWebM0CtFTo', symObjAddr: 0x8A0, symBinAddr: 0x49DC0, symSize: 0x100 }
+  - { offset: 0x13CEA3, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11initWithKeyyypSgSSF', symObjAddr: 0x9A0, symBinAddr: 0x49EC0, symSize: 0xB0 }
+  - { offset: 0x13CF0E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11initWithKeyyypSgSSFTo', symObjAddr: 0xA50, symBinAddr: 0x49F70, symSize: 0xD0 }
+  - { offset: 0x13CF22, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC12changeApiKey_16checkoutInstanceySS_ypSgtF', symObjAddr: 0xB20, symBinAddr: 0x4A040, symSize: 0x20 }
+  - { offset: 0x13CF4E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11payWithCred11withOptions16checkoutInstance0H15SuccessCallback010andFailureM0ySDys11AnyHashableVypG_ypSgyAKcySSctF', symObjAddr: 0xB60, symBinAddr: 0x4A080, symSize: 0x10 }
+  - { offset: 0x13CF75, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11payWithCred11withOptions16checkoutInstance0H15SuccessCallback010andFailureM0ySDys11AnyHashableVypG_ypSgyAKcySSctFTo', symObjAddr: 0xB70, symBinAddr: 0x4A090, symSize: 0x110 }
+  - { offset: 0x13CFAB, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC12getCardFlows_16checkoutInstance12withCallbackySDys11AnyHashableVypG_ypSgySbctF', symObjAddr: 0xC80, symBinAddr: 0x4A1A0, symSize: 0x90 }
+  - { offset: 0x13D070, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC12getCardFlows_16checkoutInstance12withCallbackySDys11AnyHashableVypG_ypSgySbctFTo', symObjAddr: 0xD10, symBinAddr: 0x4A230, symSize: 0x160 }
+  - { offset: 0x13D0C7, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC9submitOtp3otp16checkoutInstanceySS_ypSgtF', symObjAddr: 0xEC0, symBinAddr: 0x4A3E0, symSize: 0x80 }
+  - { offset: 0x13D151, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC9submitOtp3otp16checkoutInstanceySS_ypSgtFTo', symObjAddr: 0xF40, symBinAddr: 0x4A460, symSize: 0x110 }
+  - { offset: 0x13D1A0, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC18redirectToBankPage16checkoutInstanceyypSg_tF', symObjAddr: 0x1250, symBinAddr: 0x4A770, symSize: 0x70 }
+  - { offset: 0x13D214, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC18redirectToBankPage16checkoutInstanceyypSg_tFTo', symObjAddr: 0x12C0, symBinAddr: 0x4A7E0, symSize: 0xE0 }
+  - { offset: 0x13D258, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC17getPaymentMethods11withOptions16checkoutInstance0H15SuccessCallback010andFailureM0ySDys11AnyHashableVypGSg_ypSgyAKcySSctF', symObjAddr: 0x13A0, symBinAddr: 0x4A8C0, symSize: 0x20 }
+  - { offset: 0x13D273, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC17getPaymentMethods11withOptions16checkoutInstance0H15SuccessCallback010andFailureM0ySDys11AnyHashableVypGSg_ypSgyAKcySSctFTo', symObjAddr: 0x13C0, symBinAddr: 0x4A8E0, symSize: 0x150 }
+  - { offset: 0x13D2A9, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC21getSubscriptionAmount06havingF2Id16checkoutInstance19withSuccessCallback010andFailureN0ySS_ypSgys6UInt64VcySSctF', symObjAddr: 0x1510, symBinAddr: 0x4AA30, symSize: 0x20 }
+  - { offset: 0x13D2CA, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC21getSubscriptionAmount06havingF2Id16checkoutInstance19withSuccessCallback010andFailureN0ySS_ypSgys6UInt64VcySSctFTo', symObjAddr: 0x1530, symBinAddr: 0x4AA50, symSize: 0x130 }
+  - { offset: 0x13D2F4, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC21getSubscriptionAmount7options16checkoutInstance19withSuccessCallback010andFailureM0ySDys11AnyHashableVypG_ypSgys6UInt64VcySSctF', symObjAddr: 0x1660, symBinAddr: 0x4AB80, symSize: 0x20 }
+  - { offset: 0x13D30F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC21getSubscriptionAmount7options16checkoutInstance19withSuccessCallback010andFailureM0ySDys11AnyHashableVypG_ypSgys6UInt64VcySSctFTo', symObjAddr: 0x1680, symBinAddr: 0x4ABA0, symSize: 0x140 }
+  - { offset: 0x13D339, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC9authorize_16checkoutInstanceySDys11AnyHashableVypG_ypSgtF', symObjAddr: 0x17C0, symBinAddr: 0x4ACE0, symSize: 0x10 }
+  - { offset: 0x13D34D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC04openC04dict16checkoutInstanceySDys11AnyHashableVypG_ypSgtF', symObjAddr: 0x17F0, symBinAddr: 0x4AD10, symSize: 0x10 }
+  - { offset: 0x13D361, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC20userCancelledPayment16checkoutInstanceyypSg_tF', symObjAddr: 0x18E0, symBinAddr: 0x4AE00, symSize: 0x20 }
+  - { offset: 0x13D375, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC9decodeURI4from16checkoutInstanceySS_ypSgtF', symObjAddr: 0x1920, symBinAddr: 0x4AE40, symSize: 0x20 }
+  - { offset: 0x13D390, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC9decodeURI4from16checkoutInstanceySS_ypSgtFTo', symObjAddr: 0x1940, symBinAddr: 0x4AE60, symSize: 0x80 }
+  - { offset: 0x13D3BA, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC5close16checkoutInstanceyypSg_tF', symObjAddr: 0x19C0, symBinAddr: 0x4AEE0, symSize: 0x20 }
+  - { offset: 0x13D3CE, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC7webView_9didCommit16checkoutInstanceySo05WKWebF0C_So12WKNavigationCSgypSgtF', symObjAddr: 0x1A90, symBinAddr: 0x4AFB0, symSize: 0x20 }
+  - { offset: 0x13D3E9, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC7webView_9didCommit16checkoutInstanceySo05WKWebF0C_So12WKNavigationCSgypSgtFTo', symObjAddr: 0x1AB0, symBinAddr: 0x4AFD0, symSize: 0xD0 }
+  - { offset: 0x13D413, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC7webView_28didFailProvisionalNavigation9withError16checkoutInstanceySo05WKWebF0C_So12WKNavigationCSgs0L0_pypSgtF', symObjAddr: 0x1B80, symBinAddr: 0x4B0A0, symSize: 0x20 }
+  - { offset: 0x13D42E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC7webView_28didFailProvisionalNavigation9withError16checkoutInstanceySo05WKWebF0C_So12WKNavigationCSgs0L0_pypSgtFTo', symObjAddr: 0x1BA0, symBinAddr: 0x4B0C0, symSize: 0xE0 }
+  - { offset: 0x13D458, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC7webView_7didFail9withError16checkoutInstanceySo05WKWebF0C_So12WKNavigationCSgs0J0_pypSgtF', symObjAddr: 0x1C80, symBinAddr: 0x4B1A0, symSize: 0x20 }
+  - { offset: 0x13D473, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC7webView_7didFail9withError16checkoutInstanceySo05WKWebF0C_So12WKNavigationCSgs0J0_pypSgtFTo', symObjAddr: 0x1CA0, symBinAddr: 0x4B1C0, symSize: 0xE0 }
+  - { offset: 0x13D49D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC7webView_9didFinish16checkoutInstanceySo05WKWebF0C_So12WKNavigationCSgypSgtF', symObjAddr: 0x1D80, symBinAddr: 0x4B2A0, symSize: 0x20 }
+  - { offset: 0x13D4B8, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC7webView_9didFinish16checkoutInstanceySo05WKWebF0C_So12WKNavigationCSgypSgtFTo', symObjAddr: 0x1DA0, symBinAddr: 0x4B2C0, symSize: 0xD0 }
+  - { offset: 0x13D4E2, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC14getCardNetwork04fromF6Number16checkoutInstanceS2S_ypSgtF', symObjAddr: 0x1E70, symBinAddr: 0x4B390, symSize: 0x10 }
+  - { offset: 0x13D4FD, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC14getCardNetwork04fromF6Number16checkoutInstanceS2S_ypSgtFTo', symObjAddr: 0x1E80, symBinAddr: 0x4B3A0, symSize: 0xD0 }
+  - { offset: 0x13D533, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC22getAppsWhichSupportUpi7handleryySaySDys11AnyHashableVypGGc_tF', symObjAddr: 0x1F50, symBinAddr: 0x4B470, symSize: 0x10 }
+  - { offset: 0x13D547, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC31getAppsWhichSupportUpiRecurring7handleryySaySDys11AnyHashableVypGGc_tF', symObjAddr: 0x1F80, symBinAddr: 0x4B4A0, symSize: 0x10 }
+  - { offset: 0x13D55B, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11isCardValid_16checkoutInstanceSbSS_ypSgtF', symObjAddr: 0x2030, symBinAddr: 0x4B550, symSize: 0x10 }
+  - { offset: 0x13D58A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11isCardValid_16checkoutInstanceSbSS_ypSgtFTo', symObjAddr: 0x2040, symBinAddr: 0x4B560, symSize: 0xB0 }
+  - { offset: 0x13D5B4, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC10isValidVpa_16checkoutInstance19withSuccessCallback0J7FailureySS_ypSgySDys11AnyHashableVypGcyAKctF', symObjAddr: 0x20F0, symBinAddr: 0x4B610, symSize: 0x20 }
+  - { offset: 0x13D5CF, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC10isValidVpa_16checkoutInstance19withSuccessCallback0J7FailureySS_ypSgySDys11AnyHashableVypGcyAKctFTo', symObjAddr: 0x2110, symBinAddr: 0x4B630, symSize: 0x130 }
+  - { offset: 0x13D5F9, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC20getCardNetworkLength02ofG016checkoutInstanceSiSS_ypSgtF', symObjAddr: 0x2240, symBinAddr: 0x4B760, symSize: 0x10 }
+  - { offset: 0x13D614, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC20getCardNetworkLength02ofG016checkoutInstanceSiSS_ypSgtFTo', symObjAddr: 0x2250, symBinAddr: 0x4B770, symSize: 0xB0 }
+  - { offset: 0x13D63E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC28payWithExternalPaymentEntity7options03arrgH8Entities16checkoutInstanceySDys11AnyHashableVypG_Say0A4Core06PluginH8Delegate_pGypSgtF', symObjAddr: 0x25B0, symBinAddr: 0x4BAD0, symSize: 0x20 }
+  - { offset: 0x13D659, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC28payWithExternalPaymentEntity7options03arrgH8Entities16checkoutInstanceySDys11AnyHashableVypG_Say0A4Core06PluginH8Delegate_pGypSgtFTo', symObjAddr: 0x25D0, symBinAddr: 0x4BAF0, symSize: 0xE0 }
+  - { offset: 0x13D683, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC10publishUri4with16checkoutInstanceySS_ypSgtF', symObjAddr: 0x26B0, symBinAddr: 0x4BBD0, symSize: 0x20 }
+  - { offset: 0x13D6E8, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC10setWebViewyySo05WKWebG0CKFTo', symObjAddr: 0x27C0, symBinAddr: 0x4BCC0, symSize: 0xB0 }
+  - { offset: 0x13D793, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11setDelegateyy0A4Core0A25PaymentCompletionProtocol_pKFTo', symObjAddr: 0x28B0, symBinAddr: 0x4BD70, symSize: 0xB0 }
+  - { offset: 0x13D809, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationCACycfC', symObjAddr: 0x2960, symBinAddr: 0x4BE20, symSize: 0x20 }
+  - { offset: 0x13D81D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationCACycfc', symObjAddr: 0x2980, symBinAddr: 0x4BE40, symSize: 0x50 }
+  - { offset: 0x13D850, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationCACycfcTo', symObjAddr: 0x29D0, symBinAddr: 0x4BE90, symSize: 0x50 }
+  - { offset: 0x13D885, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationCfD', symObjAddr: 0x2A20, symBinAddr: 0x4BEE0, symSize: 0x30 }
+  - { offset: 0x13D8E7, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11payWithCred11withOptions16checkoutInstance0H15SuccessCallback010andFailureM0ySDys11AnyHashableVypG_ypSgyAKcySSctFTf4nndnd_n', symObjAddr: 0x2AC0, symBinAddr: 0x4BF40, symSize: 0xC0 }
+  - { offset: 0x13D998, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC9authorize_16checkoutInstanceySDys11AnyHashableVypG_ypSgtFTf4nnd_n', symObjAddr: 0x2CC0, symBinAddr: 0x4C0D0, symSize: 0x110 }
+  - { offset: 0x13DAB9, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC04openC04dict16checkoutInstanceySDys11AnyHashableVypG_ypSgtFTf4nnd_n', symObjAddr: 0x2DD0, symBinAddr: 0x4C1E0, symSize: 0xB0 }
+  - { offset: 0x13DBA8, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC14getCardNetwork04fromF6Number16checkoutInstanceS2S_ypSgtFTf4nnd_n', symObjAddr: 0x2FD0, symBinAddr: 0x4C3E0, symSize: 0xD0 }
+  - { offset: 0x13DD08, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC22getAppsWhichSupportUpi7handleryySaySDys11AnyHashableVypGGc_tFTf4nd_n', symObjAddr: 0x30A0, symBinAddr: 0x4C4B0, symSize: 0x1D0 }
+  - { offset: 0x13DE13, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC31getAppsWhichSupportUpiRecurring7handleryySaySDys11AnyHashableVypGGc_tFTf4nd_n', symObjAddr: 0x3270, symBinAddr: 0x4C680, symSize: 0x1D0 }
+  - { offset: 0x13DF45, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC11isCardValid_16checkoutInstanceSbSS_ypSgtFTf4nnd_n', symObjAddr: 0x3440, symBinAddr: 0x4C850, symSize: 0xB0 }
+  - { offset: 0x13E03D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0B22CheckoutImplementationC20getCardNetworkLength02ofG016checkoutInstanceSiSS_ypSgtFTf4nnd_n', symObjAddr: 0x35C0, symBinAddr: 0x4C9D0, symSize: 0x1E0 }
+  - { offset: 0x13E29A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC14sharedInstance33_5F54B00A656483404F259221BFC088B6LLACvpZ', symObjAddr: 0x690, symBinAddr: 0x96E88, symSize: 0x0 }
+  - { offset: 0x13E436, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC14sharedInstance33_5F54B00A656483404F259221BFC088B6LL_WZ', symObjAddr: 0x20, symBinAddr: 0x4CF00, symSize: 0x30 }
+  - { offset: 0x13E477, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfCfETo', symObjAddr: 0x420, symBinAddr: 0x4D300, symSize: 0x10 }
+  - { offset: 0x13E4B3, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfCMa', symObjAddr: 0x5C0, symBinAddr: 0x4D4A0, symSize: 0x20 }
+  - { offset: 0x13E576, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC15initWithWebView_14andMerchantKeyySo05WKWebG0C_SSSgtFZ', symObjAddr: 0x0, symBinAddr: 0x4CEE0, symSize: 0x10 }
+  - { offset: 0x13E5B8, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC17getSharedInstanceACSgyFZ', symObjAddr: 0x10, symBinAddr: 0x4CEF0, symSize: 0x10 }
+  - { offset: 0x13E5E7, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfCACyc33_5F54B00A656483404F259221BFC088B6LlfcTo', symObjAddr: 0x50, symBinAddr: 0x4CF30, symSize: 0x30 }
+  - { offset: 0x13E65D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC15initWithWebView_14andMerchantKeyySo05WKWebG0C_SSSgtFZTo', symObjAddr: 0x80, symBinAddr: 0x4CF60, symSize: 0x60 }
+  - { offset: 0x13E6AE, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC17getSharedInstanceACSgyFZTo', symObjAddr: 0xE0, symBinAddr: 0x4CFC0, symSize: 0x20 }
+  - { offset: 0x13E6EF, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC14setPaymentDatayySDys11AnyHashableVypGF', symObjAddr: 0x100, symBinAddr: 0x4CFE0, symSize: 0x90 }
+  - { offset: 0x13E778, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC14setPaymentDatayySDys11AnyHashableVypGFTo', symObjAddr: 0x190, symBinAddr: 0x4D070, symSize: 0xE0 }
+  - { offset: 0x13E7CA, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC7webView9didFinishySo12WKNavigationCSg_tKF', symObjAddr: 0x270, symBinAddr: 0x4D150, symSize: 0x10 }
+  - { offset: 0x13E800, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC7webView9didFinishySo12WKNavigationCSg_tKFTo', symObjAddr: 0x280, symBinAddr: 0x4D160, symSize: 0x60 }
+  - { offset: 0x13E837, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC5closeyyF', symObjAddr: 0x2E0, symBinAddr: 0x4D1C0, symSize: 0x80 }
+  - { offset: 0x13E8B1, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC5closeyyFTo', symObjAddr: 0x360, symBinAddr: 0x4D240, symSize: 0x90 }
+  - { offset: 0x13E8F9, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfCfD', symObjAddr: 0x3F0, symBinAddr: 0x4D2D0, symSize: 0x30 }
+  - { offset: 0x13E930, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC17getSharedInstanceACSgyFZTf4d_n', symObjAddr: 0x430, symBinAddr: 0x4D310, symSize: 0xB0 }
+  - { offset: 0x13E994, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom6OtpelfC7webView9didFinishySo12WKNavigationCSg_tKFTf4dd_n', symObjAddr: 0x4E0, symBinAddr: 0x4D3C0, symSize: 0xE0 }
+  - { offset: 0x13EB6B, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom12RemoteConfigC14sharedInstanceACvpZ', symObjAddr: 0xB2C0, symBinAddr: 0x98EB0, symSize: 0x0 }
+  - { offset: 0x13ED12, size: 0x8, addend: 0x0, symName: '_$sSD14RazorpayCustomE5merge5otherySDyxq_G_tFSS_ypTg5', symObjAddr: 0x270, symBinAddr: 0x4D7B0, symSize: 0x460 }
+  - { offset: 0x13EED1, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom12RemoteConfigC14sharedInstance_WZ', symObjAddr: 0x6D0, symBinAddr: 0x4DC10, symSize: 0x40 }
+  - { offset: 0x13EF17, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom12RemoteConfigCfE', symObjAddr: 0x710, symBinAddr: 0x4DC50, symSize: 0x20 }
+  - { offset: 0x13EF7D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom12RemoteConfigCMa', symObjAddr: 0x780, symBinAddr: 0x4DCC0, symSize: 0x20 }
+  - { offset: 0x13F102, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOwet', symObjAddr: 0x1F90, symBinAddr: 0x4F3D0, symSize: 0x80 }
+  - { offset: 0x13F116, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOwst', symObjAddr: 0x2010, symBinAddr: 0x4F450, symSize: 0xD0 }
+  - { offset: 0x13F12A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOMa', symObjAddr: 0x2110, symBinAddr: 0x4F520, symSize: 0x10 }
+  - { offset: 0x13F13E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOSHAASQWb', symObjAddr: 0x2120, symBinAddr: 0x4F530, symSize: 0x10 }
+  - { offset: 0x13F152, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOACSQAAWl', symObjAddr: 0x2130, symBinAddr: 0x4F540, symSize: 0x30 }
+  - { offset: 0x13F1A6, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0xD0, symBinAddr: 0x4D610, symSize: 0x70 }
+  - { offset: 0x13F279, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOSHAASH9hashValueSivgTW', symObjAddr: 0x140, symBinAddr: 0x4D680, symSize: 0x50 }
+  - { offset: 0x13F2F7, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x190, symBinAddr: 0x4D6D0, symSize: 0x30 }
+  - { offset: 0x13F349, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0x1C0, symBinAddr: 0x4D700, symSize: 0x50 }
+  - { offset: 0x13F53A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsO8rawValueSSvg', symObjAddr: 0x0, symBinAddr: 0x4D540, symSize: 0xD0 }
+  - { offset: 0x13F58F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOSYAASY8rawValuexSg03RawG0Qz_tcfCTW', symObjAddr: 0x210, symBinAddr: 0x4D750, symSize: 0x30 }
+  - { offset: 0x13F5B8, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsOSYAASY8rawValue03RawG0QzvgTW', symObjAddr: 0x240, symBinAddr: 0x4D780, symSize: 0x30 }
+  - { offset: 0x13F636, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom12RemoteConfigCfD', symObjAddr: 0x730, symBinAddr: 0x4DC70, symSize: 0x50 }
+  - { offset: 0x13F6DB, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom12RemoteConfigCACyc33_2F95BA117359203479CB879708FEAED5LlfcTf4g_n', symObjAddr: 0x7A0, symBinAddr: 0x4DCE0, symSize: 0x16F0 }
+  - { offset: 0x140792, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19RemoteConfigOptionsO8rawValueACSgSS_tcfCTf4nd_n', symObjAddr: 0x2160, symBinAddr: 0x4F570, symSize: 0x6F }
+  - { offset: 0x14094F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC11isSetupDone33_A8433C8C2FE2435E95013CF9655FF18FLLSbvpZ', symObjAddr: 0x19B8, symBinAddr: 0x96FB0, symSize: 0x0 }
+  - { offset: 0x140969, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC14sharedInstance33_A8433C8C2FE2435E95013CF9655FF18FLLACvpZ', symObjAddr: 0x19C0, symBinAddr: 0x96FB8, symSize: 0x0 }
+  - { offset: 0x140AD2, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC19networkConnectivityAA08InternetF0OvpZ', symObjAddr: 0x19C8, symBinAddr: 0x96FC0, symSize: 0x0 }
+  - { offset: 0x140AE0, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC14sharedInstance33_A8433C8C2FE2435E95013CF9655FF18FLL_WZ', symObjAddr: 0x0, symBinAddr: 0x4F5E0, symSize: 0x40 }
+  - { offset: 0x140D23, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilCMa', symObjAddr: 0x11F0, symBinAddr: 0x507D0, symSize: 0x20 }
+  - { offset: 0x140D9A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom7CXErrorVWOr', symObjAddr: 0x18F0, symBinAddr: 0x50E40, symSize: 0x40 }
+  - { offset: 0x140DAE, size: 0x8, addend: 0x0, symName: '_$sSS_yptWOh', symObjAddr: 0x1930, symBinAddr: 0x50E80, symSize: 0x30 }
+  - { offset: 0x140FF5, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilCACyc33_A8433C8C2FE2435E95013CF9655FF18FLlfc', symObjAddr: 0x40, symBinAddr: 0x4F620, symSize: 0xB0 }
+  - { offset: 0x14108D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC10trackEvent_16havingProperties02cxH0yAA0cF0O_SDys11AnyHashableVypGAKSgtF', symObjAddr: 0xF0, symBinAddr: 0x4F6D0, symSize: 0x120 }
+  - { offset: 0x141170, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC11addProperty9havingKey03andF0ySS_AA0cF0CtF', symObjAddr: 0x210, symBinAddr: 0x4F7F0, symSize: 0xA0 }
+  - { offset: 0x141203, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC11reportError_11havingLevel03andB7Message11errorSourceySo7NSErrorCSg_AA0afH0OS2SSgtF', symObjAddr: 0x2B0, symBinAddr: 0x4F890, symSize: 0xA50 }
+  - { offset: 0x1416D0, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC34removeReachabilityNotifierObserveryyF', symObjAddr: 0xD00, symBinAddr: 0x502E0, symSize: 0x160 }
+  - { offset: 0x1417D2, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC31setReachabilityNotifierObserveryyF', symObjAddr: 0xE60, symBinAddr: 0x50440, symSize: 0x220 }
+  - { offset: 0x14190D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC19reachabilityChanged4notey10Foundation12NotificationV_tF', symObjAddr: 0x1080, symBinAddr: 0x50660, symSize: 0xC0 }
+  - { offset: 0x14198B, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC19reachabilityChanged4notey10Foundation12NotificationV_tFTo', symObjAddr: 0x1140, symBinAddr: 0x50720, symSize: 0x80 }
+  - { offset: 0x1419B3, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilCfD', symObjAddr: 0x11C0, symBinAddr: 0x507A0, symSize: 0x30 }
+  - { offset: 0x141A22, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14CXAvailabilityC21generateCXErrorObject7cxErrorSDySSypGAA0eF8Protocol_p_tFTf4en_nAA0E0V_TB5Tf4nd_n', symObjAddr: 0x1270, symBinAddr: 0x507F0, symSize: 0x610 }
+  - { offset: 0x141F8A, size: 0x8, addend: 0x0, symName: '_$sSo8UIDeviceC14RazorpayCustomE9modelNameSSvgTf4d_n', symObjAddr: 0x0, symBinAddr: 0x50EB0, symSize: 0x1C10 }
+  - { offset: 0x14203B, size: 0x8, addend: 0x0, symName: '_$sSo8UIDeviceC14RazorpayCustomE9modelNameSSvgTf4d_n', symObjAddr: 0x0, symBinAddr: 0x50EB0, symSize: 0x1C10 }
+  - { offset: 0x142ADE, size: 0x8, addend: 0x0, symName: '_$sSSSg5label_yp5valuetWOc', symObjAddr: 0x1C70, symBinAddr: 0x52AE0, symSize: 0x40 }
+  - { offset: 0x142AF2, size: 0x8, addend: 0x0, symName: '_$sSSSg5label_yp5valuetWOh', symObjAddr: 0x1CB0, symBinAddr: 0x52B20, symSize: 0x2C }
+  - { offset: 0x142D71, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC14sharedInstance33_87F5FB9514EBE761F2543FAB15BA4630LLACvpZ', symObjAddr: 0x35E8, symBinAddr: 0x97188, symSize: 0x0 }
+  - { offset: 0x142FB5, size: 0x8, addend: 0x0, symName: '_$sypSgs5Error_pSgIeghng_yXlSgSo7NSErrorCSgIeyBhyy_TR', symObjAddr: 0x0, symBinAddr: 0x52B50, symSize: 0xA0 }
+  - { offset: 0x143057, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC14sharedInstance33_87F5FB9514EBE761F2543FAB15BA4630LL_WZ', symObjAddr: 0x830, symBinAddr: 0x53380, symSize: 0x30 }
+  - { offset: 0x143145, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfCfETo', symObjAddr: 0x23E0, symBinAddr: 0x54F30, symSize: 0x80 }
+  - { offset: 0x143174, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfCMa', symObjAddr: 0x2460, symBinAddr: 0x54FB0, symSize: 0x20 }
+  - { offset: 0x143188, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC27StorageBridgeMessageHandler33_87F5FB9514EBE761F2543FAB15BA4630LLCMa', symObjAddr: 0x2480, symBinAddr: 0x54FD0, symSize: 0x20 }
+  - { offset: 0x14319C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC26OtpElfBridgeMessageHandler33_87F5FB9514EBE761F2543FAB15BA4630LLCMa', symObjAddr: 0x24A0, symBinAddr: 0x54FF0, symSize: 0x20 }
+  - { offset: 0x143347, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC7webView9didFinishySo12WKNavigationCSg_tFyypSg_s5Error_pSgtYbScMYccfU_TA', symObjAddr: 0x3500, symBinAddr: 0x55FD0, symSize: 0x10 }
+  - { offset: 0x14335B, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x3510, symBinAddr: 0x55FE0, symSize: 0x20 }
+  - { offset: 0x14336F, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x3530, symBinAddr: 0x56000, symSize: 0x10 }
+  - { offset: 0x1436EF, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC14setPaymentDatayySDys11AnyHashableVypGF', symObjAddr: 0xA0, symBinAddr: 0x52BF0, symSize: 0x420 }
+  - { offset: 0x143986, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC5closeyyF', symObjAddr: 0x4C0, symBinAddr: 0x53010, symSize: 0x1D0 }
+  - { offset: 0x143A2B, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC27StorageBridgeMessageHandler33_87F5FB9514EBE761F2543FAB15BA4630LLC21userContentController_10didReceiveySo06WKUserpQ0C_So08WKScriptG0CtFTo', symObjAddr: 0x690, symBinAddr: 0x531E0, symSize: 0x60 }
+  - { offset: 0x143A5C, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC26OtpElfBridgeMessageHandler33_87F5FB9514EBE761F2543FAB15BA4630LLC21userContentController_10didReceiveySo06WKUserqR0C_So08WKScriptH0CtFTo', symObjAddr: 0x730, symBinAddr: 0x53280, symSize: 0x60 }
+  - { offset: 0x143AE2, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfCACyc33_87F5FB9514EBE761F2543FAB15BA4630Llfc', symObjAddr: 0x860, symBinAddr: 0x533B0, symSize: 0x2A0 }
+  - { offset: 0x143B7D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfCACyc33_87F5FB9514EBE761F2543FAB15BA4630LlfcTo', symObjAddr: 0xB00, symBinAddr: 0x53650, symSize: 0x20 }
+  - { offset: 0x143B91, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC12setupBridges33_87F5FB9514EBE761F2543FAB15BA4630LLyyF', symObjAddr: 0xB20, symBinAddr: 0x53670, symSize: 0x210 }
+  - { offset: 0x143C3E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC7webView9didFinishySo12WKNavigationCSg_tFyypSg_s5Error_pSgtYbScMYccfU_', symObjAddr: 0xD30, symBinAddr: 0x53880, symSize: 0x2F0 }
+  - { offset: 0x143DDB, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC14getSDKMetadata33_87F5FB9514EBE761F2543FAB15BA4630LLyyF', symObjAddr: 0x1020, symBinAddr: 0x53B70, symSize: 0x1390 }
+  - { offset: 0x1443EE, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfCfD', symObjAddr: 0x23B0, symBinAddr: 0x54F00, symSize: 0x30 }
+  - { offset: 0x144411, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC15initWithWebView_14andMerchantKeyySo05WKWebH0C_SSSgtFZTf4nnd_n', symObjAddr: 0x24C0, symBinAddr: 0x55010, symSize: 0x430 }
+  - { offset: 0x14458F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC7webView9didFinishySo12WKNavigationCSg_tFTf4dn_n', symObjAddr: 0x28F0, symBinAddr: 0x55440, symSize: 0x1A0 }
+  - { offset: 0x144697, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC27StorageBridgeMessageHandler33_87F5FB9514EBE761F2543FAB15BA4630LLC21userContentController_10didReceiveySo06WKUserpQ0C_So08WKScriptG0CtFTf4dnd_n', symObjAddr: 0x2A90, symBinAddr: 0x555E0, symSize: 0x4E0 }
+  - { offset: 0x1449E1, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14InternalOtpelfC26OtpElfBridgeMessageHandler33_87F5FB9514EBE761F2543FAB15BA4630LLC21userContentController_10didReceiveySo06WKUserqR0C_So08WKScriptH0CtFTf4dnd_n', symObjAddr: 0x2F70, symBinAddr: 0x55AC0, symSize: 0x4E0 }
+  - { offset: 0x144E60, size: 0x8, addend: 0x0, symName: '_$ss17_dictionaryUpCastySDyq0_q1_GSDyxq_GSHRzSHR0_r2_lFSS_yps11AnyHashableVypTg5', symObjAddr: 0x10, symBinAddr: 0x56040, symSize: 0x500 }
+  - { offset: 0x1450EA, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom20ReachabilityObserverCMa', symObjAddr: 0x1850, symBinAddr: 0x57880, symSize: 0x20 }
+  - { offset: 0x145130, size: 0x8, addend: 0x0, symName: '_$ss17_dictionaryUpCastySDyq0_q1_GSDyxq_GSHRzSHR0_r2_lFSS_yps11AnyHashableVypTg5', symObjAddr: 0x10, symBinAddr: 0x56040, symSize: 0x500 }
+  - { offset: 0x145259, size: 0x8, addend: 0x0, symName: '_$ss17_dictionaryUpCastySDyq0_q1_GSDyxq_GSHRzSHR0_r2_lFSS_S2SypTg5', symObjAddr: 0x510, symBinAddr: 0x56540, symSize: 0x450 }
+  - { offset: 0x145398, size: 0x8, addend: 0x0, symName: '_$ss17_dictionaryUpCastySDyq0_q1_GSDyxq_GSHRzSHR0_r2_lFSS_SSSgSSypTg5', symObjAddr: 0x960, symBinAddr: 0x56990, symSize: 0x460 }
+  - { offset: 0x1454D1, size: 0x8, addend: 0x0, symName: '_$ss17_dictionaryUpCastySDyq0_q1_GSDyxq_GSHRzSHR0_r2_lFs11AnyHashableV_A2EypTg5', symObjAddr: 0xDC0, symBinAddr: 0x56DF0, symSize: 0x4F0 }
+  - { offset: 0x145651, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom20ReachabilityObserverCACycfc', symObjAddr: 0x12B0, symBinAddr: 0x572E0, symSize: 0xD0 }
+  - { offset: 0x14572D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom20ReachabilityObserverC21startReceivingUpdatesyyKF', symObjAddr: 0x1380, symBinAddr: 0x573B0, symSize: 0x140 }
+  - { offset: 0x1457DD, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom20ReachabilityObserverC21broadcastNotification12notificationy10Foundation0F0V_tF', symObjAddr: 0x14C0, symBinAddr: 0x574F0, symSize: 0x170 }
+  - { offset: 0x1458C7, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom20ReachabilityObserverC21broadcastNotification12notificationy10Foundation0F0V_tFTo', symObjAddr: 0x1630, symBinAddr: 0x57660, symSize: 0x80 }
+  - { offset: 0x1458E0, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom20ReachabilityObserverC20stopReceivingUpdatesyyF', symObjAddr: 0x16B0, symBinAddr: 0x576E0, symSize: 0x160 }
+  - { offset: 0x145974, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom20ReachabilityObserverCfD', symObjAddr: 0x1810, symBinAddr: 0x57840, symSize: 0x40 }
+  - { offset: 0x145B0D, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14CXAvailabilityC14sharedInstanceACvpZ', symObjAddr: 0x3470, symBinAddr: 0x98EB8, symSize: 0x0 }
+  - { offset: 0x145B6A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14CXAvailabilityC14sharedInstance_WZ', symObjAddr: 0x0, symBinAddr: 0x578A0, symSize: 0x30 }
+  - { offset: 0x145B92, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14CXAvailabilityCMa', symObjAddr: 0x60, symBinAddr: 0x578E0, symSize: 0x20 }
+  - { offset: 0x145BA6, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom7CXErrorVwxx', symObjAddr: 0x1C0, symBinAddr: 0x57920, symSize: 0x30 }
+  - { offset: 0x145BBA, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom7CXErrorVwcp', symObjAddr: 0x1F0, symBinAddr: 0x57950, symSize: 0x70 }
+  - { offset: 0x145BCE, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom7CXErrorVwca', symObjAddr: 0x260, symBinAddr: 0x579C0, symSize: 0x90 }
+  - { offset: 0x145BE2, size: 0x8, addend: 0x0, symName: ___swift_memcpy48_8, symObjAddr: 0x2F0, symBinAddr: 0x57A50, symSize: 0x20 }
+  - { offset: 0x145BF6, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom7CXErrorVwta', symObjAddr: 0x310, symBinAddr: 0x57A70, symSize: 0x60 }
+  - { offset: 0x145C0A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom7CXErrorVwet', symObjAddr: 0x370, symBinAddr: 0x57AD0, symSize: 0x40 }
+  - { offset: 0x145C1E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom7CXErrorVwst', symObjAddr: 0x3B0, symBinAddr: 0x57B10, symSize: 0x50 }
+  - { offset: 0x145C32, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom7CXErrorVMa', symObjAddr: 0x400, symBinAddr: 0x57B60, symSize: 0xA }
+  - { offset: 0x145C69, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14CXAvailabilityCfd', symObjAddr: 0x30, symBinAddr: 0x578D0, symSize: 0x10 }
+  - { offset: 0x145DFB, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOMa', symObjAddr: 0x1A0, symBinAddr: 0x57B70, symSize: 0x10 }
+  - { offset: 0x145E0F, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOwet', symObjAddr: 0x1B0, symBinAddr: 0x57B80, symSize: 0x80 }
+  - { offset: 0x145E23, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOwst', symObjAddr: 0x230, symBinAddr: 0x57C00, symSize: 0xD0 }
+  - { offset: 0x145E37, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOMa', symObjAddr: 0x310, symBinAddr: 0x57CD0, symSize: 0x10 }
+  - { offset: 0x145F62, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOSHAASQWb', symObjAddr: 0x14A0, symBinAddr: 0x58D20, symSize: 0x10 }
+  - { offset: 0x145F76, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOACSQAAWl', symObjAddr: 0x14B0, symBinAddr: 0x58D30, symSize: 0x30 }
+  - { offset: 0x145F8A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOSHAASQWb', symObjAddr: 0x14E0, symBinAddr: 0x58D60, symSize: 0x10 }
+  - { offset: 0x145F9E, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOACSQAAWl', symObjAddr: 0x14F0, symBinAddr: 0x58D70, symSize: 0x30 }
+  - { offset: 0x145FCF, size: 0x8, addend: 0x0, symName: '_$ss2eeoiySbx_xtSYRzSQ8RawValueRpzlF14RazorpayCustom0D10ErrorLevelO_Tg5', symObjAddr: 0x400, symBinAddr: 0x57CE0, symSize: 0xE0 }
+  - { offset: 0x1460A1, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x1070, symBinAddr: 0x58950, symSize: 0x10 }
+  - { offset: 0x146108, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOSHAASH9hashValueSivgTW', symObjAddr: 0x1080, symBinAddr: 0x58960, symSize: 0x90 }
+  - { offset: 0x1461B3, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x1110, symBinAddr: 0x589F0, symSize: 0x70 }
+  - { offset: 0x14621A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0x1180, symBinAddr: 0x58A60, symSize: 0x90 }
+  - { offset: 0x1462B8, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x1300, symBinAddr: 0x58B80, symSize: 0x70 }
+  - { offset: 0x14638B, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOSHAASH9hashValueSivgTW', symObjAddr: 0x1370, symBinAddr: 0x58BF0, symSize: 0x50 }
+  - { offset: 0x146409, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x13C0, symBinAddr: 0x58C40, symSize: 0x30 }
+  - { offset: 0x14645B, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0x13F0, symBinAddr: 0x58C70, symSize: 0x50 }
+  - { offset: 0x1464EB, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventO8rawValueSSvg', symObjAddr: 0x4E0, symBinAddr: 0x57DC0, symSize: 0xB90 }
+  - { offset: 0x146DB5, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOSYAASY8rawValuexSg03RawF0Qz_tcfCTW', symObjAddr: 0x1210, symBinAddr: 0x58AF0, symSize: 0x30 }
+  - { offset: 0x146DDE, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelOSYAASY8rawValue03RawF0QzvgTW', symObjAddr: 0x1240, symBinAddr: 0x58B20, symSize: 0x60 }
+  - { offset: 0x146E21, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOSYAASY8rawValuexSg03RawF0Qz_tcfCTW', symObjAddr: 0x1440, symBinAddr: 0x58CC0, symSize: 0x30 }
+  - { offset: 0x146E4A, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventOSYAASY8rawValue03RawF0QzvgTW', symObjAddr: 0x1470, symBinAddr: 0x58CF0, symSize: 0x30 }
+  - { offset: 0x146E64, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom0A10ErrorLevelO8rawValueACSgSS_tcfCTf4nd_n', symObjAddr: 0x1520, symBinAddr: 0x58DA0, symSize: 0x70 }
+  - { offset: 0x146E9B, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom14AnalyticsEventO8rawValueACSgSS_tcfCTf4nd_n', symObjAddr: 0x15D0, symBinAddr: 0x58E10, symSize: 0x590 }
+  - { offset: 0x14702B, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC5track_16havingProperties6sentByySS_SDySSypGSgAA16RzpWebViewBridgeOtF', symObjAddr: 0x0, symBinAddr: 0x593C0, symSize: 0x240 }
+  - { offset: 0x147126, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom13AnalyticsUtilC5track_16havingProperties6sentByySS_SDySSypGSgAA16RzpWebViewBridgeOtF', symObjAddr: 0x0, symBinAddr: 0x593C0, symSize: 0x240 }
+  - { offset: 0x1474AD, size: 0x8, addend: 0x0, symName: '_$s14RazorpayCustom19ResourceBundleClass33_8326A1FAEC957F421AE3D23D843F7354LLCMa', symObjAddr: 0x20, symBinAddr: 0x59600, symSize: 0x14 }
 ...

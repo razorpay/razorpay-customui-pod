@@ -74,6 +74,8 @@ public class TurboPluginManager {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers final public class CustomCheckoutImplementation : ObjectiveC.NSObject, RazorpayCore.CustomCheckoutImplementationProtocol {
+  @objc final public var upiTurbo: (any RazorpayCore.UPITurboPlugin)?
+  @objc final public var upiTurboUI: (any RazorpayCore.UPITurboUIPlugin)?
   @objc final public func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, plugin: any RazorpayCore.UPITurboPlugin) -> Any?
   @objc final public func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, UIPlugin: any RazorpayCore.UPITurboUIPlugin) -> Any?
   @objc final public func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView) -> Any?

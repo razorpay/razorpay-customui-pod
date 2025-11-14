@@ -2859,6 +2859,258 @@
         "printedName": "CustomCheckoutImplementation",
         "children": [
           {
+            "kind": "Var",
+            "name": "upiTurbo",
+            "printedName": "upiTurbo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any RazorpayCore.UPITurboPlugin)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UPITurboPlugin",
+                    "printedName": "any RazorpayCore.UPITurboPlugin",
+                    "usr": "c:@M@RazorpayCore@objc(pl)UPITurboPlugin"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RazorpayCustom@objc(cs)CustomCheckoutImplementation(py)upiTurbo",
+            "mangledName": "$s14RazorpayCustom0B22CheckoutImplementationC8upiTurbo0A4Core14UPITurboPlugin_pSgvp",
+            "moduleName": "RazorpayCustom",
+            "objc_name": "upiTurbo",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any RazorpayCore.UPITurboPlugin)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UPITurboPlugin",
+                        "printedName": "any RazorpayCore.UPITurboPlugin",
+                        "usr": "c:@M@RazorpayCore@objc(pl)UPITurboPlugin"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RazorpayCustom@objc(cs)CustomCheckoutImplementation(im)upiTurbo",
+                "mangledName": "$s14RazorpayCustom0B22CheckoutImplementationC8upiTurbo0A4Core14UPITurboPlugin_pSgvg",
+                "moduleName": "RazorpayCustom",
+                "implicit": true,
+                "objc_name": "upiTurbo",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any RazorpayCore.UPITurboPlugin)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UPITurboPlugin",
+                        "printedName": "any RazorpayCore.UPITurboPlugin",
+                        "usr": "c:@M@RazorpayCore@objc(pl)UPITurboPlugin"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RazorpayCustom@objc(cs)CustomCheckoutImplementation(im)setUpiTurbo:",
+                "mangledName": "$s14RazorpayCustom0B22CheckoutImplementationC8upiTurbo0A4Core14UPITurboPlugin_pSgvs",
+                "moduleName": "RazorpayCustom",
+                "implicit": true,
+                "objc_name": "setUpiTurbo:",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14RazorpayCustom0B22CheckoutImplementationC8upiTurbo0A4Core14UPITurboPlugin_pSgvM",
+                "mangledName": "$s14RazorpayCustom0B22CheckoutImplementationC8upiTurbo0A4Core14UPITurboPlugin_pSgvM",
+                "moduleName": "RazorpayCustom",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "upiTurboUI",
+            "printedName": "upiTurboUI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any RazorpayCore.UPITurboUIPlugin)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UPITurboUIPlugin",
+                    "printedName": "any RazorpayCore.UPITurboUIPlugin",
+                    "usr": "c:@M@RazorpayCore@objc(pl)UPITurboUIPlugin"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RazorpayCustom@objc(cs)CustomCheckoutImplementation(py)upiTurboUI",
+            "mangledName": "$s14RazorpayCustom0B22CheckoutImplementationC10upiTurboUI0A4Core16UPITurboUIPlugin_pSgvp",
+            "moduleName": "RazorpayCustom",
+            "objc_name": "upiTurboUI",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any RazorpayCore.UPITurboUIPlugin)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UPITurboUIPlugin",
+                        "printedName": "any RazorpayCore.UPITurboUIPlugin",
+                        "usr": "c:@M@RazorpayCore@objc(pl)UPITurboUIPlugin"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RazorpayCustom@objc(cs)CustomCheckoutImplementation(im)upiTurboUI",
+                "mangledName": "$s14RazorpayCustom0B22CheckoutImplementationC10upiTurboUI0A4Core16UPITurboUIPlugin_pSgvg",
+                "moduleName": "RazorpayCustom",
+                "implicit": true,
+                "objc_name": "upiTurboUI",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any RazorpayCore.UPITurboUIPlugin)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UPITurboUIPlugin",
+                        "printedName": "any RazorpayCore.UPITurboUIPlugin",
+                        "usr": "c:@M@RazorpayCore@objc(pl)UPITurboUIPlugin"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RazorpayCustom@objc(cs)CustomCheckoutImplementation(im)setUpiTurboUI:",
+                "mangledName": "$s14RazorpayCustom0B22CheckoutImplementationC10upiTurboUI0A4Core16UPITurboUIPlugin_pSgvs",
+                "moduleName": "RazorpayCustom",
+                "implicit": true,
+                "objc_name": "setUpiTurboUI:",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14RazorpayCustom0B22CheckoutImplementationC10upiTurboUI0A4Core16UPITurboUIPlugin_pSgvM",
+                "mangledName": "$s14RazorpayCustom0B22CheckoutImplementationC10upiTurboUI0A4Core16UPITurboUIPlugin_pSgvM",
+                "moduleName": "RazorpayCustom",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "initWithKey",
             "printedName": "initWithKey(_:andDelegate:withPaymentWebView:plugin:)",

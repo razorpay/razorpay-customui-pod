@@ -333,16 +333,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) CheckoutRegi
 - (BOOL)isFlavorAvailable:(enum CheckoutFlavor)flavor SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@protocol UPITurboPlugin;
+@protocol UPITurboUIPlugin;
 @class NSString;
 @protocol RazorpayPaymentCompletionProtocol;
 @class WKWebView;
-@protocol UPITurboPlugin;
-@protocol UPITurboUIPlugin;
 @class WKNavigation;
 @class NSURL;
 @protocol PluginPaymentDelegate;
 SWIFT_PROTOCOL("_TtP12RazorpayCore36CustomCheckoutImplementationProtocol_")
 @protocol CustomCheckoutImplementationProtocol <CheckoutImplementation>
+@property (nonatomic, strong) id <UPITurboPlugin> _Nullable upiTurbo;
+@property (nonatomic, strong) id <UPITurboUIPlugin> _Nullable upiTurboUI;
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate withPaymentWebView:(WKWebView * _Nonnull)merchantWebView SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate withPaymentWebView:(WKWebView * _Nonnull)merchantWebView plugin:(id <UPITurboPlugin> _Nonnull)plugin SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate withPaymentWebView:(WKWebView * _Nonnull)merchantWebView UIPlugin:(id <UPITurboUIPlugin> _Nonnull)UIPlugin SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
@@ -441,6 +443,7 @@ SWIFT_CLASS("_TtC12RazorpayCore7Session")
 @class UIViewController;
 SWIFT_PROTOCOL("_TtP12RazorpayCore38StandardCheckoutImplementationProtocol_")
 @protocol StandardCheckoutImplementationProtocol <CheckoutImplementation>
+@property (nonatomic, strong) id <UPITurboUIPlugin> _Nullable upiTurbo;
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayProtocol> _Nonnull)delegate SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegateWithData:(id <RazorpayPaymentCompletionProtocolWithData> _Nonnull)delegate SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegateWithData:(id <RazorpayPaymentCompletionProtocolWithData> _Nonnull)delegate plugin:(id <UPITurboUIPlugin> _Nullable)plugin SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
@@ -893,16 +896,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) CheckoutRegi
 - (BOOL)isFlavorAvailable:(enum CheckoutFlavor)flavor SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@protocol UPITurboPlugin;
+@protocol UPITurboUIPlugin;
 @class NSString;
 @protocol RazorpayPaymentCompletionProtocol;
 @class WKWebView;
-@protocol UPITurboPlugin;
-@protocol UPITurboUIPlugin;
 @class WKNavigation;
 @class NSURL;
 @protocol PluginPaymentDelegate;
 SWIFT_PROTOCOL("_TtP12RazorpayCore36CustomCheckoutImplementationProtocol_")
 @protocol CustomCheckoutImplementationProtocol <CheckoutImplementation>
+@property (nonatomic, strong) id <UPITurboPlugin> _Nullable upiTurbo;
+@property (nonatomic, strong) id <UPITurboUIPlugin> _Nullable upiTurboUI;
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate withPaymentWebView:(WKWebView * _Nonnull)merchantWebView SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate withPaymentWebView:(WKWebView * _Nonnull)merchantWebView plugin:(id <UPITurboPlugin> _Nonnull)plugin SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate withPaymentWebView:(WKWebView * _Nonnull)merchantWebView UIPlugin:(id <UPITurboUIPlugin> _Nonnull)UIPlugin SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
@@ -1001,6 +1006,7 @@ SWIFT_CLASS("_TtC12RazorpayCore7Session")
 @class UIViewController;
 SWIFT_PROTOCOL("_TtP12RazorpayCore38StandardCheckoutImplementationProtocol_")
 @protocol StandardCheckoutImplementationProtocol <CheckoutImplementation>
+@property (nonatomic, strong) id <UPITurboUIPlugin> _Nullable upiTurbo;
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayProtocol> _Nonnull)delegate SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegateWithData:(id <RazorpayPaymentCompletionProtocolWithData> _Nonnull)delegate SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegateWithData:(id <RazorpayPaymentCompletionProtocolWithData> _Nonnull)delegate plugin:(id <UPITurboUIPlugin> _Nullable)plugin SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;

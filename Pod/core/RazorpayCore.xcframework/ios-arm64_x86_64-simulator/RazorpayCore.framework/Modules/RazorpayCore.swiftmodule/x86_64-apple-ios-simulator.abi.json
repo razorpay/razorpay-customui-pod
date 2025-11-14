@@ -15,6 +15,424 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "PluginPaymentModel",
+        "printedName": "PluginPaymentModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "merchantKey",
+            "printedName": "merchantKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12RazorpayCore18PluginPaymentModelC11merchantKeySSvp",
+            "mangledName": "$s12RazorpayCore18PluginPaymentModelC11merchantKeySSvp",
+            "moduleName": "RazorpayCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12RazorpayCore18PluginPaymentModelC11merchantKeySSvg",
+                "mangledName": "$s12RazorpayCore18PluginPaymentModelC11merchantKeySSvg",
+                "moduleName": "RazorpayCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dictPaymentInformation",
+            "printedName": "dictPaymentInformation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12RazorpayCore18PluginPaymentModelC04dictD11InformationSDys11AnyHashableVypGvp",
+            "mangledName": "$s12RazorpayCore18PluginPaymentModelC04dictD11InformationSDys11AnyHashableVypGvp",
+            "moduleName": "RazorpayCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12RazorpayCore18PluginPaymentModelC04dictD11InformationSDys11AnyHashableVypGvg",
+                "mangledName": "$s12RazorpayCore18PluginPaymentModelC04dictD11InformationSDys11AnyHashableVypGvg",
+                "moduleName": "RazorpayCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PluginPaymentCompletionDelegate",
+                "printedName": "any RazorpayCore.PluginPaymentCompletionDelegate",
+                "usr": "s:12RazorpayCore31PluginPaymentCompletionDelegateP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12RazorpayCore18PluginPaymentModelC8delegateAA0cD18CompletionDelegate_pvp",
+            "mangledName": "$s12RazorpayCore18PluginPaymentModelC8delegateAA0cD18CompletionDelegate_pvp",
+            "moduleName": "RazorpayCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PluginPaymentCompletionDelegate",
+                    "printedName": "any RazorpayCore.PluginPaymentCompletionDelegate",
+                    "usr": "s:12RazorpayCore31PluginPaymentCompletionDelegateP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12RazorpayCore18PluginPaymentModelC8delegateAA0cD18CompletionDelegate_pvg",
+                "mangledName": "$s12RazorpayCore18PluginPaymentModelC8delegateAA0cD18CompletionDelegate_pvg",
+                "moduleName": "RazorpayCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "getMerchantKey",
+            "printedName": "getMerchantKey()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12RazorpayCore18PluginPaymentModelC14getMerchantKeySSyF",
+            "mangledName": "$s12RazorpayCore18PluginPaymentModelC14getMerchantKeySSyF",
+            "moduleName": "RazorpayCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPaymentInfoDict",
+            "printedName": "getPaymentInfoDict()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12RazorpayCore18PluginPaymentModelC03getD8InfoDictSDys11AnyHashableVypGyF",
+            "mangledName": "$s12RazorpayCore18PluginPaymentModelC03getD8InfoDictSDys11AnyHashableVypGyF",
+            "moduleName": "RazorpayCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDelegate",
+            "printedName": "getDelegate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PluginPaymentCompletionDelegate",
+                "printedName": "any RazorpayCore.PluginPaymentCompletionDelegate",
+                "usr": "s:12RazorpayCore31PluginPaymentCompletionDelegateP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12RazorpayCore18PluginPaymentModelC11getDelegateAA0cd10CompletionG0_pyF",
+            "mangledName": "$s12RazorpayCore18PluginPaymentModelC11getDelegateAA0cd10CompletionG0_pyF",
+            "moduleName": "RazorpayCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(merchantKey:dictPaymentInformation:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PluginPaymentModel",
+                "printedName": "RazorpayCore.PluginPaymentModel",
+                "usr": "c:@M@RazorpayCore@objc(cs)PluginPaymentModel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PluginPaymentCompletionDelegate",
+                "printedName": "any RazorpayCore.PluginPaymentCompletionDelegate",
+                "usr": "s:12RazorpayCore31PluginPaymentCompletionDelegateP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12RazorpayCore18PluginPaymentModelC11merchantKey04dictD11Information8delegateACSS_SDys11AnyHashableVypGAA0cD18CompletionDelegate_ptcfc",
+            "mangledName": "$s12RazorpayCore18PluginPaymentModelC11merchantKey04dictD11Information8delegateACSS_SDys11AnyHashableVypGAA0cD18CompletionDelegate_ptcfc",
+            "moduleName": "RazorpayCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PluginPaymentModel",
+                "printedName": "RazorpayCore.PluginPaymentModel",
+                "usr": "c:@M@RazorpayCore@objc(cs)PluginPaymentModel"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@RazorpayCore@objc(cs)PluginPaymentModel(im)init",
+            "mangledName": "$s12RazorpayCore18PluginPaymentModelCACycfc",
+            "moduleName": "RazorpayCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RazorpayCore@objc(cs)PluginPaymentModel",
+        "mangledName": "$s12RazorpayCore18PluginPaymentModelC",
+        "moduleName": "RazorpayCore",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RazorpayCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
@@ -33,6 +451,210 @@
         "name": "CustomCheckoutImplementationProtocol",
         "printedName": "CustomCheckoutImplementationProtocol",
         "children": [
+          {
+            "kind": "Var",
+            "name": "upiTurbo",
+            "printedName": "upiTurbo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any RazorpayCore.UPITurboPlugin)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UPITurboPlugin",
+                    "printedName": "any RazorpayCore.UPITurboPlugin",
+                    "usr": "c:@M@RazorpayCore@objc(pl)UPITurboPlugin"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RazorpayCore@objc(pl)CustomCheckoutImplementationProtocol(py)upiTurbo",
+            "mangledName": "$s12RazorpayCore36CustomCheckoutImplementationProtocolP8upiTurboAA14UPITurboPlugin_pSgvp",
+            "moduleName": "RazorpayCore",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any RazorpayCore.UPITurboPlugin)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UPITurboPlugin",
+                        "printedName": "any RazorpayCore.UPITurboPlugin",
+                        "usr": "c:@M@RazorpayCore@objc(pl)UPITurboPlugin"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RazorpayCore@objc(pl)CustomCheckoutImplementationProtocol(im)upiTurbo",
+                "mangledName": "$s12RazorpayCore36CustomCheckoutImplementationProtocolP8upiTurboAA14UPITurboPlugin_pSgvg",
+                "moduleName": "RazorpayCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : RazorpayCore.CustomCheckoutImplementationProtocol>",
+                "sugared_genericSig": "<Self where Self : RazorpayCore.CustomCheckoutImplementationProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any RazorpayCore.UPITurboPlugin)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UPITurboPlugin",
+                        "printedName": "any RazorpayCore.UPITurboPlugin",
+                        "usr": "c:@M@RazorpayCore@objc(pl)UPITurboPlugin"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RazorpayCore@objc(pl)CustomCheckoutImplementationProtocol(im)setUpiTurbo:",
+                "mangledName": "$s12RazorpayCore36CustomCheckoutImplementationProtocolP8upiTurboAA14UPITurboPlugin_pSgvs",
+                "moduleName": "RazorpayCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : RazorpayCore.CustomCheckoutImplementationProtocol>",
+                "sugared_genericSig": "<Self where Self : RazorpayCore.CustomCheckoutImplementationProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "upiTurboUI",
+            "printedName": "upiTurboUI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any RazorpayCore.UPITurboUIPlugin)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UPITurboUIPlugin",
+                    "printedName": "any RazorpayCore.UPITurboUIPlugin",
+                    "usr": "c:@M@RazorpayCore@objc(pl)UPITurboUIPlugin"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RazorpayCore@objc(pl)CustomCheckoutImplementationProtocol(py)upiTurboUI",
+            "mangledName": "$s12RazorpayCore36CustomCheckoutImplementationProtocolP10upiTurboUIAA16UPITurboUIPlugin_pSgvp",
+            "moduleName": "RazorpayCore",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any RazorpayCore.UPITurboUIPlugin)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UPITurboUIPlugin",
+                        "printedName": "any RazorpayCore.UPITurboUIPlugin",
+                        "usr": "c:@M@RazorpayCore@objc(pl)UPITurboUIPlugin"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RazorpayCore@objc(pl)CustomCheckoutImplementationProtocol(im)upiTurboUI",
+                "mangledName": "$s12RazorpayCore36CustomCheckoutImplementationProtocolP10upiTurboUIAA16UPITurboUIPlugin_pSgvg",
+                "moduleName": "RazorpayCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : RazorpayCore.CustomCheckoutImplementationProtocol>",
+                "sugared_genericSig": "<Self where Self : RazorpayCore.CustomCheckoutImplementationProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any RazorpayCore.UPITurboUIPlugin)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UPITurboUIPlugin",
+                        "printedName": "any RazorpayCore.UPITurboUIPlugin",
+                        "usr": "c:@M@RazorpayCore@objc(pl)UPITurboUIPlugin"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RazorpayCore@objc(pl)CustomCheckoutImplementationProtocol(im)setUpiTurboUI:",
+                "mangledName": "$s12RazorpayCore36CustomCheckoutImplementationProtocolP10upiTurboUIAA16UPITurboUIPlugin_pSgvs",
+                "moduleName": "RazorpayCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : RazorpayCore.CustomCheckoutImplementationProtocol>",
+                "sugared_genericSig": "<Self where Self : RazorpayCore.CustomCheckoutImplementationProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
           {
             "kind": "Function",
             "name": "initWithKey",
@@ -7724,6 +8346,108 @@
         "printedName": "StandardCheckoutImplementationProtocol",
         "children": [
           {
+            "kind": "Var",
+            "name": "upiTurbo",
+            "printedName": "upiTurbo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any RazorpayCore.UPITurboUIPlugin)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UPITurboUIPlugin",
+                    "printedName": "any RazorpayCore.UPITurboUIPlugin",
+                    "usr": "c:@M@RazorpayCore@objc(pl)UPITurboUIPlugin"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RazorpayCore@objc(pl)StandardCheckoutImplementationProtocol(py)upiTurbo",
+            "mangledName": "$s12RazorpayCore38StandardCheckoutImplementationProtocolP8upiTurboAA16UPITurboUIPlugin_pSgvp",
+            "moduleName": "RazorpayCore",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any RazorpayCore.UPITurboUIPlugin)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UPITurboUIPlugin",
+                        "printedName": "any RazorpayCore.UPITurboUIPlugin",
+                        "usr": "c:@M@RazorpayCore@objc(pl)UPITurboUIPlugin"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RazorpayCore@objc(pl)StandardCheckoutImplementationProtocol(im)upiTurbo",
+                "mangledName": "$s12RazorpayCore38StandardCheckoutImplementationProtocolP8upiTurboAA16UPITurboUIPlugin_pSgvg",
+                "moduleName": "RazorpayCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : RazorpayCore.StandardCheckoutImplementationProtocol>",
+                "sugared_genericSig": "<Self where Self : RazorpayCore.StandardCheckoutImplementationProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any RazorpayCore.UPITurboUIPlugin)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UPITurboUIPlugin",
+                        "printedName": "any RazorpayCore.UPITurboUIPlugin",
+                        "usr": "c:@M@RazorpayCore@objc(pl)UPITurboUIPlugin"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RazorpayCore@objc(pl)StandardCheckoutImplementationProtocol(im)setUpiTurbo:",
+                "mangledName": "$s12RazorpayCore38StandardCheckoutImplementationProtocolP8upiTurboAA16UPITurboUIPlugin_pSgvs",
+                "moduleName": "RazorpayCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : RazorpayCore.StandardCheckoutImplementationProtocol>",
+                "sugared_genericSig": "<Self where Self : RazorpayCore.StandardCheckoutImplementationProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "initWithKey",
             "printedName": "initWithKey(_:andDelegate:)",
@@ -8461,424 +9185,6 @@
             "printedName": "CheckoutImplementation",
             "usr": "c:@M@RazorpayCore@objc(pl)CheckoutImplementation",
             "mangledName": "$s12RazorpayCore22CheckoutImplementationP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "RazorpayCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PluginPaymentModel",
-        "printedName": "PluginPaymentModel",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "merchantKey",
-            "printedName": "merchantKey",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12RazorpayCore18PluginPaymentModelC11merchantKeySSvp",
-            "mangledName": "$s12RazorpayCore18PluginPaymentModelC11merchantKeySSvp",
-            "moduleName": "RazorpayCore",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12RazorpayCore18PluginPaymentModelC11merchantKeySSvg",
-                "mangledName": "$s12RazorpayCore18PluginPaymentModelC11merchantKeySSvg",
-                "moduleName": "RazorpayCore",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "dictPaymentInformation",
-            "printedName": "dictPaymentInformation",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.AnyHashable : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AnyHashable",
-                    "printedName": "Swift.AnyHashable",
-                    "usr": "s:s11AnyHashableV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12RazorpayCore18PluginPaymentModelC04dictD11InformationSDys11AnyHashableVypGvp",
-            "mangledName": "$s12RazorpayCore18PluginPaymentModelC04dictD11InformationSDys11AnyHashableVypGvp",
-            "moduleName": "RazorpayCore",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.AnyHashable : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AnyHashable",
-                        "printedName": "Swift.AnyHashable",
-                        "usr": "s:s11AnyHashableV"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12RazorpayCore18PluginPaymentModelC04dictD11InformationSDys11AnyHashableVypGvg",
-                "mangledName": "$s12RazorpayCore18PluginPaymentModelC04dictD11InformationSDys11AnyHashableVypGvg",
-                "moduleName": "RazorpayCore",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "delegate",
-            "printedName": "delegate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PluginPaymentCompletionDelegate",
-                "printedName": "any RazorpayCore.PluginPaymentCompletionDelegate",
-                "usr": "s:12RazorpayCore31PluginPaymentCompletionDelegateP"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12RazorpayCore18PluginPaymentModelC8delegateAA0cD18CompletionDelegate_pvp",
-            "mangledName": "$s12RazorpayCore18PluginPaymentModelC8delegateAA0cD18CompletionDelegate_pvp",
-            "moduleName": "RazorpayCore",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PluginPaymentCompletionDelegate",
-                    "printedName": "any RazorpayCore.PluginPaymentCompletionDelegate",
-                    "usr": "s:12RazorpayCore31PluginPaymentCompletionDelegateP"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12RazorpayCore18PluginPaymentModelC8delegateAA0cD18CompletionDelegate_pvg",
-                "mangledName": "$s12RazorpayCore18PluginPaymentModelC8delegateAA0cD18CompletionDelegate_pvg",
-                "moduleName": "RazorpayCore",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "getMerchantKey",
-            "printedName": "getMerchantKey()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12RazorpayCore18PluginPaymentModelC14getMerchantKeySSyF",
-            "mangledName": "$s12RazorpayCore18PluginPaymentModelC14getMerchantKeySSyF",
-            "moduleName": "RazorpayCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getPaymentInfoDict",
-            "printedName": "getPaymentInfoDict()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.AnyHashable : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AnyHashable",
-                    "printedName": "Swift.AnyHashable",
-                    "usr": "s:s11AnyHashableV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12RazorpayCore18PluginPaymentModelC03getD8InfoDictSDys11AnyHashableVypGyF",
-            "mangledName": "$s12RazorpayCore18PluginPaymentModelC03getD8InfoDictSDys11AnyHashableVypGyF",
-            "moduleName": "RazorpayCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getDelegate",
-            "printedName": "getDelegate()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PluginPaymentCompletionDelegate",
-                "printedName": "any RazorpayCore.PluginPaymentCompletionDelegate",
-                "usr": "s:12RazorpayCore31PluginPaymentCompletionDelegateP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12RazorpayCore18PluginPaymentModelC11getDelegateAA0cd10CompletionG0_pyF",
-            "mangledName": "$s12RazorpayCore18PluginPaymentModelC11getDelegateAA0cd10CompletionG0_pyF",
-            "moduleName": "RazorpayCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(merchantKey:dictPaymentInformation:delegate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PluginPaymentModel",
-                "printedName": "RazorpayCore.PluginPaymentModel",
-                "usr": "c:@M@RazorpayCore@objc(cs)PluginPaymentModel"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.AnyHashable : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AnyHashable",
-                    "printedName": "Swift.AnyHashable",
-                    "usr": "s:s11AnyHashableV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PluginPaymentCompletionDelegate",
-                "printedName": "any RazorpayCore.PluginPaymentCompletionDelegate",
-                "usr": "s:12RazorpayCore31PluginPaymentCompletionDelegateP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:12RazorpayCore18PluginPaymentModelC11merchantKey04dictD11Information8delegateACSS_SDys11AnyHashableVypGAA0cD18CompletionDelegate_ptcfc",
-            "mangledName": "$s12RazorpayCore18PluginPaymentModelC11merchantKey04dictD11Information8delegateACSS_SDys11AnyHashableVypGAA0cD18CompletionDelegate_ptcfc",
-            "moduleName": "RazorpayCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PluginPaymentModel",
-                "printedName": "RazorpayCore.PluginPaymentModel",
-                "usr": "c:@M@RazorpayCore@objc(cs)PluginPaymentModel"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@RazorpayCore@objc(cs)PluginPaymentModel(im)init",
-            "mangledName": "$s12RazorpayCore18PluginPaymentModelCACycfc",
-            "moduleName": "RazorpayCore",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@RazorpayCore@objc(cs)PluginPaymentModel",
-        "mangledName": "$s12RazorpayCore18PluginPaymentModelC",
-        "moduleName": "RazorpayCore",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       }
