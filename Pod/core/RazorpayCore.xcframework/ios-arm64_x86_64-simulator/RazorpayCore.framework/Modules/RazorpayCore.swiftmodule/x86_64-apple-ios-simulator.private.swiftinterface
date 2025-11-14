@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
-// swift-module-flags: -target x86_64-apple-ios18.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name RazorpayCore
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name RazorpayCore
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import Foundation
 import Swift
@@ -9,16 +9,6 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc public class PluginPaymentModel : ObjectiveC.NSObject {
-  final public let merchantKey: Swift.String
-  final public let dictPaymentInformation: [Swift.AnyHashable : Any]
-  final public let delegate: any RazorpayCore.PluginPaymentCompletionDelegate
-  public func getMerchantKey() -> Swift.String
-  public func getPaymentInfoDict() -> [Swift.AnyHashable : Any]
-  public func getDelegate() -> any RazorpayCore.PluginPaymentCompletionDelegate
-  public init(merchantKey: Swift.String, dictPaymentInformation: [Swift.AnyHashable : Any], delegate: any RazorpayCore.PluginPaymentCompletionDelegate)
-  @objc deinit
-}
 @objc public protocol CustomCheckoutImplementationProtocol : RazorpayCore.CheckoutImplementation {
   @objc func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView) -> Any?
   @objc func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, plugin: any RazorpayCore.UPITurboPlugin) -> Any?
@@ -223,6 +213,16 @@ extension RazorpayCore.UPITurboPrefetchWithUIProtocol {
   @objc func close(checkoutInstance: Any?)
   @objc func clearUserData(checkoutInstance: Any?)
   @objc func checkIntegration(withMerchantKey key: Swift.String)
+}
+@objc public class PluginPaymentModel : ObjectiveC.NSObject {
+  final public let merchantKey: Swift.String
+  final public let dictPaymentInformation: [Swift.AnyHashable : Any]
+  final public let delegate: any RazorpayCore.PluginPaymentCompletionDelegate
+  public func getMerchantKey() -> Swift.String
+  public func getPaymentInfoDict() -> [Swift.AnyHashable : Any]
+  public func getDelegate() -> any RazorpayCore.PluginPaymentCompletionDelegate
+  public init(merchantKey: Swift.String, dictPaymentInformation: [Swift.AnyHashable : Any], delegate: any RazorpayCore.PluginPaymentCompletionDelegate)
+  @objc deinit
 }
 extension RazorpayCore.CheckoutFlavor : Swift.Equatable {}
 extension RazorpayCore.CheckoutFlavor : Swift.Hashable {}
