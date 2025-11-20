@@ -309,8 +309,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @protocol UPITurboUIPlugin;
 SWIFT_CLASS("_TtC8Razorpay16RazorpayCheckout")
 @interface RazorpayCheckout : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RazorpayCheckout * _Nonnull shared;)
-+ (RazorpayCheckout * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, strong) id <UPITurboPlugin> _Nullable upiTurbo;
 @property (nonatomic, strong) id <UPITurboUIPlugin> _Nullable upiTurboUI;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -731,8 +729,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @protocol UPITurboUIPlugin;
 SWIFT_CLASS("_TtC8Razorpay16RazorpayCheckout")
 @interface RazorpayCheckout : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RazorpayCheckout * _Nonnull shared;)
-+ (RazorpayCheckout * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, strong) id <UPITurboPlugin> _Nullable upiTurbo;
 @property (nonatomic, strong) id <UPITurboUIPlugin> _Nullable upiTurboUI;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

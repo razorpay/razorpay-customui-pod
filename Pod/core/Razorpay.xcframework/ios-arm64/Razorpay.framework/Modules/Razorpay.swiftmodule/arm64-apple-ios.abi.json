@@ -62,59 +62,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "RazorpayCheckout",
-                "printedName": "Razorpay.RazorpayCheckout",
-                "usr": "c:@M@Razorpay@objc(cs)RazorpayCheckout"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Razorpay@objc(cs)RazorpayCheckout(cpy)shared",
-            "mangledName": "$s8Razorpay0A8CheckoutC6sharedACvpZ",
-            "moduleName": "Razorpay",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RazorpayCheckout",
-                    "printedName": "Razorpay.RazorpayCheckout",
-                    "usr": "c:@M@Razorpay@objc(cs)RazorpayCheckout"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Razorpay@objc(cs)RazorpayCheckout(cm)shared",
-                "mangledName": "$s8Razorpay0A8CheckoutC6sharedACvgZ",
-                "moduleName": "Razorpay",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "upiTurbo",
             "printedName": "upiTurbo",
             "children": [
@@ -3051,28 +2998,28 @@
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/CheckoutModularisation\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 5826,
+      "offset": 5819,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/CheckoutModularisation\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 6365,
+      "offset": 6358,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/CheckoutModularisation\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 6959,
+      "offset": 6952,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/CheckoutModularisation\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 7632,
+      "offset": 7625,
       "length": 4,
       "value": "true"
     },

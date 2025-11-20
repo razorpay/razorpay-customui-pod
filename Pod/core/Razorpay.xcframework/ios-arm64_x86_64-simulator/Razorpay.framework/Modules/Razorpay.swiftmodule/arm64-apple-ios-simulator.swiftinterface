@@ -12,7 +12,6 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class RazorpayCheckout : ObjectiveC.NSObject {
-  @objc public static let shared: Razorpay.RazorpayCheckout
   @objc final public var upiTurbo: (any RazorpayCore.UPITurboPlugin)?
   @objc final public var upiTurboUI: (any RazorpayCore.UPITurboUIPlugin)?
   @objc deinit
