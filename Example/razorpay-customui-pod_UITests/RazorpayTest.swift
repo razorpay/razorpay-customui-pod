@@ -11,6 +11,10 @@ import XCTest
 class RazorpayTest: XCTestCase {
     
     var app : XCUIApplication!
+    var entry: FlowEntryScreen!
+    var sdkWebViewPage: SDKWebViewPage!
+    var successString = "SUCCESS"
+    var failureString = "FAILURE"
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -18,70 +22,137 @@ class RazorpayTest: XCTestCase {
         app = XCUIApplication()
         app.launchArguments += ["-UITests"]    // reserved if you ever want it
         app.launch()
+        entry = FlowEntryScreen(app: app)
+        sdkWebViewPage = SDKWebViewPage(app: app)
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         app = nil
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-        
-//       try testCardSuccessPaymentFlow()
-        
-    }
     
     
+    //MARK: - Helper functions
     
-    func testCardSuccessPaymentFlow() throws {
-        
-        let entry = FlowEntryScreen(app: app)
-        let sdkWeb = SDKWebViewPage(app: app)
-    
-
-        // 1. Start the flow
-        entry.cardSuccessPayment()
-
-        // 2. Wait for SDK WebView
-//        sdkWeb.waitForAppear()
-
-        // 3. Drive WebView (minimum necessary taps)
-        // Replace "Pay" with the actual visible label
-        sdkWeb.tapSuccessButton()
-
-        let successAlert = app.alerts["SUCCESS"]
+    func successAlertExists() {
+        let successAlert = app.alerts[successString]
         XCTAssertTrue(successAlert.waitForExistence(timeout: 10), "SUCCESS alert did not appear")
 
         // If you just want to check that it mentions a payment id:
         let msgPredicate = NSPredicate(format: "label CONTAINS %@", "Payment Id")
         let messageLabel = successAlert.staticTexts.element(matching: msgPredicate)
         XCTAssertTrue(messageLabel.exists, "Alert message does not contain 'Payment Id'")
+    }
+    
+    func failueAlertExist() {
+        let failureAlert = app.alerts[failureString]
+        XCTAssertTrue(failureAlert.waitForExistence(timeout: 10), "FAILURE alert did not appear")
+    }
+    
+    
+    // MARK: - Net banking test cases
+    func testNetBankingSuccessPaymentFlow() throws {
+        entry.tapCell(cellName: .netBankingCell)
+        sdkWebViewPage.tapSuccessButton()
+        successAlertExists()
+    }
+
+    
+    func testNetBankingFailurePaymentFlow() throws {
+        entry.tapCell(cellName: .netBankingCell)
+        sdkWebViewPage.tapFailureButton()
+        failueAlertExist()
+    }
+    
+    
+    
+    //MARK: - Pay with Cred
+    func testPayWithCredSuccessFlow() throws {
+        entry.tapCell(cellName: .payWithCred)
+        
         
     }
     
-    func testCardFailurePaymentFlow() throws {
+    
+    //MARK: - EMI
+    func testEMISuccessFlow() throws {
+        entry.tapCell(cellName: .emi)
+        sdkWebViewPage.tapSuccessButton()
+        successAlertExists()
+    }
+    
+    
+    func testEMIFailureFlow() throws {
+        entry.tapCell(cellName: .emi)
+        sdkWebViewPage.tapFailureButton()
+        failueAlertExist()
+    }
+    
+    //MARK: - UPI
+    func testUPISuccesFlow() throws {
+        entry.tapCell(cellName: .upi)
+        let textField = app.textFields["Your VPA (someone@abc)"]
         
-        let entry = FlowEntryScreen(app: app)
-        let sdkWeb = SDKWebViewPage(app: app)
+        if textField.waitForExistence(timeout: 10) {
+            textField.tap()
+            textField.typeText("success@razorpay")
+            let button = app.buttons["PAY ₹1"]
+            button.firstMatch.tap()
+        }
+        successAlertExists()
+    }
+    
+    
+    //MARK:  - Wallet Payment
+    func testWalletSuccessPaymentFlow() throws {
+        entry.tapCell(cellName: .walletPayment)
+        sdkWebViewPage.tapSuccessButton()
+        successAlertExists()
+        
+    }
+    
+    
+    func testWalletFailurePaymentFlow() throws {
+        entry.tapCell(cellName: .walletPayment)
+        sdkWebViewPage.tapFailureButton()
+       failueAlertExist()
+    }
     
 
+    
+    //MARK: - Card test Cases
+    func testCardSuccessPaymentFlow() throws {
+
         // 1. Start the flow
-        entry.cardSuccessPayment()
+        entry.tapCell(cellName: .cardCell)
 
         // 2. Wait for SDK WebView
 //        sdkWeb.waitForAppear()
 
         // 3. Drive WebView (minimum necessary taps)
         // Replace "Pay" with the actual visible label
-        sdkWeb.tapFailureButton()
+        sdkWebViewPage.tapSuccessButton()
 
-        let failureAlert = app.alerts["FAILURE"]
-        XCTAssertTrue(failureAlert.waitForExistence(timeout: 10), "FAILURE alert did not appear")
+        // test if sucees alert gives payment Id or not
+        successAlertExists()
+        
+    }
+    
+    
+    
+    func testCardFailurePaymentFlow() throws {
+
+        // 1. Start the flow
+        entry.tapCell(cellName: .cardCell)
+
+        // 2. Wait for SDK WebView
+//        sdkWeb.waitForAppear()
+
+        // 3. Drive WebView (minimum necessary taps)
+        // Replace "Pay" with the actual visible label
+        sdkWebViewPage.tapFailureButton()
+
+        failueAlertExist()
 
     }
 

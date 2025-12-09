@@ -14,8 +14,22 @@ final class FlowEntryScreen {
     init(app: XCUIApplication) {
         self.app = app
     }
+
     
-    func cardSuccessPayment(){
-        app.staticTexts["Card Payment"].tap()
+    func tapCell(cellName: CellNameType) {
+        let cell = app.cells[cellName.rawValue].otherElements.firstMatch
+        XCTAssertTrue(cell.exists)
+        cell.tap()
+    }
+    
+    
+    // MARK: - Enums
+    enum CellNameType: String {
+        case cardCell = "Card Payment"
+        case netBankingCell = "Net Banking"
+        case payWithCred = "Pay with Cred"
+        case walletPayment = "Wallet Payment"
+        case upi = "UPI"
+        case emi = "EMI"
     }
 }
