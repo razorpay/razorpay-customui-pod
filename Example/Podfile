@@ -6,9 +6,6 @@ target 'razorpay-customui-pod_Example' do
   
   pod 'razorpay-customui-pod', :path=> '../'
 
-  target 'razorpay-customui-pod_Tests' do
-    inherit! :complete
-  end
 end
 
 post_install do |installer|
