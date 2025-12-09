@@ -44,7 +44,7 @@ class RazorpayTest: XCTestCase {
         XCTAssertTrue(messageLabel.exists, "Alert message does not contain 'Payment Id'")
     }
     
-    func failueAlertExist() {
+    func failureAlertExist() {
         let failureAlert = app.alerts[failureString]
         XCTAssertTrue(failureAlert.waitForExistence(timeout: 10), "FAILURE alert did not appear")
     }
@@ -61,7 +61,7 @@ class RazorpayTest: XCTestCase {
     func testNetBankingFailurePaymentFlow() throws {
         entry.tapCell(cellName: .netBankingCell)
         sdkWebViewPage.tapFailureButton()
-        failueAlertExist()
+        failureAlertExist()
     }
     
     
@@ -85,7 +85,7 @@ class RazorpayTest: XCTestCase {
     func testEMIFailureFlow() throws {
         entry.tapCell(cellName: .emi)
         sdkWebViewPage.tapFailureButton()
-        failueAlertExist()
+        failureAlertExist()
     }
     
     //MARK: - UPI
@@ -115,7 +115,7 @@ class RazorpayTest: XCTestCase {
     func testWalletFailurePaymentFlow() throws {
         entry.tapCell(cellName: .walletPayment)
         sdkWebViewPage.tapFailureButton()
-       failueAlertExist()
+       failureAlertExist()
     }
     
 
@@ -152,7 +152,7 @@ class RazorpayTest: XCTestCase {
         // Replace "Pay" with the actual visible label
         sdkWebViewPage.tapFailureButton()
 
-        failueAlertExist()
+        failureAlertExist()
 
     }
 
