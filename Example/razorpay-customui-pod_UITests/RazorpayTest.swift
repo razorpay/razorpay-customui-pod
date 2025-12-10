@@ -66,14 +66,6 @@ class RazorpayTest: XCTestCase {
     
     
     
-    //MARK: - Pay with Cred
-    func testPayWithCredSuccessFlow() throws {
-        entry.tapCell(cellName: .payWithCred)
-        
-        
-    }
-    
-    
     //MARK: - EMI
     func testEMISuccessFlow() throws {
         entry.tapCell(cellName: .emi)
