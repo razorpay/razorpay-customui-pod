@@ -16,17 +16,33 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "RazorpayCustomUI",
-            targets: ["RazorpayWrapper"]
+            targets: ["RazorpayCustom",
+                      "Razorpay",
+                      "RazorpayCore",
+                      "RazorpayWrapper"
+                     ]
         ),
     ],
     targets: [
-       .binaryTarget(
-            name: "Razorpay",
-            path: "Pod/Razorpay.xcframework"
+        .binaryTarget(
+            name: "RazorpayCustom",
+            path: "Pod/RazorpayCustom.xcframework"
+        ),
+        .binaryTarget(
+           name: "Razorpay",
+           path: "Pod/core/Razorpay.xcframework"
+        ),
+        .binaryTarget(
+           name: "RazorpayCore",
+           path: "Pod/core/RazorpayCore.xcframework"
         ),
         .target(
             name: "RazorpayWrapper",
-            dependencies: ["Razorpay"]
+            dependencies: [
+                .target(name: "Razorpay"),
+                .target(name: "RazorpayCore"),
+                .target(name: "RazorpayCustom"),
+            ],
         )
     ],
     swiftLanguageVersions: [.v5]
