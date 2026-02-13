@@ -81,7 +81,7 @@ extension Razorpay.RazorpayCheckout {
   @objc final public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc final public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, checkoutInstance: Any?, handler decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @objc final public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, checkoutInstance: Any? = nil, handler decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
   #endif
   @objc final public func getCardNetwork(fromCardNumber cardNumber: Swift.String) -> Swift.String
   @objc public static func getAppsWhichSupportUpi(handler: @escaping ([[Swift.AnyHashable : Any]]) -> Swift.Void)

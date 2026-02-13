@@ -2608,6 +2608,7 @@
                     "printedName": "Any"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
