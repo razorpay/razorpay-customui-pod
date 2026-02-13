@@ -1,16 +1,28 @@
 PODS:
-  - razorpay-customui-pod (2.1.1)
+  - razorpay-apay-wallet-paylater (1.0.0)
+  - razorpay-core-pod (1.0.4)
+  - razorpay-customui-pod (2.1.2):
+    - razorpay-core-pod
 
 DEPENDENCIES:
+  - razorpay-apay-wallet-paylater (from `../`)
   - razorpay-customui-pod (from `../`)
 
+SPEC REPOS:
+  trunk:
+    - razorpay-core-pod
+
 EXTERNAL SOURCES:
+  razorpay-apay-wallet-paylater:
+    :path: "../"
   razorpay-customui-pod:
     :path: "../"
 
 SPEC CHECKSUMS:
-  razorpay-customui-pod: 4fec3ad7118453d7ae648df90f5a2430e9dc9698
+  razorpay-apay-wallet-paylater: 9fd76b3ec68dd3270eddc9e6bc8c40f263042a83
+  razorpay-core-pod: a5ee92704a114e9468436dcba9d9b6222f6d9899
+  razorpay-customui-pod: 9842438f4be5c02feed162f3b8988d672c8aca62
 
-PODFILE CHECKSUM: f21675744a709b8e314b42564691caf867fcb0e8
+PODFILE CHECKSUM: 7ef0e2bf11ab86cb61986a7467dedf421d87d619
 
 COCOAPODS: 1.16.2
