@@ -7,22 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06B0D4922F3E003A00E2EC1E /* LoginWithAmazon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B0D4902F3E003A00E2EC1E /* LoginWithAmazon.xcframework */; };
-		06B0D4932F3E003A00E2EC1E /* LoginWithAmazon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06B0D4902F3E003A00E2EC1E /* LoginWithAmazon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		06B0D4942F3E003A00E2EC1E /* AmazonPayHardenediOSSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B0D4912F3E003A00E2EC1E /* AmazonPayHardenediOSSDK.xcframework */; };
-		06B0D4952F3E003A00E2EC1E /* AmazonPayHardenediOSSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06B0D4912F3E003A00E2EC1E /* AmazonPayHardenediOSSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		088B2897E4AB96952D9A96C5 /* Pods_razorpay_customui_pod_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D915DCE8D8F1490B600A1F /* Pods_razorpay_customui_pod_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		705007394C9CD91203422BCB /* Pods_razorpay_customui_pod_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379BD5F336B39E88700EDF44 /* Pods_razorpay_customui_pod_Tests.framework */; };
 		D3F929E8280D4B0C00429FA7 /* WebCheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F929E6280D4B0C00429FA7 /* WebCheckoutVC.swift */; };
 		D3F929E9280D4B0C00429FA7 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F929E7280D4B0C00429FA7 /* MenuVC.swift */; };
 		D3F929EB280D4B3100429FA7 /* DynamicHeightFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F929EA280D4B3100429FA7 /* DynamicHeightFlowLayout.swift */; };
 		D3F929ED280D4BDC00429FA7 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F929EC280D4BDC00429FA7 /* MenuItemCell.swift */; };
-		FF24EE30239CAB8975B59985 /* Pods_razorpay_customui_pod_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46570FB0CFBCA7664A0A570 /* Pods_razorpay_customui_pod_Example.framework */; };
+		D5C462C04E942A2A14FE886C /* Pods_razorpay_customui_pod_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5572CEF739D5BF9ED181EA /* Pods_razorpay_customui_pod_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,27 +38,13 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		06B0D4962F3E003A00E2EC1E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				06B0D4952F3E003A00E2EC1E /* AmazonPayHardenediOSSDK.xcframework in Embed Frameworks */,
-				06B0D4932F3E003A00E2EC1E /* LoginWithAmazon.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		06B0D4902F3E003A00E2EC1E /* LoginWithAmazon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LoginWithAmazon.xcframework; path = "../../apay-merge/RazorpayIOS/ThirdPartyLibraries/AmazonWalletPaylater/LoginWithAmazon.xcframework"; sourceTree = "<group>"; };
 		06B0D4912F3E003A00E2EC1E /* AmazonPayHardenediOSSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AmazonPayHardenediOSSDK.xcframework; path = "../../apay-merge/RazorpayIOS/ThirdPartyLibraries/AmazonWalletPaylater/AmazonPayHardenediOSSDK.xcframework"; sourceTree = "<group>"; };
 		06F39D152EDF984900E5ED6A /* razorpay-customui-pod_UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "razorpay-customui-pod_UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		35FE952C698CF243EFAA194D /* Pods-razorpay-customui-pod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-razorpay-customui-pod_Tests.debug.xcconfig"; path = "Target Support Files/Pods-razorpay-customui-pod_Tests/Pods-razorpay-customui-pod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		379BD5F336B39E88700EDF44 /* Pods_razorpay_customui_pod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_razorpay_customui_pod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07D915DCE8D8F1490B600A1F /* Pods_razorpay_customui_pod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_razorpay_customui_pod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3747DD17932688A80C866EDC /* Pods-razorpay-customui-pod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-razorpay-customui-pod_Tests.debug.xcconfig"; path = "Target Support Files/Pods-razorpay-customui-pod_Tests/Pods-razorpay-customui-pod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4EB74D496EEF6A31AE831057 /* Pods-razorpay-customui-pod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-razorpay-customui-pod_Example.debug.xcconfig"; path = "Target Support Files/Pods-razorpay-customui-pod_Example/Pods-razorpay-customui-pod_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* razorpay-customui-pod_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "razorpay-customui-pod_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,17 +55,16 @@
 		607FACE51AFB9204008FA782 /* razorpay-customui-pod_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "razorpay-customui-pod_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		62CE3E84BFF19B0228EE65AE /* Pods-razorpay-customui-pod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-razorpay-customui-pod_Tests.release.xcconfig"; path = "Target Support Files/Pods-razorpay-customui-pod_Tests/Pods-razorpay-customui-pod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		697594B5060467FFC9259032 /* razorpay-customui-pod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "razorpay-customui-pod.podspec"; path = "../razorpay-customui-pod.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7A614181B1C8A0FFD5DEFE76 /* Pods-razorpay-customui-pod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-razorpay-customui-pod_Example.release.xcconfig"; path = "Target Support Files/Pods-razorpay-customui-pod_Example/Pods-razorpay-customui-pod_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7F36DF68F1761EBA10417172 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7F5572CEF739D5BF9ED181EA /* Pods_razorpay_customui_pod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_razorpay_customui_pod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB717FA86D30C33C4EE189B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		B46570FB0CFBCA7664A0A570 /* Pods_razorpay_customui_pod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_razorpay_customui_pod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4821569BD0EC792FBBE91F6 /* Pods-razorpay-customui-pod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-razorpay-customui-pod_Example.release.xcconfig"; path = "Target Support Files/Pods-razorpay-customui-pod_Example/Pods-razorpay-customui-pod_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D3F929E6280D4B0C00429FA7 /* WebCheckoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebCheckoutVC.swift; sourceTree = "<group>"; };
 		D3F929E7280D4B0C00429FA7 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		D3F929EA280D4B3100429FA7 /* DynamicHeightFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicHeightFlowLayout.swift; sourceTree = "<group>"; };
 		D3F929EC280D4BDC00429FA7 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
-		DAA44F656819470C5AC84AFC /* Pods-razorpay-customui-pod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-razorpay-customui-pod_Example.debug.xcconfig"; path = "Target Support Files/Pods-razorpay-customui-pod_Example/Pods-razorpay-customui-pod_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DEEDD77C1EBE48A5EB60B2BD /* Pods-razorpay-customui-pod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-razorpay-customui-pod_Tests.release.xcconfig"; path = "Target Support Files/Pods-razorpay-customui-pod_Tests/Pods-razorpay-customui-pod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -112,9 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06B0D4942F3E003A00E2EC1E /* AmazonPayHardenediOSSDK.xcframework in Frameworks */,
-				06B0D4922F3E003A00E2EC1E /* LoginWithAmazon.xcframework in Frameworks */,
-				FF24EE30239CAB8975B59985 /* Pods_razorpay_customui_pod_Example.framework in Frameworks */,
+				D5C462C04E942A2A14FE886C /* Pods_razorpay_customui_pod_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				705007394C9CD91203422BCB /* Pods_razorpay_customui_pod_Tests.framework in Frameworks */,
+				088B2897E4AB96952D9A96C5 /* Pods_razorpay_customui_pod_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,8 +113,8 @@
 			children = (
 				06B0D4912F3E003A00E2EC1E /* AmazonPayHardenediOSSDK.xcframework */,
 				06B0D4902F3E003A00E2EC1E /* LoginWithAmazon.xcframework */,
-				B46570FB0CFBCA7664A0A570 /* Pods_razorpay_customui_pod_Example.framework */,
-				379BD5F336B39E88700EDF44 /* Pods_razorpay_customui_pod_Tests.framework */,
+				7F5572CEF739D5BF9ED181EA /* Pods_razorpay_customui_pod_Example.framework */,
+				07D915DCE8D8F1490B600A1F /* Pods_razorpay_customui_pod_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -219,10 +198,10 @@
 		D0F4B110F704EC1615C874FF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DAA44F656819470C5AC84AFC /* Pods-razorpay-customui-pod_Example.debug.xcconfig */,
-				B4821569BD0EC792FBBE91F6 /* Pods-razorpay-customui-pod_Example.release.xcconfig */,
-				35FE952C698CF243EFAA194D /* Pods-razorpay-customui-pod_Tests.debug.xcconfig */,
-				62CE3E84BFF19B0228EE65AE /* Pods-razorpay-customui-pod_Tests.release.xcconfig */,
+				4EB74D496EEF6A31AE831057 /* Pods-razorpay-customui-pod_Example.debug.xcconfig */,
+				7A614181B1C8A0FFD5DEFE76 /* Pods-razorpay-customui-pod_Example.release.xcconfig */,
+				3747DD17932688A80C866EDC /* Pods-razorpay-customui-pod_Tests.debug.xcconfig */,
+				DEEDD77C1EBE48A5EB60B2BD /* Pods-razorpay-customui-pod_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -255,12 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "razorpay-customui-pod_Example" */;
 			buildPhases = (
-				9D0A48331FF55F93F1C0CDDB /* [CP] Check Pods Manifest.lock */,
+				B0635A09541AE5EF024CCA52 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				06B0D4962F3E003A00E2EC1E /* Embed Frameworks */,
-				B7164016E90ECFE2096CC9AB /* [CP] Embed Pods Frameworks */,
+				77CF833F9F6B95CC254538DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,7 +253,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "razorpay-customui-pod_Tests" */;
 			buildPhases = (
-				756B7E8285AC0EB0D11D2149 /* [CP] Check Pods Manifest.lock */,
+				DD9533AC54C8D641359C3ACB /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -367,29 +345,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		756B7E8285AC0EB0D11D2149 /* [CP] Check Pods Manifest.lock */ = {
+		77CF833F9F6B95CC254538DA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${PODS_ROOT}/Target Support Files/Pods-razorpay-customui-pod_Example/Pods-razorpay-customui-pod_Example-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/razorpay-core-pod/Razorpay.framework/Razorpay",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/razorpay-core-pod/RazorpayCore.framework/RazorpayCore",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/razorpay-customui-pod/RazorpayCustom.framework/RazorpayCustom",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-razorpay-customui-pod_Tests-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Razorpay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RazorpayCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RazorpayCustom.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-razorpay-customui-pod_Example/Pods-razorpay-customui-pod_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9D0A48331FF55F93F1C0CDDB /* [CP] Check Pods Manifest.lock */ = {
+		B0635A09541AE5EF024CCA52 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -411,26 +389,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B7164016E90ECFE2096CC9AB /* [CP] Embed Pods Frameworks */ = {
+		DD9533AC54C8D641359C3ACB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-razorpay-customui-pod_Example/Pods-razorpay-customui-pod_Example-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/razorpay-core-pod/Razorpay.framework/Razorpay",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/razorpay-core-pod/RazorpayCore.framework/RazorpayCore",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/razorpay-customui-pod/RazorpayCustom.framework/RazorpayCustom",
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Razorpay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RazorpayCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RazorpayCustom.framework",
+				"$(DERIVED_FILE_DIR)/Pods-razorpay-customui-pod_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-razorpay-customui-pod_Example/Pods-razorpay-customui-pod_Example-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -668,7 +646,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAA44F656819470C5AC84AFC /* Pods-razorpay-customui-pod_Example.debug.xcconfig */;
+			baseConfigurationReference = 4EB74D496EEF6A31AE831057 /* Pods-razorpay-customui-pod_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -692,7 +670,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4821569BD0EC792FBBE91F6 /* Pods-razorpay-customui-pod_Example.release.xcconfig */;
+			baseConfigurationReference = 7A614181B1C8A0FFD5DEFE76 /* Pods-razorpay-customui-pod_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -716,7 +694,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35FE952C698CF243EFAA194D /* Pods-razorpay-customui-pod_Tests.debug.xcconfig */;
+			baseConfigurationReference = 3747DD17932688A80C866EDC /* Pods-razorpay-customui-pod_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 3J5MJT3GNL;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -743,7 +721,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62CE3E84BFF19B0228EE65AE /* Pods-razorpay-customui-pod_Tests.release.xcconfig */;
+			baseConfigurationReference = DEEDD77C1EBE48A5EB60B2BD /* Pods-razorpay-customui-pod_Tests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 3J5MJT3GNL;
 				FRAMEWORK_SEARCH_PATHS = (

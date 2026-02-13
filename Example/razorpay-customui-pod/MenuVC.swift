@@ -159,29 +159,15 @@ extension MenuVC {
         self.payloadArray += [PayloadModel(title: "EMI", options: cardPaymentDict, paymentType: .makePayment)]
         cardPaymentDict = [:]
         
-        cardPaymentDict = /*[
+        cardPaymentDict = [
             "amount": 100, // amount in currency subunits. Defaults to INR. 100 = 100 paise = INR 1.
             "currency": "INR",
-            "email": "ramprasad179@gmail.com",
-            "contact": "9663976539",
+            "email": "test@gmail.com",
+            "contact": "9731585653",
             "method": "upi",
-            "vpa":"9663976539@ybl",
+//            "vpa":"9663976539@ybl",
             "_[flow]": "intent",
             "upi_app_package_name": "phonepe",
-        ] */
-        
-        
-        [
-            
-            
-                "currency":"MYR",
-                "amount":"100",
-                "email":"test@razorpay.com",
-                "contact":"9999999999",
-                "method":"fpx",
-                "bank":"AGOB"
-                
-            
         ]
 //        [
 //                    "amount": 100, // amount in currency subunits. Defaults to INR. 100 = 100 paise = INR 1.

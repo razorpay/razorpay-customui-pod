@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'razorpay-apay-wallet-paylater'
-  s.version          = '1.0.0-beta1'
+  s.version          = '1.0.0'
   s.summary          = "CocoaPod implementation of Razorpay's Internal Core Payment SDK"
 
   s.description      = <<-DESC

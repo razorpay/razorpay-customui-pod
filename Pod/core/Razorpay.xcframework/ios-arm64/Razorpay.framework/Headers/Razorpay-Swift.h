@@ -416,7 +416,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RazorpayChec
 + (void)payWithExternalPaymentEntityWithOptions:(NSDictionary * _Nonnull)options arrExternalPaymentEntities:(NSArray<id <PluginPaymentDelegate>> * _Nonnull)arrExternalPaymentEntities;
 - (BOOL)setWebView:(WKWebView * _Nonnull)webView error:(NSError * _Nullable * _Nullable)error;
 - (BOOL)setDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate error:(NSError * _Nullable * _Nullable)error;
-- (BOOL)handleRedirection:(NSString * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)handleRedirection:(NSString * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #endif

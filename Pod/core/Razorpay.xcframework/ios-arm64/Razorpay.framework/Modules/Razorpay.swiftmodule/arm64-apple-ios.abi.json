@@ -3199,9 +3199,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@Razorpay@objc(cs)RazorpayCheckout(im)handleRedirection:",
-            "mangledName": "$s8Razorpay0A8CheckoutC17handleRedirectionySbSSF",
+            "usr": "c:@CM@Razorpay@objc(cs)RazorpayCheckout(cm)handleRedirection:",
+            "mangledName": "$s8Razorpay0A8CheckoutC17handleRedirectionySbSSFZ",
             "moduleName": "Razorpay",
+            "static": true,
             "declAttributes": [
               "Final",
               "AccessControl",

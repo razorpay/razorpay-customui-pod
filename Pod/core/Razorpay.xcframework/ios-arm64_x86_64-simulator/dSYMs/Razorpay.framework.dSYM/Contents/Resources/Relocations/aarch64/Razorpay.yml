@@ -146,8 +146,8 @@ relocations:
   - { offset: 0x62910, size: 0x8, addend: 0x0, symName: '_$s8Razorpay0A8CheckoutC10setWebViewyySo05WKWebE0CKFTo', symObjAddr: 0x3374, symBinAddr: 0x7720, symSize: 0xA4 }
   - { offset: 0x62951, size: 0x8, addend: 0x0, symName: '_$s8Razorpay0A8CheckoutC11setDelegateyy0A4Core0A25PaymentCompletionProtocol_pKF', symObjAddr: 0x3418, symBinAddr: 0x77C4, symSize: 0x1C }
   - { offset: 0x6297B, size: 0x8, addend: 0x0, symName: '_$s8Razorpay0A8CheckoutC11setDelegateyy0A4Core0A25PaymentCompletionProtocol_pKFTo', symObjAddr: 0x3434, symBinAddr: 0x77E0, symSize: 0xA4 }
-  - { offset: 0x629BC, size: 0x8, addend: 0x0, symName: '_$s8Razorpay0A8CheckoutC17handleRedirectionySbSSF', symObjAddr: 0x34D8, symBinAddr: 0x7884, symSize: 0xB8 }
-  - { offset: 0x62A32, size: 0x8, addend: 0x0, symName: '_$s8Razorpay0A8CheckoutC17handleRedirectionySbSSFTo', symObjAddr: 0x3590, symBinAddr: 0x793C, symSize: 0xBC }
+  - { offset: 0x629BC, size: 0x8, addend: 0x0, symName: '_$s8Razorpay0A8CheckoutC17handleRedirectionySbSSFZ', symObjAddr: 0x34D8, symBinAddr: 0x7884, symSize: 0xB8 }
+  - { offset: 0x62A32, size: 0x8, addend: 0x0, symName: '_$s8Razorpay0A8CheckoutC17handleRedirectionySbSSFZTo', symObjAddr: 0x3590, symBinAddr: 0x793C, symSize: 0xBC }
   - { offset: 0x62A8D, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFs11AnyHashableV_Tg5', symObjAddr: 0x364C, symBinAddr: 0x79F8, symSize: 0x30 }
   - { offset: 0x62AC5, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4find_9hashValues10_HashTableV6BucketV6bucket_Sb5foundtx_SitSHRzlFs11AnyHashableV_Tg5', symObjAddr: 0x367C, symBinAddr: 0x7A28, symSize: 0xC4 }
   - { offset: 0x62B6B, size: 0x8, addend: 0x0, symName: '_$s8Razorpay0A8CheckoutC11initWithKey_11andDelegate18withPaymentWebViewACSS_0A4Core0aI18CompletionProtocol_pSo05WKWebK0CtFZTf4nnnd_g', symObjAddr: 0x3878, symBinAddr: 0x7C24, symSize: 0x1AC }

@@ -101,5 +101,5 @@ extension Razorpay.RazorpayCheckout {
   @objc public static func payWithExternalPaymentEntity(options: [Swift.AnyHashable : Any], arrExternalPaymentEntities: [any RazorpayCore.PluginPaymentDelegate])
   @objc final public func setWebView(_ webView: WebKit.WKWebView) throws
   @objc final public func setDelegate(_ delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol) throws
-  @objc final public func handleRedirection(_ url: Swift.String) -> Swift.Bool
+  @objc public static func handleRedirection(_ url: Swift.String) -> Swift.Bool
 }
