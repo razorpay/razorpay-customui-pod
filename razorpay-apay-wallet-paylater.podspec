@@ -37,7 +37,12 @@ helps businesses accepts online payments via Credit Card, Debit Card, Net bankin
   s.social_media_url = 'https://twitter.com/razorpay'
 
   s.platform     = :ios, '11.0'
-  
-  
-  
+
+  s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 x86_64'
+  }
+  s.user_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 x86_64'
+  }
+
 end
