@@ -46,13 +46,13 @@ let package = Package(
         // ────────────────────────────────────────────────────────
         .binaryTarget(
             name: "Razorpay",
-            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/<version>/Razorpay.xcframework.zip",
-            checksum: "<checksum>"
+            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/test-0.0.1/Razorpay.xcframework.zip",
+            checksum: "52286a896782f4476027e19b39cf507108287edc47e477189e4ca87711439c5f"
         ),
         .binaryTarget(
             name: "RazorpayCore",
-            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/<version>/RazorpayCore.xcframework.zip",
-            checksum: "<checksum>"
+            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/test-0.0.1/RazorpayCore.xcframework.zip",
+            checksum: "2a1d307d088696e4a5d39d4686864a16ecc31e2399b959586a9e58202ff012f9"
         ),
 
         .binaryTarget(
