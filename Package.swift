@@ -40,18 +40,20 @@ let package = Package(
             path: "RazorpayCustomUI/Sources"
         ),
 
-        // ── Binary Targets ───────────────────────────────────
-        // Update the <version> in the URL to match the release tag.
+        // ── Binary Targets ────────────────────────────────────────────
+        // Razorpay + RazorpayCore are uploaded to the GitHub Release
+        // at the same tag as packageVersion — same release event as the
+        // CocoaPod publish. Bump packageVersion to pick up new binaries.
         // Run .github/scripts/update_spm_checksums.sh to auto-fill checksums.
-        // ────────────────────────────────────────────────────────
+        // ─────────────────────────────────────────────────────────────
         .binaryTarget(
             name: "Razorpay",
-            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/<version>/Razorpay.xcframework.zip",
+            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/\(packageVersion)/Razorpay.xcframework.zip",
             checksum: "<checksum>"
         ),
         .binaryTarget(
             name: "RazorpayCore",
-            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/<version>/RazorpayCore.xcframework.zip",
+            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/\(packageVersion)/RazorpayCore.xcframework.zip",
             checksum: "<checksum>"
         ),
 
