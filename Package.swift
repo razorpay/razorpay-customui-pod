@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let packageVersion = "test-0.0.1"
+let packageVersion = "snapshot-core-1.0.7"
 
 
 let package = Package(
