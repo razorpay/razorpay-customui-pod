@@ -1,5 +1,11 @@
 // swift-tools-version: 5.9
 // The swift-tools-version declares the minimum version of Swift required to build this package.
+//
+// ---- SPM DEPRECATION NOTICE ----
+// SPM distribution of RazorpayCustomUI has moved to the razorpay-pod monorepo.
+// Add the package from: https://github.com/razorpay/razorpay-pod
+// and use the "RazorpayCustomUI" product.
+// ---------------------------------
 
 import PackageDescription
 
