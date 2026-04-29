@@ -44,6 +44,15 @@ for older cocoapod versions check [CHANGELOG](https://github.com/razorpay/razorp
 
 Refer to the documentation from [here](https://razorpay.com/docs/payment-gateway/ios-integration/custom/)
 
+### Note:
+
+> **SPM support has moved.** `RazorpayCustomUI` is now available from [`razorpay-pod`](https://github.com/razorpay/razorpay-pod). No new SPM releases will be made from this repository.
+To integrate via SPM:
+1. In Xcode, go to **File → Add Package Dependencies**
+2. Enter the URL: `https://github.com/razorpay/razorpay-pod`
+3. Select the **RazorpayCustomUI** product
+If migrating from this repo, remove `razorpay-customui-pod` from your package dependencies first.
+
 ## Contributing
 
 See the [CONTRIBUTING] document.
