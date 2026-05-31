@@ -4,7 +4,7 @@
 import PackageDescription
 
 
-let packageVersion = "1.4.1"
+let packageVersion = "1.5.0"
 
 
 let package = Package(
@@ -20,7 +20,8 @@ let package = Package(
                 "RazorpayCustomUI",
                 "Razorpay",
                 "RazorpayCustom",
-                "RazorpayCore"
+                "RazorpayCore",
+                "RazorpayApplePayPlugin"
             ]
         ),
     ],
@@ -48,6 +49,11 @@ let package = Package(
         .binaryTarget(
             name: "RazorpayCore",
             path: "Pod/core/RazorpayCore.xcframework"
+        ),
+
+        .binaryTarget(
+            name: "RazorpayApplePayPlugin",
+            path: "Pod/RazorpayApplePayPlugin.xcframework"
         ),
     ],
     swiftLanguageVersions: [.v5]

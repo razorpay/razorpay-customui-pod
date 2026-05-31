@@ -7,5 +7,4 @@ framework module RazorpayCore {
 
 module RazorpayCore.Swift {
   header "RazorpayCore-Swift.h"
-  requires objc
 }
