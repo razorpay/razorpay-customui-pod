@@ -839,7 +839,7 @@
           {
             "kind": "Function",
             "name": "initWithKey",
-            "printedName": "initWithKey(_:andDelegate:ApplePayPlugin:)",
+            "printedName": "initWithKey(_:andDelegate:withPaymentWebView:ApplePayPlugin:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -861,14 +861,20 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "ApplePayPlugin",
                 "printedName": "any RazorpayCore.ApplePayPlugin",
                 "usr": "c:@M@RazorpayCore@objc(pl)ApplePayPlugin"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@RazorpayCustom@objc(cs)RazorpayCheckout(cm)initWithKey:andDelegate:ApplePayPlugin:",
-            "mangledName": "$s14RazorpayCustom0A8CheckoutC11initWithKey_11andDelegate14ApplePayPluginACSS_0A4Core0A25PaymentCompletionProtocol_pAgF_ptFZ",
+            "usr": "c:@M@RazorpayCustom@objc(cs)RazorpayCheckout(cm)initWithKey:andDelegate:withPaymentWebView:ApplePayPlugin:",
+            "mangledName": "$s14RazorpayCustom0A8CheckoutC11initWithKey_11andDelegate18withPaymentWebView14ApplePayPluginACSS_0A4Core0aJ18CompletionProtocol_pSo05WKWebL0CAhG_ptFZ",
             "moduleName": "RazorpayCustom",
             "static": true,
             "declAttributes": [
@@ -3926,7 +3932,7 @@
           {
             "kind": "Function",
             "name": "initWithKey",
-            "printedName": "initWithKey(_:andDelegate:ApplePayPlugin:)",
+            "printedName": "initWithKey(_:andDelegate:withPaymentWebView:ApplePayPlugin:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3955,16 +3961,22 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "ApplePayPlugin",
                 "printedName": "any RazorpayCore.ApplePayPlugin",
                 "usr": "c:@M@RazorpayCore@objc(pl)ApplePayPlugin"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@RazorpayCustom@objc(cs)CustomCheckoutImplementation(im)initWithKey:andDelegate:ApplePayPlugin:",
-            "mangledName": "$s14RazorpayCustom0B22CheckoutImplementationC11initWithKey_11andDelegate14ApplePayPluginypSgSS_0A4Core0A25PaymentCompletionProtocol_pAhF_ptF",
+            "usr": "c:@M@RazorpayCustom@objc(cs)CustomCheckoutImplementation(im)initWithKey:andDelegate:withPaymentWebView:ApplePayPlugin:",
+            "mangledName": "$s14RazorpayCustom0B22CheckoutImplementationC11initWithKey_11andDelegate18withPaymentWebView14ApplePayPluginypSgSS_0A4Core0aK18CompletionProtocol_pSo05WKWebM0CAiG_ptF",
             "moduleName": "RazorpayCustom",
-            "objc_name": "initWithKey:andDelegate:ApplePayPlugin:",
+            "objc_name": "initWithKey:andDelegate:withPaymentWebView:ApplePayPlugin:",
             "declAttributes": [
               "Final",
               "ObjC",
@@ -6617,7 +6629,7 @@
     {
       "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/RazorpayCheckout.swift",
       "kind": "StringLiteral",
-      "offset": 16627,
+      "offset": 17152,
       "length": 12,
       "value": "\"rcURIEvent\""
     },
@@ -6946,49 +6958,49 @@
     {
       "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 65241,
+      "offset": 64350,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 65270,
+      "offset": 64379,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 66058,
+      "offset": 65167,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "BooleanLiteral",
-      "offset": 69902,
+      "offset": 69011,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 106004,
+      "offset": 105113,
       "length": 14,
       "value": "\"user_aborted\""
     },
     {
       "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 106084,
+      "offset": 105193,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/CustomuiOtpelf\/InternalRazorpay.swift",
       "kind": "StringLiteral",
-      "offset": 106179,
+      "offset": 105288,
       "length": 8,
       "value": "\"failed\""
     },

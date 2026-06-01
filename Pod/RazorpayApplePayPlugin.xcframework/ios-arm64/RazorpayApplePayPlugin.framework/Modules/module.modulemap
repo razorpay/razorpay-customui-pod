@@ -1,3 +1,0 @@
-framework module RazorpayApplePayPlugin {
-  header "RazorpayApplePayPlugin-Swift.h"
-}

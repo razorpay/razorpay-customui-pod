@@ -18,7 +18,7 @@ import _SwiftConcurrencyShims
   @objc func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, UIPlugin: any RazorpayCore.UPITurboUIPlugin) -> Any?
   @objc func initWithKey(_ key: Swift.String) -> Any?
   @objc func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, AmazonpayPlugin: any RazorpayCore.AmazonWalletPaylaterProtocol) -> Any?
-  @objc func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, ApplePayPlugin: any RazorpayCore.ApplePayPlugin) -> Any?
+  @objc func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, ApplePayPlugin: any RazorpayCore.ApplePayPlugin) -> Any?
   @objc func changeApiKey(_ newApiKey: Swift.String, checkoutInstance: Any?)
   @objc func payWithCred(withOptions options: [Swift.AnyHashable : Any], checkoutInstance: Any?, withSuccessCallback success: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc func getCardFlows(_ options: [Swift.AnyHashable : Any], checkoutInstance: Any?, withCallback: @escaping (Swift.Bool) -> Swift.Void)
@@ -244,6 +244,7 @@ extension RazorpayCore.UPITurboPrefetchWithUIProtocol {
   @objc func initiate(key_id: Swift.String)
   @objc var paymentPlugin: any RazorpayCore.PluginPaymentDelegate { get }
   @objc func canMakePayments(completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc func setAnalyticsTracker(_ tracker: @escaping (Swift.String, [Swift.AnyHashable : Any]?) -> Swift.Void)
 }
 @objc public protocol StandardCheckoutImplementationProtocol : RazorpayCore.CheckoutImplementation {
   @objc var upiTurbo: (any RazorpayCore.UPITurboUIPlugin)? { get set }

@@ -21,7 +21,7 @@ let package = Package(
                 "Razorpay",
                 "RazorpayCustom",
                 "RazorpayCore",
-                "RazorpayApplePayPlugin"
+                "RazorpayApplePay"
             ]
         ),
     ],
@@ -52,8 +52,8 @@ let package = Package(
         ),
 
         .binaryTarget(
-            name: "RazorpayApplePayPlugin",
-            path: "Pod/RazorpayApplePayPlugin.xcframework"
+            name: "RazorpayApplePay",
+            path: "Pod/RazorpayApplePay.xcframework"
         ),
     ],
     swiftLanguageVersions: [.v5]

@@ -1,0 +1,716 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "RazorpayApplePay",
+    "printedName": "RazorpayApplePay",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RazorpayApplePay",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "RazorpayApplePay"
+      },
+      {
+        "kind": "Import",
+        "name": "RazorpayCore",
+        "printedName": "RazorpayCore",
+        "declKind": "Import",
+        "moduleName": "RazorpayApplePay"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApplePay",
+        "printedName": "ApplePay",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "pluginInstance",
+            "printedName": "pluginInstance()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApplePayPlugin",
+                "printedName": "any RazorpayCore.ApplePayPlugin",
+                "usr": "c:@M@RazorpayCore@objc(pl)ApplePayPlugin"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RazorpayApplePay0bC0C14pluginInstance0A4Core0bC6Plugin_pyFZ",
+            "mangledName": "$s16RazorpayApplePay0bC0C14pluginInstance0A4Core0bC6Plugin_pyFZ",
+            "moduleName": "RazorpayApplePay",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isApplePaySupported",
+            "printedName": "isApplePaySupported()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RazorpayApplePay0bC0C02isbC9SupportedSbyFZ",
+            "mangledName": "$s16RazorpayApplePay0bC0C02isbC9SupportedSbyFZ",
+            "moduleName": "RazorpayApplePay",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RazorpayApplePay@objc(cs)ApplePay",
+        "mangledName": "$s16RazorpayApplePay0bC0C",
+        "moduleName": "RazorpayApplePay",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RazorpayApplePay",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "RazorpayApplePay"
+      },
+      {
+        "kind": "Import",
+        "name": "RazorpayCore",
+        "printedName": "RazorpayCore",
+        "declKind": "Import",
+        "moduleName": "RazorpayApplePay"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApplePayEntity",
+        "printedName": "ApplePayEntity",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setAnalyticsTracker",
+            "printedName": "setAnalyticsTracker(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, [Swift.AnyHashable : Any]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, [Swift.AnyHashable : Any]?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[Swift.AnyHashable : Any]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.AnyHashable : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "AnyHashable",
+                                "printedName": "Swift.AnyHashable",
+                                "usr": "s:s11AnyHashableV"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RazorpayApplePay@objc(cs)ApplePayEntity(im)setAnalyticsTracker:",
+            "mangledName": "$s16RazorpayApplePay0bC6EntityC19setAnalyticsTrackeryyySS_SDys11AnyHashableVypGSgtcF",
+            "moduleName": "RazorpayApplePay",
+            "objc_name": "setAnalyticsTracker:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initiate",
+            "printedName": "initiate(key_id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RazorpayApplePay@objc(cs)ApplePayEntity(im)initiateWithKey_id:",
+            "mangledName": "$s16RazorpayApplePay0bC6EntityC8initiate6key_idySS_tF",
+            "moduleName": "RazorpayApplePay",
+            "objc_name": "initiateWithKey_id:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "paymentPlugin",
+            "printedName": "paymentPlugin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PluginPaymentDelegate",
+                "printedName": "any RazorpayCore.PluginPaymentDelegate",
+                "usr": "c:@M@RazorpayCore@objc(pl)PluginPaymentDelegate"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RazorpayApplePay@objc(cs)ApplePayEntity(py)paymentPlugin",
+            "mangledName": "$s16RazorpayApplePay0bC6EntityC13paymentPlugin0A4Core0F15PaymentDelegate_pvp",
+            "moduleName": "RazorpayApplePay",
+            "objc_name": "paymentPlugin",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PluginPaymentDelegate",
+                    "printedName": "any RazorpayCore.PluginPaymentDelegate",
+                    "usr": "c:@M@RazorpayCore@objc(pl)PluginPaymentDelegate"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RazorpayApplePay@objc(cs)ApplePayEntity(im)paymentPlugin",
+                "mangledName": "$s16RazorpayApplePay0bC6EntityC13paymentPlugin0A4Core0F15PaymentDelegate_pvg",
+                "moduleName": "RazorpayApplePay",
+                "objc_name": "paymentPlugin",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "canMakePayments",
+            "printedName": "canMakePayments(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RazorpayApplePay@objc(cs)ApplePayEntity(im)canMakePaymentsWithCompletion:",
+            "mangledName": "$s16RazorpayApplePay0bC6EntityC15canMakePayments10completionyySbc_tF",
+            "moduleName": "RazorpayApplePay",
+            "objc_name": "canMakePaymentsWithCompletion:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApplePayEntity",
+                "printedName": "RazorpayApplePay.ApplePayEntity",
+                "usr": "c:@M@RazorpayApplePay@objc(cs)ApplePayEntity"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@RazorpayApplePay@objc(cs)ApplePayEntity(im)init",
+            "mangledName": "$s16RazorpayApplePay0bC6EntityCACycfc",
+            "moduleName": "RazorpayApplePay",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RazorpayApplePay@objc(cs)ApplePayEntity",
+        "mangledName": "$s16RazorpayApplePay0bC6EntityC",
+        "moduleName": "RazorpayApplePay",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ApplePayPlugin",
+            "printedName": "ApplePayPlugin",
+            "usr": "c:@M@RazorpayCore@objc(pl)ApplePayPlugin",
+            "mangledName": "$s12RazorpayCore14ApplePayPluginP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RazorpayApplePay",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "RazorpayApplePay"
+      },
+      {
+        "kind": "Import",
+        "name": "RazorpayCore",
+        "printedName": "RazorpayCore",
+        "declKind": "Import",
+        "moduleName": "RazorpayApplePay"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "RazorpayApplePay"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RazorpayApplePay",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RazorpayApplePay",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RazorpayApplePay",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RazorpayApplePay",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayPluginEntity.swift",
+      "kind": "BooleanLiteral",
+      "offset": 571,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/PreferencesCache.swift",
+      "kind": "BooleanLiteral",
+      "offset": 448,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/PreferencesCache.swift",
+      "kind": "Array",
+      "offset": 514,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 461,
+      "length": 29,
+      "value": "\"APPLEPAY_ELIGIBILITY_CALLED\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 526,
+      "length": 30,
+      "value": "\"APPLEPAY_ELIGIBILITY_SUCCESS\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 592,
+      "length": 29,
+      "value": "\"APPLEPAY_ELIGIBILITY_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 683,
+      "length": 35,
+      "value": "\"APPLEPAY_PREFERENCES_FETCH_CALLED\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 754,
+      "length": 36,
+      "value": "\"APPLEPAY_PREFERENCES_FETCH_SUCCESS\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 826,
+      "length": 35,
+      "value": "\"APPLEPAY_PREFERENCES_FETCH_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 923,
+      "length": 25,
+      "value": "\"APPLEPAY_PAYMENT_CALLED\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 984,
+      "length": 26,
+      "value": "\"APPLEPAY_PAYMENT_SUCCESS\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1046,
+      "length": 25,
+      "value": "\"APPLEPAY_PAYMENT_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1107,
+      "length": 33,
+      "value": "\"APPLEPAY_USER_CANCELLED_PAYMENT\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1232,
+      "length": 27,
+      "value": "\"APPLEPAY_VALIDATION_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1295,
+      "length": 30,
+      "value": "\"APPLEPAY_DEVICE_NOT_ELIGIBLE\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1361,
+      "length": 26,
+      "value": "\"APPLEPAY_SHEET_PRESENTED\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1423,
+      "length": 23,
+      "value": "\"APPLEPAY_SHEET_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1482,
+      "length": 29,
+      "value": "\"APPLEPAY_PAYMENT_AUTHORIZED\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1586,
+      "length": 32,
+      "value": "\"APPLEPAY_CREATE_PAYMENT_CALLED\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1654,
+      "length": 33,
+      "value": "\"APPLEPAY_CREATE_PAYMENT_SUCCESS\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1723,
+      "length": 32,
+      "value": "\"APPLEPAY_CREATE_PAYMENT_FAILED\""
+    }
+  ]
+}

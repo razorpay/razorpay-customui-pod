@@ -395,11 +395,13 @@ SWIFT_PROTOCOL("_TtP12RazorpayCore28AmazonWalletPaylaterProtocol_")
 - (void)startTransaction:(NSString * _Nonnull)url requestId:(NSString * _Nonnull)requestId internalDelegate:(id <InternalDelegate> _Nonnull)internalDelegate paymentType:(NSString * _Nonnull)paymentType webView:(WKWebView * _Nonnull)webView;
 @end
 
+@class NSObject;
 SWIFT_PROTOCOL("_TtP12RazorpayCore14ApplePayPlugin_")
 @protocol ApplePayPlugin
 - (void)initiateWithKey_id:(NSString * _Nonnull)key_id;
 @property (nonatomic, readonly, strong) id <PluginPaymentDelegate> _Nonnull paymentPlugin;
 - (void)canMakePaymentsWithCompletion:(void (^ _Nonnull)(BOOL))completion;
+- (void)setAnalyticsTracker:(void (^ _Nonnull)(NSString * _Nonnull, NSDictionary * _Nullable))tracker;
 @end
 
 /// Represents the available checkout implementation flavors.
@@ -445,7 +447,7 @@ SWIFT_PROTOCOL("_TtP12RazorpayCore36CustomCheckoutImplementationProtocol_")
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate withPaymentWebView:(WKWebView * _Nonnull)merchantWebView UIPlugin:(id <UPITurboUIPlugin> _Nonnull)UIPlugin SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate withPaymentWebView:(WKWebView * _Nonnull)merchantWebView AmazonpayPlugin:(id <AmazonWalletPaylaterProtocol> _Nonnull)AmazonpayPlugin SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
-- (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate ApplePayPlugin:(id <ApplePayPlugin> _Nonnull)ApplePayPlugin SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate withPaymentWebView:(WKWebView * _Nonnull)merchantWebView ApplePayPlugin:(id <ApplePayPlugin> _Nonnull)ApplePayPlugin SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 - (void)changeApiKey:(NSString * _Nonnull)newApiKey checkoutInstance:(id _Nullable)checkoutInstance;
 - (void)payWithCredWithOptions:(NSDictionary * _Nonnull)options checkoutInstance:(id _Nullable)checkoutInstance withSuccessCallback:(void (^ _Nonnull)(NSDictionary * _Nonnull))success andFailureCallback:(void (^ _Nonnull)(NSString * _Nonnull))failure;
 - (void)getCardFlows:(NSDictionary * _Nonnull)options checkoutInstance:(id _Nullable)checkoutInstance withCallback:(void (^ _Nonnull)(BOOL))withCallback;
@@ -1070,11 +1072,13 @@ SWIFT_PROTOCOL("_TtP12RazorpayCore28AmazonWalletPaylaterProtocol_")
 - (void)startTransaction:(NSString * _Nonnull)url requestId:(NSString * _Nonnull)requestId internalDelegate:(id <InternalDelegate> _Nonnull)internalDelegate paymentType:(NSString * _Nonnull)paymentType webView:(WKWebView * _Nonnull)webView;
 @end
 
+@class NSObject;
 SWIFT_PROTOCOL("_TtP12RazorpayCore14ApplePayPlugin_")
 @protocol ApplePayPlugin
 - (void)initiateWithKey_id:(NSString * _Nonnull)key_id;
 @property (nonatomic, readonly, strong) id <PluginPaymentDelegate> _Nonnull paymentPlugin;
 - (void)canMakePaymentsWithCompletion:(void (^ _Nonnull)(BOOL))completion;
+- (void)setAnalyticsTracker:(void (^ _Nonnull)(NSString * _Nonnull, NSDictionary * _Nullable))tracker;
 @end
 
 /// Represents the available checkout implementation flavors.
@@ -1120,7 +1124,7 @@ SWIFT_PROTOCOL("_TtP12RazorpayCore36CustomCheckoutImplementationProtocol_")
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate withPaymentWebView:(WKWebView * _Nonnull)merchantWebView UIPlugin:(id <UPITurboUIPlugin> _Nonnull)UIPlugin SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 - (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate withPaymentWebView:(WKWebView * _Nonnull)merchantWebView AmazonpayPlugin:(id <AmazonWalletPaylaterProtocol> _Nonnull)AmazonpayPlugin SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
-- (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate ApplePayPlugin:(id <ApplePayPlugin> _Nonnull)ApplePayPlugin SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)initWithKey:(NSString * _Nonnull)key andDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate withPaymentWebView:(WKWebView * _Nonnull)merchantWebView ApplePayPlugin:(id <ApplePayPlugin> _Nonnull)ApplePayPlugin SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 - (void)changeApiKey:(NSString * _Nonnull)newApiKey checkoutInstance:(id _Nullable)checkoutInstance;
 - (void)payWithCredWithOptions:(NSDictionary * _Nonnull)options checkoutInstance:(id _Nullable)checkoutInstance withSuccessCallback:(void (^ _Nonnull)(NSDictionary * _Nonnull))success andFailureCallback:(void (^ _Nonnull)(NSString * _Nonnull))failure;
 - (void)getCardFlows:(NSDictionary * _Nonnull)options checkoutInstance:(id _Nullable)checkoutInstance withCallback:(void (^ _Nonnull)(BOOL))withCallback;

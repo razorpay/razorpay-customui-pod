@@ -2,8 +2,8 @@
 triple:          'arm64-apple-darwin'
 binary-path:     '/Users/anand.suryawanshi/Desktop/Projects/razorpay-ios/RazorpayIOS/DerivedData/iphonesimulator/Build/Products/Release-iphonesimulator/RazorpayCore/RazorpayCore.framework/RazorpayCore'
 relocations:
-  - { offset: 0x774, size: 0x8, addend: 0x0, symName: _RazorpayCoreVersionString, symObjAddr: 0x0, symBinAddr: 0x45A0, symSize: 0x0 }
-  - { offset: 0x7A8, size: 0x8, addend: 0x0, symName: _RazorpayCoreVersionNumber, symObjAddr: 0x30, symBinAddr: 0x45D0, symSize: 0x0 }
+  - { offset: 0x774, size: 0x8, addend: 0x0, symName: _RazorpayCoreVersionString, symObjAddr: 0x0, symBinAddr: 0x45B0, symSize: 0x0 }
+  - { offset: 0x7A8, size: 0x8, addend: 0x0, symName: _RazorpayCoreVersionNumber, symObjAddr: 0x30, symBinAddr: 0x45E0, symSize: 0x0 }
   - { offset: 0x7E4, size: 0x8, addend: 0x0, symName: '_$s12RazorpayCore18PluginPaymentModelC11merchantKeySSvg', symObjAddr: 0x0, symBinAddr: 0x1368, symSize: 0x38 }
   - { offset: 0x8EA, size: 0x8, addend: 0x0, symName: '_$s12RazorpayCore18PluginPaymentModelCMa', symObjAddr: 0x160, symBinAddr: 0x14C8, symSize: 0x20 }
   - { offset: 0x911, size: 0x8, addend: 0x0, symName: '_$s12RazorpayCore18PluginPaymentModelCfETo', symObjAddr: 0x220, symBinAddr: 0x155C, symSize: 0x4C }

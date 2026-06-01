@@ -26,7 +26,7 @@ import _SwiftConcurrencyShims
   @objc public static func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, UIPlugin: any RazorpayCore.UPITurboUIPlugin) -> RazorpayCustom.RazorpayCheckout
   @objc public static func initWithKey(_ key: Swift.String) -> RazorpayCustom.RazorpayCheckout
   @objc public static func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, AmazonpayPlugin: any RazorpayCore.AmazonWalletPaylaterProtocol) -> RazorpayCustom.RazorpayCheckout
-  @objc public static func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, ApplePayPlugin applePayPlugin: any RazorpayCore.ApplePayPlugin) -> RazorpayCustom.RazorpayCheckout
+  @objc public static func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, ApplePayPlugin applePayPlugin: any RazorpayCore.ApplePayPlugin) -> RazorpayCustom.RazorpayCheckout
   @objc final public func changeApiKey(_ newApiKey: Swift.String)
   @objc final public func payWithCred(withOptions options: [Swift.AnyHashable : Any], withSuccessCallback success: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc final public func getCardFlows(_ options: [Swift.AnyHashable : Any], withCallback: @escaping (Swift.Bool) -> Swift.Void)
@@ -86,7 +86,7 @@ public class TurboPluginManager {
   @objc final public func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, plugin: any RazorpayCore.UPITurboPlugin) -> Any?
   @objc final public func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, UIPlugin: any RazorpayCore.UPITurboUIPlugin) -> Any?
   @objc final public func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView) -> Any?
-  @objc final public func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, ApplePayPlugin: any RazorpayCore.ApplePayPlugin) -> Any?
+  @objc final public func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, ApplePayPlugin: any RazorpayCore.ApplePayPlugin) -> Any?
   @objc final public func initWithKey(_ key: Swift.String) -> Any?
   @objc final public func changeApiKey(_ newApiKey: Swift.String, checkoutInstance: Any?)
   @objc final public func payWithCred(withOptions options: [Swift.AnyHashable : Any], checkoutInstance: Any?, withSuccessCallback success: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
