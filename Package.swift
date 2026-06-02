@@ -4,7 +4,7 @@
 import PackageDescription
 
 
-let packageVersion = "1.5.0"
+let packageVersion = "1.5.0-alpha.1"
 
 
 let package = Package(
@@ -22,6 +22,14 @@ let package = Package(
                 "RazorpayCustom",
                 "RazorpayCore",
                 "RazorpayApplePay"
+            ]
+        ),
+        .library(
+            name: "RazorpayApplePay",
+            targets: [
+                "RazorpayApplePay",
+                "RazorpayCustom",
+                "RazorpayCore"
             ]
         ),
     ],
@@ -43,17 +51,20 @@ let package = Package(
 
         .binaryTarget(
             name: "RazorpayCustom",
-            path: "Pod/RazorpayCustom.xcframework"
+            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/1.5.0-alpha.1/RazorpayCustom.xcframework.zip",
+            checksum: "5c70aa931563615c85546692594c352e54758a06991d37e8fd315e01115283ab"
         ),
 
         .binaryTarget(
             name: "RazorpayCore",
-            path: "Pod/core/RazorpayCore.xcframework"
+            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/1.5.0-alpha.1/RazorpayCore.xcframework.zip",
+            checksum: "6706414f8ddbe76a8e5613a55d0f60cbd47e7e21de778cecaa5eb89d26628b6d"
         ),
 
         .binaryTarget(
             name: "RazorpayApplePay",
-            path: "Pod/RazorpayApplePay.xcframework"
+            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/1.5.0-alpha.1/RazorpayApplePay.xcframework.zip",
+            checksum: "89b77777481357108288656ae659acf29851c4f1ed245270e7f9e57bd643e8d3"
         ),
     ],
     swiftLanguageVersions: [.v5]
