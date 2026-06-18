@@ -2,80 +2,62 @@ name: Deploy Custom Checkout
 on: repository_dispatch
 
 env:
-  DEPLOYMENT_VERSION: ${{github.event.client_payload.version}}
-  DEPLOYMENT_BRANCH_NAME: "release-v-${{github.event.client_payload.version}}"
+  DEPLOYMENT_VERSION: ${{ github.event.client_payload.version }}
+  DEPLOYMENT_BRANCH:  "release-v-${{ github.event.client_payload.version }}"
+  SOURCE_RUN_ID:      ${{ github.event.client_payload.run_id }}
 
 jobs:
-  uts_and_build_generation:
-    runs-on: macOS-latest # nosemgrep : non-self-hosted-runner
+  receive-and-release:
+    if: ${{ github.event.action == 'deploy_custom_xcframework' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - name: Select Xcode
-        run: sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
+      - name: Checkout pod repo
+        uses: actions/checkout@v4
 
-      - name: Xcode Version
-        run: /usr/bin/xcodebuild -version
-
-      - name: Check out razorpay-ios repository code
-        uses: actions/checkout@v2
+      - name: Download XCFramework from razorpay-ios
+        uses: actions/download-artifact@v4
         with:
-          repository: "razorpay/razorpay-ios"
-          token: "${{ secrets.CI_BOT_TOKEN }}"
+          name: "xcframework-custom-v${{ env.DEPLOYMENT_VERSION }}"
+          path: ./xcframework-download
+          github-token: ${{ secrets.CI_BOT_TOKEN }}
+          repository: razorpay/razorpay-ios
+          run-id: ${{ env.SOURCE_RUN_ID }}
 
-      - name: Set permission
-        run: exec chmod +x ./.github/scripts/run-uts.sh
-
-      - name: Running Standard Checkout Unit Tests
-        run: exec ./.github/scripts/run-uts.sh
-
-      - name: Set permission to run XCFramework Script
-        run: exec chmod +x ./.github/scripts/create-custom-checkout-build.sh
-
-      - name: Run Create XCFramework Script
-        run: exec ./.github/scripts/create-custom-checkout-build.sh
-
-      - name: Check out razorpay-customui-pod repository code
-        uses: actions/checkout@v2
-        with:
-          repository: "razorpay/razorpay-customui-pod"
-          token: "${{ secrets.CI_BOT_TOKEN }}"
-
-      - name: Set permission for PODSPEC Update
-        run: exec chmod +x ./.github/scripts/update_podspec_version.sh
-
-      - name: Update Release Version
-        run: exec ./.github/scripts/update_podspec_version.sh $DEPLOYMENT_VERSION
-
-      - name: Remove old Build
-        run: rm -rf ./Pod/Razorpay.xcframework
-
-      - name: Update new build
-        run: cp -R ~/Desktop/CustomuiOtpelf/ ./Pod
-
-      - name: Upload Release builds to Artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: "Checkout-Releases-v${{env.DEPLOYMENT_VERSION}}"
-          path: ~/Desktop/CustomuiOtpelf
-
-      - name: Remove Framework Folder
-        run: rm -rf ./Pod/Razorpay.framework
-
-      - name: Create Branch and Commit Changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: Ramprasad A
-          author_email: ramprasad.a@razorpay.com
-          message: "Release standard checkout v${{env.DEPLOYMENT_VERSION}}"
-          new_branch: ${{env.DEPLOYMENT_BRANCH_NAME}}
-          add: "[./Pod, razorpay-customui-pod.podspec]"
-          push: origin ${{env.DEPLOYMENT_BRANCH_NAME}} --set-upstream --force
-
-      - name: Create Pull Request
-        shell: bash
+      - name: Replace XCFramework in Pod/
         run: |
-          curl \
-          -X POST \
-          -H 'authorization: Bearer ${{ secrets.CI_BOT_TOKEN }}' \
-          -H "Accept: application/vnd.github+json" \
-          https://api.github.com/repos/razorpay/razorpay-customui-pod/pulls \
-          -d '{"title":"v_${{env.DEPLOYMENT_VERSION}}_release","body":"Standard Checkout Deployment","head":"${{env.DEPLOYMENT_BRANCH_NAME}}","base":"master"}'
+          rm -rf ./Pod/RazorpayCustom.xcframework
+          cp -R ./xcframework-download/RazorpayCustom.xcframework ./Pod/RazorpayCustom.xcframework
+          echo "✅ Replaced RazorpayCustom.xcframework"
+
+      - name: Bump podspec version
+        run: |
+          chmod +x ./.github/scripts/update_podspec_version.sh
+          ./.github/scripts/update_podspec_version.sh "${{ env.DEPLOYMENT_VERSION }}"
+          grep "s.version" razorpay-customui-pod.podspec
+
+      - name: Commit release branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "${{ env.DEPLOYMENT_BRANCH }}"
+          git add ./Pod razorpay-customui-pod.podspec
+          git commit -m "release: v${{ env.DEPLOYMENT_VERSION }}"
+          git push origin "${{ env.DEPLOYMENT_BRANCH }}"
+
+      - name: Open PR to master
+        env:
+          GH_TOKEN: ${{ secrets.CI_BOT_TOKEN }}
+        run: |
+          PR_URL=$(gh pr create \
+            --title "v_${{ env.DEPLOYMENT_VERSION }}_release" \
+            --body "Custom Checkout SDK v${{ env.DEPLOYMENT_VERSION }} — pre-built xcframework from razorpay-ios.
+
+          **BrowserStack build:** ${{ github.event.client_payload.bs_build_id }}
+          **Dashboard:** ${{ github.event.client_payload.bs_dashboard }}
+          **Source run:** https://github.com/razorpay/razorpay-ios/actions/runs/${{ env.SOURCE_RUN_ID }}
+
+          Merging this PR triggers \`release-to-cocoapods.yml\` (tag + GitHub release + pod trunk push)." \
+            --base master \
+            --head "${{ env.DEPLOYMENT_BRANCH }}")
+          echo "✅ PR opened: $PR_URL"
