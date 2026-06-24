@@ -14,8 +14,8 @@
             filePath = "razorpay-customui-pod/WebCheckoutVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "triggerAppropriatePayment()"
             landmarkType = "7">
          </BreakpointContent>
@@ -32,7 +32,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "644"
             endingLineNumber = "644"
-            landmarkName = "webView(_:decidePolicyFor:handler:)"
+            landmarkName = "authorize(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -48,71 +48,85 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "643"
             endingLineNumber = "643"
-            landmarkName = "webView(_:decidePolicyFor:handler:)"
+            landmarkName = "authorize(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "36F10B8C-055B-4470-8995-73192587D7E8"
+            uuid = "EB789B52-0226-4ADA-8196-5DCFBE1FAF7D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../razorpay-ios/RazorpayIOS/CustomuiOtpelf/InternalRazorpay.swift"
+            filePath = "razorpay-customui-pod/WebCheckoutVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1254"
-            endingLineNumber = "1254"
-            landmarkName = "performPollingRequest(_:)"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "triggerAppropriatePayment()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EB789B52-0226-4ADA-8196-5DCFBE1FAF7D - a53d39037e5571e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "razorpay_customui_pod_Example.WebCheckoutVC.triggerAppropriatePayment() -&gt; ()"
+                  moduleName = "razorpay-customui-pod_Example.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivek.shindhe/Razorpay/ios/razorpay-customui-pod/Example/razorpay-customui-pod/WebCheckoutVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144">
+               </Location>
+               <Location
+                  uuid = "EB789B52-0226-4ADA-8196-5DCFBE1FAF7D - f2b32fdcd55b5399"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 (Swift.Dictionary&lt;Swift.AnyHashable, Any&gt;) -&gt; () in razorpay_customui_pod_Example.WebCheckoutVC.triggerAppropriatePayment() -&gt; ()"
+                  moduleName = "razorpay-customui-pod_Example.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivek.shindhe/Razorpay/ios/razorpay-customui-pod/Example/razorpay-customui-pod/WebCheckoutVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E7287A39-4531-4669-BF04-7DF3DCBF5A00"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "razorpay-customui-pod/WebCheckoutVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "triggerAppropriatePayment()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6DC4B122-4DBE-420B-AC55-FD3CC8D2F130"
+            uuid = "4AD9511A-9F7B-4E45-BA46-9B66725EBEF0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../razorpay-ios/RazorpayIOS/CustomuiOtpelf/InternalRazorpay.swift"
+            filePath = "razorpay-customui-pod/WebCheckoutVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1244"
-            endingLineNumber = "1244"
-            landmarkName = "pollStatus(_:removeLimiter:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8F0809ED-EBDF-478A-93F4-2918EA637C9F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../razorpay-ios/RazorpayIOS/CustomuiOtpelf/InternalRazorpay.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1245"
-            endingLineNumber = "1245"
-            landmarkName = "pollStatus(_:removeLimiter:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E35EEEEA-DDB1-4FEA-85EE-9EA2FE8695F9"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../razorpay-ios/RazorpayIOS/CustomuiOtpelf/InternalRazorpay.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1247"
-            endingLineNumber = "1247"
-            landmarkName = "performPollingRequest(_:)"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "triggerAppropriatePayment()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

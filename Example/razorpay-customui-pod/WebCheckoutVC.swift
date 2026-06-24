@@ -17,6 +17,7 @@ enum PaymentType:String,Codable {
     case makeVASPayment
     case makeCredPayment
     case upiPayment
+    case getRecommendedInstruments
 }
 
 class WebCheckoutVC: UIViewController, WKScriptMessageHandler {
@@ -139,6 +140,12 @@ extension WebCheckoutVC {
             } else {
                 self.razorpay?.authorize(payload?.options ?? [:])
             }
+        case .getRecommendedInstruments:
+            RazorpayCheckout.getRecommendedInstruments(withOptions: payload?.options ?? [:], withSuccessCallback: { response in
+                print(response)
+            }, andFailureCallback: { error in
+                print(error)
+            })
             
         default:
             self.razorpay?.authorize(payload?.options ?? [:])
