@@ -4,7 +4,7 @@
 import PackageDescription
 
 
-let packageVersion = "1.5.0-beta.6"
+let packageVersion = "1.5.0"
 
 
 let package = Package(
@@ -47,26 +47,26 @@ let package = Package(
 
         .binaryTarget(
             name: "Razorpay",
-            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/1.5.0-beta.6/Razorpay.xcframework.zip",
-            checksum: "a437bd68ad16b883216fcd8ac949dd03ae6206ef26a3ed81d7f4c89f1cc643aa"
+            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/1.5.0/Razorpay.xcframework.zip",
+            checksum: "a51208d8529b813e4625829f2fd0624651f1c4113f61507636096d6756284ba7"
         ),
 
         .binaryTarget(
             name: "RazorpayCustom",
-            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/1.5.0-beta.6/RazorpayCustom.xcframework.zip",
-            checksum: "3a598e7646c48b69a6337b5bf955d157de5b8057070b62edbab40baedcedc214"
+            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/1.5.0/RazorpayCustom.xcframework.zip",
+            checksum: "ba359c81870950f7f5dee5bc1f539adb028efe482335104d242bcc64ac59d021"
         ),
 
         .binaryTarget(
             name: "RazorpayCore",
-            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/1.5.0-beta.6/RazorpayCore.xcframework.zip",
-            checksum: "2e7681c56be2e6df4afdbf1f00ad8d636b6d5b8afcf3c398041f660978666b89"
+            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/1.5.0/RazorpayCore.xcframework.zip",
+            checksum: "43905538520d5a74f3316567c5ecff945075ccd0e09ae38bb9b3de8f194272de"
         ),
 
         .binaryTarget(
             name: "RazorpayApplePay",
-            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/1.5.0-beta.6/RazorpayApplePay.xcframework.zip",
-            checksum: "b48ba5deccbdb17b243d52fe6ccd90f92057b7c31a8e737c427f995f2644052e"
+            url: "https://github.com/razorpay/razorpay-customui-pod/releases/download/1.5.0/RazorpayApplePay.xcframework.zip",
+            checksum: "c9e47f4e3edaee208f910ea4626b733da0767102768f8b0d806824ee84f62568"
         ),
     ],
     swiftLanguageVersions: [.v5]
