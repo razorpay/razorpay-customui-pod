@@ -28,8 +28,8 @@ jobs:
   deploy-custom:
     name: Deploy custom checkout
     if: github.event_name == 'repository_dispatch'
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
+    runs-on: macos-latest
+    timeout-minutes: 20
 
     env:
       DEPLOYMENT_VERSION: ${{ github.event.client_payload.version }}
@@ -206,38 +206,152 @@ jobs:
           cp -R "$CORE_XCFW" Pod/core/RazorpayCore.xcframework
           echo "✅ Pod/core/RazorpayCore.xcframework replaced"
 
-      - name: Update podspec versions
+      - name: Resolve target core version
+        env:
+          CI_BOT_TOKEN: ${{ secrets.CI_BOT_TOKEN }}
         run: |
           set -eo pipefail
 
-          # Update customui podspec version
+          RELEASES_RESPONSE=$(curl --silent --show-error --fail \
+            -H "Authorization: Bearer ${CI_BOT_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/razorpay/razorpay-customui-pod/releases?per_page=100")
+
+          LATEST_CORE_TAG=$(printf '%s\n' "${RELEASES_RESPONSE}" | jq -r 'map(select(.tag_name | startswith("core-"))) | .[0].tag_name // empty')
+          if [ -z "${LATEST_CORE_TAG}" ]; then
+            echo "❌ Failed to resolve latest core release tag from razorpay-customui-pod releases"
+            exit 1
+          fi
+
+          LATEST_RELEASED_CORE_VERSION="${LATEST_CORE_TAG#core-}"
+          CURRENT_BASE="${LATEST_RELEASED_CORE_VERSION%%-*}"
+          CURRENT_SUFFIX=""
+          if [[ "${LATEST_RELEASED_CORE_VERSION}" == *-* ]]; then
+            CURRENT_SUFFIX="${LATEST_RELEASED_CORE_VERSION#*-}"
+          fi
+
+          DEPLOYMENT_SUFFIX=""
+          if [[ "${DEPLOYMENT_VERSION}" == *-* ]]; then
+            DEPLOYMENT_SUFFIX="${DEPLOYMENT_VERSION#*-}"
+          fi
+
+          IFS='.' read -r MAJOR MINOR PATCH <<< "${CURRENT_BASE}"
+          NEXT_PATCH=$((PATCH + 1))
+          NEXT_BASE="${MAJOR}.${MINOR}.${NEXT_PATCH}"
+
+          if [ -n "${DEPLOYMENT_SUFFIX}" ]; then
+            if [ -n "${CURRENT_SUFFIX}" ]; then
+              TARGET_CORE_VERSION="${CURRENT_BASE}-${DEPLOYMENT_SUFFIX}"
+            else
+              TARGET_CORE_VERSION="${NEXT_BASE}-${DEPLOYMENT_SUFFIX}"
+            fi
+          else
+            if [ -n "${CURRENT_SUFFIX}" ]; then
+              TARGET_CORE_VERSION="${CURRENT_BASE}"
+            else
+              TARGET_CORE_VERSION="${NEXT_BASE}"
+            fi
+          fi
+
+          echo "LATEST_CORE_TAG=${LATEST_CORE_TAG}" >> "$GITHUB_ENV"
+          echo "LATEST_RELEASED_CORE_VERSION=${LATEST_RELEASED_CORE_VERSION}" >> "$GITHUB_ENV"
+          echo "TARGET_CORE_VERSION=${TARGET_CORE_VERSION}" >> "$GITHUB_ENV"
+
+          echo "✅ Latest released core tag: ${LATEST_CORE_TAG}"
+          echo "✅ Latest released core version: ${LATEST_RELEASED_CORE_VERSION}"
+          echo "✅ Target core version for this release: ${TARGET_CORE_VERSION}"
+
+      - name: Prepare release files
+        run: |
+          set -eo pipefail
+
           chmod +x .github/scripts/update_podspec_version.sh
-          ./.github/scripts/update_podspec_version.sh "${{ env.DEPLOYMENT_VERSION }}"
-          echo "✅ razorpay-customui-pod.podspec → v${{ env.DEPLOYMENT_VERSION }}"
+          ./.github/scripts/update_podspec_version.sh "${DEPLOYMENT_VERSION}"
+          echo "✅ razorpay-customui-pod.podspec → v${DEPLOYMENT_VERSION}"
 
-          # Always bump core-pod version (Wrapper binary changes every release)
-          CORE_VERSION=$(grep -m1 "s\.version" razorpay-core-pod.podspec | grep -oE '[0-9]+\.[0-9]+\.[0-9]+[^"]*' | head -1)
-          MAJOR=$(echo "$CORE_VERSION" | cut -d. -f1)
-          MINOR=$(echo "$CORE_VERSION" | cut -d. -f2)
-          PATCH=$(echo "$CORE_VERSION" | cut -d. -f3 | grep -oE '[0-9]+')
-          NEW_CORE_VERSION="${MAJOR}.${MINOR}.$((PATCH + 1))"
-          sed -i "s/s\.version.*=.*/s.version          = '${NEW_CORE_VERSION}'/" razorpay-core-pod.podspec
-          echo "✅ razorpay-core-pod.podspec → v${NEW_CORE_VERSION}"
+          sed -Ei "" "s/s\.version[[:space:]]*=.*/s.version          = '${TARGET_CORE_VERSION}'/" razorpay-core-pod.podspec
+          echo "✅ razorpay-core-pod.podspec → v${TARGET_CORE_VERSION}"
 
-          sed -Ei "s/(s\.dependency 'razorpay-core-pod'(,[[:space:]]*'[^']*')?)/s.dependency 'razorpay-core-pod', '~> ${NEW_CORE_VERSION}'/" razorpay-customui-pod.podspec
-          echo "✅ razorpay-customui-pod dependency → razorpay-core-pod ~> ${NEW_CORE_VERSION}"
+          if grep -q "s\\.dependency 'razorpay-core-pod'" razorpay-customui-pod.podspec; then
+            sed -Ei "" "s|^[[:space:]]*#?s\\.dependency 'razorpay-core-pod'.*|  #s.dependency 'razorpay-core-pod'|" razorpay-customui-pod.podspec
+          else
+            ruby -0pi -e "sub(/s\\.vendored_frameworks = \\['Pod\\/RazorpayCustom\\.xcframework'\\]\\n/, \"s.vendored_frameworks = ['Pod/RazorpayCustom.xcframework']\\n  #s.dependency 'razorpay-core-pod'\\n\")" razorpay-customui-pod.podspec
+          fi
+          echo "✅ razorpay-customui-pod first commit shape restored with core dependency commented"
+
+      - name: Refresh Example app pods
+        run: |
+          set -eo pipefail
+
+          cat > Example/Podfile <<'EOF'
+          use_frameworks!
+
+          platform :ios, '11.0'
+
+          target 'razorpay-customui-pod_Example' do
+            
+            pod 'razorpay-customui-pod', :path=>'../'
+            pod 'razorpay-core-pod', :path=>'../'
+          
+            
+          end
+
+          post_install do |installer|
+            installer.pods_project.targets.each do |target|
+              target.build_configurations.each do |config|
+                config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+                config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+              end
+            end
+          end
+          EOF
+
+          rm -rf Example/Pods Example/Podfile.lock
+          (cd Example && pod install --no-repo-update)
+          echo "✅ Example Podfile, Podfile.lock and Pods refreshed for local customui/core usage"
 
       - name: Commit and push
         run: |
+          set -eo pipefail
+
+          RELEASE_BRANCH="release/v${DEPLOYMENT_VERSION}"
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "chore: update custom checkout to v${{ env.DEPLOYMENT_VERSION }}"
-            git push origin "release/v${{ env.DEPLOYMENT_VERSION }}"
+
+          git add Pod/RazorpayCustom.xcframework Pod/core/Razorpay.xcframework razorpay-core-pod.podspec razorpay-customui-pod.podspec Example/Podfile Example/Podfile.lock Example/Pods
+          if [ "${CORE_CHANGED}" = "true" ]; then
+            git add Pod/core/RazorpayCore.xcframework
           fi
+
+          RELEASE_COMMIT_CREATED="false"
+          if git diff --cached --quiet; then
+            echo "No release asset changes to commit"
+          else
+            git commit -m "chore: release core:${TARGET_CORE_VERSION} and customui:${DEPLOYMENT_VERSION}"
+            RELEASE_COMMIT_CREATED="true"
+          fi
+
+          if grep -q "^  #s\\.dependency 'razorpay-core-pod'$" razorpay-customui-pod.podspec; then
+            sed -Ei "" "s|^  #s\\.dependency 'razorpay-core-pod'$|  s.dependency 'razorpay-core-pod', '~> ${TARGET_CORE_VERSION}'|" razorpay-customui-pod.podspec
+          elif grep -q "s\\.dependency 'razorpay-core-pod'" razorpay-customui-pod.podspec; then
+            sed -Ei "" "s|(s\\.dependency 'razorpay-core-pod'(,[[:space:]]*'[^']*')?).*|  s.dependency 'razorpay-core-pod', '~> ${TARGET_CORE_VERSION}'|" razorpay-customui-pod.podspec
+          else
+            ruby -0pi -e "sub(/s\\.vendored_frameworks = \\['Pod\\/RazorpayCustom\\.xcframework'\\]\\n/, \"s.vendored_frameworks = ['Pod/RazorpayCustom.xcframework']\\n  s.dependency 'razorpay-core-pod', '~> ${TARGET_CORE_VERSION}'\\n\")" razorpay-customui-pod.podspec
+          fi
+
+          git add razorpay-customui-pod.podspec
+          if git diff --cached --quiet; then
+            if [ "${RELEASE_COMMIT_CREATED}" = "false" ]; then
+              echo "No changes to commit"
+              exit 0
+            fi
+            echo "No podspec pin change to commit"
+          else
+            git commit -m "chore: update customui podspec to take the latest version of core"
+          fi
+
+          git push origin "${RELEASE_BRANCH}"
 
       - name: Create pull request
         env:
@@ -257,9 +371,9 @@ jobs:
           - Updated \`Pod/RazorpayCustom.xcframework\`
           - Updated \`Pod/core/Razorpay.xcframework\` (Wrapper)
           ${CORE_LINE}
-          - Bumped \`razorpay-customui-pod.podspec\` to v${DEPLOYMENT_VERSION}
-          - Bumped \`razorpay-core-pod.podspec\` patch version
-          - Pinned \`razorpay-customui-pod\` dependency to \`razorpay-core-pod ~> $(grep -m1 "s\.version" razorpay-core-pod.podspec | grep -oE '[0-9]+\.[0-9]+\.[0-9]+[^"]*' | head -1)\`
+          - Refreshed \`Example/Podfile\`, \`Example/Podfile.lock\`, and \`Example/Pods\` for local customui/core usage
+          - First commit mirrors \`7eef6cccedf7276f232ce2ebe58761bb02fe225b\`: release core \`${TARGET_CORE_VERSION}\` and customui \`${DEPLOYMENT_VERSION}\`
+          - Second commit mirrors \`be28858d6af3b6e99d4f212d131974d22573ece5\`: \`razorpay-customui-pod\` depends on \`razorpay-core-pod ~> ${TARGET_CORE_VERSION}\`
 
           ---
           Opened automatically by CI.
