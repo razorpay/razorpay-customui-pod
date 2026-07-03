@@ -12,7 +12,7 @@ struct PayloadModel {
     var title: String
     var options: [String: Any]
 //    var key: String = "rzp_live_JbQIqxBRizNPmu"
-    var key: String = "rzp_test_1DP5mmOlF5G5ag"
+    var key: String = "rzp_live_rVCVDXKlJdwDST"
 //    var key: String = "rzp_live_partner_Jgy1T7ZabnnFB1"
 //    var key: String = "rzp_live_5W8oZPBNQPbZDE"
 //    var key: String = "rzp_live_INaX9xm2rADfMM"
@@ -125,7 +125,7 @@ extension MenuVC {
             "email": "a@b.com",
             "contact": "1234567890",
             "method": "netbanking",
-            "bank": "UTIB",
+            "bank": "CNRB",
         ]
         
         self.payloadArray += [PayloadModel(title: "Net Banking", options: cardPaymentDict, paymentType: .makePayment)]
@@ -159,30 +159,18 @@ extension MenuVC {
         self.payloadArray += [PayloadModel(title: "EMI", options: cardPaymentDict, paymentType: .makePayment)]
         cardPaymentDict = [:]
         
-        cardPaymentDict = /*[
+        cardPaymentDict = [
             "amount": 100, // amount in currency subunits. Defaults to INR. 100 = 100 paise = INR 1.
             "currency": "INR",
-            "email": "ramprasad179@gmail.com",
-            "contact": "9663976539",
+            "email": "test@gmail.com",
+            "contact": "9465650159",
             "method": "upi",
-            "vpa":"9663976539@ybl",
             "_[flow]": "intent",
-            "upi_app_package_name": "phonepe",
-        ] */
-        
-        
-        [
-            
-            
-                "currency":"MYR",
-                "amount":"100",
-                "email":"test@razorpay.com",
-                "contact":"9999999999",
-                "method":"fpx",
-                "bank":"AGOB"
-                
-            
+            "upi_app_package_name": "paytm",
         ]
+        
+        
+       
 //        [
 //                    "amount": 100, // amount in currency subunits. Defaults to INR. 100 = 100 paise = INR 1.
 //                    "currency": "INR",

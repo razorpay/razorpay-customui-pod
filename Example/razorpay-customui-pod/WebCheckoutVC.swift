@@ -79,7 +79,6 @@ extension WebCheckoutVC: RazorpayPaymentCompletionProtocol {
         DispatchQueue.main.async {
             self.displayAlert(title: "FAILURE", message: str)
         }
-        print(response)
     }
 }
 
