@@ -3,12 +3,8 @@ use_frameworks!
 platform :ios, '11.0'
 
 target 'razorpay-customui-pod_Example' do
-  
-  pod 'razorpay-customui-pod', :path=> '../'
-
-  target 'razorpay-customui-pod_Tests' do
-    inherit! :search_paths
-  end
+  pod 'razorpay-customui-pod', :path=>'../'
+  pod 'razorpay-core-pod', :path=>'../'
 end
 
 post_install do |installer|
