@@ -1,5 +1,5 @@
 # ─────────────────────────────────────────────────────────────────────────────
-# Deploy Custom Checkout & Core Pod
+# Deploy Custom Checkout
 # ─────────────────────────────────────────────────────────────────────────────
 
 name: Deploy Custom Checkout
@@ -35,14 +35,13 @@ jobs:
       DEPLOYMENT_VERSION: ${{ github.event.client_payload.version }}
       IS_RC: ${{ github.event.client_payload.is_rc }}
       CORE_CHANGED: ${{ github.event.client_payload.core_changed }}
+      CORE_VERSION_HINT: ${{ github.event.client_payload.core_version || '' }}
       SOURCE_REPO: ${{ github.event.client_payload.source_repo }}
       SOURCE_RUN_ID: ${{ github.event.client_payload.run_id }}
       SDK_ARTIFACT: ${{ github.event.client_payload.artifacts.sdk }}
       WRAPPER_ARTIFACT: ${{ github.event.client_payload.artifacts.wrapper }}
-      CORE_ARTIFACT: ${{ github.event.client_payload.artifacts.core || '' }}
       CHECKSUM_SDK: ${{ github.event.client_payload.checksums.sdk }}
       CHECKSUM_WRAPPER: ${{ github.event.client_payload.checksums.wrapper }}
-      CHECKSUM_CORE: ${{ github.event.client_payload.checksums.core || '' }}
 
     steps:
       - name: Checkout master
@@ -73,14 +72,18 @@ jobs:
             fi
           done
 
-          if [ "${CORE_CHANGED}" = "true" ]; then
-            for var_name in CORE_ARTIFACT CHECKSUM_CORE; do
-              if [ -z "${!var_name}" ]; then
-                echo "❌ Missing required core payload field: ${var_name}"
-                exit 1
-              fi
-            done
+      - name: Block deployment until core dependency release is ready
+        if: env.CORE_CHANGED == 'true'
+        run: |
+          set -eo pipefail
+
+          echo "❌ This workflow does not publish core artifacts."
+          if [ -n "${CORE_VERSION_HINT}" ]; then
+            echo "   Release the required core dependency version ${CORE_VERSION_HINT} first, then rerun this workflow."
+          else
+            echo "   Release the required core dependency first, then rerun this workflow."
           fi
+          exit 1
 
       - name: Create or reuse release branch
         run: |
@@ -116,16 +119,6 @@ jobs:
           name: ${{ env.WRAPPER_ARTIFACT }}
           path: /tmp/artifacts/wrapper
 
-      - name: Download Core XCFramework zip artifact
-        if: env.CORE_CHANGED == 'true'
-        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
-        with:
-          github-token: ${{ secrets.CI_BOT_TOKEN }}
-          repository: ${{ env.SOURCE_REPO }}
-          run-id: ${{ env.SOURCE_RUN_ID }}
-          name: ${{ env.CORE_ARTIFACT }}
-          path: /tmp/artifacts/core
-
       - name: Verify and unzip XCFramework artifacts
         run: |
           set -eo pipefail
@@ -158,27 +151,10 @@ jobs:
           unzip -q "$SDK_ARCHIVE" -d /tmp/sdk-artifact
           unzip -q "$WRAPPER_ARCHIVE" -d /tmp/wrapper-artifact
 
-          if [ "${CORE_CHANGED}" = "true" ]; then
-            CORE_ARCHIVE=$(find /tmp/artifacts/core -name "core-xcframework.zip" -type f | head -1)
-            if [ -z "$CORE_ARCHIVE" ]; then
-              echo "❌ Missing core zip artifact"
-              exit 1
-            fi
-
-            ACTUAL_CORE_SHA=$(sha256sum "$CORE_ARCHIVE" | awk '{print $1}')
-            if [ "$ACTUAL_CORE_SHA" != "${CHECKSUM_CORE}" ]; then
-              echo "❌ CHECKSUM MISMATCH for Core"
-              echo "   Expected: ${CHECKSUM_CORE}"
-              echo "   Actual:   ${ACTUAL_CORE_SHA}"
-              exit 1
-            fi
-
-            mkdir -p /tmp/core-artifact
-            unzip -q "$CORE_ARCHIVE" -d /tmp/core-artifact
-          fi
-
       - name: Replace custom xcframework
         run: |
+          set -eo pipefail
+
           rm -rf Pod/RazorpayCustom.xcframework
 
           SDK_XCFW=$(find /tmp/sdk-artifact -name "RazorpayCustom.xcframework" -type d | head -1)
@@ -187,24 +163,24 @@ jobs:
             find /tmp/sdk-artifact -type d -name "*.xcframework"
             exit 1
           fi
+
           cp -R "$SDK_XCFW" Pod/RazorpayCustom.xcframework
           echo "✅ Pod/RazorpayCustom.xcframework replaced"
 
       - name: Replace Wrapper xcframework
         run: |
+          set -eo pipefail
+
           rm -rf Pod/core/Razorpay.xcframework
           WRAPPER_XCFW=$(find /tmp/wrapper-artifact -name "Razorpay.xcframework" -type d | head -1)
+          if [ -z "$WRAPPER_XCFW" ]; then
+            echo "❌ Razorpay.xcframework not found in wrapper artifact"
+            exit 1
+          fi
+
           mkdir -p Pod/core
           cp -R "$WRAPPER_XCFW" Pod/core/Razorpay.xcframework
           echo "✅ Pod/core/Razorpay.xcframework replaced"
-
-      - name: Replace Core xcframework
-        if: env.CORE_CHANGED == 'true'
-        run: |
-          rm -rf Pod/core/RazorpayCore.xcframework
-          CORE_XCFW=$(find /tmp/core-artifact -name "RazorpayCore.xcframework" -type d | head -1)
-          cp -R "$CORE_XCFW" Pod/core/RazorpayCore.xcframework
-          echo "✅ Pod/core/RazorpayCore.xcframework replaced"
 
       - name: Resolve target core version
         env:
@@ -212,54 +188,52 @@ jobs:
         run: |
           set -eo pipefail
 
+          normalize_version() {
+            printf '%s' "$1" | sed -E 's/^core-//; s/^v//'
+          }
+
           RELEASES_RESPONSE=$(curl --silent --show-error --fail \
             -H "Authorization: Bearer ${CI_BOT_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/razorpay/razorpay-customui-pod/releases?per_page=100")
 
-          LATEST_CORE_TAG=$(printf '%s\n' "${RELEASES_RESPONSE}" | jq -r 'map(select(.tag_name | startswith("core-"))) | .[0].tag_name // empty')
+          LATEST_CORE_TAG=$(printf '%s\n' "${RELEASES_RESPONSE}" | jq -r 'map(select(.draft == false and (.tag_name | startswith("core-")))) | .[0].tag_name // empty')
           if [ -z "${LATEST_CORE_TAG}" ]; then
-            echo "❌ Failed to resolve latest core release tag from razorpay-customui-pod releases"
+            TAGS_RESPONSE=$(curl --silent --show-error --fail \
+              -H "Authorization: Bearer ${CI_BOT_TOKEN}" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/razorpay/razorpay-customui-pod/tags?per_page=100")
+            LATEST_CORE_TAG=$(printf '%s\n' "${TAGS_RESPONSE}" | jq -r 'map(select(.name | startswith("core-"))) | .[0].name // empty')
+          fi
+
+          if [ -z "${LATEST_CORE_TAG}" ]; then
+            echo "❌ Failed to resolve the latest released core dependency tag."
             exit 1
           fi
 
-          LATEST_RELEASED_CORE_VERSION="${LATEST_CORE_TAG#core-}"
-          CURRENT_BASE="${LATEST_RELEASED_CORE_VERSION%%-*}"
-          CURRENT_SUFFIX=""
-          if [[ "${LATEST_RELEASED_CORE_VERSION}" == *-* ]]; then
-            CURRENT_SUFFIX="${LATEST_RELEASED_CORE_VERSION#*-}"
+          TARGET_CORE_VERSION=$(normalize_version "${LATEST_CORE_TAG}")
+          if ! printf '%s\n' "${TARGET_CORE_VERSION}" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+([.-][0-9A-Za-z.-]+)?$'; then
+            echo "❌ Could not normalize a dependency version from tag ${LATEST_CORE_TAG}."
+            exit 1
           fi
 
-          DEPLOYMENT_SUFFIX=""
-          if [[ "${DEPLOYMENT_VERSION}" == *-* ]]; then
-            DEPLOYMENT_SUFFIX="${DEPLOYMENT_VERSION#*-}"
+          LOCAL_CORE_VERSION=$(grep -m1 "s\.version" razorpay-core-pod.podspec | grep -oE '[0-9]+\.[0-9]+\.[0-9]+[^ "'"'"']*' | head -1)
+          if [ -z "${LOCAL_CORE_VERSION}" ]; then
+            echo "❌ Failed to read the local core dependency version."
+            exit 1
           fi
 
-          IFS='.' read -r MAJOR MINOR PATCH <<< "${CURRENT_BASE}"
-          NEXT_PATCH=$((PATCH + 1))
-          NEXT_BASE="${MAJOR}.${MINOR}.${NEXT_PATCH}"
-
-          if [ -n "${DEPLOYMENT_SUFFIX}" ]; then
-            if [ -n "${CURRENT_SUFFIX}" ]; then
-              TARGET_CORE_VERSION="${CURRENT_BASE}-${DEPLOYMENT_SUFFIX}"
-            else
-              TARGET_CORE_VERSION="${NEXT_BASE}-${DEPLOYMENT_SUFFIX}"
-            fi
-          else
-            if [ -n "${CURRENT_SUFFIX}" ]; then
-              TARGET_CORE_VERSION="${CURRENT_BASE}"
-            else
-              TARGET_CORE_VERSION="${NEXT_BASE}"
-            fi
+          if [ "${LOCAL_CORE_VERSION}" != "${TARGET_CORE_VERSION}" ]; then
+            echo "❌ Local core dependency version is ${LOCAL_CORE_VERSION}, but the latest released dependency tag resolves to ${TARGET_CORE_VERSION}."
+            echo "   Sync the local dependency mirror first, then rerun this workflow."
+            exit 1
           fi
 
-          echo "LATEST_CORE_TAG=${LATEST_CORE_TAG}" >> "$GITHUB_ENV"
-          echo "LATEST_RELEASED_CORE_VERSION=${LATEST_RELEASED_CORE_VERSION}" >> "$GITHUB_ENV"
           echo "TARGET_CORE_VERSION=${TARGET_CORE_VERSION}" >> "$GITHUB_ENV"
 
-          echo "✅ Latest released core tag: ${LATEST_CORE_TAG}"
-          echo "✅ Latest released core version: ${LATEST_RELEASED_CORE_VERSION}"
-          echo "✅ Target core version for this release: ${TARGET_CORE_VERSION}"
+          echo "✅ Latest released core dependency tag: ${LATEST_CORE_TAG}"
+          echo "✅ Using core dependency version: ${TARGET_CORE_VERSION}"
+          echo "✅ Local core dependency mirror already matches ${TARGET_CORE_VERSION}"
 
       - name: Prepare release files
         run: |
@@ -269,31 +243,46 @@ jobs:
           ./.github/scripts/update_podspec_version.sh "${DEPLOYMENT_VERSION}"
           echo "✅ razorpay-customui-pod.podspec → v${DEPLOYMENT_VERSION}"
 
-          sed -Ei "" "s/s\.version[[:space:]]*=.*/s.version          = '${TARGET_CORE_VERSION}'/" razorpay-core-pod.podspec
-          echo "✅ razorpay-core-pod.podspec → v${TARGET_CORE_VERSION}"
+          python3 - <<'PY'
+          import os
+          import re
+          from pathlib import Path
 
-          if grep -q "s\\.dependency 'razorpay-core-pod'" razorpay-customui-pod.podspec; then
-            sed -Ei "" "s|^[[:space:]]*#?s\\.dependency 'razorpay-core-pod'.*|  #s.dependency 'razorpay-core-pod'|" razorpay-customui-pod.podspec
-          else
-            ruby -0pi -e "sub(/s\\.vendored_frameworks = \\['Pod\\/RazorpayCustom\\.xcframework'\\]\\n/, \"s.vendored_frameworks = ['Pod/RazorpayCustom.xcframework']\\n  #s.dependency 'razorpay-core-pod'\\n\")" razorpay-customui-pod.podspec
-          fi
-          echo "✅ razorpay-customui-pod first commit shape restored with core dependency commented"
+          target_core_version = os.environ["TARGET_CORE_VERSION"]
+          path = Path("razorpay-customui-pod.podspec")
+          text = path.read_text()
+          dependency_line = f"  s.dependency 'razorpay-core-pod', '~> {target_core_version}'\n"
+
+          if "s.dependency 'razorpay-core-pod'" in text:
+              text = re.sub(
+                  r"^[ \t]*s\.dependency 'razorpay-core-pod'.*$",
+                  dependency_line.rstrip("\n"),
+                  text,
+                  flags=re.M,
+              )
+          else:
+              needle = "s.vendored_frameworks = ['Pod/RazorpayCustom.xcframework']\n"
+              if needle not in text:
+                  raise SystemExit("Could not locate vendored_frameworks line in razorpay-customui-pod.podspec")
+              text = text.replace(needle, needle + dependency_line, 1)
+
+          path.write_text(text)
+          PY
+
+          echo "✅ Podspec dependency updated to core version ~> ${TARGET_CORE_VERSION}"
 
       - name: Refresh Example app pods
         run: |
           set -eo pipefail
 
-          cat > Example/Podfile <<'EOF'
+          cat > Example/Podfile <<'PODFILE'
           use_frameworks!
 
           platform :ios, '11.0'
 
           target 'razorpay-customui-pod_Example' do
-            
             pod 'razorpay-customui-pod', :path=>'../'
             pod 'razorpay-core-pod', :path=>'../'
-          
-            
           end
 
           post_install do |installer|
@@ -304,7 +293,7 @@ jobs:
               end
             end
           end
-          EOF
+          PODFILE
 
           rm -rf Example/Pods Example/Podfile.lock
           (cd Example && pod install --no-repo-update)
@@ -319,65 +308,39 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add Pod/RazorpayCustom.xcframework Pod/core/Razorpay.xcframework razorpay-core-pod.podspec razorpay-customui-pod.podspec Example/Podfile Example/Podfile.lock Example/Pods
-          if [ "${CORE_CHANGED}" = "true" ]; then
-            git add Pod/core/RazorpayCore.xcframework
-          fi
+          git add Pod/RazorpayCustom.xcframework Pod/core/Razorpay.xcframework razorpay-customui-pod.podspec Example/Podfile Example/Podfile.lock Example/Pods
 
-          RELEASE_COMMIT_CREATED="false"
           if git diff --cached --quiet; then
             echo "No release asset changes to commit"
-          else
-            git commit -m "chore: release core:${TARGET_CORE_VERSION} and customui:${DEPLOYMENT_VERSION}"
-            RELEASE_COMMIT_CREATED="true"
+            exit 0
           fi
 
-          if grep -q "^  #s\\.dependency 'razorpay-core-pod'$" razorpay-customui-pod.podspec; then
-            sed -Ei "" "s|^  #s\\.dependency 'razorpay-core-pod'$|  s.dependency 'razorpay-core-pod', '~> ${TARGET_CORE_VERSION}'|" razorpay-customui-pod.podspec
-          elif grep -q "s\\.dependency 'razorpay-core-pod'" razorpay-customui-pod.podspec; then
-            sed -Ei "" "s|(s\\.dependency 'razorpay-core-pod'(,[[:space:]]*'[^']*')?).*|  s.dependency 'razorpay-core-pod', '~> ${TARGET_CORE_VERSION}'|" razorpay-customui-pod.podspec
-          else
-            ruby -0pi -e "sub(/s\\.vendored_frameworks = \\['Pod\\/RazorpayCustom\\.xcframework'\\]\\n/, \"s.vendored_frameworks = ['Pod/RazorpayCustom.xcframework']\\n  s.dependency 'razorpay-core-pod', '~> ${TARGET_CORE_VERSION}'\\n\")" razorpay-customui-pod.podspec
-          fi
-
-          git add razorpay-customui-pod.podspec
-          if git diff --cached --quiet; then
-            if [ "${RELEASE_COMMIT_CREATED}" = "false" ]; then
-              echo "No changes to commit"
-              exit 0
-            fi
-            echo "No podspec pin change to commit"
-          else
-            git commit -m "chore: update customui podspec to take the latest version of core"
-          fi
-
+          git commit -m "chore: release customui:${DEPLOYMENT_VERSION} against core:${TARGET_CORE_VERSION}"
           git push origin "${RELEASE_BRANCH}"
 
       - name: Create pull request
         env:
           CI_BOT_TOKEN: ${{ secrets.CI_BOT_TOKEN }}
         run: |
-          RELEASE_BRANCH="release/v${{ env.DEPLOYMENT_VERSION }}"
+          set -eo pipefail
 
-          CORE_LINE=""
-          if [ "${CORE_CHANGED}" = "true" ]; then
-            CORE_LINE="- Updated \`Pod/core/RazorpayCore.xcframework\`"
-          fi
+          RELEASE_BRANCH="release/v${DEPLOYMENT_VERSION}"
 
-          PR_BODY=$(cat <<EOF
+          PR_BODY=$(cat <<EOF_BODY
           ## Custom Checkout v${DEPLOYMENT_VERSION}
 
           ### Updated frameworks
           - Updated \`Pod/RazorpayCustom.xcframework\`
           - Updated \`Pod/core/Razorpay.xcframework\` (Wrapper)
-          ${CORE_LINE}
           - Refreshed \`Example/Podfile\`, \`Example/Podfile.lock\`, and \`Example/Pods\` for local customui/core usage
-          - First commit mirrors \`7eef6cccedf7276f232ce2ebe58761bb02fe225b\`: release core \`${TARGET_CORE_VERSION}\` and customui \`${DEPLOYMENT_VERSION}\`
-          - Second commit mirrors \`be28858d6af3b6e99d4f212d131974d22573ece5\`: \`razorpay-customui-pod\` depends on \`razorpay-core-pod ~> ${TARGET_CORE_VERSION}\`
+          - CustomUI release version: \`${DEPLOYMENT_VERSION}\`
+          - Core pod dependency version: \`${TARGET_CORE_VERSION}\`
+          - Core dependency version: \`${TARGET_CORE_VERSION}\`
+          - Dependency version is aligned with the latest released core tag
 
           ---
           Opened automatically by CI.
-          EOF
+          EOF_BODY
           )
 
           HTTP_STATUS=$(curl --silent --output /tmp/pr_response.json --write-out "%{http_code}" \
@@ -407,20 +370,16 @@ jobs:
       - name: Job summary
         if: always()
         run: |
-          echo "## Deploy Custom Checkout v${{ env.DEPLOYMENT_VERSION }}" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "| | |" >> $GITHUB_STEP_SUMMARY
-          echo "|---|---|" >> $GITHUB_STEP_SUMMARY
-          echo "| Version | \`${{ env.DEPLOYMENT_VERSION }}\` |" >> $GITHUB_STEP_SUMMARY
-          echo "| RC | ${{ env.IS_RC }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| RazorpayCustom.xcframework | ✅ replaced |" >> $GITHUB_STEP_SUMMARY
-          echo "| Razorpay.xcframework (Wrapper) | ✅ replaced |" >> $GITHUB_STEP_SUMMARY
-          if [ "${{ env.CORE_CHANGED }}" = "true" ]; then
-            echo "| RazorpayCore.xcframework | ✅ replaced |" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "| RazorpayCore.xcframework | — unchanged |" >> $GITHUB_STEP_SUMMARY
-          fi
-          echo "| PR | opened to master |" >> $GITHUB_STEP_SUMMARY
+          echo "## Deploy Custom Checkout v${DEPLOYMENT_VERSION}" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Item | Value |" >> "$GITHUB_STEP_SUMMARY"
+          echo "|---|---|" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Version | \`${DEPLOYMENT_VERSION}\` |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| RC | ${IS_RC} |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| RazorpayCustom.xcframework | ✅ replaced |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Razorpay.xcframework (Wrapper) | ✅ replaced |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| razorpay-core-pod dependency | \`${TARGET_CORE_VERSION}\` |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| PR | opened to master |" >> "$GITHUB_STEP_SUMMARY"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # JOB 2 — On PR merge to master: tag, release, publish
@@ -454,14 +413,17 @@ jobs:
           set -eo pipefail
 
           CUSTOMUI_VERSION=$(grep -m1 "s\.version" razorpay-customui-pod.podspec | grep -oE '[0-9]+\.[0-9]+\.[0-9]+[^ "'"'"']*' | head -1)
-          CORE_VERSION=$(grep -m1 "s\.version" razorpay-core-pod.podspec | grep -oE '[0-9]+\.[0-9]+\.[0-9]+[^ "'"'"']*' | head -1)
+          CORE_DEPENDENCY_VERSION=$(grep -m1 "s\.dependency 'razorpay-core-pod'" razorpay-customui-pod.podspec | grep -oE '[0-9]+\.[0-9]+\.[0-9]+[^ "'"'"']*' | head -1)
           CUSTOMUI_TAG="${CUSTOMUI_VERSION}"
-          CORE_TAG="core-${CORE_VERSION}"
 
-          echo "customui_version=${CUSTOMUI_VERSION}" >> $GITHUB_OUTPUT
-          echo "core_version=${CORE_VERSION}" >> $GITHUB_OUTPUT
-          echo "customui_tag=${CUSTOMUI_TAG}" >> $GITHUB_OUTPUT
-          echo "core_tag=${CORE_TAG}" >> $GITHUB_OUTPUT
+          if [ -z "${CORE_DEPENDENCY_VERSION}" ]; then
+            echo "❌ The podspec is missing the required core dependency version."
+            exit 1
+          fi
+
+          echo "customui_version=${CUSTOMUI_VERSION}" >> "$GITHUB_OUTPUT"
+          echo "core_dependency_version=${CORE_DEPENDENCY_VERSION}" >> "$GITHUB_OUTPUT"
+          echo "customui_tag=${CUSTOMUI_TAG}" >> "$GITHUB_OUTPUT"
 
           git fetch --force --tags origin
 
@@ -471,65 +433,32 @@ jobs:
             CUSTOMUI_TAG_EXISTS="false"
           fi
 
-          if git ls-remote --exit-code --tags origin "refs/tags/${CORE_TAG}" >/dev/null; then
-            CORE_TAG_EXISTS="true"
+          RESPONSE_FILE="/tmp/customui_release.json"
+          HTTP_STATUS=$(curl --silent --output "${RESPONSE_FILE}" --write-out "%{http_code}" \
+            -H "Authorization: Bearer ${CI_BOT_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/razorpay/razorpay-customui-pod/releases/tags/${CUSTOMUI_TAG}")
+
+          if [ "${HTTP_STATUS}" -eq 200 ]; then
+            CUSTOMUI_RELEASE_EXISTS="true"
+            CUSTOMUI_RELEASE_URL=$(jq -r '.html_url' "${RESPONSE_FILE}")
+            echo "customui_release_exists=true" >> "$GITHUB_OUTPUT"
+            echo "customui_release_url=${CUSTOMUI_RELEASE_URL}" >> "$GITHUB_OUTPUT"
+          elif [ "${HTTP_STATUS}" -eq 404 ]; then
+            CUSTOMUI_RELEASE_EXISTS="false"
+            echo "customui_release_exists=false" >> "$GITHUB_OUTPUT"
+            echo "customui_release_url=" >> "$GITHUB_OUTPUT"
           else
-            CORE_TAG_EXISTS="false"
+            echo "❌ Failed to read customui release state (HTTP ${HTTP_STATUS})"
+            cat "${RESPONSE_FILE}"
+            exit 1
           fi
 
-          CORE_RELEASE_EXISTS="false"
-          CORE_RELEASE_URL=""
-          CUSTOMUI_RELEASE_EXISTS="false"
-          CUSTOMUI_RELEASE_URL=""
-
-          read_release_state() {
-            local tag_name="$1"
-            local output_prefix="$2"
-            local response_file="/tmp/${output_prefix}_release.json"
-            local http_status
-
-            http_status=$(curl --silent --output "${response_file}" --write-out "%{http_code}" \
-              -H "Authorization: Bearer ${CI_BOT_TOKEN}" \
-              -H "Accept: application/vnd.github+json" \
-              "https://api.github.com/repos/razorpay/razorpay-customui-pod/releases/tags/${tag_name}")
-
-            if [ "${http_status}" -eq 200 ]; then
-              local release_url
-              release_url=$(jq -r '.html_url' "${response_file}")
-              if [ "${output_prefix}" = "core" ]; then
-                CORE_RELEASE_EXISTS="true"
-                CORE_RELEASE_URL="${release_url}"
-              else
-                CUSTOMUI_RELEASE_EXISTS="true"
-                CUSTOMUI_RELEASE_URL="${release_url}"
-              fi
-              echo "${output_prefix}_release_exists=true" >> $GITHUB_OUTPUT
-              echo "${output_prefix}_release_url=${release_url}" >> $GITHUB_OUTPUT
-            elif [ "${http_status}" -eq 404 ]; then
-              if [ "${output_prefix}" = "core" ]; then
-                CORE_RELEASE_EXISTS="false"
-                CORE_RELEASE_URL=""
-              else
-                CUSTOMUI_RELEASE_EXISTS="false"
-                CUSTOMUI_RELEASE_URL=""
-              fi
-              echo "${output_prefix}_release_exists=false" >> $GITHUB_OUTPUT
-              echo "${output_prefix}_release_url=" >> $GITHUB_OUTPUT
-            else
-              echo "❌ Failed to read ${output_prefix} release state (HTTP ${http_status})"
-              cat "${response_file}"
-              exit 1
-            fi
-          }
-
-          read_release_state "${CORE_TAG}" "core"
-          read_release_state "${CUSTOMUI_TAG}" "customui"
-
           CORE_INFO=$(pod trunk info razorpay-core-pod 2>/dev/null || true)
-          if printf '%s\n' "${CORE_INFO}" | grep -Eq "(^|[[:space:]])${CORE_VERSION}([[:space:]]|$)"; then
-            CORE_PUBLISHED="true"
+          if printf '%s\n' "${CORE_INFO}" | grep -Eq "(^|[[:space:]])${CORE_DEPENDENCY_VERSION}([[:space:]]|$)"; then
+            CORE_DEPENDENCY_AVAILABLE="true"
           else
-            CORE_PUBLISHED="false"
+            CORE_DEPENDENCY_AVAILABLE="false"
           fi
 
           CUSTOM_INFO=$(pod trunk info razorpay-customui-pod 2>/dev/null || true)
@@ -539,28 +468,12 @@ jobs:
             CUSTOMUI_PUBLISHED="false"
           fi
 
-          echo "core_tag_exists=${CORE_TAG_EXISTS}" >> $GITHUB_OUTPUT
-          echo "customui_tag_exists=${CUSTOMUI_TAG_EXISTS}" >> $GITHUB_OUTPUT
-          echo "core_published=${CORE_PUBLISHED}" >> $GITHUB_OUTPUT
-          echo "customui_published=${CUSTOMUI_PUBLISHED}" >> $GITHUB_OUTPUT
-
-          if [ "${CORE_RELEASE_EXISTS}" = "true" ] && [ "${CORE_TAG_EXISTS}" != "true" ]; then
-            echo "❌ Core GitHub release ${CORE_TAG} exists, but the tag is missing remotely."
-            exit 1
-          fi
+          echo "customui_tag_exists=${CUSTOMUI_TAG_EXISTS}" >> "$GITHUB_OUTPUT"
+          echo "core_dependency_available=${CORE_DEPENDENCY_AVAILABLE}" >> "$GITHUB_OUTPUT"
+          echo "customui_published=${CUSTOMUI_PUBLISHED}" >> "$GITHUB_OUTPUT"
 
           if [ "${CUSTOMUI_RELEASE_EXISTS}" = "true" ] && [ "${CUSTOMUI_TAG_EXISTS}" != "true" ]; then
             echo "❌ CustomUI GitHub release ${CUSTOMUI_TAG} exists, but the tag is missing remotely."
-            exit 1
-          fi
-
-          if [ "${CORE_PUBLISHED}" = "true" ] && [ "${CORE_TAG_EXISTS}" != "true" ]; then
-            echo "❌ Core pod ${CORE_VERSION} is published but tag ${CORE_TAG} is missing."
-            exit 1
-          fi
-
-          if [ "${CORE_PUBLISHED}" = "true" ] && [ "${CORE_RELEASE_EXISTS}" != "true" ]; then
-            echo "❌ Core pod ${CORE_VERSION} is published but GitHub release ${CORE_TAG} is missing."
             exit 1
           fi
 
@@ -574,112 +487,32 @@ jobs:
             exit 1
           fi
 
-          if [ "${CUSTOMUI_PUBLISHED}" = "true" ] && [ "${CORE_PUBLISHED}" != "true" ]; then
-            echo "❌ CustomUI pod ${CUSTOMUI_VERSION} is published but required core pod ${CORE_VERSION} is not."
+          if [ "${CUSTOMUI_PUBLISHED}" = "true" ] && [ "${CORE_DEPENDENCY_AVAILABLE}" != "true" ]; then
+            echo "❌ CustomUI pod ${CUSTOMUI_VERSION} is published but required core pod ${CORE_DEPENDENCY_VERSION} is not available on CocoaPods trunk."
+            exit 1
+          fi
+
+          if [ "${CORE_DEPENDENCY_AVAILABLE}" != "true" ]; then
+            echo "❌ Required core dependency version ${CORE_DEPENDENCY_VERSION} is not available on CocoaPods trunk."
+            echo "   Publish the matching core dependency release first, then rerun this workflow."
             exit 1
           fi
 
           echo "── Detected ──"
           echo "  Custom UI: v${CUSTOMUI_VERSION}"
-          echo "  Core:      v${CORE_VERSION}"
-          echo "  Core tag:  ${CORE_TAG_EXISTS}"
-          echo "  Core release: ${CORE_RELEASE_EXISTS}"
-          echo "  Core pod:  ${CORE_PUBLISHED}"
+          echo "  Core dependency version: ${CORE_DEPENDENCY_VERSION}"
+          echo "  Core dependency available on trunk: ${CORE_DEPENDENCY_AVAILABLE}"
           echo "  Custom tag: ${CUSTOMUI_TAG_EXISTS}"
           echo "  Custom release: ${CUSTOMUI_RELEASE_EXISTS}"
           echo "  Custom pod: ${CUSTOMUI_PUBLISHED}"
 
-      - name: Tag core pod
-        if: steps.detect.outputs.core_tag_exists != 'true'
-        run: |
-          VERSION="${{ steps.detect.outputs.core_version }}"
-          TAG_NAME="${{ steps.detect.outputs.core_tag }}"
-
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git tag -a "${TAG_NAME}" -m "Release Core Pod ${VERSION}"
-          git push origin "${TAG_NAME}"
-          echo "✅ Tagged ${TAG_NAME}"
-
-      - name: Create core GitHub Release
-        if: steps.detect.outputs.core_release_exists != 'true'
-        env:
-          CI_BOT_TOKEN: ${{ secrets.CI_BOT_TOKEN }}
-        run: |
-          VERSION="${{ steps.detect.outputs.core_version }}"
-          TAG_NAME="${{ steps.detect.outputs.core_tag }}"
-
-          IS_PRERELEASE="false"
-          if [[ "$VERSION" == *"-rc"* ]]; then
-            IS_PRERELEASE="true"
-          fi
-
-          HTTP_STATUS=$(curl --silent --output /tmp/core_release.json --write-out "%{http_code}" \
-            -X POST \
-            -H "Authorization: Bearer ${CI_BOT_TOKEN}" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/razorpay/razorpay-customui-pod/releases" \
-            -d "$(jq -n \
-              --arg tag_name "${TAG_NAME}" \
-              --arg name "Core Pod ${VERSION}" \
-              --arg target "${{ github.event.pull_request.merge_commit_sha }}" \
-              --argjson prerelease ${IS_PRERELEASE} \
-              --argjson generate_release_notes true \
-              '{tag_name: $tag_name, name: $name, target_commitish: $target, prerelease: $prerelease, generate_release_notes: $generate_release_notes}')")
-
-          if [ "$HTTP_STATUS" -eq 201 ]; then
-            echo "✅ Core GitHub Release created"
-          elif [ "$HTTP_STATUS" -eq 422 ]; then
-            echo "⚠️  Core release already exists"
-          else
-            echo "❌ Failed to create core release (HTTP ${HTTP_STATUS})"
-            cat /tmp/core_release.json
-            exit 1
-          fi
-
-      - name: Publish core pod to CocoaPods
-        if: steps.detect.outputs.core_published != 'true'
-        run: |
-          set -eo pipefail
-          VERSION="${{ steps.detect.outputs.core_version }}"
-
-          if [[ "$VERSION" == *"-rc"* ]]; then
-            echo "ℹ️ RC release — skipping CocoaPods trunk push for core pod."
-            echo "Test via Podfile:"
-            echo "  pod 'razorpay-core-pod', :git => 'https://github.com/razorpay/razorpay-customui-pod.git', :tag => 'core-${VERSION}'"
-            exit 0
-          fi
-
-          pod lib lint razorpay-core-pod.podspec --allow-warnings
-          pod trunk push razorpay-core-pod.podspec --allow-warnings
-        env:
-          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
-
-      - name: Wait for core pod availability on CocoaPods
-        if: steps.detect.outputs.core_published != 'true' && !contains(steps.detect.outputs.core_version, '-rc') && steps.detect.outputs.customui_published != 'true'
-        run: |
-          set -eo pipefail
-          VERSION="${{ steps.detect.outputs.core_version }}"
-
-          for attempt in $(seq 1 20); do
-            CORE_INFO=$(pod trunk info razorpay-core-pod 2>/dev/null || true)
-            if printf '%s\n' "${CORE_INFO}" | grep -Eq "(^|[[:space:]])${VERSION}([[:space:]]|$)"; then
-              echo "✅ razorpay-core-pod ${VERSION} is visible on CocoaPods trunk."
-              exit 0
-            fi
-
-            echo "Waiting for razorpay-core-pod ${VERSION} to become visible on CocoaPods trunk (attempt ${attempt}/20)..."
-            sleep 15
-          done
-
-          echo "❌ Timed out waiting for razorpay-core-pod ${VERSION} to appear on CocoaPods trunk."
-          exit 1
-
       - name: Tag custom checkout
         if: steps.detect.outputs.customui_tag_exists != 'true'
+        env:
+          VERSION: ${{ steps.detect.outputs.customui_version }}
+          TAG_NAME: ${{ steps.detect.outputs.customui_tag }}
         run: |
-          VERSION="${{ steps.detect.outputs.customui_version }}"
-          TAG_NAME="${{ steps.detect.outputs.customui_tag }}"
+          set -eo pipefail
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -691,12 +524,14 @@ jobs:
         if: steps.detect.outputs.customui_release_exists != 'true'
         env:
           CI_BOT_TOKEN: ${{ secrets.CI_BOT_TOKEN }}
+          VERSION: ${{ steps.detect.outputs.customui_version }}
+          TAG_NAME: ${{ steps.detect.outputs.customui_tag }}
+          MERGE_COMMIT_SHA: ${{ github.event.pull_request.merge_commit_sha }}
         run: |
-          VERSION="${{ steps.detect.outputs.customui_version }}"
-          TAG_NAME="${{ steps.detect.outputs.customui_tag }}"
+          set -eo pipefail
 
           IS_PRERELEASE="false"
-          if [[ "$VERSION" == *"-rc"* ]]; then
+          if [[ "${VERSION}" == *"-rc"* ]]; then
             IS_PRERELEASE="true"
           fi
 
@@ -708,7 +543,7 @@ jobs:
             -d "$(jq -n \
               --arg tag_name "${TAG_NAME}" \
               --arg name "Custom Checkout ${VERSION}" \
-              --arg target "${{ github.event.pull_request.merge_commit_sha }}" \
+              --arg target "${MERGE_COMMIT_SHA}" \
               --argjson prerelease ${IS_PRERELEASE} \
               --argjson generate_release_notes true \
               '{tag_name: $tag_name, name: $name, target_commitish: $target, prerelease: $prerelease, generate_release_notes: $generate_release_notes}')")
@@ -725,48 +560,27 @@ jobs:
 
       - name: Publish custom checkout to CocoaPods
         if: steps.detect.outputs.customui_published != 'true'
+        env:
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+          VERSION: ${{ steps.detect.outputs.customui_version }}
         run: |
           set -eo pipefail
-          VERSION="${{ steps.detect.outputs.customui_version }}"
-
-          if [[ "$VERSION" == *"-rc"* ]]; then
-            echo "ℹ️ RC release — skipping CocoaPods trunk push for custom checkout."
-            echo "Test via Podfile:"
-            echo "  pod 'razorpay-customui-pod', :git => 'https://github.com/razorpay/razorpay-customui-pod.git', :tag => '${VERSION}'"
-            exit 0
-          fi
 
           pod lib lint razorpay-customui-pod.podspec --allow-warnings
           pod trunk push razorpay-customui-pod.podspec --allow-warnings
-        env:
-          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
 
       - name: Job summary
         if: always()
         run: |
-          echo "## Release Summary" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "| Pod | Version | Status |" >> $GITHUB_STEP_SUMMARY
-          echo "|-----|---------|--------|" >> $GITHUB_STEP_SUMMARY
-
-          CORE_VERSION="${{ steps.detect.outputs.core_version }}"
-          if [ "${{ steps.detect.outputs.core_published }}" = "true" ]; then
-            echo "| razorpay-core-pod | \`${CORE_VERSION}\` | skipped (already published) |" >> $GITHUB_STEP_SUMMARY
-          else
-            if [[ "$CORE_VERSION" == *"-rc"* ]]; then
-              echo "| razorpay-core-pod | \`${CORE_VERSION}\` | ✅ tagged, ⏭️ trunk skipped (RC) |" >> $GITHUB_STEP_SUMMARY
-            else
-              echo "| razorpay-core-pod | \`${CORE_VERSION}\` | ✅ tagged + published |" >> $GITHUB_STEP_SUMMARY
-            fi
-          fi
+          echo "## Release Summary" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Item | Value |" >> "$GITHUB_STEP_SUMMARY"
+          echo "|---|---|" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Core dependency | \`${{ steps.detect.outputs.core_dependency_version }}\` verified on CocoaPods trunk |" >> "$GITHUB_STEP_SUMMARY"
 
           CUSTOMUI_VERSION="${{ steps.detect.outputs.customui_version }}"
           if [ "${{ steps.detect.outputs.customui_published }}" = "true" ]; then
-            echo "| razorpay-customui-pod | \`${CUSTOMUI_VERSION}\` | skipped (already published) |" >> $GITHUB_STEP_SUMMARY
+            echo "| razorpay-customui-pod | \`${CUSTOMUI_VERSION}\` already published |" >> "$GITHUB_STEP_SUMMARY"
           else
-            if [[ "$CUSTOMUI_VERSION" == *"-rc"* ]]; then
-              echo "| razorpay-customui-pod | \`${CUSTOMUI_VERSION}\` | ✅ tagged, ⏭️ trunk skipped (RC) |" >> $GITHUB_STEP_SUMMARY
-            else
-              echo "| razorpay-customui-pod | \`${CUSTOMUI_VERSION}\` | ✅ tagged + published |" >> $GITHUB_STEP_SUMMARY
-            fi
+            echo "| razorpay-customui-pod | \`${CUSTOMUI_VERSION}\` tagged + published |" >> "$GITHUB_STEP_SUMMARY"
           fi
