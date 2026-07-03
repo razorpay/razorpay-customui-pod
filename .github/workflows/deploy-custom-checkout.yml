@@ -223,17 +223,16 @@ jobs:
             exit 1
           fi
 
-          if [ "${LOCAL_CORE_VERSION}" != "${TARGET_CORE_VERSION}" ]; then
-            echo "❌ Local core dependency version is ${LOCAL_CORE_VERSION}, but the latest released dependency tag resolves to ${TARGET_CORE_VERSION}."
-            echo "   Sync the local dependency mirror first, then rerun this workflow."
-            exit 1
-          fi
-
+          echo "LOCAL_CORE_VERSION=${LOCAL_CORE_VERSION}" >> "$GITHUB_ENV"
           echo "TARGET_CORE_VERSION=${TARGET_CORE_VERSION}" >> "$GITHUB_ENV"
 
           echo "✅ Latest released core dependency tag: ${LATEST_CORE_TAG}"
           echo "✅ Using core dependency version: ${TARGET_CORE_VERSION}"
-          echo "✅ Local core dependency mirror already matches ${TARGET_CORE_VERSION}"
+          if [ "${LOCAL_CORE_VERSION}" = "${TARGET_CORE_VERSION}" ]; then
+            echo "✅ Local core dependency mirror already matches ${TARGET_CORE_VERSION}"
+          else
+            echo "ℹ️ Local core dependency mirror is ${LOCAL_CORE_VERSION}; it will be updated to ${TARGET_CORE_VERSION} in this release branch."
+          fi
 
       - name: Prepare release files
         run: |
@@ -242,6 +241,28 @@ jobs:
           chmod +x .github/scripts/update_podspec_version.sh
           ./.github/scripts/update_podspec_version.sh "${DEPLOYMENT_VERSION}"
           echo "✅ razorpay-customui-pod.podspec → v${DEPLOYMENT_VERSION}"
+
+          python3 - <<'PY'
+          import os
+          import re
+          from pathlib import Path
+
+          target_core_version = os.environ["TARGET_CORE_VERSION"]
+          path = Path("razorpay-core-pod.podspec")
+          text = path.read_text()
+          updated = re.sub(
+              r"^(\s*s\.version\s*=\s*)'[^']+'",
+              rf"\1'{target_core_version}'",
+              text,
+              count=1,
+              flags=re.M,
+          )
+          if updated == text:
+              raise SystemExit("Could not update razorpay-core-pod.podspec version")
+          path.write_text(updated)
+          PY
+
+          echo "✅ razorpay-core-pod.podspec mirror synced to v${TARGET_CORE_VERSION}"
 
           python3 - <<'PY'
           import os
@@ -308,7 +329,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add Pod/RazorpayCustom.xcframework Pod/core/Razorpay.xcframework razorpay-customui-pod.podspec Example/Podfile Example/Podfile.lock Example/Pods
+          git add Pod/RazorpayCustom.xcframework Pod/core/Razorpay.xcframework razorpay-core-pod.podspec razorpay-customui-pod.podspec Example/Podfile Example/Podfile.lock Example/Pods
 
           if git diff --cached --quiet; then
             echo "No release asset changes to commit"
@@ -334,9 +355,9 @@ jobs:
           - Updated \`Pod/core/Razorpay.xcframework\` (Wrapper)
           - Refreshed \`Example/Podfile\`, \`Example/Podfile.lock\`, and \`Example/Pods\` for local customui/core usage
           - CustomUI release version: \`${DEPLOYMENT_VERSION}\`
+          - Core pod mirror version: \`${TARGET_CORE_VERSION}\`
           - Core pod dependency version: \`${TARGET_CORE_VERSION}\`
-          - Core dependency version: \`${TARGET_CORE_VERSION}\`
-          - Dependency version is aligned with the latest released core tag
+          - Core dependency is aligned with the latest released core tag
 
           ---
           Opened automatically by CI.
