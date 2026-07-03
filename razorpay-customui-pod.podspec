@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'razorpay-customui-pod'
-  s.version          = '2.1.2'
+  s.version          = '2.1.5-rc.2'
   s.summary          = "CocoaPod implementation of Razorpay's Custom Payment SDK"
 
   s.description      = <<-DESC
@@ -31,6 +31,6 @@ helps businesses accepts online payments via Credit Card, Debit Card, Net bankin
   s.platform     = :ios, '11.0'
   
   s.vendored_frameworks = ['Pod/RazorpayCustom.xcframework']
-  s.dependency 'razorpay-core-pod'
+  #s.dependency 'razorpay-core-pod'
   
 end
