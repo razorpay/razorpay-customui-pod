@@ -23,7 +23,7 @@ concurrency:
 
 jobs:
 # ─────────────────────────────────────────────────────────────────────────────
-# JOB 1 — Deploy custom checkout (download xcframeworks, open PR)
+# JOB 1 — Deploy custom checkout (download release artifact, open PR)
 # ─────────────────────────────────────────────────────────────────────────────
   deploy-custom:
     name: Deploy custom checkout
@@ -36,12 +36,10 @@ jobs:
       IS_RC: ${{ github.event.client_payload.is_rc }}
       CORE_CHANGED: ${{ github.event.client_payload.core_changed }}
       CORE_VERSION_HINT: ${{ github.event.client_payload.core_version || '' }}
-      SOURCE_REPO: ${{ github.event.client_payload.source_repo }}
-      SOURCE_RUN_ID: ${{ github.event.client_payload.run_id }}
+      ARTIFACT_REPOSITORY: ${{ github.event.client_payload.source_repo }}
+      ARTIFACT_RUN_ID: ${{ github.event.client_payload.run_id }}
       SDK_ARTIFACT: ${{ github.event.client_payload.artifacts.sdk }}
-      WRAPPER_ARTIFACT: ${{ github.event.client_payload.artifacts.wrapper }}
       CHECKSUM_SDK: ${{ github.event.client_payload.checksums.sdk }}
-      CHECKSUM_WRAPPER: ${{ github.event.client_payload.checksums.wrapper }}
 
     steps:
       - name: Checkout master
@@ -57,12 +55,10 @@ jobs:
 
           REQUIRED_VARS=(
             DEPLOYMENT_VERSION
-            SOURCE_REPO
-            SOURCE_RUN_ID
+            ARTIFACT_REPOSITORY
+            ARTIFACT_RUN_ID
             SDK_ARTIFACT
-            WRAPPER_ARTIFACT
             CHECKSUM_SDK
-            CHECKSUM_WRAPPER
           )
 
           for var_name in "${REQUIRED_VARS[@]}"; do
@@ -105,33 +101,23 @@ jobs:
         uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
         with:
           github-token: ${{ secrets.CI_BOT_TOKEN }}
-          repository: ${{ env.SOURCE_REPO }}
-          run-id: ${{ env.SOURCE_RUN_ID }}
+          repository: ${{ env.ARTIFACT_REPOSITORY }}
+          run-id: ${{ env.ARTIFACT_RUN_ID }}
           name: ${{ env.SDK_ARTIFACT }}
           path: /tmp/artifacts/sdk
-
-      - name: Download Wrapper XCFramework zip artifact
-        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
-        with:
-          github-token: ${{ secrets.CI_BOT_TOKEN }}
-          repository: ${{ env.SOURCE_REPO }}
-          run-id: ${{ env.SOURCE_RUN_ID }}
-          name: ${{ env.WRAPPER_ARTIFACT }}
-          path: /tmp/artifacts/wrapper
 
       - name: Verify and unzip XCFramework artifacts
         run: |
           set -eo pipefail
 
           SDK_ARCHIVE=$(find /tmp/artifacts/sdk -name "sdk-xcframework.zip" -type f | head -1)
-          WRAPPER_ARCHIVE=$(find /tmp/artifacts/wrapper -name "wrapper-xcframework.zip" -type f | head -1)
 
-          if [ -z "$SDK_ARCHIVE" ] || [ -z "$WRAPPER_ARCHIVE" ]; then
-            echo "❌ Missing required zip artifacts"
+          if [ -z "$SDK_ARCHIVE" ]; then
+            echo "❌ Missing required SDK zip artifact"
             exit 1
           fi
 
-          ACTUAL_SDK_SHA=$(sha256sum "$SDK_ARCHIVE" | awk '{print $1}')
+          ACTUAL_SDK_SHA=$(shasum -a 256 "$SDK_ARCHIVE" | awk '{print $1}')
           if [ "$ACTUAL_SDK_SHA" != "${CHECKSUM_SDK}" ]; then
             echo "❌ CHECKSUM MISMATCH for SDK"
             echo "   Expected: ${CHECKSUM_SDK}"
@@ -139,17 +125,8 @@ jobs:
             exit 1
           fi
 
-          ACTUAL_WRAPPER_SHA=$(sha256sum "$WRAPPER_ARCHIVE" | awk '{print $1}')
-          if [ "$ACTUAL_WRAPPER_SHA" != "${CHECKSUM_WRAPPER}" ]; then
-            echo "❌ CHECKSUM MISMATCH for Wrapper"
-            echo "   Expected: ${CHECKSUM_WRAPPER}"
-            echo "   Actual:   ${ACTUAL_WRAPPER_SHA}"
-            exit 1
-          fi
-
-          mkdir -p /tmp/sdk-artifact /tmp/wrapper-artifact
+          mkdir -p /tmp/sdk-artifact
           unzip -q "$SDK_ARCHIVE" -d /tmp/sdk-artifact
-          unzip -q "$WRAPPER_ARCHIVE" -d /tmp/wrapper-artifact
 
       - name: Replace custom xcframework
         run: |
@@ -166,21 +143,6 @@ jobs:
 
           cp -R "$SDK_XCFW" Pod/RazorpayCustom.xcframework
           echo "✅ Pod/RazorpayCustom.xcframework replaced"
-
-      - name: Replace Wrapper xcframework
-        run: |
-          set -eo pipefail
-
-          rm -rf Pod/core/Razorpay.xcframework
-          WRAPPER_XCFW=$(find /tmp/wrapper-artifact -name "Razorpay.xcframework" -type d | head -1)
-          if [ -z "$WRAPPER_XCFW" ]; then
-            echo "❌ Razorpay.xcframework not found in wrapper artifact"
-            exit 1
-          fi
-
-          mkdir -p Pod/core
-          cp -R "$WRAPPER_XCFW" Pod/core/Razorpay.xcframework
-          echo "✅ Pod/core/Razorpay.xcframework replaced"
 
       - name: Resolve target core version
         env:
@@ -329,7 +291,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add Pod/RazorpayCustom.xcframework Pod/core/Razorpay.xcframework razorpay-core-pod.podspec razorpay-customui-pod.podspec Example/Podfile Example/Podfile.lock Example/Pods
+          git add Pod/RazorpayCustom.xcframework razorpay-core-pod.podspec razorpay-customui-pod.podspec Example/Podfile Example/Podfile.lock Example/Pods
 
           if git diff --cached --quiet; then
             echo "No release asset changes to commit"
@@ -352,7 +314,6 @@ jobs:
 
           ### Updated frameworks
           - Updated \`Pod/RazorpayCustom.xcframework\`
-          - Updated \`Pod/core/Razorpay.xcframework\` (Wrapper)
           - Refreshed \`Example/Podfile\`, \`Example/Podfile.lock\`, and \`Example/Pods\` for local customui/core usage
           - CustomUI release version: \`${DEPLOYMENT_VERSION}\`
           - Core pod mirror version: \`${TARGET_CORE_VERSION}\`
@@ -391,16 +352,18 @@ jobs:
       - name: Job summary
         if: always()
         run: |
-          echo "## Deploy Custom Checkout v${DEPLOYMENT_VERSION}" >> "$GITHUB_STEP_SUMMARY"
-          echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "| Item | Value |" >> "$GITHUB_STEP_SUMMARY"
-          echo "|---|---|" >> "$GITHUB_STEP_SUMMARY"
-          echo "| Version | \`${DEPLOYMENT_VERSION}\` |" >> "$GITHUB_STEP_SUMMARY"
-          echo "| RC | ${IS_RC} |" >> "$GITHUB_STEP_SUMMARY"
-          echo "| RazorpayCustom.xcframework | ✅ replaced |" >> "$GITHUB_STEP_SUMMARY"
-          echo "| Razorpay.xcframework (Wrapper) | ✅ replaced |" >> "$GITHUB_STEP_SUMMARY"
-          echo "| razorpay-core-pod dependency | \`${TARGET_CORE_VERSION}\` |" >> "$GITHUB_STEP_SUMMARY"
-          echo "| PR | opened to master |" >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo "## Deploy Custom Checkout v${DEPLOYMENT_VERSION}"
+            echo ""
+            echo "| Item | Value |"
+            echo "|---|---|"
+            echo "| Version | \`${DEPLOYMENT_VERSION}\` |"
+            echo "| RC | ${IS_RC} |"
+            echo "| RazorpayCustom.xcframework | ✅ replaced |"
+            echo "| Razorpay.xcframework (Wrapper) | — unchanged |"
+            echo "| razorpay-core-pod dependency | \`${TARGET_CORE_VERSION}\` |"
+            echo "| PR | opened to master |"
+          } >> "$GITHUB_STEP_SUMMARY"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # JOB 2 — On PR merge to master: tag, release, publish
@@ -442,9 +405,11 @@ jobs:
             exit 1
           fi
 
-          echo "customui_version=${CUSTOMUI_VERSION}" >> "$GITHUB_OUTPUT"
-          echo "core_dependency_version=${CORE_DEPENDENCY_VERSION}" >> "$GITHUB_OUTPUT"
-          echo "customui_tag=${CUSTOMUI_TAG}" >> "$GITHUB_OUTPUT"
+          {
+            echo "customui_version=${CUSTOMUI_VERSION}"
+            echo "core_dependency_version=${CORE_DEPENDENCY_VERSION}"
+            echo "customui_tag=${CUSTOMUI_TAG}"
+          } >> "$GITHUB_OUTPUT"
 
           git fetch --force --tags origin
 
@@ -463,12 +428,16 @@ jobs:
           if [ "${HTTP_STATUS}" -eq 200 ]; then
             CUSTOMUI_RELEASE_EXISTS="true"
             CUSTOMUI_RELEASE_URL=$(jq -r '.html_url' "${RESPONSE_FILE}")
-            echo "customui_release_exists=true" >> "$GITHUB_OUTPUT"
-            echo "customui_release_url=${CUSTOMUI_RELEASE_URL}" >> "$GITHUB_OUTPUT"
+            {
+              echo "customui_release_exists=true"
+              echo "customui_release_url=${CUSTOMUI_RELEASE_URL}"
+            } >> "$GITHUB_OUTPUT"
           elif [ "${HTTP_STATUS}" -eq 404 ]; then
             CUSTOMUI_RELEASE_EXISTS="false"
-            echo "customui_release_exists=false" >> "$GITHUB_OUTPUT"
-            echo "customui_release_url=" >> "$GITHUB_OUTPUT"
+            {
+              echo "customui_release_exists=false"
+              echo "customui_release_url="
+            } >> "$GITHUB_OUTPUT"
           else
             echo "❌ Failed to read customui release state (HTTP ${HTTP_STATUS})"
             cat "${RESPONSE_FILE}"
@@ -489,9 +458,11 @@ jobs:
             CUSTOMUI_PUBLISHED="false"
           fi
 
-          echo "customui_tag_exists=${CUSTOMUI_TAG_EXISTS}" >> "$GITHUB_OUTPUT"
-          echo "core_dependency_available=${CORE_DEPENDENCY_AVAILABLE}" >> "$GITHUB_OUTPUT"
-          echo "customui_published=${CUSTOMUI_PUBLISHED}" >> "$GITHUB_OUTPUT"
+          {
+            echo "customui_tag_exists=${CUSTOMUI_TAG_EXISTS}"
+            echo "core_dependency_available=${CORE_DEPENDENCY_AVAILABLE}"
+            echo "customui_published=${CUSTOMUI_PUBLISHED}"
+          } >> "$GITHUB_OUTPUT"
 
           if [ "${CUSTOMUI_RELEASE_EXISTS}" = "true" ] && [ "${CUSTOMUI_TAG_EXISTS}" != "true" ]; then
             echo "❌ CustomUI GitHub release ${CUSTOMUI_TAG} exists, but the tag is missing remotely."
@@ -592,16 +563,22 @@ jobs:
 
       - name: Job summary
         if: always()
+        env:
+          CORE_DEPENDENCY_VERSION_OUTPUT: ${{ steps.detect.outputs.core_dependency_version }}
+          CUSTOMUI_VERSION_OUTPUT: ${{ steps.detect.outputs.customui_version }}
+          CUSTOMUI_PUBLISHED_OUTPUT: ${{ steps.detect.outputs.customui_published }}
         run: |
-          echo "## Release Summary" >> "$GITHUB_STEP_SUMMARY"
-          echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "| Item | Value |" >> "$GITHUB_STEP_SUMMARY"
-          echo "|---|---|" >> "$GITHUB_STEP_SUMMARY"
-          echo "| Core dependency | \`${{ steps.detect.outputs.core_dependency_version }}\` verified on CocoaPods trunk |" >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo "## Release Summary"
+            echo ""
+            echo "| Item | Value |"
+            echo "|---|---|"
+            echo "| Core dependency | \`${CORE_DEPENDENCY_VERSION_OUTPUT}\` verified on CocoaPods trunk |"
 
-          CUSTOMUI_VERSION="${{ steps.detect.outputs.customui_version }}"
-          if [ "${{ steps.detect.outputs.customui_published }}" = "true" ]; then
-            echo "| razorpay-customui-pod | \`${CUSTOMUI_VERSION}\` already published |" >> "$GITHUB_STEP_SUMMARY"
-          else
-            echo "| razorpay-customui-pod | \`${CUSTOMUI_VERSION}\` tagged + published |" >> "$GITHUB_STEP_SUMMARY"
-          fi
+            CUSTOMUI_VERSION="${CUSTOMUI_VERSION_OUTPUT}"
+            if [ "${CUSTOMUI_PUBLISHED_OUTPUT}" = "true" ]; then
+              echo "| razorpay-customui-pod | \`${CUSTOMUI_VERSION}\` already published |"
+            else
+              echo "| razorpay-customui-pod | \`${CUSTOMUI_VERSION}\` tagged + published |"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
