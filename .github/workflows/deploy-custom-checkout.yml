@@ -527,6 +527,7 @@ jobs:
             IS_PRERELEASE="true"
           fi
 
+          # Release is created with an empty body (no auto-generated notes).
           HTTP_STATUS=$(curl --silent --output /tmp/customui_release.json --write-out "%{http_code}" \
             -X POST \
             -H "Authorization: Bearer ${CI_BOT_TOKEN}" \
@@ -537,8 +538,7 @@ jobs:
               --arg name "Custom Checkout ${VERSION}" \
               --arg target "${MERGE_COMMIT_SHA}" \
               --argjson prerelease ${IS_PRERELEASE} \
-              --argjson generate_release_notes true \
-              '{tag_name: $tag_name, name: $name, target_commitish: $target, prerelease: $prerelease, generate_release_notes: $generate_release_notes}')")
+              '{tag_name: $tag_name, name: $name, target_commitish: $target, prerelease: $prerelease, body: ""}')")
 
           if [ "$HTTP_STATUS" -eq 201 ]; then
             echo "✅ Custom Checkout GitHub Release created"
