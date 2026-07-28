@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/vivek.shindhe/Razorpay/iOS/razorpay-ios/RazorpayIOS/DerivedData/iphoneos/Build/Products/Release-iphoneos/RazorpayCore/RazorpayCore.framework/RazorpayCore'
+binary-path:     '/Users/runner/work/razorpay-ios/razorpay-ios/RazorpayIOS/DerivedData/iphoneos/Build/Products/Release-iphoneos/RazorpayCore/RazorpayCore.framework/RazorpayCore'
 relocations:
   - { offset: 0x778, size: 0x8, addend: 0x0, symName: _RazorpayCoreVersionString, symObjAddr: 0x0, symBinAddr: 0x7E90, symSize: 0x0 }
   - { offset: 0x7AC, size: 0x8, addend: 0x0, symName: _RazorpayCoreVersionNumber, symObjAddr: 0x30, symBinAddr: 0x7EC0, symSize: 0x0 }
@@ -16,7 +16,7 @@ relocations:
   - { offset: 0xAD9, size: 0x8, addend: 0x0, symName: '_$s12RazorpayCore18PluginPaymentModelCACycfc', symObjAddr: 0x1A0, symBinAddr: 0x41A0, symSize: 0x2C }
   - { offset: 0xB2C, size: 0x8, addend: 0x0, symName: '_$s12RazorpayCore18PluginPaymentModelCACycfcTo', symObjAddr: 0x1CC, symBinAddr: 0x41CC, symSize: 0x2C }
   - { offset: 0xB86, size: 0x8, addend: 0x0, symName: '_$s12RazorpayCore18PluginPaymentModelCfD', symObjAddr: 0x1F8, symBinAddr: 0x41F8, symSize: 0x30 }
-  - { offset: 0xCB4, size: 0x8, addend: 0x0, symName: '_$s12RazorpayCore16CheckoutRegistryC6sharedACvpZ', symObjAddr: 0x12D0, symBinAddr: 0xE5A8, symSize: 0x0 }
+  - { offset: 0xCB4, size: 0x8, addend: 0x0, symName: '_$s12RazorpayCore16CheckoutRegistryC6sharedACvpZ', symObjAddr: 0x12D0, symBinAddr: 0x12AE8, symSize: 0x0 }
   - { offset: 0xE9C, size: 0x8, addend: 0x0, symName: '_$s12RazorpayCore16CheckoutRegistryC6shared_WZ', symObjAddr: 0xFC, symBinAddr: 0x43E4, symSize: 0x2C }
   - { offset: 0xF6C, size: 0x8, addend: 0x0, symName: '_$s12RazorpayCore22CheckoutImplementation_pIego_AaB_pIegr_TRTA', symObjAddr: 0x400, symBinAddr: 0x46E8, symSize: 0x28 }
   - { offset: 0xFED, size: 0x8, addend: 0x0, symName: '_$s12RazorpayCore16CheckoutRegistryCfETo', symObjAddr: 0x760, symBinAddr: 0x4A48, symSize: 0x10 }
