@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name RazorpayCustom
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios12-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name RazorpayCustom
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import CommonCrypto
 import CoreLocation
 import CoreTelephony
@@ -19,10 +19,41 @@ import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class RazorpayCheckout : ObjectiveC.NSObject {
   @objc final public var upiTurbo: (any RazorpayCore.UPITurboPlugin)?
   @objc final public var upiTurboUI: (any RazorpayCore.UPITurboUIPlugin)?
+  @objc final public var amazonPay: (any RazorpayCore.AmazonWalletPaylaterProtocol)?
+  @objc final public var applePay: (any RazorpayCore.ApplePayPlugin)?
+  @objc @_inheritsConvenienceInitializers @objcMembers final public class RecommendedInstruments : ObjectiveC.NSObject {
+    @objc @_inheritsConvenienceInitializers @objcMembers final public class ResponseKey : ObjectiveC.NSObject {
+      @objc public static let getRecommendedInstruments: Swift.String
+      @objc public static let items: Swift.String
+      @objc override dynamic public init()
+      @objc deinit
+    }
+    @objc @_inheritsConvenienceInitializers @objcMembers final public class InstrumentField : ObjectiveC.NSObject {
+      @objc public static let method: Swift.String
+      @objc public static let appPackage: Swift.String
+      @objc override dynamic public init()
+      @objc deinit
+    }
+    @objc @_inheritsConvenienceInitializers @objcMembers final public class InstrumentType : ObjectiveC.NSObject {
+      @objc public static let upi: Swift.String
+      @objc public static let card: Swift.String
+      @objc public static let netbanking: Swift.String
+      @objc public static let wallet: Swift.String
+      @objc public static let emi: Swift.String
+      @objc public static let paylater: Swift.String
+      @objc public static let bankTransfer: Swift.String
+      @objc override dynamic public init()
+      @objc deinit
+    }
+    @objc override dynamic public init()
+    @objc deinit
+  }
   @objc public static func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView) -> RazorpayCustom.RazorpayCheckout
   @objc public static func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, plugin: any RazorpayCore.UPITurboPlugin) -> RazorpayCustom.RazorpayCheckout
   @objc public static func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, UIPlugin: any RazorpayCore.UPITurboUIPlugin) -> RazorpayCustom.RazorpayCheckout
   @objc public static func initWithKey(_ key: Swift.String) -> RazorpayCustom.RazorpayCheckout
+  @objc public static func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, AmazonpayPlugin: any RazorpayCore.AmazonWalletPaylaterProtocol) -> RazorpayCustom.RazorpayCheckout
+  @objc public static func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, ApplePay applePayPlugin: any RazorpayCore.ApplePayPlugin) -> RazorpayCustom.RazorpayCheckout
   @objc final public func changeApiKey(_ newApiKey: Swift.String)
   @objc final public func payWithCred(withOptions options: [Swift.AnyHashable : Any], withSuccessCallback success: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc final public func getCardFlows(_ options: [Swift.AnyHashable : Any], withCallback: @escaping (Swift.Bool) -> Swift.Void)
@@ -31,6 +62,7 @@ import _SwiftConcurrencyShims
   @objc final public func resendOtp(response: @escaping (Swift.Bool) -> Swift.Void)
   @objc final public func redirectToBankPage()
   @objc final public func getPaymentMethods(withOptions options: [Swift.AnyHashable : Any]?, withSuccessCallback success: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
+  @objc final public func getRecommendedInstruments(withOptions options: [Swift.AnyHashable : Any], withSuccessCallback success: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc final public func getSubscriptionAmount(havingSubscriptionId subId: Swift.String, withSuccessCallback success: @escaping (Swift.UInt64) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc final public func getSubscriptionAmount(options: [Swift.AnyHashable : Any], withSuccessCallback success: @escaping (Swift.UInt64) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc final public func authorize(_ options: [Swift.AnyHashable : Any])
@@ -74,11 +106,15 @@ public class TurboPluginManager {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers final public class CustomCheckoutImplementation : ObjectiveC.NSObject, RazorpayCore.CustomCheckoutImplementationProtocol {
+  @objc final public func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, AmazonpayPlugin: any RazorpayCore.AmazonWalletPaylaterProtocol) -> Any?
   @objc final public var upiTurbo: (any RazorpayCore.UPITurboPlugin)?
   @objc final public var upiTurboUI: (any RazorpayCore.UPITurboUIPlugin)?
+  @objc final public var amazonPayPlugin: (any RazorpayCore.AmazonWalletPaylaterProtocol)?
+  @objc final public var applePayPlugin: (any RazorpayCore.ApplePayPlugin)?
   @objc final public func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, plugin: any RazorpayCore.UPITurboPlugin) -> Any?
   @objc final public func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, UIPlugin: any RazorpayCore.UPITurboUIPlugin) -> Any?
   @objc final public func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView) -> Any?
+  @objc final public func initWithKey(_ key: Swift.String, andDelegate delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol, withPaymentWebView merchantWebView: WebKit.WKWebView, ApplePay applePayPlugin: any RazorpayCore.ApplePayPlugin) -> Any?
   @objc final public func initWithKey(_ key: Swift.String) -> Any?
   @objc final public func changeApiKey(_ newApiKey: Swift.String, checkoutInstance: Any?)
   @objc final public func payWithCred(withOptions options: [Swift.AnyHashable : Any], checkoutInstance: Any?, withSuccessCallback success: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
@@ -88,6 +124,7 @@ public class TurboPluginManager {
   @objc final public func resendOtp(checkoutInstance: Any?, response: @escaping (Swift.Bool) -> Swift.Void)
   @objc final public func redirectToBankPage(checkoutInstance: Any?)
   @objc final public func getPaymentMethods(withOptions options: [Swift.AnyHashable : Any]?, checkoutInstance: Any?, withSuccessCallback success: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
+  @objc final public func getRecommendedInstruments(withOptions options: [Swift.AnyHashable : Any], checkoutInstance: Any?, withSuccessCallback success: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc final public func getSubscriptionAmount(havingSubscriptionId subId: Swift.String, checkoutInstance: Any?, withSuccessCallback success: @escaping (Swift.UInt64) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc final public func getSubscriptionAmount(options: [Swift.AnyHashable : Any], checkoutInstance: Any?, withSuccessCallback success: @escaping (Swift.UInt64) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc final public func authorize(_ options: [Swift.AnyHashable : Any], checkoutInstance: Any?)
