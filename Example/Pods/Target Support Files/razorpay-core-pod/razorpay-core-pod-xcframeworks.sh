@@ -17,10 +17,16 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "RazorpayCustom.xcframework/ios-arm64")
+  "Razorpay.xcframework/ios-arm64")
     echo ""
     ;;
-  "RazorpayCustom.xcframework/ios-arm64-simulator")
+  "Razorpay.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "RazorpayCore.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "RazorpayCore.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
   esac
@@ -29,11 +35,17 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
-  "RazorpayCustom.xcframework/ios-arm64")
+  "Razorpay.xcframework/ios-arm64")
     echo "arm64"
     ;;
-  "RazorpayCustom.xcframework/ios-arm64-simulator")
+  "Razorpay.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "RazorpayCore.xcframework/ios-arm64")
     echo "arm64"
+    ;;
+  "RazorpayCore.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
     ;;
   esac
 }
@@ -117,5 +129,6 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/../../Pod/RazorpayCustom.xcframework" "razorpay-customui-pod" "framework" "ios-arm64" "ios-arm64-simulator"
+install_xcframework "${PODS_ROOT}/../../Pod/core/Razorpay.xcframework" "razorpay-core-pod" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../Pod/core/RazorpayCore.xcframework" "razorpay-core-pod" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 
