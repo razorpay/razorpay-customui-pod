@@ -154,6 +154,7 @@ extension MenuVC {
             "card[expiry_month]": "11",
             "card[expiry_year]": "28",
             "emi_duration": "12",
+            "card[cvv]": "123"
         ]
         
         self.payloadArray += [PayloadModel(title: "EMI", options: cardPaymentDict, paymentType: .makePayment)]
@@ -183,17 +184,18 @@ extension MenuVC {
                 
             
         ]
-//        [
-//                    "amount": 100, // amount in currency subunits. Defaults to INR. 100 = 100 paise = INR 1.
-//                    "currency": "INR",
-//                    "email": "gaurav.kumar@example.com",
-//                    "contact": "9090980808",
-////                    "order_id": "order_DBJOWzybf0sJbb",
-//                    "method": "upi",
-////                    "_[flow]": "intent",
-////                    "upi_app_package_name": "phonepe",
-//                    "vpa": "success@razorpay" // Optional Parameter
-//                ]
+        
+       cardPaymentDict = [
+                    "amount": 100, // amount in currency subunits. Defaults to INR. 100 = 100 paise = INR 1.
+                    "currency": "INR",
+                    "email": "gaurav.kumar@example.com",
+                    "contact": "9090980808",
+//                    "order_id": "order_DBJOWzybf0sJbb",
+                    "method": "upi",
+//                    "_[flow]": "intent",
+//                    "upi_app_package_name": "phonepe",
+                    "vpa": "success@razorpay" // Optional Parameter
+                ]
         self.payloadArray += [PayloadModel(title: "UPI", options: cardPaymentDict, paymentType: .makePayment)]
         cardPaymentDict = [:]
     }
