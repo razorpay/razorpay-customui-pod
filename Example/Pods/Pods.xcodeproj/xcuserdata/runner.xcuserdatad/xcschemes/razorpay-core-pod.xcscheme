@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "777F0DEA21AFE86E5D44193732FCF3C6"
-               BuildableName = "Pods_razorpay_customui_pod_Tests.framework"
-               BlueprintName = "Pods-razorpay-customui-pod_Tests"
+               BlueprintIdentifier = "0A1CC38B57BF7987D9DDA7A1CE4F117E"
+               BuildableName = "razorpay-core-pod"
+               BlueprintName = "razorpay-core-pod"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
