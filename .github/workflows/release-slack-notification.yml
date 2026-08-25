@@ -4,20 +4,17 @@ on:
   release:
     types: [published]
 
-permissions:
-  contents: read
-
 jobs:
   notify-slack:
     runs-on: ubuntu-latest # nosemgrep : non-self-hosted-runner
     steps:
-      - name: Start PMG (SafeDep Package Manager Guard)
+      - name: Setup PMG proxy
+        id: pmg-setup
         uses: safedep/pmg@v1
         with:
           server-mode: true
           api-key: ${{ secrets.PMG_PUBLIC_REPOS_TOKEN }}
           tenant-id: ${{ secrets.PMG_TENANT_ID }}
-
       - name: Build Slack Message
         id: build-message
         run: |
@@ -47,7 +44,12 @@ jobs:
           method: chat.postMessage
           token: ${{ secrets.SLACK_BOT_TOKEN }}
           payload: ${{ steps.build-message.outputs.payload }}
-
+            
       - name: Enforce PMG policy
         if: always()
-        run: pmg proxy stop --fail-on-violation
+        run: |
+          if [ "${{ steps.pmg-setup.outcome }}" = "success" ]; then
+            pmg proxy stop --fail-on-violation
+          else
+            pmg proxy stop || true
+          fi
