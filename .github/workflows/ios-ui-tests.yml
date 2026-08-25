@@ -56,6 +56,13 @@ jobs:
     if: ${{ needs.ui-tests.result == 'success' && github.event_name == 'pull_request' }}
 
     steps:
+      - name: Start PMG (SafeDep Package Manager Guard)
+        uses: safedep/pmg@v1
+        with:
+          server-mode: true
+          api-key: ${{ secrets.PMG_PUBLIC_REPOS_TOKEN }}
+          tenant-id: ${{ secrets.PMG_TENANT_ID }}
+
       - name: Comment on PR when sanity UI tests pass
         uses: actions/github-script@v7
         with:
@@ -72,5 +79,9 @@ jobs:
               issue_number: pr.number,
               body: "✅ iOS sanity UI tests passed on all configured simulators."
             });
+
+      - name: Enforce PMG policy
+        if: always()
+        run: pmg proxy stop --fail-on-violation
 
 
