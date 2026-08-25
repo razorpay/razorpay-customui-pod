@@ -3966,7 +3966,7 @@
           {
             "kind": "Function",
             "name": "webView",
-            "printedName": "webView(_:decidePolicyFor:checkoutInstance:handler:)",
+            "printedName": "webView(_:decidePolicyFor:handler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3984,19 +3984,6 @@
                 "name": "WKNavigationAction",
                 "printedName": "WebKit.WKNavigationAction",
                 "usr": "c:objc(cs)WKNavigationAction"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -4018,8 +4005,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@Razorpay@objc(cs)RazorpayCheckout(im)webView:decidePolicyFor:checkoutInstance:handler:",
-            "mangledName": "$s8Razorpay0A8CheckoutC7webView_15decidePolicyFor16checkoutInstance7handlerySo05WKWebD0C_So18WKNavigationActionCypSgySo0lmF0VctF",
+            "usr": "c:@CM@Razorpay@objc(cs)RazorpayCheckout(im)webView:decidePolicyFor:handler:",
+            "mangledName": "$s8Razorpay0A8CheckoutC7webView_15decidePolicyFor7handlerySo05WKWebD0C_So18WKNavigationActionCySo0jkF0VctF",
             "moduleName": "Razorpay",
             "declAttributes": [
               "Final",
@@ -4586,9 +4573,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@Razorpay@objc(cs)RazorpayCheckout(im)handleRedirection:",
-            "mangledName": "$s8Razorpay0A8CheckoutC17handleRedirectionySbSSF",
+            "usr": "c:@CM@Razorpay@objc(cs)RazorpayCheckout(cm)handleRedirection:",
+            "mangledName": "$s8Razorpay0A8CheckoutC17handleRedirectionySbSSFZ",
             "moduleName": "Razorpay",
+            "static": true,
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -4702,133 +4690,133 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "StringLiteral",
       "offset": 827,
       "length": 29,
       "value": "\"get_recommended_instruments\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "StringLiteral",
       "offset": 895,
       "length": 7,
       "value": "\"items\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "StringLiteral",
       "offset": 1021,
       "length": 8,
       "value": "\"method\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "StringLiteral",
       "offset": 1073,
       "length": 13,
       "value": "\"app_package\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "StringLiteral",
       "offset": 1201,
       "length": 5,
       "value": "\"upi\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "StringLiteral",
       "offset": 1244,
       "length": 6,
       "value": "\"card\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "StringLiteral",
       "offset": 1294,
       "length": 12,
       "value": "\"netbanking\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "StringLiteral",
       "offset": 1346,
       "length": 8,
       "value": "\"wallet\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "StringLiteral",
       "offset": 1391,
       "length": 5,
       "value": "\"emi\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "StringLiteral",
       "offset": 1438,
       "length": 10,
       "value": "\"paylater\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "StringLiteral",
       "offset": 1494,
       "length": 15,
       "value": "\"bank_transfer\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "BooleanLiteral",
       "offset": 6819,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "BooleanLiteral",
       "offset": 7358,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "BooleanLiteral",
       "offset": 7952,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "BooleanLiteral",
       "offset": 8625,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper+Extension.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper+Extension.swift",
       "kind": "BooleanLiteral",
       "offset": 4235,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper+Extension.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper+Extension.swift",
       "kind": "BooleanLiteral",
       "offset": 4801,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper+Extension.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper+Extension.swift",
       "kind": "BooleanLiteral",
       "offset": 5480,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/razorpay-ios\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper+Extension.swift",
+      "filePath": "\/Users\/gaurav.bhardwaj\/Documents\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper+Extension.swift",
       "kind": "BooleanLiteral",
       "offset": 5969,
       "length": 4,
