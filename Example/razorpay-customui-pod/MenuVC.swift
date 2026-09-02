@@ -11,11 +11,7 @@ import Razorpay
 struct PayloadModel {
     var title: String
     var options: [String: Any]
-//    var key: String = "rzp_live_JbQIqxBRizNPmu"
-    var key: String = "rzp_test_TTZVoQxjD5VIuI"
-//    var key: String = "rzp_live_partner_Jgy1T7ZabnnFB1"
-//    var key: String = "rzp_live_5W8oZPBNQPbZDE"
-//    var key: String = "rzp_live_INaX9xm2rADfMM"
+    var key: String = "rzp_test_1sjnKZ3EsBduvp"
     var paymentType: PaymentType
 }
     
