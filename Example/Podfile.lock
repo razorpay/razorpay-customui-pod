@@ -1,6 +1,6 @@
 PODS:
   - razorpay-core-pod (1.0.8)
-  - razorpay-customui-pod (2.1.6):
+  - razorpay-customui-pod (2.2.2):
     - razorpay-core-pod (~> 1.0.8)
 
 DEPENDENCIES:
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   razorpay-core-pod: 21111673f8696ebfa03cc38cbbafeaeca0b1e146
-  razorpay-customui-pod: 5dd5cc1da1ecdcce1c23e5c1e010086a2ca8b02f
+  razorpay-customui-pod: 11a88b5bb948f49bec6670407bbd0a27046cdde1
 
 PODFILE CHECKSUM: 5a9cec6fb534f0cfaf51366126dfc3345a4d06fa
 
