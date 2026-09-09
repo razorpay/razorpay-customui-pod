@@ -398,6 +398,8 @@ SWIFT_CLASS("_TtC14RazorpayCustom16RazorpayCheckout")
 - (void)getCardFlows:(NSDictionary * _Nonnull)options withCallback:(void (^ _Nonnull)(BOOL))withCallback;
 - (void)getCardOtpDataWithResponse:(void (^ _Nonnull)(BOOL))response;
 - (void)submitOtpWithOtp:(NSString * _Nonnull)otp;
+/// A rejected OTP is reported here on the main thread instead of onPaymentError, so the session stays alive for a retry or resend.
+- (void)submitOtpWithOtp:(NSString * _Nonnull)otp andFailureCallback:(void (^ _Nonnull)(NSString * _Nonnull))failure;
 - (void)resendOtpWithResponse:(void (^ _Nonnull)(BOOL))response;
 - (void)redirectToBankPage;
 - (void)getPaymentMethodsWithOptions:(NSDictionary * _Nullable)options withSuccessCallback:(void (^ _Nonnull)(NSDictionary * _Nonnull))success andFailureCallback:(void (^ _Nonnull)(NSString * _Nonnull))failure;
@@ -839,6 +841,8 @@ SWIFT_CLASS("_TtC14RazorpayCustom16RazorpayCheckout")
 - (void)getCardFlows:(NSDictionary * _Nonnull)options withCallback:(void (^ _Nonnull)(BOOL))withCallback;
 - (void)getCardOtpDataWithResponse:(void (^ _Nonnull)(BOOL))response;
 - (void)submitOtpWithOtp:(NSString * _Nonnull)otp;
+/// A rejected OTP is reported here on the main thread instead of onPaymentError, so the session stays alive for a retry or resend.
+- (void)submitOtpWithOtp:(NSString * _Nonnull)otp andFailureCallback:(void (^ _Nonnull)(NSString * _Nonnull))failure;
 - (void)resendOtpWithResponse:(void (^ _Nonnull)(BOOL))response;
 - (void)redirectToBankPage;
 - (void)getPaymentMethodsWithOptions:(NSDictionary * _Nullable)options withSuccessCallback:(void (^ _Nonnull)(NSDictionary * _Nonnull))success andFailureCallback:(void (^ _Nonnull)(NSString * _Nonnull))failure;
