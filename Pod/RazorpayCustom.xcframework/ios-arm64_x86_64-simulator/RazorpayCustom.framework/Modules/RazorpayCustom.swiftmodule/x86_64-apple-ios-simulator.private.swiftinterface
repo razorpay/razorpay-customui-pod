@@ -58,6 +58,7 @@ import _SwiftConcurrencyShims
   @objc final public func getCardFlows(_ options: [Swift.AnyHashable : Any], withCallback: @escaping (Swift.Bool) -> Swift.Void)
   @objc final public func getCardOtpData(response: @escaping (Swift.Bool) -> Swift.Void)
   @objc final public func submitOtp(otp: Swift.String)
+  @objc final public func submitOtp(otp: Swift.String, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
   @objc final public func resendOtp(response: @escaping (Swift.Bool) -> Swift.Void)
   @objc final public func redirectToBankPage()
   @objc final public func getPaymentMethods(withOptions options: [Swift.AnyHashable : Any]?, withSuccessCallback success: @escaping ([Swift.AnyHashable : Any]) -> Swift.Void, andFailureCallback failure: @escaping (Swift.String) -> Swift.Void)
