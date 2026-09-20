@@ -30,7 +30,8 @@ helps businesses accepts online payments via Credit Card, Debit Card, Net bankin
 
   s.platform     = :ios, '11.0'
   
-  s.vendored_frameworks = ['Pod/RazorpayCustom.xcframework']
+  s.vendored_frameworks = ['Pod/RazorpayCustom.xcframework', 'Pod/RazorpayApplePay.xcframework']
+  s.frameworks = 'PassKit'
   s.dependency 'razorpay-core-pod', '~> 1.0.9'
   
 end
