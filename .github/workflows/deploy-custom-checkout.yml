@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
 # ─────────────────────────────────────────────────────────────────────────────
-# JOB 1 — Replace wrapper+core+custom+applepay, bump both podspecs, open ONE PR
+# JOB 1 — Replace wrapper+core+custom, bump both podspecs, open ONE PR
 # ─────────────────────────────────────────────────────────────────────────────
   deploy-customui:
     name: Deploy combined core + custom
@@ -43,8 +43,6 @@ jobs:
       CHECKSUM_WRAPPER:    ${{ github.event.client_payload.checksums.wrapper }}
       CHECKSUM_CORE:       ${{ github.event.client_payload.checksums.core }}
       CHECKSUM_CUSTOM:     ${{ github.event.client_payload.checksums.custom_sdk }}
-      APPLEPAY_ARTIFACT:   ${{ github.event.client_payload.artifacts.applepay }}
-      CHECKSUM_APPLEPAY:   ${{ github.event.client_payload.checksums.applepay }}
 
     steps:
       - name: Checkout master
@@ -57,13 +55,11 @@ jobs:
       - name: Validate dispatch payload
         run: |
           set -eo pipefail
-          # Custom + Apple Pay fields are always required (the podspec vendors both).
-          # Core/wrapper fields are required only when core actually changed
-          # (custom-only dispatches leave them empty).
+          # Custom fields are always required. Core/wrapper fields are required only
+          # when core actually changed (custom-only dispatches leave them empty).
           REQUIRED_VARS=(
             CUSTOM_VERSION ARTIFACT_REPOSITORY ARTIFACT_RUN_ID
             CUSTOM_ARTIFACT CHECKSUM_CUSTOM
-            APPLEPAY_ARTIFACT CHECKSUM_APPLEPAY
           )
           if [ "${CORE_CHANGED}" = "true" ]; then
             REQUIRED_VARS+=(
@@ -97,15 +93,6 @@ jobs:
           run-id: ${{ env.ARTIFACT_RUN_ID }}
           name: ${{ env.CUSTOM_ARTIFACT }}
           path: /tmp/artifacts/custom
-
-      - name: Download Apple Pay XCFramework zip
-        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
-        with:
-          github-token: ${{ secrets.CI_BOT_TOKEN }}
-          repository: ${{ env.ARTIFACT_REPOSITORY }}
-          run-id: ${{ env.ARTIFACT_RUN_ID }}
-          name: ${{ env.APPLEPAY_ARTIFACT }}
-          path: /tmp/artifacts/applepay
 
       - name: Download wrapper XCFramework zip
         if: env.CORE_CHANGED == 'true'
@@ -149,16 +136,12 @@ jobs:
             echo "✅ ${dest} replaced"
           }
 
-          rm -rf /tmp/x && mkdir -p /tmp/x/custom /tmp/x/applepay
+          rm -rf /tmp/x && mkdir -p /tmp/x/custom
 
-          # Custom always changes; Apple Pay ships with it.
+          # Custom always changes.
           CUSTOM_ZIP=$(verify /tmp/artifacts/custom sdk-xcframework.zip "${CHECKSUM_CUSTOM}" custom)
           unzip -q "$CUSTOM_ZIP" -d /tmp/x/custom
           replace /tmp/x/custom RazorpayCustom Pod/RazorpayCustom.xcframework
-
-          APPLEPAY_ZIP=$(verify /tmp/artifacts/applepay applepay-xcframework.zip "${CHECKSUM_APPLEPAY}" applepay)
-          unzip -q "$APPLEPAY_ZIP" -d /tmp/x/applepay
-          replace /tmp/x/applepay RazorpayApplePay Pod/RazorpayApplePay.xcframework
 
           # Wrapper + core only on a core change (custom-only leaves them pinned).
           if [ "${CORE_CHANGED}" = "true" ]; then
@@ -251,8 +234,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           # Core paths are always add'd; when custom-only they carry no diff so
           # nothing extra is staged.
-          git add Pod/RazorpayCustom.xcframework Pod/RazorpayApplePay.xcframework \
-                  Pod/core/Razorpay.xcframework Pod/core/RazorpayCore.xcframework \
+          git add Pod/RazorpayCustom.xcframework Pod/core/Razorpay.xcframework Pod/core/RazorpayCore.xcframework \
                   razorpay-core-pod.podspec razorpay-customui-pod.podspec \
                   Example/Podfile Example/Podfile.lock Example/Pods
           if git diff --cached --quiet; then
@@ -279,7 +261,6 @@ jobs:
 
           ### Updated frameworks
           - \`Pod/RazorpayCustom.xcframework\` (custom)
-          - \`Pod/RazorpayApplePay.xcframework\` (apple pay)
           - \`Pod/core/Razorpay.xcframework\` (wrapper)
           - \`Pod/core/RazorpayCore.xcframework\` (core)
 
@@ -302,7 +283,6 @@ jobs:
 
           ### Updated frameworks
           - \`Pod/RazorpayCustom.xcframework\` (custom)
-          - \`Pod/RazorpayApplePay.xcframework\` (apple pay)
 
           ### Podspecs
           - \`razorpay-customui-pod.podspec\` → \`${CUSTOM_VERSION}\`
@@ -352,11 +332,11 @@ jobs:
             echo "| RC | ${IS_RC} |"
             if [ "${CORE_CHANGED}" = "true" ]; then
               echo "| Core version | \`${CORE_VERSION}\` |"
-              echo "| Frameworks replaced | RazorpayCustom + RazorpayApplePay + Razorpay (wrapper) + RazorpayCore |"
+              echo "| Frameworks replaced | RazorpayCustom + Razorpay (wrapper) + RazorpayCore |"
               echo "| On merge | releases core-${CORE_VERSION} AND ${CUSTOM_VERSION} |"
             else
               echo "| Core version | unchanged (dependency stays pinned) |"
-              echo "| Frameworks replaced | RazorpayCustom + RazorpayApplePay |"
+              echo "| Frameworks replaced | RazorpayCustom only |"
               echo "| On merge | releases ${CUSTOM_VERSION} |"
             fi
             echo "| PR | ONE PR opened to master |"
