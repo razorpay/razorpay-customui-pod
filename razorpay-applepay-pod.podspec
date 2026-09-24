@@ -10,7 +10,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'razorpay-applepay-pod'
-  s.version          = '1.0.0-beta'
+  s.version          = '1.0.0'
   s.summary          = "Apple Pay plugin for Razorpay's Custom Payment SDK"
 
   s.description      = <<-DESC
