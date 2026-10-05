@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Razorpay' => 'support@razorpay.com' }
   s.source           = { :git => 'https://github.com/razorpay/razorpay-customui-pod.git', :tag => "applepay-#{s.version.to_s}" }
   s.social_media_url = 'https://twitter.com/razorpay'
+  s.readme           = "https://raw.githubusercontent.com/razorpay/razorpay-customui-pod/applepay-#{s.version.to_s}/APPLEPAY_README.md"
 
   # Matches the xcframework's MinimumOSVersion; PKPaymentButton styling APIs are iOS 12+.
   s.platform     = :ios, '12.0'
