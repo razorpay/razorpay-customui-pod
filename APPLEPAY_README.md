@@ -34,6 +34,12 @@ let razorpay = RazorpayCheckout.initWithKey(key, andDelegate: self,
                                            ApplePay: ApplePay.pluginInstance())
 ```
 
+Show the Apple Pay button only when the device supports Apple Pay:
+
+```swift
+applePayButton.isHidden = !ApplePay.isApplePaySupported()
+```
+
 Pay with `method: "card"` and `app.name: "apple_pay"`:
 
 ```swift
@@ -50,5 +56,7 @@ razorpay.authorize([
     ]
 ])
 ```
+
+`merchant_identifier` must exactly match the merchant ID in your app's Apple Pay entitlement.
 
 Other options such as `notes` and `description` are forwarded with the payment.
