@@ -561,6 +561,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "RazorpayCore",
+        "printedName": "RazorpayCore",
+        "declKind": "Import",
+        "moduleName": "RazorpayApplePay"
       }
     ],
     "json_format_version": 8
@@ -719,6 +726,20 @@
       "offset": 1723,
       "length": 32,
       "value": "\"APPLEPAY_CREATE_PAYMENT_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsSink.swift",
+      "kind": "StringLiteral",
+      "offset": 1408,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/anand.suryawanshi\/Desktop\/Projects\/razorpay-ios\/RazorpayIOS\/RazorpayApplePay\/ApplePayAnalyticsSink.swift",
+      "kind": "StringLiteral",
+      "offset": 1452,
+      "length": 9,
+      "value": "\"unknown\""
     }
   ]
 }
