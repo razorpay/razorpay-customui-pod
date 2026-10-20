@@ -33,6 +33,15 @@ let package = Package(
                 "RazorpayCore"
             ]
         ),
+        // Razorpay Elements (Quick Buy). RazorpayElements links RazorpayCore dynamically and shares this
+        // package's copy with Custom UI, so an app taking both products gets one RazorpayCore.
+        .library(
+            name: "RazorpayElements",
+            targets: [
+                "RazorpayElements",
+                "RazorpayCore"
+            ]
+        ),
     ],
     targets: [
        .target(
@@ -58,6 +67,11 @@ let package = Package(
         .binaryTarget(
             name: "RazorpayCore",
             path: "Pod/core/RazorpayCore.xcframework"
+        ),
+
+        .binaryTarget(
+            name: "RazorpayElements",
+            path: "Frameworks/RazorpayElements.xcframework"
         ),
 
         .binaryTarget(

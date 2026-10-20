@@ -1,0 +1,323 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name RazorpayElements -module-alias Module___RazorpayElements=RazorpayElements -module-alias Module____StringProcessing=_StringProcessing -module-alias Module____SwiftConcurrencyShims=_SwiftConcurrencyShims -module-alias Module____Concurrency=_Concurrency -module-alias Module___UIKit=UIKit -module-alias Module___WebKit=WebKit -module-alias Module___RazorpayCore=RazorpayCore -module-alias Module___CommonCrypto=CommonCrypto -module-alias Module___SystemConfiguration=SystemConfiguration -module-alias Module___CoreTelephony=CoreTelephony -module-alias Module___MetricKit=MetricKit -module-alias Module___CoreGraphics=CoreGraphics -module-alias Module___log=log -module-alias Module___os=os -module-alias Module___SwiftUI=SwiftUI
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+import Module___CommonCrypto
+import Module___CoreGraphics
+import Module___CoreTelephony
+import Foundation
+import Module___MetricKit
+import Module___RazorpayCore
+import Swift
+import Module___SwiftUI
+import Module___SystemConfiguration
+import Module___UIKit
+import Module___WebKit
+import Module____Concurrency
+import Module____StringProcessing
+import Module____SwiftConcurrencyShims
+import Module___os.log
+import Module___os
+@_hasMissingDesignatedInitializers public class CXAvailability {
+  @objc deinit
+}
+public struct CXError {
+}
+public class TurboPluginManager {
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getSessionId() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getMercahntKey() -> Swift.String?
+  #endif
+  public func getHTMLLoaingPage() -> Swift.String
+  public func isCFBEnabledUser() -> Swift.Bool
+  public func getBaseAnalyticsProperties() -> [Swift.AnyHashable : Any]
+  public func trackEvent(eventName: Swift.String, payload: [Swift.AnyHashable : Any])
+  public func submitAnalyticsEvents()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func gatherAnalyticsDataCustomUI() -> [Swift.String : Any]?
+  #endif
+  @objc deinit
+}
+public enum RazorpayElements {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func configure(keyId: Swift.String, email: Swift.String? = nil, customerId: Swift.String? = nil, theme: Module___RazorpayElements.RazorpayTheme? = nil)
+  #endif
+}
+public enum FontWeight : Swift.String, Swift.Codable, Swift.Equatable {
+  case regular
+  case medium
+  case semibold
+  case bold
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct RazorpayTheme : Swift.Codable, Swift.Equatable {
+  public var themeColor: Swift.String?
+  public var fontColor: Swift.String?
+  public var fontStyle: Swift.String?
+  public var fontWeight: Module___RazorpayElements.FontWeight?
+  public var fontSize: Swift.String?
+  public var buttonColor: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(themeColor: Swift.String? = nil, fontColor: Swift.String? = nil, fontStyle: Swift.String? = nil, fontWeight: Module___RazorpayElements.FontWeight? = nil, fontSize: Swift.String? = nil, buttonColor: Swift.String? = nil)
+  #endif
+  public static func == (a: Module___RazorpayElements.RazorpayTheme, b: Module___RazorpayElements.RazorpayTheme) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ElementsError : Swift.Error, Swift.Codable, Swift.Equatable {
+  public enum Reason : Swift.Codable, Swift.Equatable, Swift.Hashable {
+    case inputValidationFailed
+    case invalidSetKey
+    case elementNotConfigured
+    case invalidOrderId
+    case orderExpired
+    case missingOrderId
+    case hookTimeout
+    case amountOrderMismatch
+    case amountLessThanMinimumAmount
+    case pspAppNotAvailable
+    case cardExpired
+    case paymentCancelled
+    case networkError
+    case tlsUnsupported
+    case cardDeclined
+    case paymentDeclined
+    case insufficientFunds
+    case rateLimitExceeded
+    case unknown(Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public static func == (a: Module___RazorpayElements.ElementsError.Reason, b: Module___RazorpayElements.ElementsError.Reason) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Code : Swift.String, Swift.Codable, Swift.Equatable {
+    case badRequest
+    case gateway
+    case server
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.String)
+    #endif
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Channel : Swift.Equatable {
+    case validation
+    case payment
+    public static func == (a: Module___RazorpayElements.ElementsError.Channel, b: Module___RazorpayElements.ElementsError.Channel) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var reason: Module___RazorpayElements.ElementsError.Reason
+  public var code: Module___RazorpayElements.ElementsError.Code
+  public var source: Swift.String
+  public var step: Swift.String
+  public var field: Swift.String?
+  public var description: Swift.String
+  public var metadata: [Swift.String : Swift.String]?
+  public var paymentErrorCode: Swift.Int {
+    get
+  }
+  public var responseJson: Swift.String {
+    get
+  }
+  public static let paymentCancelledCode: Swift.Int
+  public static let networkErrorCode: Swift.Int
+  public static let tlsErrorCode: Swift.Int
+  public var channel: Module___RazorpayElements.ElementsError.Channel {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+  public static func == (a: Module___RazorpayElements.ElementsError, b: Module___RazorpayElements.ElementsError) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum QuickBuyButtonType : Swift.String, Swift.Codable, Swift.Equatable, Swift.CaseIterable {
+  case tap
+  case swipe
+  public init(from decoder: any Swift.Decoder) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [Module___RazorpayElements.QuickBuyButtonType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [Module___RazorpayElements.QuickBuyButtonType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct QuickBuyTheme : Swift.Codable, Swift.Equatable {
+  public var buttonColor: Swift.String?
+  public var buttonRadius: CoreFoundation.CGFloat?
+  public var buttonText: Swift.String?
+  public var amountFontColor: Swift.String?
+  public var amountFontSize: Swift.String?
+  public var amountFontWeight: Swift.String?
+  public var offerDisplayFontColor: Swift.String?
+  public var offerDisplayFontSize: Swift.String?
+  public var offerDisplayFontWeight: Swift.String?
+  public var changeMethodFontColor: Swift.String?
+  public var changeMethodFontSize: Swift.String?
+  public var changeMethodFontWeight: Swift.String?
+  public var changeMethodText: Swift.String?
+  public var instrumentFontColor: Swift.String?
+  public var instrumentFontSize: Swift.String?
+  public var instrumentFontWeight: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(buttonColor: Swift.String? = nil, buttonRadius: CoreFoundation.CGFloat? = nil, buttonText: Swift.String? = nil, amountFontColor: Swift.String? = nil, amountFontSize: Swift.String? = nil, amountFontWeight: Swift.String? = nil, offerDisplayFontColor: Swift.String? = nil, offerDisplayFontSize: Swift.String? = nil, offerDisplayFontWeight: Swift.String? = nil, changeMethodFontColor: Swift.String? = nil, changeMethodFontSize: Swift.String? = nil, changeMethodFontWeight: Swift.String? = nil, changeMethodText: Swift.String? = nil, instrumentFontColor: Swift.String? = nil, instrumentFontSize: Swift.String? = nil, instrumentFontWeight: Swift.String? = nil)
+  #endif
+  public static func == (a: Module___RazorpayElements.QuickBuyTheme, b: Module___RazorpayElements.QuickBuyTheme) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol QuickBuyCallbacks : AnyObject {
+  func onPaymentSuccess(_ payload: [Swift.String : Any])
+  func onPaymentError(_ error: Module___RazorpayElements.ElementsError)
+  func onValidationError(_ error: Module___RazorpayElements.ElementsError)
+  func changeMethods(_ payload: [Swift.String : Any])
+  func showDefaultCheckout(_ payload: [Swift.String : Any])
+  #if compiler(>=5.3) && $NonescapableTypes
+  func onPaymentInitiateCreateOrder(_ request: Module___RazorpayElements.CreateOrderRequest, completion: @escaping (Swift.String?) -> Swift.Void)
+  #endif
+}
+extension Module___RazorpayElements.QuickBuyCallbacks {
+  public func onPaymentSuccess(_ payload: [Swift.String : Any])
+  public func onPaymentError(_ error: Module___RazorpayElements.ElementsError)
+  public func onValidationError(_ error: Module___RazorpayElements.ElementsError)
+  public func changeMethods(_ payload: [Swift.String : Any])
+  public func showDefaultCheckout(_ payload: [Swift.String : Any])
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func onPaymentInitiateCreateOrder(_ request: Module___RazorpayElements.CreateOrderRequest, completion: @escaping (Swift.String?) -> Swift.Void)
+  #endif
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @Module____Concurrency.MainActor @preconcurrency final public class RazorpayQuickBuy : Module___UIKit.UIView {
+  @Module____Concurrency.MainActor @preconcurrency final public var amount: Swift.Int? {
+    get
+    set
+  }
+  @objc @IBInspectable @Module____Concurrency.MainActor @preconcurrency final public var currency: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @Module____Concurrency.MainActor @preconcurrency final public var contact: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @Module____Concurrency.MainActor @preconcurrency final public var displayCod: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @Module____Concurrency.MainActor @preconcurrency final public var buttonType: Module___RazorpayElements.QuickBuyButtonType {
+    get
+    set
+  }
+  @objc @IBInspectable @Module____Concurrency.MainActor @preconcurrency final public var displayOffer: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @Module____Concurrency.MainActor @preconcurrency final public var orderId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @Module____Concurrency.MainActor @preconcurrency final public var codFee: Swift.Int? {
+    get
+    set
+  }
+  @Module____Concurrency.MainActor @preconcurrency final public var theme: Module___RazorpayElements.QuickBuyTheme? {
+    get
+    set
+  }
+  @Module____Concurrency.MainActor @preconcurrency weak final public var callbacks: (any Module___RazorpayElements.QuickBuyCallbacks)?
+  @Module____Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @Module____Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @Module____Concurrency.MainActor @preconcurrency @objc override final public func prepareForInterfaceBuilder()
+  @Module____Concurrency.MainActor @preconcurrency @objc override final public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @Module____Concurrency.MainActor @preconcurrency @objc override final public func didMoveToWindow()
+  @Module____Concurrency.MainActor @preconcurrency final public func unmount()
+  @objc deinit
+  @Module____Concurrency.MainActor @preconcurrency final public func set(_ key: Swift.String, _ value: Any)
+  @Module____Concurrency.MainActor @preconcurrency final public var onContentHeightChange: ((CoreFoundation.CGFloat) -> Swift.Void)?
+}
+extension Module___RazorpayElements.RazorpayQuickBuy {
+  @Module____Concurrency.MainActor @preconcurrency final public func canMakePayment(_ completion: @escaping (Swift.Bool) -> Swift.Void)
+}
+public struct CreateOrderRequest : Swift.Equatable {
+  public let amount: Swift.Int?
+  public let currency: Swift.String?
+  public let orderId: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(amount: Swift.Int? = nil, currency: Swift.String? = nil, orderId: Swift.String? = nil)
+  #endif
+  public static func == (a: Module___RazorpayElements.CreateOrderRequest, b: Module___RazorpayElements.CreateOrderRequest) -> Swift.Bool
+}
+@available(iOS 13.0, *)
+@Module____Concurrency.MainActor @preconcurrency public struct RazorpayQuickBuyView : SwiftUICore.View {
+  @Module____Concurrency.MainActor @preconcurrency public var amount: Swift.Int?
+  @Module____Concurrency.MainActor @preconcurrency public var currency: Swift.String?
+  @Module____Concurrency.MainActor @preconcurrency public var contact: Swift.String?
+  @Module____Concurrency.MainActor @preconcurrency public var displayCod: Swift.Bool
+  @Module____Concurrency.MainActor @preconcurrency public var buttonType: Module___RazorpayElements.QuickBuyButtonType
+  @Module____Concurrency.MainActor @preconcurrency public var displayOffer: Swift.Bool
+  @Module____Concurrency.MainActor @preconcurrency public var orderId: Swift.String?
+  @Module____Concurrency.MainActor @preconcurrency public var codFee: Swift.Int?
+  @Module____Concurrency.MainActor @preconcurrency public var theme: Module___RazorpayElements.QuickBuyTheme?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @Module____Concurrency.MainActor @preconcurrency public init(amount: Swift.Int? = nil, currency: Swift.String? = nil, contact: Swift.String? = nil, displayCod: Swift.Bool = false, buttonType: Module___RazorpayElements.QuickBuyButtonType = .tap, displayOffer: Swift.Bool = false, orderId: Swift.String? = nil, codFee: Swift.Int? = nil, theme: Module___RazorpayElements.QuickBuyTheme? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @Module____Concurrency.MainActor @preconcurrency public func onCreateOrder(_ handler: @escaping (Module___RazorpayElements.CreateOrderRequest, @escaping (Swift.String?) -> Swift.Void) -> Swift.Void) -> Module___RazorpayElements.RazorpayQuickBuyView
+  #endif
+  @Module____Concurrency.MainActor @preconcurrency public func onPaymentSuccess(_ handler: @escaping ([Swift.String : Any]) -> Swift.Void) -> Module___RazorpayElements.RazorpayQuickBuyView
+  @Module____Concurrency.MainActor @preconcurrency public func onPaymentError(_ handler: @escaping (Module___RazorpayElements.ElementsError) -> Swift.Void) -> Module___RazorpayElements.RazorpayQuickBuyView
+  @Module____Concurrency.MainActor @preconcurrency public func onValidationError(_ handler: @escaping (Module___RazorpayElements.ElementsError) -> Swift.Void) -> Module___RazorpayElements.RazorpayQuickBuyView
+  @Module____Concurrency.MainActor @preconcurrency public func onChangeMethods(_ handler: @escaping ([Swift.String : Any]) -> Swift.Void) -> Module___RazorpayElements.RazorpayQuickBuyView
+  @Module____Concurrency.MainActor @preconcurrency public func onShowDefaultCheckout(_ handler: @escaping ([Swift.String : Any]) -> Swift.Void) -> Module___RazorpayElements.RazorpayQuickBuyView
+  @Module____Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_hasMissingDesignatedInitializers final public class Coordinator : Module___RazorpayElements.QuickBuyCallbacks {
+    final public func onPaymentSuccess(_ payload: [Swift.String : Any])
+    final public func onPaymentError(_ error: Module___RazorpayElements.ElementsError)
+    final public func onValidationError(_ error: Module___RazorpayElements.ElementsError)
+    final public func changeMethods(_ payload: [Swift.String : Any])
+    final public func showDefaultCheckout(_ payload: [Swift.String : Any])
+    #if compiler(>=5.3) && $NonescapableTypes
+    final public func onPaymentInitiateCreateOrder(_ request: Module___RazorpayElements.CreateOrderRequest, completion: @escaping (Swift.String?) -> Swift.Void)
+    #endif
+    @objc deinit
+  }
+  @available(iOS 13.0, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s16RazorpayElements0A12QuickBuyViewV4bodyQrvp", 0) __
+}
+extension Module___RazorpayElements.FontWeight : Swift.Hashable {}
+extension Module___RazorpayElements.FontWeight : Swift.RawRepresentable {}
+extension Module___RazorpayElements.ElementsError.Code : Swift.Hashable {}
+extension Module___RazorpayElements.ElementsError.Code : Swift.RawRepresentable {}
+extension Module___RazorpayElements.ElementsError.Channel : Swift.Hashable {}
+extension Module___RazorpayElements.QuickBuyButtonType : Swift.Hashable {}
+extension Module___RazorpayElements.QuickBuyButtonType : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension Module___RazorpayElements.RazorpayQuickBuyView : Swift.Sendable {}
