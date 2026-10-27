@@ -1,0 +1,105 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "razorpay-customui-pod",
+          "kind" : "root",
+          "location" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod",
+          "name" : "razorpay-customui-pod"
+        },
+        "path" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/Pod/RazorpayCustom.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "RazorpayCustom"
+      },
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "razorpay-customui-pod",
+          "kind" : "root",
+          "location" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod",
+          "name" : "razorpay-customui-pod"
+        },
+        "path" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/Pod/core/Razorpay.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "Razorpay"
+      },
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "razorpay-customui-pod",
+          "kind" : "root",
+          "location" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod",
+          "name" : "razorpay-customui-pod"
+        },
+        "path" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/Pod/core/RazorpayCore.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "RazorpayCore"
+      },
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "razorpay-customui-pod",
+          "kind" : "root",
+          "location" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod",
+          "name" : "razorpay-customui-pod"
+        },
+        "path" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/artifacts/razorpay-customui-pod/RazorpayApplePay/RazorpayApplePay.xcframework",
+        "source" : {
+          "checksum" : "c9e47f4e3edaee208f910ea4626b733da0767102768f8b0d806824ee84f62568",
+          "type" : "remote",
+          "url" : "https://github.com/razorpay/razorpay-customui-pod/releases/download/2.2.0/RazorpayApplePay.xcframework.zip"
+        },
+        "targetName" : "RazorpayApplePay"
+      },
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "razorpay-customui-pod",
+          "kind" : "root",
+          "location" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod",
+          "name" : "razorpay-customui-pod"
+        },
+        "path" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/Frameworks/RazorpayElements.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "RazorpayElements"
+      }
+    ],
+    "dependencies" : [
+
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}

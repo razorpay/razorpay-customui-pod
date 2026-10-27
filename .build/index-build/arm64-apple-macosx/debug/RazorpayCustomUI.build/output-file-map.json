@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/RazorpayCustomUI.build/primary.swiftdeps"
+  },
+  "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/sources/RazorpayWrapper/RazorpayWrapper.swift": {
+    "dependencies": "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/RazorpayCustomUI.build/RazorpayWrapper.d",
+    "object": "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/RazorpayCustomUI.build/RazorpayWrapper.swift.o",
+    "swiftmodule": "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/RazorpayCustomUI.build/RazorpayWrapper~partial.swiftmodule",
+    "swift-dependencies": "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/RazorpayCustomUI.build/RazorpayWrapper.swiftdeps",
+    "diagnostics": "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/RazorpayCustomUI.build/RazorpayWrapper.dia"  }
+}

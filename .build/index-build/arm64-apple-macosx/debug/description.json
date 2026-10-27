@@ -1,0 +1,235 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.RazorpayCustomUI-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/RazorpayCustomUI.build/sources",
+      "importPath" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/sources/RazorpayWrapper/RazorpayWrapper.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/RazorpayCustomUI.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "RazorpayCustomUI",
+      "moduleOutputPath" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/Modules/RazorpayCustomUI.swiftmodule",
+      "objects" : [
+        "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/RazorpayCustomUI.build/RazorpayWrapper.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx12.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/RazorpayCustomUI.build/include/RazorpayCustomUI-Swift.h",
+        "-swift-version",
+        "5",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "razorpay_customui_pod"
+      ],
+      "outputFileMapPath" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/RazorpayCustomUI.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/Modules/RazorpayCustomUI.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/sources/RazorpayWrapper/RazorpayWrapper.swift"
+      ],
+      "tempsPath" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/RazorpayCustomUI.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "RazorpayCustomUI" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "RazorpayCustomUI",
+      "-package-name",
+      "razorpay_customui_pod",
+      "-c",
+      "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/sources/RazorpayWrapper/RazorpayWrapper.swift",
+      "-I",
+      "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx12.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/RazorpayCustomUI.build/include/RazorpayCustomUI-Swift.h",
+      "-swift-version",
+      "5",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "razorpay_customui_pod",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "RazorpayCustomUI" : [
+      "RazorpayCustom",
+      "RazorpayCore",
+      "Razorpay"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : [
+      {
+
+      }
+    ]
+  },
+  "writeCommands" : {
+    "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/RazorpayCustomUI.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/sources/RazorpayWrapper/RazorpayWrapper.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/RazorpayCustomUI.build/sources"
+    },
+    "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/vivek.shindhe/Projects/ios/razorpay-customui-pod/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}
